@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!--
+	W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+	
+			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
+			
+		Created by GhostMiner, June/July 2023.
+		Ghost-Miner.Github.io,
+		YouTube.com/GhostMinerMC
+			
+-->
+<html lang="en">
+	<head>
+		<title>Thronefall leaderbaord</title>
+		<link rel="shortcut icon" type="image/jpg" href="./img/crown.png">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<body>
+		<style>
+			:root 
+			{
+				--backgroundColour: rgba(255, 255, 255, 0.9);
+				--foregroundColour: rgba(0, 255, 0, 0.5);
+			}
+			a:link 
+			{
+				color: orange;
+				text-decoration: none;
+			}
+			a:visited 
+			{
+				color: orange;
+				text-decoration: overline;
+			}
+			body 
+			{ 
+				background: url(./img/bgr.jpg) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			.masterPageContainer 
+			{
+				max-width: 1000px;
+				min-width: 600px; 
+				margin: 0 auto; 
+				font-family: 'Times New Roman', Times, serif;
+			}
+			.BgrBox 
+			{
+				border-radius: 5px 5px;
+				padding: 10px;
+				background-color: var(--backgroundColour);
+			}
+			@media only screen and (max-width: 600px) 
+			{
+			  body
+			  {
+				
+			  }
+			}
+		</style>
+		<script>
+			var w = window.innerWidth;
+			var h = window.innerHeight;
+			if (h > w) 
+			{
+				//alert("This page is not yet optimized for small/vertical screens. Zoom out if page content doesn't fit on the screen");
+			}
+			
+			function ChangeShownTable (tableToShow)
+			{ 
+				var NFscoreTable = document.getElementById("Nordfels score lb");
+				var NLscoreTable = document.getElementById("Neuland score lb");
+				var NFcoinsTable = document.getElementById("Nordfels gold lb");
+				
+				var showTable = document.getElementById(tableToShow);
+				
+				NFscoreTable.style.display = "none";
+				NLscoreTable.style.display = "none";
+				NFcoinsTable.style.display = "none";
+				
+				showTable.style.display = "block";
+			}
+			function test ()
+			{
+			alert("size");
+			}
+ 		</script>
+		
+		<div class="masterPageContainer">
+			<div class="BgrBox" style="margin-top: 50px; margin-bottom: 25px; padding-top:25px;">
+
+				<!-- Page head stuff -->
+				<section id ="Page header"> 
+					<center>
+						<section id="Title">
+							<img src="./img/crown.png" alt="Crown icon" id="crown Icon">
+							<h1><strong><em>Thronefall leaderboard</em></strong></h1>
+						</section>
+						<hr/>
+						<section id="*Llinks">
+							<h4>
+								<a href="https://discord.gg/gVYctptyg8" id="discord Link">Discord server</a> | 
+								<a href="https://store.steampowered.com/app/2239150/Thronefall/" id="steam page">Get the game</a>
+							</h4>
+						</section>
+						
+					</center>
+				</section> <!-- Page head stuff -->
+				<hr/>
+				  
+				<!-- Header buttons -->
+				<section id="Header buttons">
+					<table id="Heaer button container" style="width: 100%;">
+						<tr>
+							<td style="width: 75%; padding: 5px;">
+								<!-- Table toggle buttons -->
+								<section id="Table toggle buttons">
+									<font style="font-family: Ubuntu;">
+									<button type="button" class="btn btn-warning" id="NF score toggle" onclick="ChangeShownTable('Nordfels score lb')">
+									<b>Nordfels scores</b>
+									</button>
+									<button type="button" class="btn btn-warning" id="NL score toggle" onclick="ChangeShownTable('Neuland score lb')">
+									<b>Neuland scores</b>
+									</button>
+									<button type="button" class="btn btn-warning" id="NF gold toggle" onclick="ChangeShownTable('Nordfels gold lb')">
+									<b>Nordfels gold</b>
+									</button>
+									</font>
+								</section> <!-- toggle buttons -->
+							</td>
+							<td style="width: 25%; text-align: right;">
+								<!-- Submit score button -->
+								<section id="Submit score">
+									<script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+									<script type="text/javascript">
+										var JFL_231755087536059 = new JotformFeedback({
+										formId: '231755087536059',
+										base: 'https://form.jotform.com/',
+										windowTitle: 'Submit score',
+										backgroundColor: '#FFA500',
+										fontColor: '#FFFFFF',
+										type: '0',
+										height: 500,
+										width: 640,
+										openOnLoad: false
+										});
+									</script>
+									<script type="text/javascript">
+										var ifr = document.getElementById("lightbox-231755087536059");
+										if (ifr) {
+										var src = ifr.src;
+										var iframeParams = [];
+										if (window.location.href && window.location.href.indexOf("?") > -1) {
+											iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+										}
+										if (src && src.indexOf("?") > -1) {
+											iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+											src = src.substr(0, src.indexOf("?"))
+										}
+										iframeParams.push("isIframeEmbed=1");
+										ifr.src = src + "?" + iframeParams.join('&');
+										}
+										window.handleIFrameMessage = function(e) {
+										if (typeof e.data === 'object') { return; }
+										var args = e.data.split(":");
+										if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
+										if (!iframe) { return; }
+										switch (args[0]) {
+											case "scrollIntoView":
+											iframe.scrollIntoView();
+											break;
+											case "setHeight":
+											iframe.style.height = args[1] + "px";
+											if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+												iframe.style.minHeight = args[1] + "px";
+											}
+											break;
+											case "collapseErrorPage":
+											if (iframe.clientHeight > window.innerHeight) {
+												iframe.style.height = window.innerHeight + "px";
+											}
+											break;
+											case "reloadPage":
+											window.location.reload();
+											break;
+											case "loadScript":
+											if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+											var src = args[1];
+											if (args.length > 3) {
+												src = args[1] + ':' + args[2];
+											}
+											var script = document.createElement('script');
+											script.src = src;
+											script.type = 'text/javascript';
+											document.body.appendChild(script);
+											break;
+											case "exitFullscreen":
+											if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+											else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+											else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+											else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+											else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+											break;
+										}
+										var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+										if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+											var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+											iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+										}
+										};
+										window.isPermitted = function(originUrl, whitelisted_domains) {
+										var url = document.createElement('a');
+										url.href = originUrl;
+										var hostname = url.hostname;
+										var result = false;
+										if( typeof hostname !== 'undefined' ) {
+											whitelisted_domains.forEach(function(element) {
+												if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+													result = true;
+												}
+											});
+											return result;
+										}
+										};
+										if (window.addEventListener) {
+										window.addEventListener("message", handleIFrameMessage, false);
+										} else if (window.attachEvent) {
+										window.attachEvent("onmessage", handleIFrameMessage);
+										}
+									</script>
+									<a class="btn lightbox-231755087536059" 
+										style="
+										margin-top: 16px;
+										text-transform: uppercase;
+										font-size: 14px;
+										text-decoration: none;
+										cursor: pointer;
+										display: inline-block;
+										padding: 10px;
+										font-family: inherit;
+										text-shadow: none;
+										user-select: none;
+										transition: all,.1s,ease-in;
+										background-color: #FFA500;
+										border: 1px solid #FFA500;
+										color: #FFFFFF;
+										font-family: Ubuntu;
+										">
+									<strong>Submit score</strong>
+									</a>
+									<br>
+									<em>Requires JavaScript.</em>
+								</section> <!-- Submit score -->
+							</td>
+						</tr>
+					</table>
+				</section> <!-- Header buttons -->
+				<hr/>
+				
+				<section class="scoreTable" id="Nordfels score lb">  <!-- Nordfels score lb -->
+					<h3><strong>Nordfels high-scores (10k+)</strong></h3>
+					<!-- Bootstrap styled table. DO NOT CHANGE TABLE CLASSSES! -->
+					<table id="Nordfels scores" class="table table-striped">
+						<!-- Table header. Do not change or the styling might break! -->
+						<thead class="thead-dark">
+							<tr>
+								<th style="text-align: center;">
+									<h5><strong> # </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Name </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Score </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Date </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Screenshot/Video </strong></h5>
+								</th>
+							</tr>
+						</thead>
+						<!-- You can only change content in "tbody" -->
+						<tbody>
+							<tr>
+								<td style="text-align: center;"><strong> 1 </strong></td>
+								<td id="player name"> mrllama_ </td>
+								<td id="value">14 792</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 2 </strong></td>
+								<td id="player name"> deltatee </td>
+								<td id="value">14 546</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 3 </strong></td>
+								<td id="player name">FRAZZ/Kenob  i</td>
+								<td id="value">14 457</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 4 </strong></td>
+								<td id="player name">777ake  r</td>
+								<td id="value">14 526</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 5 </strong></td>
+								<td id="player name">quazar2.1017wbns</td>
+								<td id="value">13 992</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 6 </strong></td>
+								<td id="player name"> bluesaphirxiv </td>
+								<td id="value">13 097</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 7 </strong></td>
+								<td id="player name"> babykrokodile </div>
+								</td>
+								<td id="value">13 048</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 8 </strong></td>
+								<td id="player name"> neonitedragon </div>
+								</td>
+								<td id="value">12 716</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 9 </strong></td>
+								<td id="player name">giraffasaur</td>
+								<td id="value">12 539</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 10 </strong></td>
+								<td id="player name"> zsalab_ </div>
+								</td>
+								<td id="value">12 503</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 11 <br /></strong></td>
+								<td id="player name"> domedin#0478 </div>
+									</div>
+								</td>
+								<td id="value">11 486</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 12 <br /></strong></td>
+								<td id="player name"> barigamb </div>
+								</td>
+								<td id="value">11 326</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr/>
+				</section> <!-- Nordfels score lb -->
+				
+				<section class="scoreTable" id="Neuland score lb">	<!-- Neuland score lb -->
+					<h3><strong>Neuland high-scores (5k+)</strong></h3>
+					<!-- Bootstrap styled table. DO NOT CHANGE TABLE CLASSSES! -->
+					<table id="Neuland scores" class="table table-striped">
+						<!-- Table header. Do not change or the styling might break! -->
+						<thead class="thead-dark">
+							<tr>
+								<th style="text-align: center;">
+									<h5><strong> # </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Name </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Score </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Date </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Screenshot/Video </strong></h5>
+								</th>
+							</tr>
+						</thead>
+						<!-- You can only change content in "tbody" -->
+						<tbody>
+							<tr >
+								<td style="text-align: center;"><strong> 1 </strong></td>
+								<td id="player name"> quazar2.1017wbns </td>
+								<td id="value">5 292</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 2 </strong></td>
+								<td id="player name"> giraffasaur </td>
+								<td id="value">5 214</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 3 </strong></td>
+								<td id="player name">babykrokodile  i</td>
+								<td id="value">5 199</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 4 </strong></td>
+								<td id="player name">mrllama_  r</td>
+								<td id="value">5 150</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 5 </strong></td>
+								<td id="player name">bluesaphirxiv</td>
+								<td id="value">5 117</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr id="under table line"/>
+				</section> <!-- Neuland score lb -->
+				
+				<section class="scoreTable" id="Nordfels gold lb"> <!-- Nordfels score lb -->
+					<h3><strong>Nordfels most coins</strong></h3>
+					<!-- Bootstrap styled table. DO NOT CHANGE TABLE CLASSSES! -->
+					<table id="Nordfels coins" class="table table-striped">
+						<!-- Table header. Do not change or the styling might break! -->
+						<thead class="thead-dark">
+							<tr>
+								<th style="text-align:center;">
+									<h5><strong>#</strong></h5>
+								</th>
+								<th>
+									<h5><strong> Name </strong></h5>
+								</th>
+								<th>
+									<h5><strong>Coins</strong></h5>
+								</th>
+								<th>
+									<h5><strong> Date </strong></h5>
+								</th>
+								<th>
+									<h5><strong> Screenshot/Video </strong></h5>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+						<!-- You can only change content in "tbody" -->
+							<tr>
+								<td style="text-align: center;"><strong> 1 </strong></td>
+								<td id="player name">babykrokodile</div>
+								</td>
+								<td id="value">472</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 2 </strong></td>
+								<td id="player name">777aker</div>
+								</td>
+								<td id="value">436</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 3 </strong></td>
+								<td id="player name">quazar2.1017wbns</td>
+								<td id="value">404</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 4 </strong></td>
+								<td id="player name">giraffasaur</td>
+								<td id="value">398</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong> 5 </strong></td>
+								<td id="player name">mrllama_</div>
+								</td>
+								<td id="value">361</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong>6<br /></strong></td>
+								<td id="player name">bluesaphirxiv</td>
+								<td id="value">245</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong>7<br /></strong></td>
+								<td id="player name">bluesaphirxiv</td>
+								<td id="value">227</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong>8<br /></strong></td>
+								<td id="player name">zsalab_</td>
+								<td id="value">214</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong>9<br /></strong></td>
+								<td id="player name">GhostMiner</td>
+								<td id="value">209</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong>10<br /></strong></td>
+								<td id="player name">neonitedragon</td>
+								<td id="value">206</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+							<tr >
+								<td style="text-align: center;"><strong>11<br /></strong></td>
+								<td id="player name">neonitedragon</td>
+								<td id="value">142</td>
+								<td>---</td>
+								<td>---</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr id="under table line"/>
+				</section> <!-- Nordfels coins lb -->
+				
+				<section id="Footer"> <!-- Footer -->
+					<center>
+						<h5>
+							<i><font style="color:black;">Leaderbaord page made by GhostMiner. (v. 1.1)</i>
+							<a href="https://ghost-miner.github.io/">Website</a>, 
+							<a href="youtube.com/ghostMinerMC">Youtube</a>, 
+							<a href="https://discord.gg/DjUBY9h">Discord</a>
+							</font>
+						</h5>
+					</center>
+				</section> <!-- Footer -->
+				
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script>ChangeShownTable("Nordfels score lb"); </script>
+	</body>
+</html>
