@@ -1,0 +1,22 @@
+.columnRow
+{
+    display: flex;
+    width: auto;
+}
+#leftColumn
+{
+    float: left;
+    width: 70%;
+    margin-right: 10px;
+}
+#rightColumn
+{
+    float: left;
+    width: 30%;
+}
+#pictureContainer
+{
+    padding: 15px;
+    background-color: lightgray;
+    border-radius: 5px;
+}

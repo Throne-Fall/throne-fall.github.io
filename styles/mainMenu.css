@@ -1,0 +1,44 @@
+.menuSidebar
+{        
+    /*background-color: var(--foregroundColour);*/
+    border: 0px red solid;
+    width: 15%;
+    float: left;
+    padding: 15px;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+
+.primaryList
+{
+    font-weight: bold;
+    list-style: none;
+}
+.secondaryList
+{
+    font-weight: normal;
+    list-style: none;
+}
+.menuItemLink:link
+{
+    color: black;
+}
+.menuItemLink:visited
+{
+    color: black;
+}
+.menuItemLink:hover
+{
+    color: var(--orange1);
+    text-decoration: overline;
+}
+.menuItemGroup
+{
+    margin-top: 5px;
+}
+
+#mainWebsiteTitle
+{
+    font-size: xx-large;
+    font-weight: bold;
+}

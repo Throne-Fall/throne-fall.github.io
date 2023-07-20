@@ -1,0 +1,76 @@
+/* BASIC STUFF */
+:root 
+{
+    --foregroundColour:  rgba(255, 255, 255, 0.5); 
+    --baackgroundColour:  rgba(245, 245, 245, 0.95);
+    --orange1: #ba8303;
+}
+a:link 
+{
+    color: var(--orange1);
+    text-decoration: none;
+}
+a:visited 
+{
+    color: var(--orange1);
+    text-decoration: none;
+}
+body 
+{ 
+    background: url(.././pictures/bgr.jpg) no-repeat center center fixed ; 
+    background-size: cover;
+}
+
+/* C L A S S E S */
+.mainPageContainer 
+{
+    max-width: 1850px;
+    min-width: 1800px;
+    margin: 20px auto; 
+    font-family: 'Times New Roman', Times, Serif;
+     
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--foregroundColour);
+      
+    /*margin-top: 20px; 
+    margin-bottom: 25px;*/ 
+                        
+    box-shadow: 2px 2px 16px rgba(0,0,0,1);  
+
+    backdrop-filter: blur(8px);
+}
+
+.innerContainer
+{
+    display: flex;
+    width: auto;
+}
+
+.pageContentBox
+{
+    background-color: var(--baackgroundColour);
+    border: 0px blue solid;
+    width: 85%;
+    float: left;
+    padding: 10px;
+    padding-top: 15px;
+    border-radius: 5px;
+    
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.32);
+}
+  
+.footerText 
+{
+    font-weight: bold;
+}
+#footerDiv
+{
+    padding: 10px;
+}
+
+.mainSeparator
+{
+    border-width: 3px; 
+    color: #000;
+}
