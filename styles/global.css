@@ -60,6 +60,21 @@ body
     box-shadow: 0px 2px 8px rgba(0,0,0,0.32);
 }
   
+.pageTitle
+{
+    font-weight: bold;
+    font-size: 1.75em;
+}
+.pageSubtitle
+{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.articlePictureDescription
+{
+    font-weight: bold;
+}
+
 .footerText 
 {
     font-weight: bold;
@@ -77,5 +92,15 @@ body
 .mainSeparator
 {
     border-width: 3px; 
-    color: #000;
+}
+
+#pictureContainer
+{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.32);
+}
+.articlePicture
+{
+    width: 100%; 
+    height: auto; 
+    padding-bottom: 5px
 }
