@@ -43,6 +43,19 @@
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
+		<style>
+			.gameLinksBtn
+			{
+				padding: 15px; 
+				padding-top: 7px;  
+				padding-bottom: 7px;
+				box-shadow: 0px 0px 8px rgba(0,0,0, 0.64); 
+				margin-right: 10px;
+				margin-top:  10px;
+				background-color: var(--baackgroundColour);
+				font-weight: normal;
+			}
+		</style>
         <div class="mainPageContainer">
             <div class="innerContainer">
                 <div class="websiteSideBar">                    
@@ -54,7 +67,20 @@
                     </span>
                     <hr class="mainSeparator">
 		            <p>This is an unofficial Wiki for the game <a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall</a>. As of now, this site is under construction, and deep in mind that some links or other elements might not work right now.</p>
-                </div>
+					
+					<section id="Game_links">
+							<a href="https://store.steampowered.com/app/2239150/Thronefall/" id="steam_page" target="_blank">
+								<button type="button" class="btn btn-warning gameLinksBtn"> 
+									Get the game
+								</button>
+							</a>
+							<a href="https://discord.gg/gVYctptyg8" id="discord_Link" target="_blank">
+								<button type="button" class="btn btn-warning gameLinksBtn">
+									Discord server
+								</button>
+							</a>
+					</section>
+				</div>
             </div>
             
             <div id="footerDiv">
