@@ -45,3 +45,9 @@
     font-size: xx-large;
     font-weight: bold;
 }
+.menuNoLink:hover
+{
+    color: black;
+    cursor: default;
+    text-decoration: none;
+}
