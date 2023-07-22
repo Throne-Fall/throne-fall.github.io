@@ -1,4 +1,4 @@
-.menuSidebar
+.websiteSideBar
 {        
     /*background-color: var(--foregroundColour);*/
     border: 0px red solid;
@@ -13,11 +13,14 @@
 {
     font-weight: bold;
     list-style: none;
+    font-size: 1.05em;
 }
 .secondaryList
 {
     font-weight: normal;
     list-style: none;
+    font-size: 0.95em;
+    margin-left: -20px;
 }
 .menuItemLink:link
 {
@@ -30,11 +33,11 @@
 .menuItemLink:hover
 {
     color: var(--orange1);
-    text-decoration: overline;
+    text-decoration:underline;
 }
 .menuItemGroup
 {
-    margin-top: 5px;
+    margin-top: 7.54px;
 }
 
 #mainWebsiteTitle

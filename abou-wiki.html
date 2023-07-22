@@ -32,8 +32,11 @@
 		<!-- Bootstrap and other CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="./styles/global.css">
-        <link rel="stylesheet" href="./styles/mainMenu.css">
+        <link rel="stylesheet" href="../_styles/global.css"> <!-- Page styling  -->
+        <link rel="stylesheet" href="../_styles/mainMenu.css"> <!-- Main menu styling -->
+        <link rel="stylesheet" href="../_styles/article.css"> <!--Styling of wiki content - individual pages -->
+
+        <script src="./_scripts/insertComponents.js"></script>
 
 		<link rel="shortcut icon" type="image/jpg" href="../img/crown.png">
 	</head>
@@ -43,88 +46,11 @@
 
         <div class="mainPageContainer">
             <div class="innerContainer">
-                <div class="menuSidebar">
-                    <div class="pageLogoAndTitle">
-                        <img src="./pictures/crown.png" alt="page icon" style="width: 50px; height: auto;">
-                        <br>
-                        <span id="mainWebsiteTitle">Thronefall Wiki</span>
-                    </div>
-                        <hr>
-                    <section id="mainNavBarSection">
-                        <div id="mainNavBarDiv">
-                            <nav id="mainaNavBar">
-                                <ul id="mainNavbarItems" class="primaryList">
-                                    <li class="menuItemGroup">
-                                        <span class="primaryMenuItemText">
-                                            <a class="menuItemLink" href="./index.html"> Home </a>
-                                        </span>
-                                    </li>
-                                    <li class="menuItemGroup">
-                                        <span class="primaryMenuItemText">
-                                            <a class="menuItemLink" href="./about"> About </a>
-                                        </span>
-                                            <ul class="secondaryList">
-                                                <li>
-                                                    <a class="menuItemLink" href="./abou-game.html"> Game overview</a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./leveling.html"> Leveling system </a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./abou-devs.html"> Developers  </a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./abou-wiki.html"> Wiki  </a>
-                                                </li>
-                                            </ul>
-                                    </li>
-                                    <li class="menuItemGroup">
-                                        <span class="primaryMenuItemText">
-                                            <a class="menuItemLink" href="./levels.html"> Levels </a>
-                                        </span>
-                                            <ul class="secondaryList">
-                                                <li>
-                                                    <a class="menuItemLink" href="./neuland.html"> Neuland </a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./nordfels.html"> Nordfels </a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./durststein.html"> Durststein </a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./frostsee.html"> Frostsee </a>
-                                                </li>
-                                            </ul>
-                                    </li>
-                                    <li class="menuItemGroup">
-                                        <span class="primaryMenuItemText">
-                                            <a class="menuItemLink" href="./Weapons/"> Weapons</a>
-                                        </span>
-                                            <ul class="secondaryList">
-                                                <li>
-                                                    <a class="menuItemLink" href="./Weapons/Bow.html"> Bow </a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./Weapons/Spear.html"> Spear </a>
-                                                </li>
-                                                <li>
-                                                    <a class="menuItemLink" href="./Weapons/Sword.html"> Sword & shield </a>
-                                                </li>
-                                            </ul>
-                                    </li>
-                                    <li>
-                                        <span class="primaryMenuItemText">
-                                            <a class="menuItemLink" href="./leaderboard.html"> Leaderboards </a>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </nav> 
-                        </div>
-                    </section> 
+                <div class="websiteSideBar">
+                    <!-- Menu and header to be isnerted with javascript --> 
                 </div>
                 <div class="pageContentBox">
-                    <span class="pageHeader">About this wiki</span>
+                    <span class="pageTitle">About this wiki</span>
                     <hr class="mainSeparator">
 
                     <div class="alert alert-dark" role="alert">
@@ -134,17 +60,7 @@
             </div>
             
             <div id="footerDiv">
-                <section id="footerSection">
-                    <center>
-                        <hr class="mainSeparator">
-							<span class="footerText">Webpage made by GhostMiner. |
-								<a href="https://ghost-miner.github.io/">Website</a>, 
-								<a href="http://youtube.com/ghostMinerMC">Youtube</a>, 
-								<a href="https://discord.gg/DjUBY9h">Discord</a>
-                            </span>							
-						</h6>
-					</center>
-                </section>
+                <!-- Footer to be isnerted with javascript -->
             </div>
         </div>
     </body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My site</title>
+</head>
+<body>
+<div class="header-container"></div>
+<div class="nav-container"></div>
+<script>
+(   async function () 
+    {
+    const headerHTMLRequest = await fetch('./head.html');
+    const headerHTML = await headerHTMLRequest.text();
+    document.querySelector('.header-container').innerHTML = headerHTML;
+
+    const navHTMLRequest = await fetch('./nav.html');
+    const navHTML = await navHTMLRequest.text();
+    document.querySelector('.nav-container').innerHTML = navHTML;
+    } 
+) ();
+</script>
+<h1>some heading</h1>
+<p>some page text</p>
+</body>
+</html>

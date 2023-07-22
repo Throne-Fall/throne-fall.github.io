@@ -24,7 +24,7 @@
 -->
 <html lang="en">
 	<head>
-		<title>Game Developers | Thronefall Wiki</title>
+		<title>ARTICLE TEMPLATE | Thronefall Wiki</title>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -35,10 +35,10 @@
         <link rel="stylesheet" href="./_styles/global.css"> <!-- Page styling  -->
         <link rel="stylesheet" href="./_styles/mainMenu.css"> <!-- Main menu styling -->
         <link rel="stylesheet" href="./_styles/article.css"> <!--Styling of wiki content - individual pages -->
+        
+        <script src="./_scripts/insertComponents.js" crossorigin="anonymous"></script>
 
-        <script src="./_scripts/insertComponents.js"></script>
-
-		<link rel="shortcut icon" type="image/jpg" href="../img/crown.png">
+        <link rel="shortcut icon" type="image/jpg" href="../img/crown.png">
 	</head>
     <body>
         <style>
@@ -49,13 +49,25 @@
                 <div class="websiteSideBar">
                     <!-- Menu and header to be isnerted with javascript --> 
                 </div>
-                <div class="pageContentBox">
-                    <span class="pageTitle">Game developers</span>
-                    <hr class="mainSeparator">
 
-					<div class="alert alert-dark" role="alert">
-						<strong>This page has currently no content. Check again later for updates.</strong>
-					</div>
+                <div class="pageContentBox">
+                    <span class="pageTitle"> Page title </span>
+                    <hr class="mainSeparator">
+                    
+                    <div class="columnRow">
+                        <div id="leftColumn" class="column">
+                            <p>Thing descirption</p>
+                        </div>
+                        <div id="rightColumn" class="column">
+                            <div id="pictureContainer">
+                                <a href="#" target="_blank">
+                                    <img src="#" alt="picture of the thing" style="width: 100%; height: auto; padding-bottom: 5px;">
+                                </a>
+                                <br>
+                                <strong>A picutre of the thing.</strong>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
