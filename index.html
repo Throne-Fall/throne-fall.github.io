@@ -55,6 +55,23 @@
 				background-color: var(--baackgroundColour);
 				font-weight: normal;
 			}
+			#videoBox
+			{
+				text-align: center;
+				margin-top: 32px;
+				margin-bottom: 5px;
+				padding: 10px;
+				width: 50%;
+				background-color: lightgray;
+				border-radius: 5px;
+  			    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+			}
+			#trailerVideo
+			{
+				width: 100%;
+				height: auto;
+				border-radius: 5px;
+			}
 		</style>
         <div class="mainPageContainer">
             <div class="innerContainer">
@@ -80,6 +97,11 @@
 								</button>
 							</a>
 					</section>
+
+					<div id="videoBox">
+						<h4><strong>Game trailer</strong></h4>
+						<video id="trailerVideo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256919666/movie480_vp9.webm?t=1684145975" preload="auto" controls></video>
+					</div>
 				</div>
             </div>
             
