@@ -49,9 +49,60 @@
 .galleryPicture
 {
     max-width: 80%;
+    height: auto;
 }
 .galleryPictureDescription
 {
     font-size: 1.1em;
     font-weight:600;
+}
+
+.gridLayout
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    max-width: 1000px;                
+    margin: 0px auto;
+    justify-content:center;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+                
+    background-color: lightgrey;
+    border: 0px red solid;
+    
+    border-radius: 5px;
+    padding: 15px;
+}
+.gridItem
+{
+    border: 0px blue solid;
+}
+
+.galleryGrid
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+    max-width: 90%;                
+    margin: 0px auto;
+    justify-content:center;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+                
+    background-color: lightgrey;
+    border: 0px red solid;
+    
+    border-radius: 5px;
+    padding: 15px;
+}
+.galleryGridItem
+{
+    border: 0px blue solid;
 }

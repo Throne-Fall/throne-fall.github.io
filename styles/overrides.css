@@ -1,0 +1,282 @@
+
+@media screen and (max-width: 1300px)
+{
+    #websiteSideBar
+    {
+        background-color: rgba(0,255,0,0.5);
+    }
+    .primaryList
+    {        
+        margin-left: -20px;
+    }
+    #mainWebsiteTitle
+    {
+        font-size: x-large;
+    }
+    #levelsTable
+    {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    #websiteSideBar
+    {
+        background-color: rgba(255,0,0,0.5);
+    }
+    #mainWebsiteTitle
+    {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    #websiteSideBar
+    {
+        background-color: rgba(255,255,0,0.5);
+        font-size: 0.9em;
+        padding: 5px;
+    }
+    .primaryList
+    {        
+        margin-left: -30px;
+    }
+    .galleryRow
+    {
+        margin: 0px;
+    }
+    .galleryColumn
+    {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    #websiteSideBar
+    {
+        background-color: rgba(0,255,255,0.5);
+    }
+    #videoBox
+    {
+        width: 75% !important;
+    }
+    .galleryColumn
+    {
+        padding: 7px;
+        width: 30%;
+        margin: 5px;
+    }
+    .galleryRow
+    {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    #galleryGridSection
+    {
+        text-align: center;
+    }
+    .galleryGrid
+    {
+        max-width: 100% !important;
+        font-size: 0.95em !important;
+    }
+	.galleryPicture
+	{
+        max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 950px)
+{
+    #websiteSideBar
+    {
+        /*display: none;*/
+        background-color: rgba(200,200,200,0.75);
+        padding: 0px;
+    }
+    .secondaryList
+    {        
+        margin-left: -30px;
+    }
+    
+    #levelsTable
+    {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    
+    .gridLayout
+    {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        padding-top: 5px;
+    }
+    .gridItem
+    {
+        padding-top: 15px;
+    }
+
+    .galleryGrid
+    {
+        grid-template-columns: repeat(3, 1fr) !important;
+        max-width: 100% !important;
+        padding-top: 5px !important;
+        font-size: 0.95em !important;
+    }
+    .galleryGridItem
+    {
+        padding-top: 15px !important; 
+    }
+    
+	.galleryPicture
+	{
+        max-width: 100%;
+	}
+}
+
+
+/* HIDDEN NAVBAR */
+@media screen and (max-width: 750px)
+{
+    #innerContainer
+    {
+        justify-content: center;
+    }
+    #websiteSideBar
+    {
+        display: none;
+        background-color: rgba(255,255,255,0.5);
+        
+        width: 1000%;
+    }
+
+    #pageContentBox
+    {
+        width: 100%;
+    }
+    #videoBox
+    {
+        width: 100% !important;
+    }
+    
+    .galleryColumn
+    {
+        margin: 5px;
+        width: 75%;
+    }
+    #mobiNavDiv
+    {
+        display: block;
+    }
+    #pageLogoAndTitle
+    {
+        display: none;
+    }
+    #menuSeparator
+    {
+        display: none;
+    }
+    .primaryList
+    {
+        font-weight: bold;
+        list-style: none;
+        font-size: 1.2em;
+    }
+    
+    .columnRow
+    {
+        display: block;
+    }
+    #leftColumn
+    {
+        float:none;
+        width: 100%;
+    }
+    #rightColumn
+    {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .gridLayout
+    {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding-top: 5px;
+    }
+    .gridItem
+    {
+        padding-top: 15px;
+    }
+    
+    .galleryGrid
+    {
+        grid-template-columns: repeat(2, 1fr) !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-top: 5px !important;
+    }
+    .galleryGridItem
+    {
+        padding-top: 15px !important; 
+    }
+}
+/* HIDDEN NAVBAR */
+@media screen and (max-width: 500px)
+{
+    #innerContainer
+    {
+        justify-content: center;
+    }
+    #websiteSideBar
+    {
+        display: none;
+        background-color: rgba(255,255,255,0.5);
+        
+        width: 1000%;
+    }
+
+    #pageContentBox
+    {
+        width: 100%;
+    }
+    #videoBox
+    {
+        width: 100% !important;
+    }
+    .galleryColumn
+    {
+        width: 100%;
+    }
+
+    .gridLayout
+    {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        padding-top: 5px;
+    }
+    .gridItem
+    {
+        padding-top: 15px;
+    }
+    
+    .galleryGrid
+    {
+        grid-template-columns: repeat(1,1fr) !important;
+        max-width: 100% !important;
+        padding-top: 5px !important;
+    }
+    .galleryGridItem
+    {
+        padding-top: 15px !important;
+    }
+    .galleryPicture
+    {        
+        margin: 0px !important;
+    }
+}

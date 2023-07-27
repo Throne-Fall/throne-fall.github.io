@@ -32,25 +32,36 @@
 		<!-- Bootstrap and other CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="./styles/global.css"> <!-- Page styling  -->
         <link rel="stylesheet" href="./styles/mainMenu.css"> <!-- Main menu styling -->
-        <link rel="stylesheet" href="./styles/article.css"> <!--Styling of wiki content - individual pages -->
+        <link rel="stylesheet" href="./styles/article.css">  <!-- Styling of wiki content - individual articles -->
+        <link rel="stylesheet" href="./styles/global.css">   <!-- Website styling  -->
+		<link rel="stylesheet" href="./styles/overrides.css">
 
         <script src="./scripts/insertComponents.js"></script>
+		<script src="./scripts/toggleMobiMenu.js"></script>
 
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
         <style>
+            .galleryGrid
+            {
+                grid-template-columns: repeat(3,1fr);
+                max-width: 75%;
+            }
         </style>
 
-        <div class="mainPageContainer">
-            <div class="innerContainer">
-                <div class="websiteSideBar">
+        <div id="mainPageContainer">
+			<div id="mobiNavDiv">
+				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
+				<!-- Veritcal//hone navbar goes here -->
+			</div>
+            <div id="innerContainer">
+                <div id="websiteSideBar">
                     <!-- Menu and header to be isnerted with javascript --> 
                 </div>
 
-                <div class="pageContentBox">
+                <div id="pageContentBox">
                     <span class="pageTitle"> Nordfels </span>
                     <hr class="mainSeparator">
                     <section id="contentColumn">
@@ -94,30 +105,28 @@
                     </section>
                     <span class="pageSubtitle">Gallery</span>
                     <hr>
-                    <section id="galleryGridSection">
-                        <div class="galleryRow">
+                        <div class="galleryGrid">
 
-                            <div class="galleryColumn">
-                                    <a href="./pictures/1-Nordfels.webp" target="_blank">
-                                        <img class="galleryPicture" src="./pictures/1-Nordfels.webp" alt="An empty level of Nordfels.">
-                                    </a> <br>
-                                    <span class="galleryPictureDescription">Nordfels with a fully built castle.</span>
-                                </div>
-                                <div class="galleryColumn">
-                                    <a href="./pictures/nordfels_empty.png" target="_blank">
-                                        <img class="galleryPicture" src="./pictures/nordfels_empty.png" alt="Nordfels with a fully built castle">
-                                    </a> <br>
-                                    <span class="galleryPictureDescription">An empty level of Nordfels.</span>
+                            <div class="galleryGridItem">
+                                <a href="./pictures/1-Nordfels.webp" target="_blank">
+                                    <img class="galleryPicture" src="./pictures/1-Nordfels.webp" alt="An empty level of Nordfels.">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Nordfels with a fully built castle.</span>
                             </div>
-                            <div class="galleryColumn">
-                                    <a href="./pictures/nordfels lv select.png" target="_blank">
-                                        <img class="galleryPicture" src="./pictures/nordfels lv select.png" alt="Nordfels in the level selection">
-                                    </a> <br>
-                                    <span class="galleryPictureDescription">Nordfels in the level selection.</span>
+                            <div class="galleryGridItem">
+                                <a href="./pictures/nordfels_empty.png" target="_blank">
+                                    <img class="galleryPicture" src="./pictures/nordfels_empty.png" alt="Nordfels with a fully built castle">
+                                </a> <br>
+                                <span class="galleryPictureDescription">An empty level of Nordfels.</span>
+                            </div>
+                            <div class="galleryGridItem">
+                                <a href="./pictures/nordfels lv select.png" target="_blank">
+                                    <img class="galleryPicture" src="./pictures/nordfels lv select.png" alt="Nordfels in the level selection">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Nordfels in the level selection.</span>
                             </div>
 
                         </div>
-                    </section>
                 </div>
             </div>
             <div id="footerDiv">
