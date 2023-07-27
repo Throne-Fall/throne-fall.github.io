@@ -3,7 +3,7 @@
 {
     #websiteSideBar
     {
-        background-color: rgba(0,255,0,0.5);
+        /*background-color: rgba(0,255,0,0.5);*/
     }
     .primaryList
     {        
@@ -24,7 +24,7 @@
 {
     #websiteSideBar
     {
-        background-color: rgba(255,0,0,0.5);
+        /*background-color: rgba(255,0,0,0.5);*/
     }
     #mainWebsiteTitle
     {
@@ -36,7 +36,7 @@
 {
     #websiteSideBar
     {
-        background-color: rgba(255,255,0,0.5);
+        /*background-color: rgba(255,255,0,0.5);*/
         font-size: 0.9em;
         padding: 5px;
     }
@@ -58,7 +58,7 @@
 {
     #websiteSideBar
     {
-        background-color: rgba(0,255,255,0.5);
+        /*background-color: rgba(0,255,255,0.5);*/
     }
     #videoBox
     {
@@ -96,7 +96,7 @@
     #websiteSideBar
     {
         /*display: none;*/
-        background-color: rgba(200,200,200,0.75);
+        /*background-color: rgba(200,200,200,0.75);*/
         padding: 0px;
     }
     .secondaryList
@@ -150,7 +150,7 @@
     #websiteSideBar
     {
         display: none;
-        background-color: rgba(255,255,255,0.5);
+        /*background-color: rgba(255,255,255,0.5);*/
         
         width: 1000%;
     }
@@ -236,7 +236,7 @@
     #websiteSideBar
     {
         display: none;
-        background-color: rgba(255,255,255,0.5);
+        /*background-color: rgba(255,255,255,0.5);*/
         
         width: 1000%;
     }
