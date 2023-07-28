@@ -86,3 +86,19 @@
 {
     border: 0px blue solid;
 }
+
+.contentGridWrapper
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    
+    border: 0px blue solid;
+}
+.contentGridLeft
+{    
+    border: 0px red solid;
+}
+.contentGridRight
+{    
+    border: 0px green solid;
+}

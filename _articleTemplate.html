@@ -38,6 +38,7 @@
 		<link rel="stylesheet" href="./styles/overrides.css">
         
         <script src="./scripts/insertComponents.js" crossorigin="anonymous"></script>
+        <script src="./scripts/toggleMobiMenu.js" crossorigin="anonymous"></script>
 
         <link rel="shortcut icon" type="image/jpg" href="../pictures/crown.png">
 	</head>
@@ -47,8 +48,8 @@
 
         <div id="mainPageContainer">
 			<div id="mobiNavDiv">
+				<!-- Veritcal navbar goes here -->
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
 			</div>
             <div id="innerContainer">
                 <div id="websiteSideBar">
@@ -59,11 +60,11 @@
                     <span class="pageTitle"> Page title </span>
                     <hr class="mainSeparator">
                     
-                    <div class="columnRow">
-                        <div id="leftColumn" class="column">
+                    <div class="contentGridWrapper">
+                        <div class="contentGridLeft">
                             <p>Thing descirption</p>
                         </div>
-                        <div id="rightColumn" class="column">
+                        <div class="contentGridRight">
                             <div id="pictureContainer">
                                 <a href="#" target="_blank">
                                     <img src="#" alt="picture of the thing" style="width: 100%; height: auto; padding-bottom: 5px;">
@@ -73,6 +74,7 @@
                             </div>
                         </div>
                     </div>
+                    <p>more text</p>
                 </div>
             </div>
             

@@ -1,10 +1,6 @@
 
 @media screen and (max-width: 1300px)
 {
-    #websiteSideBar
-    {
-        /*background-color: rgba(0,255,0,0.5);*/
-    }
     .primaryList
     {        
         margin-left: -20px;
@@ -22,10 +18,6 @@
 
 @media screen and (max-width: 1200px)
 {
-    #websiteSideBar
-    {
-        /*background-color: rgba(255,0,0,0.5);*/
-    }
     #mainWebsiteTitle
     {
         font-size: large;
@@ -48,10 +40,6 @@
 
 @media screen and (max-width: 1000px)
 {
-    #websiteSideBar
-    {
-        /*background-color: rgba(0,255,255,0.5);*/
-    }
     #videoBox
     {
         width: 75% !important;
@@ -195,6 +183,12 @@
     .galleryGridItem
     {
         padding-top: 15px !important; 
+    }
+    
+    .contentGridWrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 /* HIDDEN NAVBAR */
