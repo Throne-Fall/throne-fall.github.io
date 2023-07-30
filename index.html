@@ -37,44 +37,15 @@
         <link rel="stylesheet" href="./styles/mainMenu.css"> <!-- Main menu styling -->
         <link rel="stylesheet" href="./styles/article.css">  <!-- Styling of wiki content - individual articles -->
         <link rel="stylesheet" href="./styles/global.css">   <!-- Website styling  -->
+		<link rel="stylesheet" href="./styles/homepgae.css"> <!-- Homepage grid -->
 		<link rel="stylesheet" href="./styles/overrides.css">
-
+		
 		<script src="./scripts/insertComponents.js"></script>
 		<script src="./scripts/toggleMobiMenu.js"></script>
 
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
-		<style>
-			.gameLinksBtn
-			{
-				padding: 15px; 
-				padding-top: 7px;  
-				padding-bottom: 7px;
-				box-shadow: 0px 0px 8px rgba(0,0,0, 0.64); 
-				margin-right: 10px;
-				margin-top:  10px;
-				background-color: var(--baackgroundColour);
-				font-weight: normal;
-			}
-			#videoBox
-			{
-				text-align: center;
-				margin-top: 32px;
-				margin-bottom: 5px;
-				padding: 10px;
-				width: 50%;
-				background-color: lightgray;
-				border-radius: 5px;
-  			    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
-			}
-			#trailerVideo
-			{
-				width: 100%;
-				height: auto;
-				border-radius: 5px;
-			}
-		</style>
 
         <div id="mainPageContainer">
 			<div id="mobiNavDiv">
@@ -91,31 +62,70 @@
                         Welcome to the Unofficial Thronefall Wiki!
                     </span>
                     <hr class="mainSeparator">
-		            <p>This is an unofficial Wiki for the game <a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall</a>. As of now, this site is under construction, and deep in mind that some links or other elements might not work right now.</p>
-
+		            
+					<p>This is an unofficial Wiki for the game <a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall</a>. As of now, this site is under construction, and deep in mind that some links or other elements might not work right now.</p>
 					<div class="alert alert-secondary" role="alert">
 						The website should display correctly on any screen/window size. Just some pages are not fully polished yet.
 					</div>
+					<div id="gridWrapper">
+						<!-- TRAILER -->
+						<div id="trailerBox" class="gridBoxes">
+							<span class="pageSubtitle">Game trailer</span>
+							<hr>
+							<video id="trailerVideo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256919666/movie480_vp9.webm?t=1684145975" preload="auto" controls></video>
+						</div>
 
-					<section id="Game_links">
-							<a href="https://store.steampowered.com/app/2239150/Thronefall/" id="steam_page" target="_blank">
-								<button type="button" class="btn btn-warning gameLinksBtn"> 
-									Get the game
-								</button>
-							</a>
-							<a href="https://discord.gg/gVYctptyg8" id="discord_Link" target="_blank">
-								<button type="button" class="btn btn-warning gameLinksBtn">
-									Discord server
-								</button>
-							</a>
-					</section>
+						<!-- GAME LINKS -->
+						<div id="gameLinksBox" class="gridBoxes">
+							<span class="pageSubtitle">Game links</span>
+							<hr>
+							<!-- Discord server -->
+							<div id="discordInviteMainBox">
+								<div id="discordBoxTitle">
+									<span id="discordBoxTitle">Thronefall Discord server</span>
+								</div>
+								<div id="serverLogo">
+									<img src="./pictures/server_logo.webp" id="serverIconImg" alt="server icon">
+								</div>
+								<div id="serverName">
+									<span id="serverNameText">Grizzly Games & Friends</span>
+								</div>
+								<div id="joinButtonDiv">
+									<a href="https://discord.gg/gVYctptyg8" target="_blank">
+										<button id="joinServerButton" class="btn btn-success btn-lg">Join</button>
+									</a>
+								</div>
+							</div>
+							<!-- Steam page -->
+							<section id="steamGameWidgetSection">
+								<div id="steamPageMain">
+									<div id="steamGameTitle">
+										<strong>Get Thronefall</strong> on Steam
+									</div>
+									<div id="steamGameLogo">
+										<img src="./pictures/steam cover.jpg" id="steamGamePicture" alt="Steam Game Picture">
+									</div>
+									<div id="steamGameDescription">
+										Saddle the horses! See your kingdom come to life, fight gripping battles to defend it and still be done in time for lunch. 
+									</div>
+								</div> <!-- steamPageMain -->
+								<div id="buyGameDiv">
+									<a href="https://store.steampowered.com/app/2239150/Thronefall/" id="buyGameButtonLink" target="_blank">
+										<button id="buyGameButton" class="btn"> Buy on Steam </button>
+									</a>
+								</div>
+							</section>
+						</div>
 
-					<div id="videoBox">
-						<h4><strong>Game trailer</strong></h4>
-						<video id="trailerVideo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256919666/movie480_vp9.webm?t=1684145975" preload="auto" controls></video>
-					</div>
-				</div>
-            </div>
+						<div id="updatesBox" class="gridBoxes">
+							<span class="pageSubtitle">Third column. Proably for updates</span>
+							<hr>
+							
+						</div>
+
+					</div> <!-- gridWrapper -->
+				</div> <!-- pageContentBox -->
+            </div> <!-- innerContainer -->
             
             <div id="footerDiv">
                 <!-- Footer to be isnerted with javascript -->

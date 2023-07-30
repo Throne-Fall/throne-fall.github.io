@@ -1,3 +1,11 @@
+@media screen and (max-width: 1500px)
+{
+    #gridWrapper
+    {
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+    }
+}
 
 @media screen and (max-width: 1300px)
 {
@@ -14,6 +22,14 @@
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
+    #steamGameDescription
+    {
+        font-size: 0.95em;
+    }
+    #buyGameDiv
+    {
+        padding-right: 10px;
+    }
 }
 
 @media screen and (max-width: 1200px)
@@ -21,6 +37,10 @@
     #mainWebsiteTitle
     {
         font-size: large;
+    }
+    #buyGameDiv
+    {
+        margin-top: -10px;
     }
 }
 
@@ -96,11 +116,20 @@
     {
         padding-top: 15px !important; 
     }
-    
-	.galleryPicture
+    .galleryPicture
 	{
         max-width: 100%;
 	}
+
+    #gridWrapper
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }   
+    #buyGameDiv
+    {
+        margin-top: -20px;
+    }
 }
 
 
@@ -239,5 +268,14 @@
     .galleryPicture
     {        
         margin: 0px !important;
+    } 
+
+    #serverName
+    {
+        text-align: center;
+    }
+    #buyGameDiv
+    {
+        margin-top: -15px;
     }
 }
