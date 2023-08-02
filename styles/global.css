@@ -15,10 +15,12 @@ a:visited
     color: var(--orange1);
     text-decoration: none;
 }
-body 
+body
 { 
-    background: url(.././pictures/bgr.jpg) no-repeat center center fixed ; 
-    background-size: cover;
+    background: url(.././pictures/bgr.jpg); 
+    background-position:top;
+    background-repeat: repeat-y;
+    background-size:cover;
 }
 
 /* C L A S S E S */
