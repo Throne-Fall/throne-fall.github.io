@@ -1,4 +1,4 @@
-// Script that inject content of "_sidebar.html" in the "mainNavBarDiv" component
+// Script that inject content of "sidebar.html" in the "mainNavBarDiv" component
 (   async function () 
     {
         const navHTMLRequest = await fetch('./parts/sidebar.html'); // REtrueve the file

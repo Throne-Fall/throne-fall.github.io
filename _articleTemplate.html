@@ -47,12 +47,12 @@
         </style>
 
         <div id="mainPageContainer">
-			<div id="mobiNavDiv">
+			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<!-- Veritcal navbar goes here -->
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
 			</div>
             <div id="innerContainer">
-                <div id="websiteSideBar">
+                <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
                     <!-- Menu and header to be isnerted with javascript --> 
                 </div>
 
@@ -78,7 +78,7 @@
                 </div>
             </div>
             
-            <div id="footerDiv">
+            <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                 <!-- Footer to be isnerted with javascript -->
             </div>
         </div>

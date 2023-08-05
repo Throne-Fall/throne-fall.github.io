@@ -40,7 +40,8 @@
 		<link rel="stylesheet" href="./styles/homepgae.css"> <!-- Homepage grid -->
 		<link rel="stylesheet" href="./styles/overrides.css">
 		
-		<script src="./scripts/insertComponents.js"></script>
+		<script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+ 
 		<script src="./scripts/toggleMobiMenu.js"></script>
 
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
@@ -48,14 +49,14 @@
     <body>
 
         <div id="mainPageContainer">
-			<div id="mobiNavDiv">
+			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
+				<!-- Veritcal navbar goes here -->
 			</div>
 
             <div id="innerContainer">
-                <div id="websiteSideBar">                    
-                    <!-- Footer to be isnerted with javascript -->
+                <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
+                    <!-- Menu to be isnerted with javascript -->
                 </div>
                 <div id="pageContentBox">
                     <span class="pageTitle">
@@ -129,7 +130,7 @@
 				</div> <!-- pageContentBox -->
             </div> <!-- innerContainer -->
             
-            <div id="footerDiv">
+            <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                 <!-- Footer to be isnerted with javascript -->
             </div>
         </div>
