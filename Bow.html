@@ -60,6 +60,11 @@
                 <div id="pageContentBox">
                     <span class="pageTitle"> Bow </span>
                     <hr class="mainSeparator">
+                    
+                    <div id="notifBar" hx-get="./parts/incomp-content.html" hx-swap="outerHTML" hx-trigger="load">
+                        <!-- injected content goes here -->
+                    </div>
+
                     <div class="columnRow">
                         <div id="leftColumn" class="column">
                             <p><strong>The bow is the weapon you start with.</strong> It deals medium damage at fairly long range. </p>

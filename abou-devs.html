@@ -60,9 +60,10 @@
                     <span class="pageTitle">Game developers</span>
                     <hr class="mainSeparator">
 
-					<div class="alert alert-dark" role="alert">
-						<strong>This page has currently no content. Check again later for updates.</strong>
-					</div>
+                    <div id="notifBar" hx-get="./parts/incomp-content.html" hx-swap="outerHTML" hx-trigger="load">
+                        <!-- injected content goes here -->
+                    </div>
+
                 </div>
             </div>
             

@@ -62,6 +62,11 @@
                 <div id="pageContentBox">
                     <span class="pageTitle"> Frostsee </span>
                     <hr class="mainSeparator">
+                    
+                    <div id="notifBar" hx-get="./parts/needs-content.html" hx-swap="outerHTML" hx-trigger="load">
+                        <!-- injected content goes here -->
+                    </div>
+
                     <div class="columnRow">
                         <div id="leftColumn" class="column">
                             <span class="pageSubtitle"> Overview </span>

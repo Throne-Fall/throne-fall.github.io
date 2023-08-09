@@ -60,6 +60,11 @@
                 <div id="pageContentBox">
                     <span class="pageTitle"> Sword and shield </span>
                     <hr class="mainSeparator">
+
+                    <div id="notifBar" hx-get="./parts/needs-content.html" hx-swap="outerHTML" hx-trigger="load">
+                        <!-- injected content goes here -->
+                    </div>
+
                     <div class="columnRow">
                         <div id="leftColumn" class="column">
                             <p><strong>Sword ans shield is the third weapon in the game.</strong> This wepon cannot be obtained in the demo version.</p>
