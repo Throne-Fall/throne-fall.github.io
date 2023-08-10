@@ -68,8 +68,103 @@
                     <div class="columnRow">
                         <div id="leftColumn" class="column">
                             <p><strong>The bow is the weapon you start with.</strong> It deals medium damage at long range. </p>
-                            <p>Its active ability is a knife stab that deals high damage 
-                                and has a short or long cooldown depending on how much health the attacked target has. </p>
+                            <p>It's active ability is a knife stab that deals high damage and has a short or long cooldown depending on how much health the attacked target has. </p>
+                            <p>The cooldown is calculated based on the targets current health based on this formular: 7.5s * ((0.1 + hpPrecentage) * (1 - 0.1))</p>
+                            <h5><strong>Details</strong><br></h5>
+                            <hr>
+                            <h3><strong>Passive Attack</strong></h3>
+
+                                <section id="Bow-Table">
+                                    <div class="table-responsive" id="Archer-TableDiv">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="table-dark" id="Archer-TableHead">
+                                                <tr id="Archer-TableHeadRow">
+                                                    <th class="align-middle">
+                                                        Statistic
+                                                    </th>
+                                                    <th class="align-middle">
+                                                        Value
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>                                                
+                                                <tr>
+                                                    <td class="align-middle">Attacks per second</td>
+                                                    <td class="align-middle">1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Base Damage</td>
+                                                    <td class="align-middle">5</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Player Resistant</td>
+                                                    <td class="align-middle">2.5</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Siege</td>
+                                                    <td class="align-middle">2.5</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Flying</td>
+                                                    <td class="align-middle">9</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Ranged Resistant</td>
+                                                    <td class="align-middle">3</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Boss</td>
+                                                    <td class="align-middle">10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
+                            <h3><strong>Active Attack</strong></h3>
+
+                                <section id="Bow-Table">
+                                    <div class="table-responsive" id="Archer-TableDiv">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="table-dark" id="Archer-TableHead">
+                                                <tr id="Archer-TableHeadRow">
+                                                    <th class="align-middle">
+                                                        Statistic
+                                                    </th>
+                                                    <th class="align-middle">
+                                                        Value
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>                                                
+                                                <tr>
+                                                    <td class="align-middle">Attacks per second</td>
+                                                    <td class="align-middle">0.13 - 1.48</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Base Damage</td>
+                                                    <td class="align-middle">10</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Player Resistant</td>
+                                                    <td class="align-middle">5</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Siege</td>
+                                                    <td class="align-middle">6</td>
+                                                </tr>                                                                                            
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Monsters</td>
+                                                    <td class="align-middle">7.5</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td class="align-middle">Damage vs. Boss</td>
+                                                    <td class="align-middle">20</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
                         </div>
                         <div id="rightColumn" class="column">
                             <div class="pictureContainer">
