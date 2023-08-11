@@ -44,6 +44,17 @@
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
+		<style>			
+			.listIcon
+			{
+				width: 32px;
+				height: auto;
+			}
+			.pageListLink
+			{
+				list-style: none;
+			}
+		</style>
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
@@ -57,15 +68,18 @@
                     <span class="pageTitle"> Weapons </span>
                     <hr class="mainSeparator">
 
-                    <ul class="secondaryList">
+                    <ul class="pageListLink">
                         <li>
-                            <a class="menuItemLink" href="./Bow.html"> Bow </a>
+							<img src="./pictures/leveling icons/Long Bow_Icon.png" class="listIcon">
+                            <a href="./Bow.html"> Bow </a>
                         </li>
                         <li>
-                            <a class="menuItemLink" href="./Spear.html"> Spear </a>
+							<img src="./pictures/leveling icons/spear icon.png" class="listIcon">
+                            <a href="./Spear.html"> Spear </a>
                         </li>
                         <li>
-                            <a class="menuItemLink" href="./Sword.html"> Sword & shield </a>
+							<img src="./pictures/leveling icons/Sword_Icon.png" class="listIcon">
+                            <a href="./Sword.html"> Sword & shield </a>
                         </li>
                     </ul>
                 </div> <!-- pageContentBox -->
