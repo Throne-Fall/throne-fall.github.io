@@ -44,15 +44,10 @@
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
-		<style>			
-			.listIcon
+		<style>
+			.pagesListGridWrapper
 			{
-				width: 32px;
-				height: auto;
-			}
-			.pageListLink
-			{
-				list-style: none;
+				grid-template-columns: repeat(3, 1fr);
 			}
 		</style>
         <div id="mainPageContainer">
@@ -68,20 +63,23 @@
                     <span class="pageTitle"> Weapons </span>
                     <hr class="mainSeparator">
 
-                    <ul class="pageListLink">
-                        <li>
-							<img src="./pictures/leveling icons/Long Bow_Icon.png" class="listIcon">
-                            <a href="./Bow.html"> Bow </a>
-                        </li>
-                        <li>
-							<img src="./pictures/leveling icons/spear icon.png" class="listIcon">
-                            <a href="./Spear.html"> Spear </a>
-                        </li>
-                        <li>
-							<img src="./pictures/leveling icons/Sword_Icon.png" class="listIcon">
-                            <a href="./Sword.html"> Sword & shield </a>
-                        </li>
-                    </ul>
+                    <div class="pagesListGridWrapper">
+                        <div class="pagesListItem">
+							<a href="./Bow.html">
+							<img src="./pictures/leveling icons/Long Bow_Icon.png" class="listIcon"><br>
+                             Bow </a>
+						</div>
+                        <div class="pagesListItem">
+							<a href="./Spear.html">
+							<img src="./pictures/leveling icons/spear icon.png" class="listIcon"> <br>
+                             Spear </a>
+						</div>
+                        <div class="pagesListItem">
+							<a href="./Sword.html"> 
+							<img src="./pictures/leveling icons/Sword_Icon.png" class="listIcon"> <br>
+                            Sword </a>
+						</div>
+                    </div>
                 </div> <!-- pageContentBox -->
             </div> <!-- innerContainer -->
             
