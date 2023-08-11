@@ -114,6 +114,10 @@
 {
     border: 0px blue solid;
 }
+.articleGridItemWide
+{
+    grid-column: 1 / 3;
+}
 .articleGridPicture
 {
     padding: 10px;
