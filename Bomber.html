@@ -31,16 +31,16 @@
                 <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
                     <!-- Menu and header to be isnerted with javascript --> 
                 </div>
-                <div id="pageContentBox">
+                <div class="articleGrid">
+                    <div class="articleGridItemWide">
                     <span class="pageTitle"> Bomber </span>
                     <hr class="mainSeparator">
-                    <section id="contentColumn">
-                        <div class="columnRow">
-                            <div id="leftColumn" class="column">
+                    </div>
+                        <div class="articleGridItem">
                                 <span class="pageSubtitle"> General </span>
                                 <hr>
                                 <p>Bombers are a specialised enemy in Thronefall, that die upon attacking a building and exploding upon death. They are encountered in some outer regions of the kingdom of Thronefall.<br></p>
-                                <h5><strong>Characteristics</strong><br></h5>
+                                <span class="pageSubtitle"> Characteristics </span>
 
                                     <section id="Bomber-Table">
                                         <div class="table-responsive" id="Bomber-TableDiv">
@@ -89,17 +89,17 @@
                                     <h5><strong>Encounters</strong><br></h5>
                                     <p>You can encounter Bombers in Durststein</p>
                                 </div>
-                            </div>
                             
-                            <div id="rightColumn" class="column">
-                                <div class="pictureContainer"  style=" text-align: center">
+                            <div class="articleGridItem">
+                                <div class="articleGridPicture">
                                     <a href="./pictures/enemies/Bomber.png" target="_blank">
                                         <img src="./pictures/enemies/Bomber.png" alt="picture of an enemy" class="articlePicture">
                                     </a>
                                     <strong>A Bomber in-game.</strong>
                                 </div>  
                             </div>
-                            
+                </div>
+            </div>
                             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                                     <!-- Footer to be isnerted with javascript -->
                                 </section>

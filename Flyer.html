@@ -31,12 +31,12 @@
                 <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
                     <!-- Menu and header to be isnerted with javascript --> 
                 </div>
-                <div id="pageContentBox">
-                    <span class="pageTitle"> Flyer </span>
-                    <hr class="mainSeparator">
-                    <section id="contentColumn">
-                        <div class="columnRow">
-                            <div id="leftColumn" class="column">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Flyer </span>
+                            <hr class="mainSeparator">
+                        </div>
+                        <div class="articleGridItem">
                                 <span class="pageSubtitle"> General </span>
                                 <hr>
                                 <p>Flyers are a basic flying enemy in Thronefall. While not introduced in the tutorial, they can be encountered almost everywhere in the kingdom of Thronefall.<br></p>
@@ -89,17 +89,17 @@
                                     <h5><strong>Encounters</strong><br></h5>
                                     <p>You can encounter Flyers in Nordfels and Frostsee.</p>
                                 </div>
-                            </div>
                             
-                            <div id="rightColumn" class="column">
-                                <div class="pictureContainer"  style=" text-align: center">
+                            <div class="articleGridItem">
+                                <div class="articleGridPicture">
                                     <a href="./pictures/enemies/Flyer.png" target="_blank">
                                         <img src="./pictures/enemies/Flyer.png" alt="picture of an enemy" class="articlePicture">
-                                    </a>
                                     <strong>A Flyer in-game.</strong>
+                                    </a>
                                 </div>  
                             </div>
-                            
+                        </div>
+                    </div>
                             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                                     <!-- Footer to be isnerted with javascript -->
                                 </section>
