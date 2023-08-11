@@ -20,91 +20,88 @@
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
-
-
         <div id="mainPageContainer">
-			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
-				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
-			</div>
-            <div id="innerContainer">
-                <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be isnerted with javascript --> 
-                </div>
+        <div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
+            <img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
+            <!-- Veritcal//hone navbar goes here -->
+        </div>
+        <div id="innerContainer">
+            <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
+                <!-- Menu and header to be isnerted with javascript --> 
+            </div>
+            <div id="pageContentBox">
                 <div class="articleGrid">
                     <div class="articleGridItemWide">
                         <span class="pageTitle"> Small Blob </span>
                         <hr class="mainSeparator">
                     </div>
-                            <div class="articleGridItem">
-                                <span class="pageSubtitle"> General </span>
-                                <hr>
-                                <p>Small Blobs are a small enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall.<br></p>
-                                <span class="pageSubtitle"> Characteristics </span>
-                                <hr>
-                                    <section id="Small Blob-Table">
-                                        <div class="table-responsive" id="Small Blob-TableDiv">
-                                            <table class="table table-striped table-bordered">
-                                                <thead class="table-dark" id="Small Blob-TableHead">
-                                                    <tr id="Small Blob-TableHeadRow">
-                                                        <th class="align-middle">
-                                                            Category
-                                                        </th>
-                                                        <th class="align-middle">
-                                                            Info
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="align-middle">Name</td>
-                                                        <td class="align-middle">Small Blob</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Icon</td>
-                                                        <td class="align-middle">
-                                                            <img src="./pictures/enemies/Small Blob_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Unit Category</td>
-                                                        <td class="align-middle">Monster</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Attack</td>
-                                                        <td class="align-middle">Melee</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Preferred Target</td>
-                                                        <td class="align-middle">None</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Tauntable?</td>
-                                                        <td class="align-middle">No</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </section>
-                                    <span class="pageSubtitle"> Encounters </span>
-                                    <hr>
-                                    <p>You can encounter Small Blobs in Frostsee.</p>
-                                </div>
-
-                            <div class="articleGridItem">
-                                <div class="articleGridPicture">
-                                    <a href="./pictures/enemies/Small Blob.png" target="_blank">
-                                        <img src="./pictures/enemies/Small Blob.png" alt="picture of an enemy" class="articlePicture">
-                                    <strong>A Small Blob in-game.</strong>
-                                </a>
-                                </div>  
+                    <div class="articleGridItem">
+                        <span class="pageSubtitle"> General </span>
+                        <hr>
+                        <p>Small Blobs are a small enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall.<br></p>
+                        <span class="pageSubtitle"> Characteristics </span>
+                        <hr>
+                        <section id="Small Blob-Table">
+                            <div class="table-responsive" id="Small Blob-TableDiv">
+                                <table class="table table-striped table-bordered">
+                                    <thead class="table-dark" id="Small Blob-TableHead">
+                                        <tr id="Small Blob-TableHeadRow">
+                                            <th class="align-middle">
+                                                Category
+                                            </th>
+                                            <th class="align-middle">
+                                                Info
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle">Name</td>
+                                            <td class="align-middle">Small Blob</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">Icon</td>
+                                            <td class="align-middle">
+                                                <img src="./pictures/enemies/Small Blob_Icon.png" alt="picture of the reward" class="levelRewardIcon">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">Unit Category</td>
+                                            <td class="align-middle">Monster</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">Attack</td>
+                                            <td class="align-middle">Melee</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">Preferred Target</td>
+                                            <td class="align-middle">None</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">Tauntable?</td>
+                                            <td class="align-middle">No</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                </div>
-            </div>
-                            <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                                    <!-- Footer to be isnerted with javascript -->
-                                </section>
-                            </div>
+                        </section>
+                        <span class="pageSubtitle"> Encounters </span>
+                        <hr>
+                        <p>You can encounter Small Blobs in Frostsee.</p>
+                    </div>
+                    <div class="articleGridItem">
+                        <div class="articleGridPicture">
+                            <a href="./pictures/enemies/Small Blob.png" target="_blank">
+                            <img src="./pictures/enemies/Small Blob.png" alt="picture of an enemy" class="articlePicture">
+                            <strong>A Small Blob in-game.</strong>
+                            </a>
                         </div>
-                    </body>
-                </html>
+                    </div>
+                </div><!--articleGrid-->
+            </div> <!--pageContentBox-->
+        </div> <!--innerContainer-->
+            <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
+                <!-- Footer to be isnerted with javascript -->
+            </div>
+    </body>    
+</html>
