@@ -130,6 +130,12 @@
     {
         margin-top: -20px;
     }
+
+    .pagesListGridWrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
@@ -219,6 +225,14 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .pagesListGridWrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
 }
 /* HIDDEN NAVBAR */
 @media screen and (max-width: 500px)
@@ -277,5 +291,13 @@
     #buyGameDiv
     {
         margin-top: -15px;
+    }
+
+    .pagesListGridWrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
     }
 }
