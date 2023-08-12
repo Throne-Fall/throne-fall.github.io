@@ -45,17 +45,16 @@
 	</head>
     <body>
         <style>
+            body 
+            {
+                background-image: url(./pictures/Maps/Nordfels/nordfels\ empty\ clean.png);
+            }
             .galleryGrid
             {
                 grid-template-columns: repeat(3,1fr);
                 max-width: 75%;
             }
         </style>
-        <script>
-            var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundImage = 'url(./pictures/Maps/Nordfels/nordfels_empty.png)';
-            console.log("ddd");
-        </script>
 
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">

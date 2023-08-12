@@ -44,11 +44,12 @@
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
-        <script>
-            var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundImage = 'url(./pictures/Maps/Frostsee/fortsee%20trailer.png)';
-            console.log("ddd");
-        </script>
+        <style>
+            body 
+            {
+                background-image: url(./pictures/Maps/Frostsee/frostsee\ empty\ clean.png);
+            }
+        </style>
 
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
