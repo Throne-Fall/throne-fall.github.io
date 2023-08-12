@@ -1,0 +1,191 @@
+<html lang="en">
+	<head>
+		<title>Castle Center | Thronefall Wiki</title>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Bootstrap and other CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="./styles/mainMenu.css"> <!-- Main menu styling -->
+        <link rel="stylesheet" href="./styles/article.css">  <!-- Styling of wiki content - individual articles -->
+        <link rel="stylesheet" href="./styles/global.css">   <!-- Website styling  -->
+		<link rel="stylesheet" href="./styles/overrides.css">
+
+        <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+
+		<script src="./scripts/toggleMobiMenu.js"></script>
+        
+		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
+	</head>
+    <body>
+        <div id="mainPageContainer">
+            <div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
+                <img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
+                <!-- Veritcal navbar goes here -->
+            </div>
+            <div id="innerContainer">
+                <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
+                    <!-- Menu and header to be injected by htmx --> 
+                </div>
+                <div id="pageContentBox">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Castle Center </span>
+                            <hr class="mainSeparator">
+                        </div>
+                        <div class="articleGridItem">
+                            <span class="pageSubtitle"> General </span>
+                            <hr>
+                            <p>The Castle Center is the most important building in the kingdom of Thronefall. It can be upgraded twice and the player loses, if the castle center is destroyed.<br></p>
+                            <p>Castle Center can be enhanced with the <a href="./royal mint.html" target="_blank"> Royal Mint </a> and <a href="./castle fortifications.html"> Castle Fortifications</a> Perks. </p>
+                            <p>The player can choose 1 out of 4 possible upgrade paths upon upgrading the Castle Center.</p>
+                            <span class="pageSubtitle"> Characteristics </span>
+                            <hr>
+                            <section id="Ram-Table">
+                                <div class="table-responsive" id="Ram-TableDiv">
+                                    <table class="table table-striped table-bordered">
+                                        <thead class="table-dark" id="Ram-TableHead">
+                                            <tr id="Ram-TableHeadRow">
+                                                <th class="align-middle">
+                                                    Category
+                                                </th>
+                                                <th class="align-middle">
+                                                    Info
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-middle">Name</td>
+                                                <td class="align-middle">Castle Center</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle">Building Category</td>
+                                                <td class="align-middle">Castle Center</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle">Health Points</td>
+                                                <td class="align-middle">N/A / N/A / N/A</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle">Attack</td>
+                                                <td class="align-middle">N/A (RANGED)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle">Building Cost</td>
+                                                <td class="align-middle">3 Gold</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle">Upgrade Cost Level 2</td>
+                                                <td class="align-middle">7 Gold</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle">Upgrade Cost Level 3</td>
+                                                <td class="align-middle">20 Gold</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                            <span class="pageSubtitle"> Upgrade Paths </span>
+                            <hr>
+                            <section id="Unit-Table">
+                                <div class="table-responsive" id="Unit-TableDiv">
+                                    <table class="table table-striped table-bordered">
+                                        <thead class="table-dark" id="Unit-TableHead">
+                                            <tr id="Unit-TableHeadRow">
+                                                <th class="align-middle">
+                                                    Type
+                                                </th>
+                                                <th class="align-middle">
+                                                    Description
+                                                </th>
+                                                <th class="align-middle">
+                                                    Icon
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-middle"> Royal Training </td>
+                                                <td class="align-middle">+75% HP for your character. +75% Attack damage output for your character.</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Royal Training_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle"> Builder's Guild </td>
+                                                <td class="align-middle">+Every morning a level I house is automaticly upgraded to a level 2 house (if available). +50% HP for your character.</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Builder's Guild_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle"> Assassin's Training </td>
+                                                <td class="align-middle">+If you execute your weapon's special ability precisely when its last cooldown expires, the next cooldown is greatly reduced. +100% Attack damage for your character.</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Assasin Training_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle"> Godly Curse </td>
+                                                <td class="align-middle">+If you lock in a target, that target receives 50% more damage from all sources +75% HP fpr your character.</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Godly Curse_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle"> Royal Mastery </td>
+                                                <td class="align-middle">+75% HP for your character. +75% Attack damage output for your character.</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Royal Training_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle"> Commander </td>
+                                                <td class="align-middle">+Units move faster while you command them. +You have a healing aura that heals allied units nearby. +30% Overall damage output for your character.</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Comander_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle"> Magic Armor </td>
+                                                <td class="align-middle">+Enemies that deal damage to you, take a part of that damage themselves. +150% HP for your character.</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Magic Armor_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="align-middle"> Castle-Up </td>
+                                                <td class="align-middle">+The upgrade costs of walls and towers get reduced by I every night (they will never be lower than I, initial build costs are unaffected).</td>
+                                                <td class="align-middle">
+                                                    <img src="./pictures/leveling icons/Castle-Up_Icon.png" alt="picture of the Unit-Icon" class="levelRewardIcon">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                            <span class="pageSubtitle"> Locations </span>
+                            <hr>
+                            <p>You can find Castle Center on <a href="./neuland.html"> Neuland</a>, <a href="./nordfels.html"> Nordfels</a>, <a href="./durststein.html"> Durststein </a> and <a href=".frostsee.html"> Frostsee</a>.</p>
+                        </div>
+                        <div class="articleGridItem">
+                            <div class="articleGridPicture">
+                                <a href="#" target="_blank">
+                                <img src="./pictures/buildings/Castle Center.png" alt="picture of a building" class="articlePicture">
+                                <strong>A Castle Center in-game.</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!--articleGrid-->
+                </div> <!--pageContentBox-->
+            </div> <!--innerContainer-->
+                <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
+                    <!-- Footer to be injected by htmx -->
+                </div>
+        </div> <!--mainPageContainer-->        
+    </body>
+</html>
