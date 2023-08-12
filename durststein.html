@@ -60,15 +60,13 @@
                     <!-- Menu and header to be injected by htmx --> 
                 </div>
                 <div id="pageContentBox">
-                    <span class="pageTitle"> Durststein </span>
-                    <hr class="mainSeparator">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Durststein </span>
+                            <hr class="mainSeparator">
+                        </div>
                     
-                    <div id="notifBar" hx-get="./parts/needs-content.html" hx-swap="outerHTML" hx-trigger="load">
-                        <!-- injected content goes here -->
-                    </div>
-
-                    <div class="columnRow">
-                        <div id="leftColumn" class="column">
+                        <div class="articleGridItem">
                             <span class="pageSubtitle"> Overview </span>
                             <hr>
                             <p><strong>Durststein <em>(German for "Thirst Stone")</em> is the third level in the game.</strong> It is one of the 4 maps available in the Early Access version.</p>
@@ -79,7 +77,7 @@
                             <p>This level features wide open areas, plenty of ramps and vantage points for ranged units to shoot from. Everything is surroundedd by mountains and cliffs, resulting in 4 spawn areas, one in each cardianl direction.</p>
                         </div>
                         
-                        <div id="rightColumn" class="column">
+                        <div class="articleGridItem">
                             <!--
                                 <div id="pictureContainer"  style="margin-bottom: 20px;">
                                     <a href="./pictures/neuland_empty.png" target="_blank">
@@ -88,7 +86,7 @@
                                     <strong>A picutre of the Neuland map with no building.</strong>
                                 </div>
                             -->
-                            <div class="pictureContainer" style=" text-align: center">
+                            <div class="articleGridPicture">
                                 <a href="./pictures/Maps/Durststein/dursstein lvl select.png" target="_blank">
                                     <img class="articlePicture" src="./pictures/Maps/Durststein/dursstein lvl select.png" alt="Durststein in the level selection" class="articlePicture" style="width: 55%;">
                                 </a> <br>

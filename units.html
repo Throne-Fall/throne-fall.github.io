@@ -45,8 +45,13 @@
 	</head>
     <body>
 		<style>
-			
+			.pagesListGridWrapper
+			{
+				grid-template-columns: repeat(4, 1fr);
+				max-width: 1000px;
+			}
 		</style>
+        
         
 		<div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">

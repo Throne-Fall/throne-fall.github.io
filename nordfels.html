@@ -68,11 +68,12 @@
                 </div>
 
                 <div id="pageContentBox">
-                    <span class="pageTitle"> Nordfels </span>
-                    <hr class="mainSeparator">
-                    <section id="contentColumn">
-                        <div class="columnRow">
-                            <div id="leftColumn" class="column">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Nordfels </span>
+                            <hr class="mainSeparator">
+                        </div>
+                            <div class="articleGridItem">
                                 <span class="pageSubtitle"> Overview </span>
                                 <hr>
                                 <span class="pageContent">
@@ -93,7 +94,7 @@
                                         </ul> 
                                 </span>
                             </div>
-                            <div id="rightColumn" class="column">
+                            <div class="articleGridItem">
                                 <div class="pictureContainer" style="margin-bottom: 20px;">
                                     <a href="./pictures/Maps/Nordfels/nordfels_empty.png" target="_blank">
                                         <img class="articlePicture" src="./pictures/Maps/Nordfels/nordfels_empty.png" alt="picture of a fully buult Nordfels castle">
@@ -111,6 +112,7 @@
                     </section>
                     <span class="pageSubtitle">Gallery</span>
                     <hr>
+                    <div class="articleGridItem">
                         <div class="galleryGrid">
 
                             <div class="galleryGridItem">
@@ -133,6 +135,7 @@
                             </div>
 
                         </div>
+                    </div>
                 </div>
             </div>
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
