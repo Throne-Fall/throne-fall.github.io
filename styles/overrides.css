@@ -144,6 +144,19 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr) ;
     }
+    .articleGrid
+    {
+        grid-template-columns: 1fr;
+    }
+    .articleGridItemWide
+    {
+        grid-column: 1;
+        order: 1;
+    }
+    .articleGridItem
+    {
+        order: 2
+    }
 }
 
 
