@@ -130,6 +130,7 @@ img
 	row-gap: 10px;
 
 	text-align: center;
+    justify-content: center;
 
 	max-width: 1500px;
 	margin: 0 auto;
