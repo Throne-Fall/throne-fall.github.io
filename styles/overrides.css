@@ -44,7 +44,7 @@
     }
     .pagesListGridWrapper
     {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr) !important;
     }
 }
 
@@ -79,7 +79,7 @@
 	}
     .pagesListGridWrapper
     {
-        grid-template-columns: repeat(5, 1fr); 
+        grid-template-columns: repeat(5, 1fr) !important; 
     }
 }
 
@@ -240,6 +240,19 @@
         grid-template-columns: repeat(3, 1fr) !important;
         column-gap: 5px;
         row-gap: 5px;
+    }
+    .articleGrid
+    {
+        grid-template-columns: 1fr;
+    }
+    .articleGridItemWide
+    {
+        grid-column: 1;
+        order: 1;
+    }
+    .articleGridItem
+    {
+        order: 2
     }
 }
 /* HIDDEN NAVBAR */
