@@ -79,7 +79,7 @@
 	}
     .pagesListGridWrapper
     {
-        grid-template-columns: repeat(5, 1fr) !important; 
+        grid-template-columns: repeat(5, 1fr); 
     }
 }
 
