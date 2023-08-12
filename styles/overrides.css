@@ -42,6 +42,10 @@
     {
         margin-top: -10px;
     }
+    .pagesListGridWrapper
+    {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 @media screen and (max-width: 1100px)
@@ -73,6 +77,10 @@
 	{
         max-width: 100%;
 	}
+    .pagesListGridWrapper
+    {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 @media screen and (max-width: 950px)
@@ -134,7 +142,7 @@
     .pagesListGridWrapper
     {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr) ;
     }
 }
 
