@@ -24,11 +24,11 @@
         <div id="mainPageContainer">
             <div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
                 <img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-                <!-- Veritcal//hone navbar goes here -->
+                <!-- Veritcal navbar goes here -->
             </div>
             <div id="innerContainer">
                 <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be isnerted with javascript --> 
+                    <!-- Menu and header to be injected by htmx --> 
                 </div>
                 <div id="pageContentBox">
                 <div class="articleGrid">
@@ -102,7 +102,7 @@
                 </div>
             </div><!--innerContainer-->
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                <!-- Footer to be isnerted with javascript -->
+                <!-- Footer to be injected by htmx -->
                 </section>
             </div>
         </div> <!--mainPageContainer-->
