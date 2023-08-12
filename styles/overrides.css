@@ -153,12 +153,15 @@
         grid-column: 1;
         order: 1;
     }
+    #rightGrindColumn
+    {
+        order: 2;
+    }
     .articleGridItem
     {
-        order: 2
+        order: 3;
     }
 }
-
 
 /* HIDDEN NAVBAR */
 @media screen and (max-width: 750px)
@@ -253,19 +256,6 @@
         grid-template-columns: repeat(3, 1fr) !important;
         column-gap: 5px;
         row-gap: 5px;
-    }
-    .articleGrid
-    {
-        grid-template-columns: 1fr;
-    }
-    .articleGridItemWide
-    {
-        grid-column: 1;
-        order: 1;
-    }
-    .articleGridItem
-    {
-        order: 2
     }
 }
 /* HIDDEN NAVBAR */
