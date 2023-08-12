@@ -1,3 +1,7 @@
+/*
+    columnRow (inclduing leftColumn and rightColumn) IS DEPRECATED.
+    USE articleGrid INSTEAD.
+*/
 .columnRow
 {
     display: flex;
@@ -14,6 +18,8 @@
     float: left;
     width: 30%;
 }
+
+
 .pictureContainer
 {
     padding: 10px;

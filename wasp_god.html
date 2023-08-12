@@ -44,9 +44,6 @@
 		<link rel="shortcut icon" type="image/jpg" href=".././pictures/crown.png">
 	</head>
     <body>
-        <style>
-        </style>
-
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
@@ -74,20 +71,18 @@
                         </div>
                         <div id="rightColumn" class="column">
                             <div class="pictureContainer">
-                                <a href="#" target="_blank">
-                                       <img src="./pictures/leveling icons/Wasp God_Icon.png" alt="Icon of the Mutator." style="width: 20%; height: auto; padding-bottom: 5px;">
-                                       <br> <strong>Icon of the Mutator.</strong>
-                                </a>
+                                <img src="./pictures/leveling icons/Wasp God_Icon.png" alt="Icon of the Mutator." style="width: 20%; height: auto; padding-bottom: 5px;">
+                                <br> <strong>Icon of the Mutator.</strong>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div> <!--columnRow-->
+                </div> <!--pageContentBox-->
+            </div> <!--innerContainer-->
             
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                     <!-- Footer to be injected by htmx -->
                 </section>
             </div>
-        </div>
+        </div> <!--mainPageContainer-->
     </body>
 </html>
