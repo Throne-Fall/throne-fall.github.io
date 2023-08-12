@@ -60,15 +60,13 @@
                     <!-- Menu and header to be injected by htmx --> 
                 </div>
                 <div id="pageContentBox">
-                    <span class="pageTitle"> Frostsee </span>
-                    <hr class="mainSeparator">
-                    
-                    <div id="notifBar" hx-get="./parts/needs-content.html" hx-swap="outerHTML" hx-trigger="load">
-                        <!-- injected content goes here -->
-                    </div>
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Frostsee </span>
+                            <hr class="mainSeparator">
+                        </div>
 
-                    <div class="columnRow">
-                        <div id="leftColumn" class="column">
+                        <div class="articleGridItem">
                             <span class="pageSubtitle"> Overview </span>
                             <hr>
                             <p><strong>Frostsee <em>(German for "Frost lake")</em> is the fourth level in the game.</strong> It is one of the 4 maps available in the Early Access version</p>
@@ -76,10 +74,10 @@
                             
                             <span class="pageSubtitle"> Level composition</span>
                             <hr>
-                            <p>This level features wide open areas, a few lakes and a buildable outpost. Everything is surroundedd by icy mountains and water, resulting in 5 spawn areas, one being an ice cave.</p>
+                            <p>This level features wide open areas, a few lakes and a buildable outpost. Everything is surrounded by icy mountains and water, resulting in 5 spawn areas, one being an ice cave.</p>
                         </div>
                         
-                        <div id="rightColumn" class="column">
+                        <div class="articleGridItem">
                             <!--
                                 <div id="pictureContainer"  style="margin-bottom: 20px;">
                                     <a href="./pictures/neuland_empty.png" target="_blank">
@@ -88,7 +86,7 @@
                                     <strong>A picutre of the Neuland map with no building.</strong>
                                 </div>
                             -->
-                            <div class="pictureContainer" style=" text-align: center">
+                            <div class="articleGridPicture" style=" text-align: center">
                                 <a href="./pictures/Maps/Frostsee/forstsee lvl select.png" target="_blank">
                                     <img class="articlePicture" src="./pictures/Maps/Frostsee/forstsee lvl select.png" alt="Frostsee in the level selection" class="articlePicture" style="width: 75%;">
                                 </a> <br>
