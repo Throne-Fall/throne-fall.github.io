@@ -57,25 +57,31 @@
                     <!-- Menu and header to be injected by htmx -->
                 </div>
 
-                <div id="pageContentBox">
-                    <span class="pageTitle"> Warrior Mode </span>
+                                <div id="pageContentBox">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Warrior Mode </span>
                     <hr class="mainSeparator">
+</div>
                     
                     <!-- <div id="notifBar" hx-get="./parts/incomp-content.html" hx-swap="outerHTML" hx-trigger="load">
                         injected content goes here 
                     </div> -->
 
-                    <div class="columnRow">
-                        <div id="leftColumn" class="column">
+<div class="articleGridItem"> 
+                            <span class="pageSubtitle"> General </span>
+                            <hr>
                             <p> The Warrior Mode Perk is one of the currently 26 Perks in the game. It is unlocked upon reaching level 47 and increases your kings damage at the cost of the damage of units and buildings.</p>
                             <br>
                             <span class="pageSubtitle"> Description</span>
+                            <hr>
                             <p>The weapon you equipped becomes more powerful every night, but all of your units and buildings deal less damage to enemies.</p>
                             <span class="pageSubtitle"> Statistics</span>
+                            <hr>
                             <p>The units and structures deal 50% less damage, but your king gains damage each night, up to a total of +100% damage. The increase in damage is calculated with this formular: <span class="codeBlock"> +(100%/total night count) * current night</span>.</p>
                         </div>
-                        <div id="rightColumn" class="column">
-                            <div class="pictureContainer">
+                        <div id="rightGridColumn" class="articleGridItem">
+                            <div class="articleGridPicture">
                                 <a href="#" target="_blank">
                                        <img src="./pictures/leveling icons/Warrior Mode_Icon.png" alt="Icon of the Mutator." style="width: 20%; height: auto; padding-bottom: 5px;">
                                        <br> <strong>Icon of the Perk.</strong>

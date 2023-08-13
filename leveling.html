@@ -72,9 +72,13 @@
                     <!-- Menu and header to be injected by htmx --> 
                 </div>
 
-                <div id="pageContentBox">
-                    <span class="pageTitle">Leveling system</span>
+                                <div id="pageContentBox">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle">Leveling system</span>
                     <hr class="mainSeparator">
+                        </div>
+                    <div class="articleGridItemWide">
                     <span class="pageSubtitle"> General </span>
                     <hr>
                     <p>In Thronefall you level up by playing the game and earning points, which are calculated using the following equation:</p>
@@ -674,7 +678,8 @@
                     </section>
                 </div>
             </div>
-            
+                                </div>
+            </div>
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                 <!-- Footer to be injected by htmx -->
             </div>

@@ -57,25 +57,31 @@
                     <!-- Menu and header to be injected by htmx -->
                 </div>
 
-                <div id="pageContentBox">
-                    <span class="pageTitle"> Castle Fortifications </span>
-                    <hr class="mainSeparator">
+                                <div id="pageContentBox">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Castle Fortifications </span>
+                            <hr class="mainSeparator">
+                        </div>
                     
                     <!-- <div id="notifBar" hx-get="./parts/incomp-content.html" hx-swap="outerHTML" hx-trigger="load">
                         injected content goes here 
                     </div> -->
 
-                    <div class="columnRow">
-                        <div id="leftColumn" class="column">
+                    <div class="articleGridItem"> 
+                        <span class="pageSubtitle"> General </span>
+                        <hr>
                             <p> The Castle Fortifications Perk is one of the currently 26 Perks in the game. It is unlocked upon reaching level 7 and increases the damage output of your caslte center.</p>
                             <br>
                             <span class="pageSubtitle"> Description</span>
+                            <hr>
                             <p>Your castle center has a lot more health points, fire arrows much faster and also has a greater attack range.</p>
                             <span class="pageSubtitle"> Statistics</span>
+                            <hr>
                             <p>The castle gains +150% health points, +50% attack range and +200% attacks per second.</p>
                         </div>
-                        <div id="rightColumn" class="column">
-                            <div class="pictureContainer">
+                        <div id="rightGridColumn" class="articleGridItem">
+                            <div class="articleGridPicture">
                                 <a href="#" target="_blank">
                                     <img src="./pictures/leveling icons/Castle Fortifications_Icon.png" alt="Icon of the Mutator." style="width: 20%; height: auto; padding-bottom: 5px;">
                                     <br> <strong>Icon of the Perk.</strong>
