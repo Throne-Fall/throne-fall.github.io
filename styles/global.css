@@ -140,7 +140,7 @@ img
 	border: 0px black dotted;
 	background-color: lightgray;
 	border-radius: 5px;
- 
+
 	height: 100%;
 	padding: 10px;
 
@@ -148,4 +148,11 @@ img
 	font-size: 1.1em;
     
     box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+}
+.pagesListItemContent
+{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
 }
