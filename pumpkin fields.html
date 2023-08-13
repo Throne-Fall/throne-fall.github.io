@@ -24,7 +24,7 @@
 -->
 <html lang="en">
 	<head>
-		<title>Game levels | Thronefall Wiki</title>
+		<title>Pumpkin Fields | Thronefall Wiki</title>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -41,65 +41,59 @@
 
 		<script src="./scripts/toggleMobiMenu.js"></script>
 
-		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
+		<link rel="shortcut icon" type="image/jpg" href=".././pictures/crown.png">
 	</head>
     <body>
         <style>
-            *
-            {
-                border: 0px black solid;
-            }
-            
-            
         </style>
 
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
+				<!-- Veritcal navbar goes here -->
 			</div>
             <div id="innerContainer">
-                <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be isnerted with javascript --> 
+                <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">                    
+                    <!-- Menu and header to be injected by htmx -->
                 </div>
-                <div id="pageContentBox">
-                    <span class="pageTitle"> Levels </span>
+
+                                <div id="pageContentBox">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Pumpkin Fields </span>
                     <hr class="mainSeparator">
+</div>
+                    
+                    <!-- <div id="notifBar" hx-get="./parts/incomp-content.html" hx-swap="outerHTML" hx-trigger="load">
+                        injected content goes here 
+                    </div> -->
 
-                    <h5><strong>The game currently contains 4 levels, but only the first 2 are playable</strong></h5>
-
-                    <div class="gridLayout">
-                        <div class="gridItem">     
-                            <a href="./neuland.html" class="mapGridLink">                           
-                                <img src="./pictures/neuland lv select.png" class="mapGridPicture" style="width: 57%;">
-                                <br> Neuland
-                            </a>
+<div class="articleGridItem"> 
+                            <span class="pageSubtitle"> General </span>
+                            <hr>
+                            <p> The Pumpkin Fields Perk is one of the currently 26 Perks in the game. It is unlocked upon reaching level 11 and increases the income, that fields produce at the cost of an increased building cost.</p>
+                            <br>
+                            <span class="pageSubtitle"> Description</span>
+                            <hr>
+                            <p>Fields give more income and have more health points, but are also more expensive.</p>
+                            <span class="pageSubtitle"> Statistics</span>
+                            <hr>
+                            <p>The fields gain 50 health points, generate 1 more gold per night (2 gold per night total), but cost 2 gold more to construct (3 gold total)</p>
                         </div>
-                        <div class="gridItem"> 
-                            <a href="./nordfels.html" class="mapGridLink">                               
-                                <img src="./pictures/nordfels lv select.png" class="mapGridPicture" style="width: 69%;">
-                                <br> Nordfels
-                            </a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="./durststein.html" class="mapGridLink">                          
-                                <img src="./pictures/dursstein lvl select.png" class="mapGridPicture" style="width: 63%;">
-                                <br> Durststein
-                            </a>    
-                        </div>
-                        <div class="gridItem">
-                            <a href="./frostsee.html" class="mapGridLink">                           
-                                <img src="./pictures/forstsee lvl select.png" class="mapGridPicture" style="width: 86%;">
-                                <br> Frostsee
-                            </a>
+                        <div id="rightGridColumn" class="articleGridItem">
+                            <div class="articleGridPicture">
+                                <a href="#" target="_blank">
+                                       <img src="./pictures/leveling icons/Pumpkin Fields_Icon.png" alt="Icon of the Mutator." style="width: 20%; height: auto; padding-bottom: 5px;">
+                                       <br> <strong>Icon of the Perk.</strong>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Footer to be isnerted with javascript -->
-                </section>
+                <!-- Footer to be injected by htmx -->
             </div>
         </div>
     </body>

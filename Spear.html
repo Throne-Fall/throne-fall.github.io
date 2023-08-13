@@ -24,7 +24,7 @@
 -->
 <html lang="en">
 	<head>
-		<title>Sword and shield | Thronefall Wiki</title>
+		<title>Spear | Thronefall Wiki</title>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -50,32 +50,32 @@
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
+				<!-- Veritcal navbar goes here -->
 			</div>
             <div id="innerContainer">
                 <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be isnerted with javascript -->
+                    <!-- Menu and header to be injected by htmx -->
                 </div>
 
                 <div id="pageContentBox">
-                    <span class="pageTitle"> Spear </span>
-                    <hr class="mainSeparator">
-                    
-                    <div id="notifBar" hx-get="./parts/incomp-content.html" hx-swap="outerHTML" hx-trigger="load">
-                        <!-- injected content goes here -->
-                    </div>
-
-                    <div class="columnRow">
-                        <div id="leftColumn" class="column">
-                            <p><strong>Spear is the second available weapon in the game, unlocked at level 4.</strong></p>
-                            <p>It deals low damage but attacks quickly, and deals bonus damage to fast enemies, 
-                               slowing them down. <br>
-                               Its active ability makes the king attack extremely fast, and regenerate his health it's low enough. </p>
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Spear </span>
+                            <hr class="mainSeparator">
                         </div>
-                        <div id="rightColumn" class="column">
-                            <div class="pictureContainer">
+
+                        <div class="articleGridItem">
+                            <span class="pageSubtitle"> General </span>
+                            <hr>
+                            <p><strong>Spear is the second available weapon in the game, unlocked at level 4.</strong></p>
+                            <p>It deals low damage but attacks quickly, deals bonus damage to fast enemies and 
+                               slows them down. <br>
+                               Its active ability makes the king attack extremely fast, and regenerate his health it's low. If the kings health is low, the duration of the ability doubles. </p>
+                        </div>
+                        <div id="rightGridColumn" class="articleGridItem">
+                            <div class="articleGridPicture">
                                 <a href="#" target="_blank">
-                                       <img src="./pictures/spear icon.png" alt="Icon of the Spear." style="width: 20%; height: auto; padding-bottom: 5px;">
+                                       <img src="./pictures/leveling icons/Spear_Icon.png" alt="Icon of the Spear." style="width: 20%; height: auto; padding-bottom: 5px;">
                                        <br> <strong>Icon of the Spear.</strong>
                                 </a>
                             </div>
@@ -85,7 +85,7 @@
             </div>
             
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                <!-- Footer to be isnerted with javascript -->
+                <!-- Footer to be injected by htmx -->
             </div>
         </div>
     </body>

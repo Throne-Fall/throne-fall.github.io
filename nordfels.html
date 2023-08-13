@@ -18,7 +18,7 @@
 			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 			
-		Created by GhostMiner, June/July 2023.
+		Created by GhostMiner, June-August 2023.
 		> Ghost-Miner.Github.io,
 		> YouTube.com/GhostMinerMC
 -->
@@ -45,99 +45,99 @@
 	</head>
     <body>
         <style>
+            body 
+            {
+                background-image: url(./pictures/Maps/Nordfels/Nordfels\ empty\ clean.png);
+            }
             .galleryGrid
             {
                 grid-template-columns: repeat(3,1fr);
                 max-width: 75%;
             }
         </style>
-        <script>
-            var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundImage = 'url(./pictures/nordfels_empty.png)';
-            console.log("ddd");
-        </script>
 
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
+				<!-- Veritcal navbar goes here -->
 			</div>
             <div id="innerContainer">
                 <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be isnerted with javascript --> 
+                    <!-- Menu and header to be injected by htmx --> 
                 </div>
 
                 <div id="pageContentBox">
-                    <span class="pageTitle"> Nordfels </span>
-                    <hr class="mainSeparator">
-                    <section id="contentColumn">
-                        <div class="columnRow">
-                            <div id="leftColumn" class="column">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Nordfels </span>
+                            <hr class="mainSeparator">
+                        </div>
+                            <div class="articleGridItem">
                                 <span class="pageSubtitle"> Overview </span>
                                 <hr>
                                 <span class="pageContent">
-                                    <p><strong>Nordfels <em>(german for "North rock")</em> is the first true Level of Thronefall.</strong> <br>
-                                        It is one of the 2 levels available in the demo version.</p>
-                                    <p>The level features a large mountain range in the north and a U-shaped river to define the level border.</p>
-                                    <p> Enemy units spawn from north-east, east, south-east, south, and west of the castle 
-                                    with the west and south and northeast of the castle only spawning flying units. </p>
+                                    <p><strong>Nordfels <em>(German for "North rock")</em> is the first map of Thronefall after the tutorial.</strong> It is one of the 4 maps available in the Early Access version.</p>
+                                    <p>The map features a large mountain range in the north and a U-shaped river to define the mapborder.</p>
+                                    <p> Enemy units spawn from the north-east, east, south-east, south, and the west of the castle 
+                                    with the west, south and northeast of the castle only spawning flying units. </p>
                                 </span>
-                                <span class="pageSubtitle">Level composition</span>
+                                <span class="pageSubtitle">Map composition</span>
                                 <hr>
                                 <span class="pageContent">
-                                    <p>Norfels' Castle layout is split into 3 areas:</p>
+                                    <p>Nordfels' Castle layout is split into 3 areas:</p>
                                     <ul>
                                         <li>Outisde area unprotected by walls: This area consists of 3 mills, 3 Watchtowers and 1 archer barracks. </li>
-                                        <li>The Front of the castle: Area with 3 houses, 4 Watchtowers and 1 barracks.</li>
-                                        <li>The Inner Castle: Area with 7 houses, 3 Watchtowers, 2 barracks <em>(1 archer and 1 melee),</em> and the Castle center building. </li>
+                                        <li>The front of the castle: Area with 3 houses, 4 watchtowers and 1 barracks.</li>
+                                        <li>The inner castle: Area with 7 houses, 3 watchtowers, 2 barracks <em>(1 ranged and 1 melee),</em> and the Castle Center building. </li>
                                         </ul> 
                                 </span>
                             </div>
-                            <div id="rightColumn" class="column">
+                            <div id="rightGridColumn" class="articleGridItem">
                                 <div class="pictureContainer" style="margin-bottom: 20px;">
-                                    <a href="./pictures/nordfels_empty.png" target="_blank">
-                                        <img class="articlePicture" src="./pictures/nordfels_empty.png" alt="picture of a fully buult Nordfels castle">
+                                    <a href="./pictures/Maps/Nordfels/Nordfels_empty.png" target="_blank">
+                                        <img class="articlePicture" src="./pictures/Maps/Nordfels/Nordfels_empty.png" alt="picture of a fully buult Nordfels castle">
                                     </a>
-                                    <span class="articlePictureDescription">An empty level of Nordfels.</span>
+                                    <span class="articlePictureDescription">Nordfels without any buildings.</span>
                                 </div>
                                 <div class="pictureContainer">
-                                    <a href="./pictures/nordfels lv select.png" target="_blank">
-                                        <img class="articlePicture" src="./pictures/nordfels lv select.png" alt="Nordfels in the level selection" style="width: 64%;">
+                                    <a href="./pictures/Maps/Nordfels/Nordfels lv select.png" target="_blank">
+                                        <img class="articlePicture" src="./pictures/Maps/Nordfels/Nordfels lv select.png" alt="Nordfels in the mapselection" style="width: 64%;">
                                     </a> <br>
-                                    <span class="articlePictureDescription">Nordfels in the level selection.</span>
+                                    <span class="articlePictureDescription">Nordfels in the map selection.</span>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <span class="pageSubtitle">Gallery</span>
                     <hr>
+                    <div class="articleGridItem">
                         <div class="galleryGrid">
 
                             <div class="galleryGridItem">
-                                <a href="./pictures/1-Nordfels.webp" target="_blank">
-                                    <img class="galleryPicture" src="./pictures/1-Nordfels.webp" alt="An empty level of Nordfels.">
+                                <a href="./pictures/Maps/Nordfels/1-Nordfels.webp" target="_blank">
+                                    <img class="galleryPicture" src="./pictures/Maps/Nordfels/1-Nordfels.webp" alt="An empty mapof Nordfels.">
                                 </a> <br>
-                                <span class="galleryPictureDescription">Nordfels with a fully built castle.</span>
+                                <span class="galleryPictureDescription">Nordfels with a fully upgraded castle.</span>
                             </div>
                             <div class="galleryGridItem">
-                                <a href="./pictures/nordfels_empty.png" target="_blank">
-                                    <img class="galleryPicture" src="./pictures/nordfels_empty.png" alt="Nordfels with a fully built castle">
+                                <a href="./pictures/Maps/Nordfels/Nordfels_empty.png" target="_blank">
+                                    <img class="galleryPicture" src="./pictures/Maps/Nordfels/Nordfels_empty.png" alt="Nordfels with a fully built castle">
                                 </a> <br>
-                                <span class="galleryPictureDescription">An empty level of Nordfels.</span>
+                                <span class="galleryPictureDescription">Nordfels without any buildings.</span>
                             </div>
                             <div class="galleryGridItem">
-                                <a href="./pictures/nordfels lv select.png" target="_blank">
-                                    <img class="galleryPicture" src="./pictures/nordfels lv select.png" alt="Nordfels in the level selection" style="width: 55%;">
+                                <a href="./pictures/Maps/Nordfels/Nordfels lv select.png" target="_blank">
+                                    <img class="galleryPicture" src="./pictures/Maps/Nordfels/Nordfels lv select.png" alt="Nordfels in the mapselection" style="width: 55%;">
                                 </a> <br>
-                                <span class="galleryPictureDescription">Nordfels in the level selection.</span>
+                                <span class="galleryPictureDescription">Nordfels in the map selection.</span>
                             </div>
 
                         </div>
+                    </div>
                 </div>
             </div>
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Footer to be isnerted with javascript -->
-                </section>
+                <!-- Footer to be injected by htmx -->
             </div>
         </div>
     </body>

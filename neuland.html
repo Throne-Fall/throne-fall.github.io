@@ -18,7 +18,7 @@
 			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 			
-		Created by GhostMiner, June/July 2023.
+		Created by GhostMiner, June-August 2023.
 		> Ghost-Miner.Github.io,
 		> YouTube.com/GhostMinerMC
 -->
@@ -44,50 +44,51 @@
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
-        <script>
-            var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundImage = 'url(./pictures/nl%20tuut%20p2.png)';
-            console.log("ddd");
-        </script>
-
+        <style>
+            body
+            {
+                background-image: url(./pictures/Maps/Neuland/neuland_empty.png);
+            }
+        </style>
+        
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
+				<!-- Veritcal navbar goes here -->
 			</div>
             <div id="innerContainer">
                 <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be isnerted with javascript --> 
+                    <!-- Menu and header to be injected by htmx --> 
                 </div>
                 <div id="pageContentBox">
-                    <span class="pageTitle"> Neuland </span>
-                    <hr class="mainSeparator">
-                    <section id="contentColumn">
-                        <div class="columnRow">
-                            <div id="leftColumn" class="column">
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Neuland </span>
+                            <hr class="mainSeparator">
+                        </div>
+                            <div class="articleGridItem">
                                 <span class="pageSubtitle"> Overview </span>
                                 <hr>
-                                <p><strong>Neuland <em>(german for "New Land")</em> is the Tutorial of Thronefall.</strong> <br>
-                                    It is one of the 2 levels available in the demo version.</p>
-                                <p>It teaches the Player basic mechanics like attacking, building, upgrading and more.<br>                            
-                                Neuland is the easiest of the game, having extra Regeneration as part of tutorial mechanics and only having one enemy spawning point on the west of the map. </p>
-                                <h4><strong>Level composition</strong></h4>
+                                <p><strong>Neuland <em>(German for "New Land")</em> is the Tutorial of Thronefall.</strong> It is one of the 4 maps available in the Early Access version.</p>
+                                <p>It teaches the Player basic mechanics like attacking, building and upgrading.<br>                            
+                                Neuland is the easiest map of the game. As a tutorial, it has only one enemy spawning point located in the west. </p>
+                                <span class="pageSubtitle"> Map composition </span>
                                 <hr>
-                                <p>This level features a small plateau, a ramp leading to the enemy spawn point, surroundedd by cliffs, a river and a forest.</p>
+                                <p>This map features a small plateau and a ramp leading to the enemy spawn point. Everything is surrounded by cliffs, a river and a forest.</p>
                             </div>
                             
-                            <div id="rightColumn" class="column">
+                            <div id="rightGridColumn" class="articleGridItem">
                                 <div class="pictureContainer"  style="margin-bottom: 20px;">
-                                    <a href="./pictures/neuland_empty.png" target="_blank">
-                                        <img src="./pictures/neuland_empty.png" alt="picture of a fully buult Nordfels castle" class="articlePicture">
+                                    <a href="./pictures/Maps/Neuland/neuland_empty.png" target="_blank">
+                                        <img src="./pictures/maps/Neuland/neuland_empty.png" alt="picture of Nordfels with castle" class="articlePicture">
                                     </a>
-                                    <strong>A picutre of the Neuland map with no building.</strong>
+                                    <strong>A picutre of Neuland without any buildings.</strong>
                                 </div>
                                 <div class="pictureContainer" style=" text-align: center">
-                                    <a href="./pictures/nordfels lv select.png" target="_blank">
-                                        <img src="./pictures/neuland lv select.png" alt="Nordfels in the level selection" class="articlePicture" style="width: 55%;">
+                                    <a href="./pictures/Maps/Neuland/neuland lv select.png" target="_blank">
+                                        <img src="./pictures/Maps/Neuland/neuland lv select.png" alt="Nordfels in the mapselection" class="articlePicture" style="width: 55%;">
                                     </a> <br>
-                                    <span class="articlePictureDescription">Nordfels in the level selection.</span>
+                                    <span class="articlePictureDescription">Neuland in the map selection.</span>
                                 </div>  
                             </div>
                         </div>
@@ -95,38 +96,39 @@
                     
                     <span class="pageSubtitle">Gallery</span>
                     <hr>
+                    <div class="articleGridItem">
                         <div class="galleryGrid">
                             <div class="galleryGridItem">
-                                <a href="./pictures/nl tut p1.png" target="_blank">
-                                    <img class="galleryPicture sizeOverrde" src="./pictures/nl tut p1.png" alt="The starting area of Neuland">
+                                <a href="./pictures/Maps/Neuland/nl tut p1.png" target="_blank">
+                                    <img class="galleryPicture sizeOverrde" src="./pictures/Maps/Neuland/nl tut p1.png" alt="The starting area of Neuland">
                                 </a> <br>
-                                <span class="galleryPictureDescription">The starting area of Neuland.</span>
+                                <span class="galleryPictureDescription">The starting area.</span>
                             </div>
                             <div class="galleryGridItem">
-                                <a href="./pictures/nl tuut p2.png" target="_blank">
-                                    <img class="galleryPicture sizeOverrde" src="./pictures/nl tuut p2.png" alt="The middle area of Neuland">
+                                <a href="./pictures/Maps/Neuland/nl tuut p2.png" target="_blank">
+                                    <img class="galleryPicture sizeOverrde" src="./pictures/Maps/Neuland/nl tuut p2.png" alt="The middle area of Neuland">
                                 </a> <br>
-                                <span class="galleryPictureDescription">The middle area of Neuland.</span>
+                                <span class="galleryPictureDescription">The middle area.</span>
                             </div>
                             <div class="galleryGridItem">
-                                <a href="./pictures/neuland_empty.png" target="_blank">
-                                    <img class="galleryPicture" src="./pictures/neuland_empty.png" alt="third main area of Neuland">
+                                <a href="./pictures/Maps/Neuland/neuland_empty.png" target="_blank">
+                                    <img class="galleryPicture" src="./pictures/Maps/Neuland/neuland_empty.png" alt="third main area of Neuland">
                                 </a> <br>
-                                <span class="galleryPictureDescription">The third main area of Neuland.</span>
+                                <span class="galleryPictureDescription">The third and main area.</span>
                             </div>
                             <div class="galleryGridItem">
-                                    <a href="./pictures/neuland lv select.png" target="_blank">
-                                        <img class="galleryPicture sizeOverrde" src="./pictures/neuland lv select.png" alt="Neuland in the level selection" style="width: 50%;">
+                                    <a href="./pictures/Maps/Neuland/neuland lv select.png" target="_blank">
+                                        <img class="galleryPicture sizeOverrde" src="./pictures/Maps/Neuland/neuland lv select.png" alt="Neuland in the mapselection" style="width: 50%;">
                                     </a> <br>
-                                    <span class="galleryPictureDescription">Neuland in the level selection.</span>
+                                    <span class="galleryPictureDescription">Neuland in the map selection.</span>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
             
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Footer to be isnerted with javascript -->
-                </section>
+                <!-- Footer to be injected by htmx -->
             </div>
         </div>
     </body>

@@ -18,7 +18,7 @@
 			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 			
-		Created by GhostMiner, June/July 2023.
+		Created by GhostMiner, June-August 2023.
 		> Ghost-Miner.Github.io,
 		> YouTube.com/GhostMinerMC
 -->
@@ -44,51 +44,52 @@
 		<link rel="shortcut icon" type="image/jpg" href="./pictures/crown.png">
 	</head>
     <body>
-        <script>
-            var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundImage = 'url(./pictures/fortsee%20trailer.png)';
-            console.log("ddd");
-        </script>
+        <style>
+            body 
+            {
+                background-image: url(./pictures/Maps/frostsee/frostsee\ empty\ clean.png);
+            }
+        </style>
 
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="./parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="./pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal//hone navbar goes here -->
+				<!-- Veritcal navbar goes here -->
 			</div>
             <div id="innerContainer">
                 <div id="websiteSideBar" hx-get="./parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be isnerted with javascript --> 
+                    <!-- Menu and header to be injected by htmx --> 
                 </div>
                 <div id="pageContentBox">
-                    <span class="pageTitle"> Frostsee </span>
-                    <hr class="mainSeparator">
-                    
-                    <div id="notifBar" hx-get="./parts/needs-content.html" hx-swap="outerHTML" hx-trigger="load">
-                        <!-- injected content goes here -->
-                    </div>
+                    <div class="articleGrid">
+                        <div class="articleGridItemWide">
+                            <span class="pageTitle"> Frostsee </span>
+                            <hr class="mainSeparator">
+                        </div>
 
-                    <div class="columnRow">
-                        <div id="leftColumn" class="column">
+                        <div class="articleGridItem">
                             <span class="pageSubtitle"> Overview </span>
                             <hr>
-                            <p><strong>Frostsee is the fourth level in the game.</strong> This level is not available in the demo version.</p>
-                            <p>More information about this level is currently unknown.</p>
+                            <p><strong>Frostsee <em>(German for "Frost lake")</em> is the fourth map in the game.</strong> It is one of the 4 maps available in the Early Access version.</p>
+                            <p>The map features a snowy tundra design, 2 new buildings, 4 new enemies and a boss. It is also the currently hardest map playable.</p>
+                            
+                            <span class="pageSubtitle"> Map composition</span>
+                            <hr>
+                            <p>This map features wide open areas, a few lakes and a buildable outpost. Everything is surrounded by icy mountains and water, resulting in 5 spawn areas, one being an ice cave.</p>
                         </div>
                         
-                        <div id="rightColumn" class="column">
-                            <!--
-                                <div id="pictureContainer"  style="margin-bottom: 20px;">
-                                    <a href="./pictures/neuland_empty.png" target="_blank">
-                                        <img src="./pictures/neuland_empty.png" alt="picture of a fully buult Nordfels castle" class="articlePicture">
-                                    </a>
-                                    <strong>A picutre of the Neuland map with no building.</strong>
-                                </div>
-                            -->
-                            <div class="pictureContainer" style=" text-align: center">
-                                <a href="./pictures/forstsee lvl select.png" target="_blank">
-                                    <img class="articlePicture" src="./pictures/forstsee lvl select.png" alt="Frostsee in the level selection" class="articlePicture" style="width: 75%;">
+                        <div id="rightGridColumn" class="articleGridItem">
+                            <div class="pictureContainer" style="margin-bottom: 20px;">
+                                <a href="./pictures/Maps/frostsee/frostsee empty clean.png" target="_blank">
+                                    <img class="articlePicture" src="./pictures/Maps/frostsee/frostsee empty clean.png" alt="picture of a fully buult Frostsee castle">
+                                </a>
+                                <span class="articlePictureDescription">Frostsee without any buildings.</span>
+                            </div>
+                            <div class="articleGridPicture" style=" text-align: center">
+                                <a href="./pictures/Maps/frostsee/forstsee lvl select.png" target="_blank">
+                                    <img class="articlePicture" src="./pictures/Maps/frostsee/forstsee lvl select.png" alt="frostsee in the mapselection" class="articlePicture" style="width: 75%;">
                                 </a> <br>
-                                <span class="articlePictureDescription">Frostsee in the level selection.</span>
+                                <span class="articlePictureDescription">Frostsee in the map selection.</span>
                             </div>  
                         </div>
                     </div>
@@ -96,8 +97,7 @@
             </div>
             
             <div id="footerDiv" hx-get="./parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Footer to be isnerted with javascript -->
-                </section>
+                <!-- Footer to be injected by htmx -->
             </div>
         </div>
     </body>

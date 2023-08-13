@@ -42,6 +42,10 @@
     {
         margin-top: -10px;
     }
+    .pagesListGridWrapper
+    {
+        grid-template-columns: repeat(6, 1fr) !important;
+    }
 }
 
 @media screen and (max-width: 1100px)
@@ -73,6 +77,10 @@
 	{
         max-width: 100%;
 	}
+    .pagesListGridWrapper
+    {
+        grid-template-columns: repeat(5, 1fr) !important; 
+    }
 }
 
 @media screen and (max-width: 950px)
@@ -130,8 +138,30 @@
     {
         margin-top: -20px;
     }
-}
 
+    .pagesListGridWrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+    }
+    .articleGrid
+    {
+        grid-template-columns: 1fr;
+    }
+    .articleGridItemWide
+    {
+        grid-column: 1;
+        order: 1;
+    }
+    #rightGridColumn
+    {
+        order: 2;
+    }
+    .articleGridItem
+    {
+        order: 3;
+    }
+}
 
 /* HIDDEN NAVBAR */
 @media screen and (max-width: 750px)
@@ -219,6 +249,14 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .pagesListGridWrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
 }
 /* HIDDEN NAVBAR */
 @media screen and (max-width: 500px)
@@ -277,5 +315,13 @@
     #buyGameDiv
     {
         margin-top: -15px;
+    }
+
+    .pagesListGridWrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        column-gap: 5px;
+        row-gap: 5px;
     }
 }
