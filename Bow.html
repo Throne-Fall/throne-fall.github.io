@@ -70,7 +70,7 @@
                             <hr>
                             <p><strong>The bow is the weapon you start with.</strong> It deals medium damage at long range. </p>
                             <p>It's active ability is a knife stab that deals high damage and has a short or long cooldown depending on how much health the attacked target has. </p>
-                            <p>The cooldown is calculated based on the targets current health based on this formular: <span class="codeBlock"> 7.5sec. * ((0.1 + hpPrecentage) * (1 - 0.1)) </span></p>
+                            <p>The cooldown is calculated based on the targets current health based on this formular: <span class="codeBlock"> 7.5sec. x ((0.1 + hpPrecentage) x (1 - 0.1)) </span></p>
                             <br>
                             <span class="pageSubtitle"> Details</span>
                             <hr>
@@ -95,35 +95,43 @@
                                                     <td class="align-middle">1</td>
                                                 </tr>
                                                 <tr>
+                                                    <td class="align-middle">Attack Range</td>
+                                                    <td class="align-middle">30 (Ranged)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Projectile Speed</td>
+                                                    <td class="align-middle">30</td>
+                                                </tr>    
+                                                <tr>
                                                     <td class="align-middle">Base Damage</td>
                                                     <td class="align-middle">5</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Player Resistant</td>
-                                                    <td class="align-middle">2.5</td>
+                                                    <td class="align-middle">x0.5</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Siege</td>
-                                                    <td class="align-middle">2.5</td>
+                                                    <td class="align-middle">x0.5</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Flying</td>
-                                                    <td class="align-middle">9</td>
+                                                    <td class="align-middle">x1.8</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Ranged Resistant</td>
-                                                    <td class="align-middle">3</td>
+                                                    <td class="align-middle">x0.6</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Boss</td>
-                                                    <td class="align-middle">10</td>
+                                                    <td class="align-middle">x2</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </section>
 
-                                <span class="pageSubtitle"> Active Attack</span>
+                                <span class="pageSubtitle"> Active Ability</span>
 
                                 <section id="Bow-Table">
                                     <div class="table-responsive" id="Archer-TableDiv">
@@ -140,34 +148,39 @@
                                             </thead>
                                             <tbody>                                                
                                                 <tr>
-                                                    <td class="align-middle">Attacks per second</td>
-                                                    <td class="align-middle">0.13 - 1.48</td>
-                                                </tr>
+                                                    <td class="align-middle">Cooldown</td>
+                                                    <td class="align-middle">0.75 - 7.5s</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td class="align-middle">Attack Range</td>
+                                                    <td class="align-middle">5 (Melee)</td>
+                                                </tr>  
                                                 <tr>
                                                     <td class="align-middle">Base Damage</td>
                                                     <td class="align-middle">10</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Player Resistant</td>
-                                                    <td class="align-middle">5</td>
+                                                    <td class="align-middle">x0.5</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Siege</td>
-                                                    <td class="align-middle">6</td>
+                                                    <td class="align-middle">x0.6</td>
                                                 </tr>                                                                                            
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Monsters</td>
-                                                    <td class="align-middle">7.5</td>
+                                                    <td class="align-middle">x0.75</td>
                                                 </tr>                                                
                                                 <tr>
                                                     <td class="align-middle">Damage vs. Boss</td>
-                                                    <td class="align-middle">20</td>
+                                                    <td class="align-middle">x3</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </section>
-                        </div>
+                                <p>The damage dealt is calculated with this formular: <span class="codeBlock"> Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n</span>, where n is the amount of types that the enemy has (all types that are not provided in the table above have a Value of 1).</p>
+                            </div>
                         <div id="rightGridColumn" class="articleGridItem">
                             <div class="articleGridPicture">
                                 <a href="#" target="_blank">

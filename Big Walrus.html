@@ -68,12 +68,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="align-middle">Unit Category</td>
-                                                        <td class="align-middle">Boss, High Health</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Attack</td>
-                                                        <td class="align-middle">Spawner</td>
+                                                        <td class="align-middle">Unit Type</td>
+                                                        <td class="align-middle">Boss, Monster</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Preferred Target</td>
@@ -87,6 +83,71 @@
                                             </table>
                                         </div>
                                     </section>
+                                    <span class="pageSubtitle"> Details</span>
+                            <hr>
+                            <span class="pageSubtitle"> Attack Statistics</span>
+                        <section id="Bow-Table">
+                            <div class="table-responsive" id="Archer-TableDiv">
+                                <table class="table table-striped table-bordered">
+                                    <thead class="table-dark" id="Archer-TableHead">
+                                        <tr id="Archer-TableHeadRow">
+                                            <th class="align-middle">
+                                                Statistic
+                                            </th>
+                                            <th class="align-middle">
+                                                Value
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>                                                
+                                        <tr>
+                                            <td class="align-middle">Attacks per second</td>
+                                            <td class="align-middle">0.167</td>
+                                        </tr>          
+                                        <tr>
+                                            <td class="align-middle">Units Spawned</td>
+                                            <td class="align-middle">10 <a href="./small slime.html">Small Slimes</a>, 5 <a href="./Medium Slime.html">Medium Slimes</a> and 5 <a href="Rusher.html">Rushers</a></td>
+                                        </tr>      
+                                        <tr>
+                                            <td class="align-middle">Selfdamage when Attacking</td>
+                                            <td class="align-middle">100</td>
+                                        </tr>                                                                                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <br><span class="pageSubtitle"> Defense Statistics </span>
+                        <section id="Bow-Table">
+                            <div class="table-responsive" id="Archer-TableDiv">
+                                <table class="table table-striped table-bordered">
+                                    <thead class="table-dark" id="Archer-TableHead">
+                                        <tr id="Archer-TableHeadRow">
+                                            <th class="align-middle">
+                                                Statistic
+                                            </th>
+                                            <th class="align-middle">
+                                                Value
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>                                                
+                                        <tr>
+                                            <td class="align-middle">Health Points</td>
+                                            <td class="align-middle">15000</td>
+                                        </tr>                                                
+                                        <tr>
+                                            <td class="align-middle">Transition Speed</td>
+                                            <td class="align-middle">10s</td>
+                                        </tr>                                                
+                                        <tr>
+                                            <td class="align-middle">Boss Vulnerability</td>
+                                            <td class="align-middle">x2</td>
+                                        </tr>                                                                                                                                                                              
+                                    </tbody>
+                                </table>
+                            </div>
+                        <p>The damage taken is calculated with this formular: <span class="codeBlock"> Incoming Damage x Vulnerability Value 1 x Vulnerability Value 2 x ... x Vulnerability Value n</span>, where n is the amount of relevant Vulnerabilities that the Unit has (all Vulnerabilities that are not provided in the table above have a Value of 1).</p><br>
+                        </section>
                                     <span class="pageSubtitle"> Encounters </span>
                                     <hr>
                                     <p>You can encounter the Big Walruss in <a href="./frostsee.html">Frostsee</a>.</p>
