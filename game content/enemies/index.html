@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+	W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+	
+			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
+			
+		Created by GhostMiner, June-August 2023.
+		> Ghost-Miner.Github.io,
+		> YouTube.com/GhostMinerMC
+-->
+<html lang="en">
+	<head>
+		<title>Enemies | Thronefall Wiki</title>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Bootstrap and other CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../../../styles/mainMenu.css"> <!-- Main menu styling -->
+        <link rel="stylesheet" href="../../../styles/article.css">  <!-- Styling of wiki content - individual articles -->
+        <link rel="stylesheet" href="../../../styles/global.css">   <!-- Website styling  -->
+		<link rel="stylesheet" href="../../../styles/overrides.css">
+
+        <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+
+		<script src="../../../scripts/toggleMobiMenu.js"></script>
+
+		<link rel="shortcut icon" type="image/jpg" href="../../../pictures/crown.png">
+	</head>
+    <body>
+		<style>
+			.pagesListGridWrapper
+			{
+				grid-template-columns: repeat(5, 1fr);
+				max-width: 1000px;
+			}
+		</style>
+        
+		<div id="mainPageContainer">
+			<div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
+				<img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
+				<!-- Veritcal navbar goes here -->
+			</div>
+            <div id="innerContainer">
+                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">   
+                    <!-- Menu and header to be injected by htmx --> 
+                </div>
+                <div id="pageContentBox">
+                    <span class="pageTitle"> Enemies </span>
+                    <hr class="mainSeparator">
+
+					<div class="pagesListGridWrapper">
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Archer.html">
+							<img src="../../../pictures/enemies/Archer_Icon.png"  alt="picture of the Archer" class="listIcon"> <br>
+							Archer 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Big Walrus.html">
+							<img src="../../../pictures/enemies/Big_Walrus_Icon.png"  alt="picture of the Big Walrus" class="listIcon"> <br> 
+							Big Walrus
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Bomber.html">
+							<img src="../../../pictures/enemies/Bomber_Icon.png"  alt="picture of the Bomber" class="listIcon"> <br>
+							Bomber 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Catapults.html">
+							<img src="../../../pictures/enemies/Catapult_Icon.png"  alt="picture of the Catapult" class="listIcon"> <br>
+							Catapult 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Crossbowmen.html"> 
+							<img src="../../../pictures/enemies/Crossbowmen_E_Icon.png"  alt="picture of the Crossbowmen" class="listIcon"> <br>
+							Crossbowmen
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Flyer.html">
+							<img src="../../../pictures/enemies/Flyer_Icon.png"  alt="picture of the Flyer" class="listIcon"> <br>
+							Flyer 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Hunterling.html"> 
+							<img src="../../../pictures/enemies/Hunterling_Icon.png"  alt="picture of the Hunterling" class="listIcon"> <br>
+							Hunterling
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Medium Slime.html"> 
+							<img src="../../../pictures/enemies/Medium_Slime_Icon.png"  alt="picture of the Medium Slime" class="listIcon"> <br>
+							Medium Slime 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Men-at-Arms.html"> 
+							<img src="../../../pictures/enemies/Men-at-Arms_Icon.png"  alt="picture of the Men-at-Arms" class="listIcon"> <br>
+							Men-at-Arms 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Monster Rider.html">
+							<img src="../../../pictures/enemies/Monster_Rider_Icon.png"  alt="picture of the Monster Rider" class="listIcon"> <br>
+							Monster Rider
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Ogre.html">
+							<img src="../../../pictures/enemies/Ogre_Icon.png"  alt="picture of the Ogre" class="listIcon"> <br>
+							Ogre 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Ram.html"> 
+							<img src="../../../pictures/enemies/Ram_Icon.png"  alt="picture of the Ram" class="listIcon"> <br>
+							Ram 
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Rusher.html"> 
+							<img src="../../../pictures/enemies/Rusher_Icon.png"  alt="picture of the Rusher" class="listIcon"> <br>
+							Rusher
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Small Slime.html"> 
+							<img src="../../../pictures/enemies/Small_Slime_Icon.png"  alt="picture of the Small Slime" class="listIcon"> <br>
+							Small Slime
+							</a>
+						</div>
+						</div>
+						<div class="pagesListItem">
+						<div class="pagesListItemContent">
+							<a href="./Squire.html"> 
+							<img src="../../../pictures/enemies/Squire_Icon.png"  alt="picture of the Squire" class="listIcon"> <br>
+							Squire 
+							</a>
+						</div>
+						</div>
+					</div>					
+                </div> <!-- pageContentBox -->
+            </div> <!-- innerContainer -->
+            
+            <div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
+                <!-- Footer to be injected by htmx -->
+            </div>
+        </div>
+    </body>
+</html>
