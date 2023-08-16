@@ -47,7 +47,49 @@
 		<link rel="shortcut icon" type="image/jpg" href="../../../pictures/crown.png">
 	</head>
     <body>
-
+		<style>
+			#updatesWindow
+			{
+				width: 100%; 
+				height: 95%; 
+				border: 1px red solid;
+				margin-bottom: 10px;
+				text-align: left;		
+			}
+			.updateArticleTitleHr
+            {
+                margin-top:    7px;
+                margin-bottom: 5px;
+            }
+			.updateArticlesSeparator
+            {
+				margin: 0px;
+				border-width: 2px;
+            }
+            .updateTitle
+            {
+                font-weight: bold;
+                font-size: 1em;
+                font-style: normal;
+				/* text-align: left !important; */
+            }
+            .updateSubtitle
+            {
+                font-style: normal;
+                font-size: 0.9em;
+            }
+            .updateBgr
+            {
+                /* background-color:beige; */
+                padding: 10px;
+                border-radius: 5px;
+            }
+            #updatesGridWrapper
+            {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+		</style>
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
@@ -71,14 +113,14 @@
 						<!-- TRAILER -->
 						<div id="trailerBox" class="gridBoxes">
 							<span class="pageSubtitle">Game trailer</span>
-							<hr>
+							<hr class="mainSeparator">
 							<video id="trailerVideo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256919666/movie480_vp9.webm?t=1684145975" preload="auto" controls></video>
 						</div>
 
 						<!-- GAME LINKS -->
 						<div id="gameLinksBox" class="gridBoxes">
 							<span class="pageSubtitle">Game links</span>
-							<hr>
+							<hr class="mainSeparator">
 							<!-- Discord server -->
 							<div id="discordInviteMainBox">
 								<div id="discordBoxTitle">
@@ -117,12 +159,13 @@
 							</section>
 						</div>
 
-						<div id="updatesBox" class="gridBoxes">
-							<span class="pageSubtitle">Updates</span>
-							<hr>
-							<p><strong>Thronefall is out now! <br>
-								<a href="https://store.steampowered.com/app/2239150/Thronefall/">Buy Thronefall</a>
-							</strong></p>
+						<div id="updatesBox" class="gridBoxes" style="overflow-y: scroll;">
+							<center>
+								<span class="pageSubtitle">Updates</span>
+							</center>
+							<hr class="mainSeparator">
+							<!-- <iframe src="./updates.html" id="updatesWindow"></iframe> -->
+							<div id="updatesDiv" hx-get="./updates.html" hx-swap="innerHTML" hx-trigger="load"></div>
 						</div>
 
 					</div> <!-- gridWrapper -->
