@@ -64,7 +64,6 @@
                 <div id="pageContentBox">
                     <span class="pageTitle"> Enemies </span>
                     <hr class="mainSeparator">
-
 					<div class="pagesListGridWrapper">
 						<div class="pagesListItem">
 						<div class="pagesListItemContent">
@@ -186,7 +185,45 @@
 								</a>
 							</div>
 							</div>
-					</div>					
+					</div>
+					<br>
+					<span class="pageSubtitle"> General </span>
+					<hr>
+					<p>Currently, there are 15 different enemies in the kingdom of Thronefall. 14 of these enemies (all except the Shadow In The Water) deal damage around them upon spawning.</p>
+					<br>
+                    <span class="pageSubtitle"> Details</span>
+                    <hr>	
+					<section id="Bow-Table">
+						<div class="table-responsive" id="Archer-TableDiv">
+							<table class="table table-striped table-bordered">
+								<thead class="table-dark" id="Archer-TableHead">
+									<tr id="Archer-TableHeadRow">
+										<th class="align-middle">
+											Statistic
+										</th>
+										<th class="align-middle">
+											Value
+										</th>
+									</tr>
+								</thead>
+								<tbody>                                           
+									<tr>
+										<td class="align-middle">Attack Radius</td>
+										<td class="align-middle">3.2</td>
+									</tr>   
+									<tr>
+										<td class="align-middle">Base Damage</td>
+										<td class="align-middle">15</td>
+									</tr>   
+									<tr>
+										<td class="align-middle">Damage vs. King</td>
+										<td class="align-middle">x0.2</td>
+									</tr>                                                     
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<p>The damage dealt is calculated with this formular: <span class="codeBlock"> Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n</span>, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).</p>				
                 </div> <!-- pageContentBox -->
             </div> <!-- innerContainer -->
             
