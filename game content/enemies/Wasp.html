@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Peasant | Thronefall Wiki</title>
+		<title>Wasp | Thronefall Wiki</title>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -21,31 +22,34 @@
 	</head>
     <body>
         <div id="mainPageContainer">
-        <div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
-            <img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
-            <!-- Veritcal navbar goes here -->
-        </div>
-        <div id="innerContainer">
-            <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                <!-- Menu and header to be injected by htmx --> 
+            <div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
+                <img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
+                <!-- Veritcal navbar goes here -->
             </div>
-            <div id="pageContentBox">
+            <div id="innerContainer">
+                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
+                    <!-- Menu and header to be injected by htmx --> 
+                </div>
+                <div id="pageContentBox">
                 <div class="articleGrid">
                     <div class="articleGridItemWide">
-                        <span class="pageTitle"> Peasant </span>
+                        <span class="pageTitle"> Wasp </span>
                         <hr class="mainSeparator">
                     </div>
                     <div class="articleGridItem">
                         <span class="pageSubtitle"> General </span>
                         <hr>
-                        <p>Peasants are a basic enemy in Thronefall. Even though they have been introduced in the tutorial, they can only rarely be encountered in the kingdom of Thronefall.<br></p>
+                        <p>Wasps are a basic flying enemy in Thronefall. While not introduced in the tutorial, they can be encountered almost everywhere in the kingdom of Thronefall.<br></p>
+                        <span class="pageSubtitle"> Description </span>
+                        <hr>
+                        <p>Wasps are flying monsters eager to destroy every single one of your economic buildings.</p>
                         <span class="pageSubtitle"> Characteristics </span>
                         <hr>
-                        <section id="Squire-Table">
-                            <div class="table-responsive" id="Squire-TableDiv">
+                        <section id="Wasp-Table">
+                            <div class="table-responsive" id="Wasp-TableDiv">
                                 <table class="table table-striped table-bordered">
-                                    <thead class="table-dark" id="Squire-TableHead">
-                                        <tr id="Squire-TableHeadRow">
+                                    <thead class="table-dark" id="Wasp-TableHead">
+                                        <tr id="Wasp-TableHeadRow">
                                             <th class="align-middle">
                                                 Category
                                             </th>
@@ -57,21 +61,21 @@
                                     <tbody>
                                         <tr>
                                             <td class="align-middle">Name</td>
-                                            <td class="align-middle">Peasant</td>
+                                            <td class="align-middle">Wasp</td>
                                         </tr>
                                         <tr>
                                             <td class="align-middle">Icon</td>
                                             <td class="align-middle">
-                                                <img src="../../../pictures/enemies/Squire_Icon.png" alt="picture of the reward" class="enemyIcon">
+                                                <img src="../../../pictures/enemies/Wasp_Icon.png" alt="picture of the reward" class="enemyIcon">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="align-middle">Unit Type</td>
-                                            <td class="align-middle">Melee</td>
+                                            <td class="align-middle">Ranged, Flying, Monster</td>
                                         </tr>
                                         <tr>
                                             <td class="align-middle">Preferred Target</td>
-                                            <td class="align-middle">None</td>
+                                            <td class="align-middle">Economnic Buildings</td>
                                         </tr>
                                         <tr>
                                             <td class="align-middle">Targets Player</td>
@@ -100,24 +104,37 @@
                                     <tbody>                                                
                                         <tr>
                                             <td class="align-middle">Attacks per second</td>
-                                            <td class="align-middle">0.5</td>
+                                            <td class="align-middle">1</td>
                                         </tr>    
                                         <tr>
                                             <td class="align-middle">Attack Range</td>
-                                            <td class="align-middle">3 (Melee)</td>
+                                            <td class="align-middle">9 (Ranged)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">Projectile Speed</td>
+                                            <td class="align-middle">20</td>
                                         </tr>      
                                         <tr>
                                             <td class="align-middle">Base Damage</td>
-                                            <td class="align-middle">1</td>
+                                            <td class="align-middle">2.5</td>
                                         </tr>      
                                         <tr>
+                                            <td class="align-middle">Damage vs. Flying</td>
+                                            <td class="align-middle">x1.2</td>
+                                        </tr>        
+                                        <tr>
+                                            <td class="align-middle">Damage vs. Ranged Resistant</td>
+                                            <td class="align-middle">x0.5</td>
+                                        </tr>
+                                        <tr>
                                             <td class="align-middle">Chase King Time</td>
-                                            <td class="align-middle">10s</td>
+                                            <td class="align-middle">3s</td>
                                         </tr>                                                                                                 
                                     </tbody>
                                 </table>
                             </div>
                         </section>
+                        <p>The damage dealt is calculated with this formular: <span class="codeBlock"> Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n</span>, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).</p>
                         <br><span class="pageSubtitle"> Defense Statistics </span>
                         <section id="Bow-Table">
                             <div class="table-responsive" id="Archer-TableDiv">
@@ -135,11 +152,11 @@
                                     <tbody>                                                
                                         <tr>
                                             <td class="align-middle">Health Points</td>
-                                            <td class="align-middle">8.7</td>
+                                            <td class="align-middle">25</td>
                                         </tr>                                                
                                         <tr>
                                             <td class="align-middle">Movement Speed</td>
-                                            <td class="align-middle">4</td>
+                                            <td class="align-middle">8</td>
                                         </tr>                                                                                       
                                     </tbody>
                                 </table>
@@ -147,22 +164,23 @@
                         </section>
                         <span class="pageSubtitle"> Encounters </span>
                         <hr>
-                        <p>You can encounter Peasants in <a href="../../../game content/maps/neuland.html">Neuland</a> and <a href="durststein.html">Durststein</a>.</p>
+                        <p>You can encounter Wasps in <a href="../../../game content/maps/nordfels.html">Nordfels</a> and <a href="../../../game content/maps/frostsee.html">Frostsee</a>.</p>
                     </div>
                     <div id="rightGridColumn" class="articleGridItem">
                         <div class="articleGridPicture">
-                            <a href="../../../pictures/enemies/Squire.png" target="_blank">
-                            <img src="../../../pictures/enemies/Squire.png" alt="picture of an enemy" class="articlePicture">
-                            <strong>A Peasant in-game.</strong>
+                            <a href="../../../pictures/enemies/Wasp.png" target="_blank">
+                            <img src="../../../pictures/enemies/Wasp.png" alt="picture of an enemy" class="articlePicture">
+                            <strong>A Wasp in-game.</strong>
                             </a>
                         </div>
                     </div>
                 </div> <!--articleGrid-->
-            </div> <!--pageContentBox-->
-            <!--pageCotentBox-->
-        </div> <!-- inner container-->
+                </div>
+            </div><!--innerContainer-->
             <div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                 <!-- Footer to be injected by htmx -->
+                </section>
             </div>
+        </div> <!--mainPageContainer-->
     </body>    
 </html>
