@@ -1,6 +1,8 @@
 /*
+    ============
     columnRow (inclduing leftColumn and rightColumn) IS DEPRECATED.
     USE articleGrid INSTEAD.
+    =============
 */
 .columnRow
 {
@@ -145,3 +147,8 @@
     width: 15%;
 }
 
+.mapDetailsTable
+{
+    max-width: 750px;
+    margin-top: 10px;
+}
