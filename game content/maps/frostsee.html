@@ -29,6 +29,12 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Page meta infromation -->
+		<meta name="description" content="A wiki for the game Thronefall">
+		<meta name="keywords" content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name="language" content="en">
+		<meta name='robots' content="index,follow">
+		<meta name='author' content="GhostMiner & ItsMeRaven"> 
 		<!-- Bootstrap and other CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -48,6 +54,11 @@
             body 
             {
                 background-image: url("../../../pictures/Maps/Frostsee/frostsee_empty_clean.png");
+            }
+            .galleryGrid
+            {
+                grid-template-columns: repeat(3,1fr);
+                max-width: 75%;
             }
         </style>
 
@@ -72,56 +83,112 @@
                             <hr>
                             <p><strong>Frostsee <em>(German for "Frost lake")</em> is the fourth map in the game.</strong> It is one of the 4 maps available in the Early Access version.</p>
                             <p>The map features a snowy tundra design, 2 new buildings, 4 new enemies and a boss. It is also the currently hardest map playable.</p>
-                            <br>
+                            
                             <span class="pageSubtitle"> Map composition</span>
                             <hr>
                             <p>This map features wide open areas, a few lakes and a buildable outpost. Everything is surrounded by icy mountains and water, resulting in 5 spawn areas, one being an ice cave.</p>
-                            <br>
-                            <span class="pageSubtitle"> Quests </span>
+
+                            <span class="pageSubtitle">Map details</span>
                             <hr>
-                            <section id="Bow-Table">
-                                <div class="table-responsive" id="Archer-TableDiv">
-                                    <table class="table table-striped table-bordered">
-                                        <thead class="table-dark" id="Archer-TableHead">
-                                            <tr id="Archer-TableHeadRow">
-                                                <th class="align-middle">
-                                                    Quest Number
-                                                </th>
-                                                <th class="align-middle">
-                                                    Details
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>                                                
-                                            <tr>
-                                                <td class="align-middle">A.</td>
-                                                <td class="align-middle">Achieve a victory</td>
-                                            </tr>    
-                                            <tr>
-                                                <td class="align-middle">B.</td>
-                                                <td class="align-middle">Achieve a victory with &nbsp;&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Sword_Icon.png" alt="sword icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Snake_God_Icon.png" alt="snake mutator icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">C.</td>
-                                                <td class="align-middle">Achieve a victory with &nbsp;&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Spear_Icon.png" alt="spear icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Falcon_God_Icon.png" alt="falcon mutator icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/God_of_Destruction_Icon.png" alt="destruction mutator icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">D.</td>
-                                                <td class="align-middle">Achieve a highscore of 12500</td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">E.</td>
-                                                <td class="align-middle">Achieve a victory with &nbsp;&nbsp; <img class="articlePicture" src="../../../pictures/leveling icons/God_of_Death_Icon.png" alt="death mutator icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Tiger_God_Icon.png" alt="tiger mutator icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/God_of_Destruction_Icon.png" alt="destruction mutator icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">F.</td>
-                                                <td class="align-middle">Achieve a victory with &nbsp;&nbsp; <img class="articlePicture" src="../../../pictures/leveling icons/Bow_Icon.png" alt="bow icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Wasp_God_Icon.png" alt="wasp mutator icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Turtle_God_Icon.png" alt="turtle mutator icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <br>
-                            </section>
+                            <span class="pageSubtitleSmall">Quests</span>
+                            <table class="table table-striped table-bordered mapDetailsTable">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>A.</td>
+                                        <td>Achieve a victory</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B.</td>
+                                        <td>Achieve a victory with Heavy Sword Challenge the Snake God <a href="../enemies/Mutators" title="Mutators">mutator</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>C.</td>
+                                        <td>Achieve a victory with Light Spear <a href="../enemies/Weapons" title="Weapons">weapon</a>, Challenge the Falcon God and God of Destruction <a href="../enemies/Mutators" title="Mutators">mutators</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>D.</td>
+                                        <td>Achieve a highscore of 12500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E.</td>
+                                        <td>Achieve a victory with Challenge the God of Death, Tiger God and God of Destruction <a href="../enemies/Mutators" title="Mutators">mutators</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>F.</td>
+                                        <td>Achieve a victory with Bow and Dagger <a href="../enemies/Weapons" title="Weapons">weapon</a>, Challenge the Wasp God and Turtle God <a href="../enemies/Mutators" title="Mutators">mutators</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <span class="pageSubtitleSmall">Spawned enemies</span>
+                            <table class="table table-striped table-bordered mapDetailsTable">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>7 swordsman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>17 slime</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>4 elite crossbow man</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>45 slime</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>10 swordsman, 1 ram</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>9 wasp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>14 elite crossbow man, 2 ram</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>30 spiky slime, 8 racer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>33 wasp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>40 swordsman, 10 elite crossbow man, 5 <a href="../enemies/Ogre" title="Ogre">ogre</a>, 4 ram</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>20 spiky slime, 30 racer, 20 wasp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>45 swordsman, 8 elite crossbow man, 8 <a href="../enemies/Ogre" title="Ogre">ogre</a>, 3 ram, 34 slime, 17 spiky slime, 10 hunterling, 20 racer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>1 Shadow In The Water</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         
                         <div id="rightGridColumn" class="articleGridItem">
@@ -139,6 +206,30 @@
                             </div>  
                         </div>
                     </div>
+                    <span class="pageSubtitle">Gallery</span>
+                    <hr>
+                    <div class="articleGridItem">
+                        <div class="galleryGrid">    
+                            <div class="galleryGridItem">
+                                <a href="../../../pictures/Maps/Frostsee/Day/Frostsee Day 5.jpg" target="_blank">
+                                    <img class="galleryPicture" src="../../../pictures/Maps/Frostsee/Day/Frostsee Day 5.jpg">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Frostsee with a fully upgraded castle.</span>
+                            </div>
+                            <div class="galleryGridItem">
+                                <a href="../../../pictures/Maps/Frostsee/frostsee_empty_clean.png" target="_blank">
+                                    <img class="galleryPicture" src="../../../pictures/Maps/Frostsee/frostsee_empty_clean.png">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Durststein without any buildings.</span>
+                            </div>
+                            <div class="galleryGridItem">
+                                <a href="../../../pictures/Maps/Frostsee/forstsee lvl select.png" target="_blank">
+                                    <img class="galleryPicture" src="../../../pictures/Maps/Frostsee/forstsee lvl select.png" style="width: 70%;">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Durststein in the map selection.</span>
+                            </div>
+                        </div>
+                    </div> <!-- articleGridItem -->
                 </div>
             </div>
             

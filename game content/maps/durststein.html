@@ -29,6 +29,12 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Page meta infromation -->
+		<meta name="description" content="A wiki for the game Thronefall">
+		<meta name="keywords" content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name="language" content="en">
+		<meta name='robots' content="index,follow">
+		<meta name='author' content="GhostMiner & ItsMeRaven"> 
 		<!-- Bootstrap and other CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -48,6 +54,11 @@
             body 
             {
                 background-image: url("../../../pictures/Maps/Durststein/durststein_empty_clean.png");
+            }
+            .galleryGrid
+            {
+                grid-template-columns: repeat(3,1fr);
+                max-width: 75%;
             }
         </style>
 
@@ -71,68 +82,107 @@
                             <span class="pageSubtitle"> Overview </span>
                             <hr>
                             <p><strong>Durststein <em>(German for "Thirst Stone")</em> is the third map in the game.</strong> It is one of the 4 maps available in the Early Access version.</p>
-                            <p>The map features a desert design, 2 new buildings and 2 new enemies. It is also the map with the biggest amount of starting money.</p>
+                            <p>The map features a desert design, 2 new buildings and 2 new enemies. It is also the map with the largest amount of starting money.</p>
                             
                             <span class="pageSubtitle">Map composition</span>
                             <hr>
-                            <p>This map features wide open areas, plenty of ramps and vantage points for ranged units to shoot from. Everything is surroundedd by mountains and cliffs, resulting in 4 spawn areas, one in each cardinal direction.</p>
-                            <br>
-                            <span class="pageSubtitle"> Quests </span>
-                            <hr>
-                            <section id="Bow-Table">
-                                <div class="table-responsive" id="Archer-TableDiv">
-                                    <table class="table table-striped table-bordered">
-                                        <thead class="table-dark" id="Archer-TableHead">
-                                            <tr id="Archer-TableHeadRow">
-                                                <th class="align-middle">
-                                                    Quest Number
-                                                </th>
-                                                <th class="align-middle">
-                                                    Details
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>                                                
-                                            <tr>
-                                                <td class="align-middle">A.</td>
-                                                <td class="align-middle">Achieve a victory</td>
-                                            </tr>    
-                                            <tr>
-                                                <td class="align-middle">B.</td>
-                                                <td class="align-middle">Achieve a victory without &nbsp;&nbsp; <img class="articlePicture" src="../../../pictures/leveling icons/Spear_Icon.png" alt="spear icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">C.</td>
-                                                <td class="align-middle">Achieve a victory with &nbsp;&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Falcon_God_Icon.png" alt="falcon mutator icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">D.</td>
-                                                <td class="align-middle">Achieve a victory with &nbsp;&nbsp; <img class="articlePicture" src="../../../pictures/leveling icons/Spear_Icon.png" alt="spear icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Turtle_God_Icon.png" alt="turtle mutator icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">E.</td>
-                                                <td class="align-middle">Achieve a victory with &nbsp;&nbsp; <img class="articlePicture" src="../../../pictures/leveling icons/Falcon_God_Icon.png" alt="falcon mutator icon" class="articlePicture" style="width: 5%;">&nbsp;<img class="articlePicture" src="../../../pictures/leveling icons/Tiger_God_Icon.png" alt="tiger mutator icon" class="articlePicture" style="width: 5%;"></td>
-                                            </tr> 
-                                            <tr>
-                                                <td class="align-middle">F.</td>
-                                                <td class="align-middle">Achieve a highscore of 12000</td>
-                                            </tr> 
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </section>
-                        
-                        
-                        
-                        
-                        
+                            <p>This map features wide open areas and plenty of ramps and vantage points for ranged units to shoot from. Everything is surrounded by mountains and cliffs, resulting in 4 spawn areas, one in each cardinal direction.</p>
+                            
+                            <span class="pageSubtitle">Map details</span>
+                                <hr>
+                                <span class="pageSubtitleSmall">Quests</span>
+                                <table class="table table-striped table-bordered mapDetailsTable">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>A.</td>
+                                            <td>Achieve a victory</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B.</td>
+                                            <td>Achieve a victory without Light Spear weapon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C.</td>
+                                            <td>Achieve a victory with Challenge the Snake God mutator</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>D.</td>
+                                            <td>Achieve a victory with Light Spear Challenge the Turtle God >mutator</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>E.</td>
+                                            <td>Achieve a victory with Challenge the Falcon God and Tiger God mutators</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>F.</td>
+                                            <td>Achieve a highscore of 12000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <span class="pageSubtitleSmall">Enemies</span>
+                                <table class="table table-striped table-bordered mapDetailsTable">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>18 <a href="../enemies/Peasant" title="Peasant">peasant</a>, 9 <a href="../enemies/Racer" title="Racer">racer</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>2 <a href="../enemies/Swordsman" title="Swordsman">swordsman</a>, 14 <a href="../enemies/Archer" title="Archer">archer</a>, 8 <a href="../enemies/Monster_Rider" title="Monster Rider">monster rider</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>30 <a href="../enemies/Swordsman" title="Swordsman">swordsman</a>, 10 <a href="../enemies/Archer" title="Archer">archer</a>, 7 <a href="../enemies/Hunterling" title="Hunterling">hunterling</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>20 <a href="../enemies/Swordsman" title="Swordsman">swordsman</a>, 5 exploder</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>30 <a href="../enemies/Archer" title="Archer">archer</a>, 10 <a href="../enemies/Monster_Rider" title="Monster Rider">monster rider</a>, 12 <a href="../enemies/Hunterling" title="Hunterling">hunterling</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>12 <a href="../enemies/Archer" title="Archer">archer</a>, 3 <a href="../enemies/Ogre" title="Ogre">ogre</a>, 12 <a href="../enemies/Monster_Rider" title="Monster Rider">monster rider</a>, 3 exploder</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>36 <a href="../enemies/Swordsman" title="Swordsman">swordsman</a>, 7 <a href="../enemies/Ogre" title="Ogre">ogre</a>, 3 exploder</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>90 <a href="../enemies/Monster_Rider" title="Monster Rider">monster rider</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>15 <a href="../enemies/Swordsman" title="Swordsman">swordsman</a>, 15 <a href="../enemies/Archer" title="Archer">archer</a>, 2 <a href="../enemies/Ogre" title="Ogre">ogre</a>, 2 <a href="../enemies/Catapult" title="Catapult">catapult</a>, 25 <a href="../enemies/Hunterling" title="Hunterling">hunterling</a>, 15 <a href="../enemies/Racer" title="Racer">racer</a>, 2 exploder</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>14 <a href="../enemies/Ogre" title="Ogre">ogre</a>, 35 <a href="../enemies/Racer" title="Racer">racer</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>50 <a href="../enemies/Swordsman" title="Swordsman">swordsman</a>, 35 <a href="../enemies/Archer" title="Archer">archer</a>, 25 <a href="../enemies/Ogre" title="Ogre">ogre</a>, 3 <a href="../enemies/Catapult" title="Catapult">catapult</a>, 150 <a href="../enemies/Monster_Rider" title="Monster Rider">monster rider</a>, 35 <a href="../enemies/Hunterling" title="Hunterling">hunterling</a>, 20 <a href="../enemies/Racer" title="Racer">racer</a>, 20 exploder</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                         </div>
                         
-
-
-
-
-
                         <div id="rightGridColumn" class="articleGridItem">
                             <div class="pictureContainer" style="margin-bottom: 20px;">
                                 <a href="../../../pictures/Maps/Durststein/durststein_empty_clean.png" target="_blank">
@@ -148,6 +198,31 @@
                             </div>  
                         </div>
                     </div>
+                    <span class="pageSubtitle">Gallery</span>
+                    <hr>
+                    <div class="articleGridItem">
+                        <div class="galleryGrid">    
+                            <div class="galleryGridItem">
+                                <a href="../../../pictures/Maps/Durststein/dursstein 1.png" target="_blank">
+                                    <img class="galleryPicture" src="../../../pictures/Maps/Durststein/dursstein 1.png">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Durststein with a fully upgraded castle.</span>
+                            </div>
+                            <div class="galleryGridItem">
+                                <a href="../../../pictures/Maps/Durststein/durststein empty clean.png" target="_blank">
+                                    <img class="galleryPicture" src="../../../pictures/Maps/Durststein/durststein empty clean.png">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Durststein without any buildings.</span>
+                            </div>
+                            <div class="galleryGridItem">
+                                <a href="../../../pictures/Maps/Durststein/dursstein lvl select.png" target="_blank">
+                                    <img class="galleryPicture" src="../../../pictures/Maps/Durststein/dursstein lvl select.png" style="width: 55%;">
+                                </a> <br>
+                                <span class="galleryPictureDescription">Durststein in the map selection.</span>
+                            </div>
+
+                        </div>
+                    </div> <!-- articleGridItem -->
                 </div>
             </div>
             
