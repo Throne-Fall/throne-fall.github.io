@@ -3,14 +3,9 @@
 {
     --foregroundColour:  rgba(255, 255, 255, 0.5); 
     --baackgroundColour:  rgba(245, 245, 245, 0.95);
-    --orange1: #ba8303;
+    --orange1: #946800;
 }
-a:link 
-{
-    color: var(--orange1);
-    text-decoration: none;
-}
-a:visited 
+a:link, a:visited, a
 {
     color: var(--orange1);
     text-decoration: none;
@@ -78,6 +73,11 @@ img
 {
     font-weight: bold;
     font-size: 1.4em;
+}
+.pageSubtitleSmall
+{
+    font-weight: bold;
+    font-size: 1.25em;
 }
 .articlePictureDescription
 {
