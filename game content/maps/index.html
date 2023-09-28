@@ -41,7 +41,6 @@
         <link rel="stylesheet" href="../../../styles/mainMenu.css"> <!-- Main menu styling -->
         <link rel="stylesheet" href="../../../styles/article.css">  <!-- Styling of wiki content - individual articles -->
         <link rel="stylesheet" href="../../../styles/global.css">   <!-- Website styling  -->
-		<link rel="stylesheet" href="../../../styles/overrides.css">
 
         <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
 
@@ -53,10 +52,10 @@
 		<style>
 			.pagesListGridWrapper
 			{
-				grid-template-columns: repeat(4, 1fr);
-				max-width: 1300px;
-				column-gap: 15px;
-				row-gap: 15px;
+				grid-template-columns: repeat(3, 1fr);
+				max-width: 1100px;
+				column-gap: 20px;
+				row-gap: 20px;
 			}
 			.pagesListItem
 			{
@@ -66,6 +65,20 @@
 			{
 				aspect-ratio: auto;
 				width: 75%;
+			}
+			@media screen and (max-width: 1000px)
+			{
+				.pagesListGridWrapper
+				{
+					grid-template-columns: repeat(3, 1fr) !important; 
+				}
+			}
+			@media screen and (max-width: 500px)
+			{
+				#frostseeButton
+				{
+					left: 0 !important;
+				}
 			}
 		</style>
         <div id="mainPageContainer">
@@ -83,36 +96,44 @@
 
                     <div class="pagesListGridWrapper">
                         <div class="pagesListItem">
-						<div class="pagesListItemContent">
-							<a href="../../../game content/maps/neuland.html">
-							<img src="../../../pictures/Maps/Neuland/neuland_empty.png" class="listIcon"><br>
-                            Neuland
-							</a>
-						</div>
-						</div>
-                        <div class="pagesListItem">
-						<div class="pagesListItemContent">
-							<a href="../../../game content/maps/nordfels.html">
-							<img src="../../../pictures/Maps/Nordfels/nordfels empty clean.png" class="listIcon"> <br>
-                            Nordfels
-							</a>
-						</div>
+							<div class="pagesListItemContent">
+								<a href="../../../game content/maps/neuland.html">
+								<img src="../../../pictures/Maps/Neuland/neuland_empty.png" class="listIcon"><br>
+									Neuland
+								</a>
+							</div>
 						</div>
                         <div class="pagesListItem">
-						<div class="pagesListItemContent">
-							<a href="../../../game content/maps/durststein.html"> 
-							<img src="../../../pictures/Maps/Durststein/durststein empty clean.png" class="listIcon"> <br>
-                            Durststein 
-							</a>
-						</div>
+							<div class="pagesListItemContent">
+								<a href="../../../game content/maps/nordfels.html">
+								<img src="../../../pictures/Maps/Nordfels/nordfels empty clean.png" class="listIcon"> <br>
+									Nordfels
+								</a>
+							</div>
 						</div>
                         <div class="pagesListItem">
-						<div class="pagesListItemContent">
-							<a href="../../../game content/maps/frostsee.html"> 
-							<img src="../../../pictures/Maps/Frostsee/frostsee empty clean.png" class="listIcon"> <br>
-                            Frostsee 
-							</a>
+							<div class="pagesListItemContent">
+								<a href="../../../game content/maps/durststein.html"> 
+								<img src="../../../pictures/Maps/Durststein/durststein empty clean.png" class="listIcon"> <br>
+									Durststein 
+								</a>
+							</div>
 						</div>
+                        <div class="pagesListItem" id="frostseeButton" style="left: 50%; position: relative;">
+							<div class="pagesListItemContent">
+								<a href="../../../game content/maps/frostsee.html"> 
+								<img src="../../../pictures/Maps/Frostsee/frostsee empty clean.png" class="listIcon"> <br>
+									Frostsee 
+								</a>
+							</div>
+						</div>
+                        <div class="pagesListItem" style="left: 50%; position: relative;">
+							<div class="pagesListItemContent">
+								<a href="../../../game content/maps/uferwind.html"> 
+								<img src="../../../pictures/Maps/uferwind clean.png" class="listIcon"> <br>
+									Uferwind 
+								</a>
+							</div>
 						</div>
                     </div>
                 </div>
@@ -122,5 +143,6 @@
                 <!-- Footer to be injected by htmx -->
             </div>
         </div>
+		<link rel="stylesheet" href="../../../styles/overrides.css">
     </body>
 </html>
