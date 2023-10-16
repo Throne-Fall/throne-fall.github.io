@@ -48,7 +48,9 @@
 
 		<link rel="shortcut icon" type="image/jpg" href="../pictures/crown.png">
         <script>
-            location.replace("http://ghost-miner.github.io/thronefall")
+			const LBurl = "http://ghost-miner.github.io/thronefall";
+			const urlHash = location.hash;
+            location.replace(LBurl + urlHash);
         </script>
 	</head>
     <body>
