@@ -24,7 +24,7 @@
 -->
 <html lang="en">
 	<head>
-		<title>Castle Blueprints | Thronefall Wiki</title>
+		<title>System Requirements | Thronefall Wiki</title>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -50,54 +50,57 @@
 		<link rel="shortcut icon" type="image/jpg" href="../../../pictures/crown.png">
 	</head>
     <body>
-        <style>
-        </style>
-
         <div id="mainPageContainer">
 			<div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
 				<img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
 				<!-- Veritcal navbar goes here -->
 			</div>
             <div id="innerContainer">
-                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">                       
+                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">                    
                     <!-- Menu and header to be injected by htmx -->
                 </div>
 
-                                <div id="pageContentBox">
+                <div id="pageContentBox">
                     <div class="articleGrid">
                         <div class="articleGridItemWide">
-                            <span class="pageTitle"> Castle Blueprints </span>
-                    <hr class="mainSeparator">
-</div>
-                    
-                    <!-- <div id="notifBar" hx-get="./parts/incomp-content.html" hx-swap="outerHTML" hx-trigger="load">
-                        injected content goes here 
-                    </div> -->
-
-<div class="articleGridItem"> 
-                            <span class="pageSubtitle"> General </span>
-                            <hr>
-                            <p>The Castle Blueprints Perk is unlocked upon reaching level 18 and increases the health points of walls and towers.</p>
-                            <br>
-                            <span class="pageSubtitle"> Description</span>
-                            <hr>
-                            <p>Walls and towers have +70% more health.</p>
+                            <span class="pageTitle">System Requirements</span>
+                            <hr class="mainSeparator">
                         </div>
-                        <div id="rightGridColumn" class="articleGridItem">
-                            <div class="articleGridPicture">
-                                <a href="#" target="_blank">
-                                       <img src="../../../pictures/leveling icons/Castle_Blueprints_Icon.png" alt="Icon of the Mutator." style="width: 20%; height: auto; padding-bottom: 5px;">
-                                       <br> <strong>Icon of the Perk.</strong>
-                                </a>
-                            </div>
+                    
+
+                        <div class="articleGridItem">
+                            <p>Currently, Thronefall can only be played on Windows and macOS. This is why there are only system requirements for these 2 operating systems.</p>
+                            <p>These requirements have been taken from <a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall's Steam page</a>.</p>
+                            <br>
+                            <span class="pageSubtitle">Microsoft Windows</span>
+                            <hr>
+                            <ul>
+                                <li>Requires a 64-bit processor and operating system</li>
+                                <li><strong>OS</strong>: Windows 10</li>
+                                <li><strong>Processor</strong>: Intel® Core™ i5-9600</li>
+                                <li><strong>Memory</strong>: 4 GB RAM</li>
+                                <li><strong>Graphics</strong>: Nvidia GeForce GTX970</li>
+                                <li><strong>Storage</strong>: 300 MB available space</li>
+                                <li><strong>Sound Card</strong>: Just whistle your favourite tune :)</li>
+                            </ul>
+                                <span class="pageSubtitle">macOS</span>
+                                <hr>
+                            <ul>
+                                <li>Requires a 64-bit processor and operating system</li>
+                                <li><strong>OS</strong>: macOS Ventura or later</li>
+                                <li><strong>Processor</strong>: M1 or Intel® equivalent</li>
+                                <li><strong>Memory</strong>: 4 GB RAM</li>
+                                <li><strong>Graphics</strong>: M1 or Intel® equivalent</li>
+                                <li><strong>Storage</strong>: 1 GB available space</li>
+                                <li><strong>Sound Card</strong>: Just whistle your favourite tune :)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            
             <div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
                 <!-- Footer to be injected by htmx -->
             </div>
         </div>
     </body>
-</html>
+</html> 

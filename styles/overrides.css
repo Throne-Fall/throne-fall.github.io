@@ -1,3 +1,11 @@
+@media screen and (max-width: 1900px)
+{
+    #mainPageContainer
+    {
+       margin: 1%;
+    }
+}
+
 @media screen and (max-width: 1500px)
 {
     #gridWrapper
