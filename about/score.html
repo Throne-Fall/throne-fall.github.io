@@ -38,7 +38,7 @@
 						<div class="articleGridItem">
 							<span class="pageSubtitle"> General </span>
 							<hr>
-							<p>The score in Thronefall consists of 3 parts: 1. Base Score, 2. Gold Score, 3. Mutator Bonus. At the end of the game all of them are added together to get the players score. This results in this formular (see sections below for more details): <span class="codeBlock">Base Score + Gold x 10 + (Base Score + Gold x 10) x Mutator Multiplier</span><br></p>
+							<p>The score in Thronefall consists of 4 parts: 1. Base Score, 2. Gold Score, 3. Mutator Bonus, 4. No Restarts. At the end of the game all of them are added together to get the players score. This results in this formular (see sections below for more details): <span class="codeBlock">(Base Score + Gold x 10 + (Base Score + Gold x 10) x Mutator Multiplier) x No Restarts Bonus</span><br></p>
 							<br>
 							<span class="pageSubtitle"> Leaderboards </span>
 							<hr>
@@ -123,6 +123,12 @@
 									</table>
 								</div>
 							</section>
+							<br>
+							<span class="pageSubtitle"> No Restarts Bonus </span>
+							<hr>
+							If the player did not use the restart function of the game, they are rewarded by an +10% increase of their score. This +10% applies to all the other Score: <span class="codeBlock">(Base Score + Gold Score + Mutator Bonus) x 1.1</span><br>
+							If the player did use the restart function, their score is multiplied by 1, which means they do not recieve any further changes to their score instead.
+							<p></p>
 						</div>
 						<div id="rightGridColumn" class="articleGridItem">
 							<div class="articleGridPicture">
