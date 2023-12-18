@@ -1,0 +1,108 @@
+<html lang="en">
+	<head>
+		<title>Eternal Trials | Thronefall Wiki</title>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Bootstrap and other CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../../styles/mainMenu.css"> <!-- Main menu styling -->
+        <link rel="stylesheet" href="../../styles/article.css">  <!-- Styling of wiki content - individual articles -->
+        <link rel="stylesheet" href="../../styles/global.css">   <!-- Website styling  -->
+		<link rel="stylesheet" href="../../styles/overrides.css">
+
+        <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+
+		<script src="../../../scripts/toggleMobiMenu.js"></script>
+        
+		<link rel="shortcut icon" type="image/jpg" href="../../../pictures/crown.png">
+	</head>
+    <body>
+
+
+        <div id="mainPageContainer">
+			<div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
+				<img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
+				<!-- Veritcal navbar goes here -->
+			</div>
+            <div id="innerContainer">
+                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">   
+                    <!-- Menu and header to be injected by htmx --> 
+                </div>
+                <div id="pageContentBox">
+                    <div class="alert alert-dark" role="alert" id="notifDiv" style=" font-weight: bold; text-align: center;">
+                        This page is missing information. It will be added, once it is available!<br>
+                        <a href="http://discord.gg/pfRJjfz6SU" target="_blank">Update this page or contribute to this wiki</a>
+                    </div>
+                    <div class="articleGrid">
+                    <div class="articleGridItemWide">
+                    <span class="pageTitle"> Eternal Trials </span>
+                    <hr class="mainSeparator">
+                    </div>
+                        <div class="articleGridItem">
+                                <span class="pageSubtitle"> General </span>
+                                <hr>
+                                <p>The eternal trials are the only alternative gamemode besides the main levels. In contrast to the normal maps, the eternal trials are an endless mode. Just like rogue-like games, the players loses all progress and power-ups upon being defeated.</p>
+                                <br>
+                                <span class="pageSubtitle"> Gameplay </span>
+                                <hr>
+                                <p>The eternal trials consists of stages. At the start of each stage the player is offered three options. Each option shows a map, a weapon and two perks. After the player has chosen an option, they will have to play on the selected map with their respective weapon and will optain the two chosen perks for the rest of their run. This means that the player has 2 perks on stage 1, 4 perks on stage 2, 6 perks on stage 3 and so on.</p>
+                                <p>While the maps, weapons and perks are chosen by the player, they have to fight a randomised set of enemies each stage. The player has to face a random number of waves between 2 and <strong>TBD</strong> per map. The enemies in each of those waves are also randomly generated, meaning the player will face enemies that do not normally spawn on a specific map (see below for more details on wave generation).</p>
+                                <p>If the player manages to beat all the waves, they move on and are able to select the map, the weapon and the two perks for the next stage. The difficulty of the game increases with each stage (see below for more details on difficulty increases). After the players castle center eventually gets destroyed, they lose. All of their previous scores from each stage will be added together and the player receives a score bonus, increasing with each stage they have won. The stage bonus is calculated using this formular: <span class="codeBlock">(Won Stages)^2 x 10000</span>. After the player has received their final score, they lose all their perks and they may start another run.</p>
+                                <br>
+                                <br>
+                        </div>
+                        <div id="rightGridColumn" class="articleGridItem">
+                            <div class="articleGridPicture">
+                                <a href="../../../pictures/Eternal Trials/eternal_trials lvl select.png" target="_blank">
+                                    <img src="../../../pictures/Eternal Trials/eternal_trials lvl select.png" alt="picture of the enternal trials lvl select" class="articlePicture">
+                                </a>
+                                <strong>Eternal Trials in the level selection</strong>
+                            </div>
+                            <br>  
+                            <div class="articleGridPicture">
+                                <a href="../../../pictures/Eternal Trials/eternal_trials loadout select.png" target="_blank">
+                                    <img src="../../../pictures/Eternal Trials/eternal_trials loadout select.png" alt="picture of the loadout selection" class="articlePicture">
+                                </a>
+                                <strong>Stage - Loadout selection</strong>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="articleGridItem">
+                                <span class="pageTitle"> Wave Generation </span>
+                                <hr class="mainSeparator">
+
+                                <span class="pageSubtitle"> Patterns </span>
+                                <hr>
+                                <p>At the start of each stage, the wave generator uses a bunch of chances to determine which patterns the waves of the stage will have. Some possibilities are: Mono-battle stages, where you encounter the same one enemy type in every single wave (1.7%) and Mono-spawn stages, where enemies only spawn from one spawn point (10%).</p>
+                                <p>Additionally, other parts of the stage are determined: 1. Starting economy (low, medium, high, extreme-high), 2. Spawn locations (random 1, random2, fixed 1, fixed 2,...), 3. Enemy types (random 1, random 2, fixed 1, fixed 2, siege, ...), 4. Wave durations, 5. Last wave bonus, 6. amount of <a href="../game content/enemies/Elite_Enemies.html">elite enemies</a> (none, small part, medium part, large part) and many more.</p>
+                                <p>From stage 5 onwards the player always starts each stage with at least 11 gold.</p>
+                                <br>
+                                <span class="pageSubtitle"> Difficulty Points </span>
+                                <hr>
+                                <p>The amount and power of enemies for each wave are determined by the amount of difficulty points. Difficulty points are a hidden statistic, purely in the background of the game.</p>
+                                <p>When creating waves, the game spends the difficulty points to spawn enemies. For example 18 per <a href="../game content/enemies/exploder.html">exploder</a>.</p>
+                                <p>The amount of difficulty points per wave is determined by a complex calculation in the background of the game (which is TBD in detail). It considers the current stage (the first 7 stages the difficulty increases exponential, after that linear), spawn location proximity to castle center (single multiplier), wave length (exponential) and simulated economy (this includes and is dependant on starting gold).</p>
+                                <br>
+                                <span class="pageSubtitle"> Simulated Economy </span>
+                                <hr>
+                                <p>As stated above, the game simulates the players economy on every given stage to increase the difficulty according to the amount of gold the player has at their disposal. </p> 
+                                <p>The game starts to simulate the players economy on day 1. It assumes that they put 50% into economy and 50% into defenses. The game also assumes that all economic buildings survive and calculates the players gold gain for the next day, which is again spent 50/50 in economy and defense. On the last day, the game expects 100% of the available gold to be spent on defenses. This way the game consideres the total defense spending for each wave, by adding all previous defense spendings together. </p>
+                                <p>In the end, the difficulty points are increased each wave, proportionally to the total defense spending up untill that respective wave.</p>
+                                <br>
+                                <span class="pageSubtitle"> Elite Enemies </span>
+                                <hr>
+                                <p>Elite enemies are a special kind of enemies, that are unique to the eternal trials. They have 4x the hp and 3x the damage of their normal counterpart and are highlighted in the game by a special golden and spiky icon, as well as a golden outline.</p>
+                                <p>Elite enemies are converted from 6 normal enemies of their kind (and therefor also cost 6x their difficulty points) based on pre-generated patterns. If the total number of enemies exceeds 200, enemies are merged into the elite version of themselves, until the total number of enemies is below 200.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
+                <!-- Footer to be injected by htmx -->
+        </div>
+    </div>
+</body>
+</html>
