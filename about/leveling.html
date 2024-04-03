@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--
-	W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+<!--W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
 	
 			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
@@ -16,708 +15,669 @@
 			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
 			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
 			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
-			
-		Created by GhostMiner ft. ItsMe_Raven, June-August 2023.
-		> Ghost-Miner.Github.io,
-		> YouTube.com/GhostMinerMC
--->
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉-->
 <html lang="en">
 	<head>
-		<title>Leveling System | Thronefall Wiki</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-		<!-- Required meta tags -->
+		<!-- PAGE TITLE -->
+		<title> Leveling | Thronefall wiki</title>
+		<!-- PAGE INFORMATION -->
+		<meta name="description" content="Details about the leveling system system">
+		<meta name="keywords"    content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name='author'      content="GhostMiner, ItsMeRaven"> 
+		<meta name='robots'      content="index,follow">
+		<meta name="language"    content="en">
+
+		<!-- Tab icon-->
+		<link rel="shortcut icon" type="image/png" href="/assets/images/game_logo_small.png">
+		<!-- Responsive design-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Chatracter set-->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<!-- Page meta infromation -->
-		<meta name="description" content="An official wiki for Thronefall">
-		<meta name="keywords" content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom">
-		<meta name="language" content="en">
-		<meta name='robots' content="index,follow">
-		<meta name='author' content="GhostMiner & ItsMeRaven"> 
-		<!-- Bootstrap and other CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="../../styles/mainMenu.css"> <!-- Main menu styling -->
-        <link rel="stylesheet" href="../../styles/article.css">  <!-- Styling of wiki content - individual articles -->
-        <link rel="stylesheet" href="../../styles/global.css">   <!-- Website styling  -->
-		<link rel="stylesheet" href="../../styles/overrides.css">
-
-
-        <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
-
-		<script src="../../../scripts/toggleMobiMenu.js"></script>
-        
-		<link rel="shortcut icon" type="image/jpg" href="../../../pictures/crown.png">
+		<!-- HTMX -->
+		<script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+		<!-- jQuery  -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+		<!-- Various features -->
+		<script src="/assets/scripts/pageOptions.js"></script>
+		<!-- Article contents menu script -->
+		<script src="/assets/scripts/contentsMenu.js"></script> 
+		<!-- Dark mode -->
+		<script src="/assets/scripts/darkmode.js"></script>
+		<!-- Cookies -->
+		<script src="/assets/scripts/cookies.js"></script>
 	</head>
-    <body>
-        <style>
-            .levelRewardIcon
-            {
-                width: 75%;
-                height:auto;
-            }
-        </style>
+	<style>
+		.levelRewardIcon
+		{
+			max-width: 75px;
+		}
+	</style>
+	<body>
+		<!-- PAGE TITLE -->
+		<h1 class="pageTitle"> Leveling system </h1>
+		<hr class="pageTitleUnderline">
+				
+		<p>In Thronefall you level up by playing the game and earning points, which are calculated using the following equation:</p>
+		<p><span class="codeBlock">[base score + (gold amount × 10)] × 1.2<sup>(mutator amount)</sup></span></p>
+		<p>By surpassing certain scores you level up and get new perks, weapons, upgrades or even permanent upgrades.</p>
 
+		<h2 class="pageSubtitle"> Detailed List </h2>
+		<hr>
+			<table>
+				<thead>
+					<tr>
+						<th>Level</th>
+						<th>Reward</th>
+						<th>Description</th>
+						<th>Type</th>
+						<th>Icon</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><a href="../game-content/weapons/Bow.html">Bow &amp; Dagger</a></td>
+						<td>
+							<p>PASSIVE: Fast ranged attack. Strong against most units but not very effective when attacking siege engines.</p>
+							<p>ACTIVE: Stab a nearby enemy with your dagger and deal massive damage. The lower health of your victim as you attack, the lower the cooldown of the ability will be.</p>
+						</td>
+						<td>Weapon</td>
+						<td>
+							<img src="/assets/images/icons/weapons/bow_and_dagger.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><a href="../game-content/perks/royal mint.html">Royal Mint</a></td>
+						<td>
+							<p>Your castle center produces 1, 2 or 3 additional gold per day depending on its level, and you start the game with +1 gold.</p>
+						</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/royal_mint.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><a href="../game-content/perks/arcane towers.html">Arcane Towers</a></td>
+						<td>
+							<p>All of your towers have +33% range and their projectiles deal +33% more damage to enemies.</p>
+						</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/arcane_towers.png" alt="Reward icon" class="levelRewardIcon">
+						</td> 
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><a href="../game-content/weapons/Spear.html">Light Spear</a></td>
+						<td>
+							<p>PASSIVE: Rapid melee attack. Deals bonus damage against all fast moving enemy types and slows them down for a couple of seconds. Effective against fast moving enemies.</p>
+							<p>ACTIVE: Heal yourself and significantly increase your attack speed for a brief moment. If you activate the ability while being below 30% of your max health the effect lasts longer.</p>
+						</td>
+						<td>Weapon</td>
+						<td>
+							<img src="/assets/images/icons/weapons/light_spear.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><a href="../game-content/perks/heavy armor.html">Heavy Armor</a></td>
+						<td>You have a massive +350% more health, but your horse is -20% slower at night.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/heavy_armor.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><a href="../game-content/units/flails.html">Flails</a></td>
+						<td>Flails can simultaneously attack all enemies in a circle around them.</td>
+						<td>Melee Unit</td>
+						<td>
+							<img src="/assets/images/icons/units/flails.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td><a href="../game-content/perks/castle fortifications.html">Castle Fortification</a></td>
+						<td>Your castle center has +150% health. The interval between its attacks is reduced by -67% and its attack range is increased by +50%.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/castle_fortifications.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td><a href="../game-content/perks/">Perk Slot</a></td>
+						<td>You can equip one additional Perk to use during a level (2 total).</td>
+						<td>Permanent Upgrade</td>
+						<td>
+							<img src="/assets/images/icons/misc/level_up.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td><a href="../game-content/perks/ring of resurrection.html">Ring of Resurrection</a></td>
+						<td>The first time you die each night, you are revived immediately and all of your dead units are revived with you.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/ring_of_resurrection.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td><a href="../game-content/upgrades/hot oil.html">Hot Oil</a></td>
+						<td>While shooting regular arrows, this tower also pours boiling oil onto nearby enemies. Enemies hit by oil suffer great damage.</td>
+						<td>Upgrade Path: Tower</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/hot_oil.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td><a href="../game-content/perks/commander mode.html">Commander Mode</a></td>
+						<td>All of your units and buildings deal +45% more damage to enemies, but your own damage is -60% less effective.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/commander_mode.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>12</td>
 
-        <div id="mainPageContainer">
-			<div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
-				<img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal navbar goes here -->
-			</div>
-            <div id="innerContainer">
-                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">   
-                    <!-- Menu and header to be injected by htmx --> 
-                </div>
+						<td><a href="../game-content/upgrades/magic armor.html">Magic Armor</a></td>
+						<td>
+							<p>Enemies that deal damage to you take a part of that damage themselves.</p>
+							<p>+150% HP for your character.</p>
+						</td>
+						<td>Upgrade Path: Castle lvl 2</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/magic_armor.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td><a href="../game-content/perks/architects council.html">Architect's Council</a></td>
+						<td>The build options from the next castle center upgrade are already unlocked. This means you have more building options to choose from early in the game.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/architects_council.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td><a href="../game-content/upgrades/scarecrows.html">Scarecrows</a></td>
+						<td>Every field belonging to this mill receives a free scarecrow. Scarecrows have a strong anti-air attack.</td>
+						<td>Upgrade Path: Mill</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/scarecrows.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>15</td>
 
-                <div id="pageContentBox">
-                    <div class="articleGrid">
-                        <div class="articleGridItemWide">
-                            <span class="pageTitle">Leveling system</span>
-                            <hr class="mainSeparator">
-                        </div>
-                    <div class="articleGridItemWide">
-                    <span class="pageSubtitle"> General </span>
-                    <hr>
-                    <p>In Thronefall you level up by playing the game and earning points, which are calculated using the following equation:</p>
-                    <p><span class="codeBlock">(base score + (gold amount x 10)) x 1,2 ^ (mutator amount)</span></p>
-                    <p>By surpassing certain scores you level up and get new perks, weapons, upgrade paths or even permanent upgrades.</p>
+						<td><a href="../game-content/weapons/Sword.html">Sword</a></td>
+						<td>
+							<p>PASSIVE: Slow melee attack. Deals splash damage. Strong against groups of enemies.</p>
+							<p>ACTIVE: Big strike with a larger radius, dealing more damage.</p>
+						</td>
+						<td>Weapon</td>
+						<td>
+							<img src="/assets/images/icons/weapons/heavy_sword.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>16</td>
 
-                    <span class="pageSubtitle"> Detailed List </span>
-                    <hr>
-                    <section id="levelsTableSection">
-                        <div class="table-responsive" id="levelsTableDiv">
-                            <table class="table table-striped table-bordered">
-                                <thead class="table-dark" id="levelsTableHead">
-                                    <tr id="levelsTableHeadRow">
-                                        <th class="align-middle">
-                                            Level
-                                        </th>
-                                        <th class="align-middle">
-                                            Reward
-                                        </th>
-                                        <th class="align-middle">
-                                            Description
-                                        </th>
-                                        <th class="align-middle">
-                                            Type
-                                        </th>
-                                        <th class="align-middle">
-                                            Icon
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="align-middle">1</td>
-                                        <td class="align-middle"><a href="../game content/weapons/Bow.html">Bow & Dagger</a></td>
-                                        <td class="align-middle">
-                                            <p>PASSIVE: Fast ranged attack. Strong against most units but not very effective when attacking siege engines.</p>
-                                            <p>ACTIVE: Stab a nearby enemy with your dagger and deal massive damage. The lower health of your victim as you attack, the lower the cooldown of the ability will be.</p>
-                                        </td>
-                                        <td class="align-middle">Weapon</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Long_Bow_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">2</td>
-                                        <td class="align-middle"><a href="../game content/perks/royal mint.html">Royal Mint</a></td>
-                                        <td class="align-middle">
-                                            <p>Your castle center produces 1, 2 or 3 additional gold per day depending on its level, and you start the game with +1 gold.</p>
-                                        </td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Royal_Mint_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">3</td>
-                                        <td class="align-middle"><a href="../game content/perks/arcane towers.html">Arcane Towers</a></td>
-                                        <td class="align-middle">
-                                            <p>All of your towers have +33% range and their projectiles deal +33% more damage to enemies.</p>
-                                        </td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Arcane_Towers_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">4</td>
-                                        <td class="align-middle"><a href="../game content/weapons/Spear.html">Light Spear</a></td>
-                                        <td class="align-middle">
-                                            <p>PASSIVE: Rapid melee attack. Deals bonus damage against all fast moving enemy types and slows them down for a couple of seconds. Effective against fast moving enemies.</p>
-                                            <p>ACTIVE: Heal yourself and significantly increase your attack speed for a brief moment. If you activate the ability while being below 30% of your max health the effect lasts longer.</p>
-                                        </td>
-                                        <td class="align-middle">Weapon</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Spear_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">5</td>
-                                        <td class="align-middle"><a href="../game content/perks/heavy armor.html">Heavy Armor</a></td>
-                                        <td class="align-middle">You have a massive +350% more health, but your horse is -20% slower at night.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Heavy_Armor_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">6</td>
-                                        <td class="align-middle"><a href="../game content/units/flails.html">Flails</a></td>
-                                        <td class="align-middle">Flails can simultaneously attack all enemies in a circle around them.</td>
-                                        <td class="align-middle">Melee Unit</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Flails_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">7</td>
-                                        <td class="align-middle"><a href="../game content/perks/castle fortifications.html">Castle Fortification</a></td>
-                                        <td class="align-middle">Your castle center has +150% health. The interval between its attacks is reduced by -67% and its attack range is increased by +50%.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Castle_Fortifications_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">8</td>
-                                        <td class="align-middle"><a href="../game content/perks/">Perk Slot</a></td>
-                                        <td class="align-middle">You can equip one additional Perk to use during a level (2 total).</td>
-                                        <td class="align-middle">Permanent Upgrade</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Perk_+1.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">9</td>
-                                        <td class="align-middle"><a href="../game content/perks/ring of resurrection.html">Ring of Resurrection</a></td>
-                                        <td class="align-middle">The first time you die each night, you are revived immediately and all of your dead units are revived with you.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Ring_of_Ressurection_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">10</td>
-                                        <td class="align-middle"><a href="../game content/upgrade paths/hot oil.html">Hot Oil</a></td>
-                                        <td class="align-middle">While shooting regular arrows, this tower also pours boiling oil onto nearby enemies. Enemies hit by oil suffer great damage.</td>
-                                        <td class="align-middle">Upgrade Path: Tower</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Hot_Oil_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">11</td>
-                                        <td class="align-middle"><a href="../game content/perks/commander mode.html">Commander Mode</a></td>
-                                        <td class="align-middle">All of your units and buildings deal +45% more damage to enemies, but your own damage is -60% less effective.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Commander_Mode_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">12</td>
+						<td><a href="../game-content/perks/warrior mode.html">Warrior Mode</a></td>
+						<td>The weapon you equipped becomes more powerful every night all the way up to +160%, but all of your units and buildings deal -40% less damage right from the beginning.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/warrior_mode.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>17</td>
 
-                                        <td class="align-middle"><a href="../game content/upgrade paths/magic armor.html">Magic Armor</a></td>
-                                        <td class="align-middle">
-                                            <p>Enemies that deal damage to you take a part of that damage themselves.</p>
-                                            <p>+150% HP for your character.</p>
-                                        </td>
-                                        <td class="align-middle">Upgrade Path: Castle lvl 2</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Magic_Armor_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">13</td>
-                                        <td class="align-middle"><a href="../game content/perks/architects council.html">Architect's Council</a></td>
-                                        <td class="align-middle">The build options from the next castle center upgrade are already unlocked. This means you have more building options to choose from early in the game.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Architect_s_Council_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">14</td>
-                                        <td class="align-middle"><a href="../game content/upgrade paths/scarecrows.html">Scarecrows</a></td>
-                                        <td class="align-middle">Every field belonging to this mill receives a free scarecrow. Scarecrows have a strong anti-air attack.</td>
-                                        <td class="align-middle">Upgrade Path: Mill</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Scarecrows_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">15</td>
+						<td><a href="../game-content/upgrades/wind spirits.html">Wind Spirits</a></td>
+						<td>Wind spirits magically intercept a portion of enemy arrows in the range of the mill. The higher the level of this mill, the more arrows are blocked.</td>
+						<td>Upgrade Path: Mill</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/wind_spirits.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>18</td>
 
-                                        <td class="align-middle"><a href="../game content/weapons/Sword.html">Sword</a></td>
-                                        <td class="align-middle">
-                                            <p>PASSIVE: Slow melee attack. Deals splash damage. Strong against groups of enemies.</p>
-                                            <p>ACTIVE: Big strike with a larger radius, dealing more damage.</p>
-                                        </td>
-                                        <td class="align-middle">Weapon</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Sword_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">16</td>
+						<td><a href="../game-content/perks/castle blueprints.html">Castle Blueprints</a></td>
+						<td>Walls and towers have +100% more health.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/castle_blueprints.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>19</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/warrior mode.html">Warrior Mode</a></td>
-                                        <td class="align-middle">The weapon you equipped becomes more powerful every night all the way up to +160%, but all of your units and buildings deal -40% less damage right from the beginning.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Warrior_Mode_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">17</td>
+						<td><a href="../game-content/units/hunters.html">Hunters</a></td>
+						<td>Hunters are fast and effective against monsters. They have decent self defence capabilities in melee combat, but are vulnerable against ranged untis.</td>
+						<td>Ranged Unit</td>
+						<td>
+							<img src="/assets/images/icons/units/hunters.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>20</td>
 
-                                        <td class="align-middle"><a href="../game content/upgrade paths/wind spirits.html">Wind Spirits</a></td>
-                                        <td class="align-middle">Wind spirits magically intercept a portion of enemy arrows in the range of the mill. The higher the level of this mill, the more arrows are blocked.</td>
-                                        <td class="align-middle">Upgrade Path: Mill</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Wind_Spirits_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">18</td>
+						<td><a href="../game-content/perks/gladiator school.html">Gladiator School</a></td>
+						<td>Units are trained +75% faster, but every barracks and each of their upgrades cost +1 gold.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/gladiator_school.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>21</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/castle blueprints.html">Castle Blueprints</a></td>
-                                        <td class="align-middle">Walls and towers have +100% more health.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Castle_Blueprints_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">19</td>
+						<td><a href="../game-content/perks/war horse.html">War Horse</a></td>
+						<td>Your horse is +20% faster and riding over enemies deals 2.5 damage. This damage increases in correlation to all of your other in-game weapon upgrades like certain castle center upgrades.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/war_horse.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>22</td>
 
-                                        <td class="align-middle"><a href="../game content/units/hunters.html">Hunters</a></td>
-                                        <td class="align-middle">Hunters are fast and effective against monsters. They have decent self defence capabilities in melee combat, but are vulnerable against ranged untis.</td>
-                                        <td class="align-middle">Ranged Unit</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Hunters_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">20</td>
+						<td><a href="../game-content/mutators/falcon_god.html">Falcon God</a></td>
+						<td>Enemies are +75% faster and chase you for -60% shorter when you attack them, but you get 20% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/falcon_god.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>23</td>
+						<td><a href="../game-content/upgrades/assassin's training.html">Assassins Training</a></td>
+						<td>
+							<p>-Your auto-attack cooldown is +100% longer.</p>
+							<p>+You deal +250% more damage.</p>
+						</td>
+						<td>Upgrade Path: Castle lvl 2</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/assassins_training.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>24</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/gladiator school.html">Gladiator School</a></td>
-                                        <td class="align-middle">Units are trained +75% faster, but every barracks and each of their upgrades cost +1 gold.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Gladiator_School_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">21</td>
+						<td><a href="../game-content/perks/">Perk Slot</a></td>
+						<td>You can equip one additional Perk to use during a level (3 total).</td>
+						<td>Permanent Upgrade</td>
+						<td>
+							<img src="/assets/images/icons/misc/level_up.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>25</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/war horse.html">War Horse</a></td>
-                                        <td class="align-middle">Your horse is +20% faster and riding over enemies deals 2.5 damage. This damage increases in correlation to all of your other in-game weapon upgrades like certain castle center upgrades.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/War_Horse_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">22</td>
+						<td><a href="../game-content/units/berserks.html">Berserks</a></td>
+						<td>Berserks target siege units and other high health targets. They will not hesitate to sacrifice their lives for you.</td>
+						<td>Melee Unit</td>
+						<td>
+							<img src="/assets/images/icons/units/berserks.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>26</td>
 
-                                        <td class="align-middle"><a href="../game content/mutators/falcon_god.html">Falcon God</a></td>
-                                        <td class="align-middle">Enemies are +75% faster and chase you for -60% shorter when you attack them, but you get 20% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Falcon_God_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">23</td>
-                                        <td class="align-middle"><a href="../game content/upgrade paths/assassin's training.html">Assassins Training</a></td>
-                                        <td class="align-middle">
-                                            <p>-Your auto-attack cooldown is +100% longer.</p>
-                                            <p>+You deal +250% more damage.</p>
-                                        </td>
-                                        <td class="align-middle">Upgrade Path: Castle lvl 2</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Assassin_Training_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">24</td>
+						<td><a href="../game-content/perks/glass cannon.html">Glass Cannon</a></td>
+						<td>You deal +100% more damage, but you have -80% health.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/glass_cannon.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>27</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/">Perk Slot</a></td>
-                                        <td class="align-middle">You can equip one additional Perk to use during a level (3 total).</td>
-                                        <td class="align-middle">Permanent Upgrade</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Perk_+1.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">25</td>
+						<td><a href="../game-content/upgrades/castle-up.html">Castle-Up</a></td>
+						<td>The upgrade costs of walls and towers get reduced by 1 every night (they will never be lower than 1, initial build costs are unaffected).</td>
+						<td>Upgrade Path: Castle lvl 3</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/castle_up.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>28</td>
 
-                                        <td class="align-middle"><a href="../game content/units/berserks.html">Berserks</a></td>
-                                        <td class="align-middle">Berserks target siege units and other high health targets. They will not hesitate to sacrifice their lives for you.</td>
-                                        <td class="align-middle">Melee Unit</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Berserks_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">26</td>
+						<td><a href="../game-content/weapons/Lightning_Staff.html">Lightning Staff</a></td>
+						<td> 
+							<p>PASSIVE: Shoots a lightning bolt at all enemies in range. Enemies in close proximity to each other can not all be hit at once. That means the more spread out your enemies are, the more enemies you can hit at once.</p>
+							<p>ACTIVE: A powerful lightning errupts from your current position after a short delay and deals massive splash damage in a small radius.</p></td>
+						<td>Weapon</td>
+						<td>
+							<img src="/assets/images/icons/weapons/lightning_staff.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>29</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/glass cannon.html">Glass Cannon</a></td>
-                                        <td class="align-middle">You deal +100% more damage, but you have -80% health.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Glass_Cannon_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">27</td>
+						<td><a href="../game-content/perks/big harbours.html">Big Harbours</a></td>
+						<td>Harbours have capacity for 2 additional fishing boats, have +100% more health, and spawn with one boat on the water.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/big_harbours.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>30</td>
 
-                                        <td class="align-middle"><a href="../game content/upgrade paths/castle-up.html">Castle-Up</a></td>
-                                        <td class="align-middle">The upgrade costs of walls and towers get reduced by 1 every night (they will never be lower than 1, initial build costs are unaffected).</td>
-                                        <td class="align-middle">Upgrade Path: Castle lvl 3</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Castle-Up_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">28</td>
+						<td><a href="../game-content/units/fire archers.html">Fire Archers</a></td>
+						<td>Fire Archers deal splash damage around their target and cause bonus damage against siege engines.</td>
+						<td>Ranged Unit</td>
+						<td>
+							<img src="/assets/images/icons/units/fire_archers.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>31</td>
 
-                                        <td class="align-middle"><a href="../game content/weapons/Lightning_Staff.html">Lightning Staff</a></td>
-                                        <td class="align-middle"> 
-                                            <p>PASSIVE: Shoots a lightning bolt at all enemies in range. Enemies in close proximity to each other can not all be hit at once. That means the more spread out your enemies are, the more enemies you can hit at once.</p>
-                                            <p>ACTIVE: A powerful lightning errupts from your current position after a short delay and deals massive splash damage in a small radius.</p></td>
-                                        <td class="align-middle">Weapon</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Lightning_Staff_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">29</td>
+						<td><a href="../game-content/mutators/destruction_god.html">God of Destruction</a></td>
+						<td>Buildings only heal 25% of their health points every morning. Destroyed buildings take an additional day to get repaired, but you get 20% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/god_of_destruction.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>32</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/big harbours.html">Big Harbours</a></td>
-                                        <td class="align-middle">Harbours have capacity for 2 additional fishing boats, have +100% more health, and spawn with one boat on the water.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Big_Harbours_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">30</td>
+						<td><a href="../game-content/perks/elite warriors.html">Elite Warriors</a></td>
+						<td>All of your units have +100% health, but their training speed at night is reduced by -60%.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/elite_warriors.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>33</td>
 
-                                        <td class="align-middle"><a href="../game content/units/fire archers.html">Fire Archers</a></td>
-                                        <td class="align-middle">Fire Archers deal splash damage around their target and cause bonus damage against siege engines.</td>
-                                        <td class="align-middle">Ranged Unit</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Fire_Archers_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">31</td>
+						<td><a href="../game-content/perks/archery skills.html">Archery Skills</a></td>
+						<td>All your archers have +60% more range and their movement speed is increased by +20%.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/archery_skills.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>34</td>
 
-                                        <td class="align-middle"><a href="../game content/mutators/destruction_god.html">God of Destruction</a></td>
-                                        <td class="align-middle">Buildings only heal 25% of their health points every morning. Destroyed buildings take an additional day to get repaired, but you get 20% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/God_of_Destruction_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">32</td>
+						<td><a href="../game-content/perks/faster research.html">Faster Research</a></td>
+						<td>Blacksmith upgrades start with 1 day of progress already complete, so all upgrades finish much faster. All blacksmith upgrades cost -1 gold.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/faster_research.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>35</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/elite warriors.html">Elite Warriors</a></td>
-                                        <td class="align-middle">All of your units have +100% health, but their training speed at night is reduced by -60%.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Elite_Warriors_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">33</td>
+						<td><a href="../game-content/upgrades/support tower.html">Support Tower</a></td>
+						<td>This tower no longer shoots at enemies. Instead it shoots healing orbs at you and your units.</td>
+						<td>Upgrade Path: Tower</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/support_tower.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>36</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/archery skills.html">Archery Skills</a></td>
-                                        <td class="align-middle">All your archers have +60% more range and their movement speed is increased by +20%.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Archery_Skills_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">34</td>
+						<td><a href="../game-content/perks/fortified houses.html">Fortified Houses</a></td>
+						<td>Houses have +250% more health and level 2 houses shoot arrows at enemies dealing 8 damage to enemies nearby every 1.66 seconds.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/fortified_houses.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>37</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/faster research.html">Faster Research</a></td>
-                                        <td class="align-middle">Blacksmith upgrades start with 1 day of progress already complete, so all upgrades finish much faster. All blacksmith upgrades cost -1 gold.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Faster_Research_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">35</td>
+						<td><a href="../game-content/mutators/wasp_god.html">Wasp God</a></td>
+						<td>In the first 3 nights, there will be +100% more enemies that spawn +25% faster, but you get +20% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/wasp_god.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>38</td>
+						<td><a href="../game-content/perks/pumpkin fields.html">Pumpkin Fields</a></td>
+						<td>Fields give +1 additional gold per day and have +900% health, but they cost +2 more gold to build.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/pumpkin_fields.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>39</td>
 
-                                        <td class="align-middle"><a href="../game content/upgrade paths/support tower.html">Support Tower</a></td>
-                                        <td class="align-middle">This tower no longer shoots at enemies. Instead it shoots healing orbs at you and your units.</td>
-                                        <td class="align-middle">Upgrade Path: Tower</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Healing_Tower_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">36</td>
+						<td><a href="../game-content/upgrades/godly curse.html">Godly Curse</a></td>
+						<td>
+							<p>If you lock onto a target, that target receives 50% more damage from all sources.</p>
+							<p>+75% HP for your character.</p>
+						</td>
+						<td>Upgrade Path: Castle lvl 3</td>
+						<td>
+							<img src="/assets/images/icons/upgrades/godly_curse.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>40</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/fortified houses.html">Fortified Houses</a></td>
-                                        <td class="align-middle">Houses have +250% more health and level 2 houses shoot arrows at enemies dealing 8 damage to enemies nearby every 1.66 seconds.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Fortified_Houses_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">37</td>
+						<td><a href="../game-content/perks/healing spirits.html">Healing Spirits</a></td>
+						<td>All healing effects on you and your units are +65% more effective.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/healing_spirits.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>41</td>
 
-                                        <td class="align-middle"><a href="../game content/mutators/wasp_god.html">Wasp God</a></td>
-                                        <td class="align-middle">In the first 3 nights, there will be +100% more enemies that spawn +25% faster, but you get +20% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Wasp_God_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">38</td>
-                                        <td class="align-middle"><a href="../game content/perks/pumpkin fields.html">Pumpkin Fields</a></td>
-                                        <td class="align-middle">Fields give +1 additional gold per day and have +900% health, but they cost +2 more gold to build.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Pumpkin_Fields_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">39</td>
+						<td><a href="../game-content/perks/ice magic.html">Ice Magic</a></td>
+						<td>Slow effects on enemies last -200% longer and slowed enemies move -30% slower.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/ice_magic.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>42</td>
 
-                                        <td class="align-middle"><a href="../game content/upgrade paths/godly curse.html">Godly Curse</a></td>
-                                        <td class="align-middle">
-                                            <p>If you lock onto a target, that target receives 50% more damage from all sources.</p>
-                                            <p>+75% HP for your character.</p>
-                                        </td>
-                                        <td class="align-middle">Upgrade Path: Castle lvl 3</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Godly_Curse_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">40</td>
+						<td><a href="../game-content/perks/melee resistance.html">Melee Resistancce</a></td>
+						<td>You, your units and all of your buildings start the game with +35% resistance against melee attacks.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/melee_resistance.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>43</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/healing spirits.html">Healing Spirits</a></td>
-                                        <td class="align-middle">All healing effects on you and your units are +65% more effective.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Healing_Spirits_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">41</td>
+						<td><a href="../game-content/perks/power tower.html">Power Tower</a></td>
+						<td>The tower you are closest to gets a significant attack speed boost of +233%.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/power_tower.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>44</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/ice magic.html">Ice Magic</a></td>
-                                        <td class="align-middle">Slow effects on enemies last -200% longer and slowed enemies move -30% slower.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Ice_Magic_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">42</td>
+						<td><a href="../game-content/perks/ranged resistance.html">Ranged Resistance</a></td>
+						<td>You, your units and all of your buildings start the game with +35% resistance against ranged attacks.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/ranged_resistance.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>45</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/melee resistance.html">Melee Resistancce</a></td>
-                                        <td class="align-middle">You, your units and all of your buildings start the game with +35% resistance against melee attacks.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Melee_Resistance_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">43</td>
+						<td><a href="../game-content/mutators/death_god.html">God of Death</a></td>
+						<td>Allied units are no longer revived at night and your own revive time is increased by +100%, but you get 20% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/god_of_death.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>46</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/power tower.html">Power Tower</a></td>
-                                        <td class="align-middle">The tower you are closest to gets a significant attack speed boost of +233%.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Power_Tower_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">44</td>
+						<td><a href="../game-content/perks/treasure hunter.html">Treasure Hunter</a></td>
+						<td>You get +50 gold on the morning before the last night.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/treasure_hunter.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>47</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/ranged resistance.html">Ranged Resistance</a></td>
-                                        <td class="align-middle">You, your units and all of your buildings start the game with +35% resistance against ranged attacks.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Ranged_Resistance_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">45</td>
+						<td><a href="../game-content/perks/indestructible mines.html">Indestructible Mines</a></td>
+						<td>Your gold mines are indestructible.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/indestructable_mines.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>48</td>
 
-                                        <td class="align-middle"><a href="../game content/mutators/death_god.html">God of Death</a></td>
-                                        <td class="align-middle">Allied units are no longer revived at night and your own revive time is increased by +100%, but you get 20% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/God_of_Death_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">46</td>
+						<td><a href="../game-content/perks/gods lotion.html">Gods Lotion</a></td>
+						<td>You regenerate health +120% faster and the delay before the health regenerations kicks in is reduced by -50%.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/gods_lotion.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>49</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/treasure hunter.html">Treasure Hunter</a></td>
-                                        <td class="align-middle">You get +50 gold on the morning before the last night.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Treasure_Hunter_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">47</td>
+						<td><a href="../game-content/mutators/no_walls_pact.html">No Walls Pact</a></td>
+						<td>You can't build any walls, but you get +10% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/no_walls_pact.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>50</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/indestructable mines.html">Indestructable Mines</a></td>
-                                        <td class="align-middle">Your gold mines are indestructable.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Indestructable_Goldmines_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">48</td>
+						<td><a href="../game-content/perks/melee damage.html">Melee Damage</a></td>
+						<td>You, your units and all of your buildings start the game with +25% melee damage.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/melee_damage.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>51</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/gods lotion.html">Gods Lotion</a></td>
-                                        <td class="align-middle">You regenerate health +120% faster and the delay before the health regenerations kicks in is reduced by -50%.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Gods_Lotion_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">49</td>
+						<td><a href="../game-content/upgrades/Firewing.html">Firewing</a></td>
+						<td>A flying unit that deals splash damage to ground and airborne enemies.</td>
+						<td>Hero Unit</td>
+						<td>
+							<img src="/assets/images/icons/units/firewing.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>52</td>
 
-                                        <td class="align-middle"><a href="../game content/mutators/no_walls_pact.html">No Walls Pact</a></td>
-                                        <td class="align-middle">You can't build any walls, but you get +10% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/No_Walls_Pact_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">50</td>
+						<td><a href="../game-content/mutators/phoenix_god.html">Phoenix God</a></td>
+						<td>Enemy units regenerate 8% of their health every second, but you get +30% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/phoenix_god.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>53</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/melee damage.html">Melee Damage</a></td>
-                                        <td class="align-middle">You, your units and all of your buildings start the game with +25% melee damage.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Melee_Damage_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">51</td>
+						<td><a href="../game-content/perks/anti-air telescope.html">Anti-Air Telescope</a></td>
+						<td>Flying enemies spawn with -25% health and deal -25% damage.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/anti-air_telescope.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>54</td>
 
-                                        <td class="align-middle"><a href="../game content/upgrade paths/Firewing.html">Firewing</a></td>
-                                        <td class="align-middle">A flying unit that deals splash damage to ground and airborne enemies.</td>
-                                        <td class="align-middle">Hero Unit</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Firewing_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">52</td>
+						<td><a href="../game-content/perks/health potions.html">Health Potions</a></td>
+						<td>All of your units heal themselves by 4% each second.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/health_potions.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>55</td>
 
-                                        <td class="align-middle"><a href="../game content/mutators/phoenix_god.html">Phoenix God</a></td>
-                                        <td class="align-middle">Enemy units regenerate 8% of their health every second, but you get +30% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Pheonix_God_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">53</td>
+						<td><a href="../game-content/mutators/no_towers_pact.html">No Towers Pact</a></td>
+						<td>You can't build any towers, but you get +20% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/no_towers_pact.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>56</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/anti-air telescope.html">Anti-Air Telescope</a></td>
-                                        <td class="align-middle">Flying enemies spawn with -25% health and deal -25% damage.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Anti-Air_Telescope_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">54</td>
+						<td><a href="../game-content/perks/ranged damage.html">Ranged Damage</a></td>
+						<td>You, your units and all of your buildings start the game with +25% ranged damage.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/ranged_damage.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>57</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/health potions.html">Health Potions</a></td>
-                                        <td class="align-middle">All of your units heal themselves by 4% each second.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Health_Potions_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">55</td>
+						<td><a href="../game-content/perks/stronger heros.html">Stronger Heros</a></td>
+						<td>Your hero units from the hero's quarter have +40% more health and are +40% stronger.</td>
+						<td>Perk</td>
+						<td>
+							<img src="/assets/images/icons/perks/stronger_heroes.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>58</td>
 
-                                        <td class="align-middle"><a href="../game content/mutators/no_towers_pact.html">No Towers Pact</a></td>
-                                        <td class="align-middle">You can't build any towers, but you get +20% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/No_Towers_Pact_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">56</td>
+						<td><a href="../game-content/mutators/no_units_pact.html">No Units Pact</a></td>
+						<td>You can't build any units, but you get +20% more points and XP if you win.</td>
+						<td>Mutator</td>
+						<td>
+							<img src="/assets/images/icons/mutators/no_units_pact.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+					<tr>
+						<td>59</td>
 
-                                        <td class="align-middle"><a href="../game content/perks/ranged damage.html">Ranged Damage</a></td>
-                                        <td class="align-middle">You, your units and all of your buildings start the game with +25% ranged damage.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Ranged_Damage_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">57</td>
-
-                                        <td class="align-middle"><a href="../game content/perks/stronger heros.html">Stronger Heros</a></td>
-                                        <td class="align-middle">Your hero units from the hero's quarter have +40% more health and are +40% stronger.</td>
-                                        <td class="align-middle">Perk</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Stronger_Heroes_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">58</td>
-
-                                        <td class="align-middle"><a href="../game content/mutators/no_units_pact.html">No Units Pact</a></td>
-                                        <td class="align-middle">You can't build any units, but you get +20% more points and XP if you win.</td>
-                                        <td class="align-middle">Mutator</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/No_Units_Pact_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">59</td>
-
-                                        <td class="align-middle"><a href="../game content/mutators/no_units_pact.html">Lizzard Rider</a></td>
-                                        <td class="align-middle">Fast archer unit that focusses on important targets like low health enemies, flying monsters or enemy support units. Additionally the lizzard can perform a melee attack.</td>
-                                        <td class="align-middle">Hero Unit</td>
-                                        <td class="align-middle">
-                                            <img src="../../../pictures/leveling icons/Lizzard_Rider_Icon.png" alt="picture of the reward" class="levelRewardIcon">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </section>
-                </div>
-            </div>
-                                </div>
-            </div>
-            <div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                <!-- Footer to be injected by htmx -->
-            </div>
-        </div>
-    </body>
+						<td><a href="../game-content/mutators/no_units_pact.html">Lizzard Rider</a></td>
+						<td>Fast archer unit that focusses on important targets like low health enemies, flying monsters or enemy support units. Additionally the lizzard can perform a melee attack.</td>
+						<td>Hero Unit</td>
+						<td>
+							<img src="/assets/images/icons/units/lizzard_rider.png" alt="Reward icon" class="levelRewardIcon">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	
+	</body>
+	
+	<script src="/assets/scripts/pageBuilder.js"></script>
+	<script>BuildPage(true);</script>
 </html>

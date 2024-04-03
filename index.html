@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--
-	W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+<!--W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
 	
 			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
@@ -16,173 +15,145 @@
 			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
 			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
 			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
-			
-		Created by GhostMiner, June/July 2023.
-		> Ghost-Miner.Github.io,
-		> YouTube.com/GhostMinerMC
-			
-        Wiki home
--->
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉-->
 <html lang="en">
-	<head>
-		<title>The official Thronefall Wiki</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<!-- Page meta infromation -->
+    <head>
+		<!-- PAGE TITLE -->
+		<title> HOME | Thronefall wiki</title>
+		<!-- PAGE INFORMATION -->
 		<meta name="description" content="An official wiki for Thronefall">
-		<meta name="keywords" content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, grizzlygames, fandom">
-		<meta name="language" content="en">
-		<meta name='robots' content="index,follow">
-		<meta name='author' content="GhostMiner & ItsMeRaven">
-		<!-- Bootstrap and other CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="./styles/mainMenu.css"> <!-- Main menu styling -->
-        <link rel="stylesheet" href="./styles/article.css">  <!-- Styling of wiki content - individual articles -->
-        <link rel="stylesheet" href="./styles/global.css">   <!-- Website styling  -->
-		<link rel="stylesheet" href="./styles/homepgae.css"> <!-- Homepage grid -->
-		<link rel="stylesheet" href="./styles/overrides.css">
-		
+		<meta name="keywords"    content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name='author'      content="GhostMiner, ItsMeRaven"> 
+		<meta name='robots'      content="index,follow">
+		<meta name="language"    content="en">
+		<!-- Tab icon-->
+		<link rel="shortcut icon" type="image/png" href="/assets/images/game_logo_small.png">
+		<!-- Tag for responsive layout to work correctly-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Chatracter set-->
+		<meta charset="utf-8">		
+		<!-- BOOTSTRAP 5 -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<!-- HTMX -->
 		<script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
- 
-		<script src="../../../scripts/toggleMobiMenu.js"></script>
-
-		<link rel="shortcut icon" type="image/jpg" href="../../../pictures/crown.png">
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+		<!-- Various features -->
+		<script src="/assets/scripts/pageOptions.js"></script>		
+		<!-- Additional styles here  -->
+		<link rel="stylesheet" href="/assets/styles/pages/homepage.css">
+		<link rel="stylesheet" href="/assets/styles/pages/updates.css">
+    	<!-- Dark mode -->
+		<script src="/assets/scripts/darkmode.js"></script>
+		<!-- Cookies -->
+		<script src="/assets/scripts/cookies.js"></script>
 	</head>
-    <body>
-		<style>
-			#updatesWindow
-			{
-				width: 100%; 
-				height: 95%; 
-				border: 1px red solid;
-				margin-bottom: 10px;
-				text-align: left;		
-			}
-			.updateArticleTitleHr
-            {
-                margin-top:    7px;
-                margin-bottom: 5px;
-            }
-			.updateArticlesSeparator
-            {
-				margin: 0px;
-				border-width: 2px;
-            }
-            .updateTitle
-            {
-                font-weight: bold;
-                font-size: 1em;
-                font-style: normal;
-				/* text-align: left !important; */
-            }
-            .updateSubtitle
-            {
-                font-style: normal;
-                font-size: 0.9em;
-            }
-            .updateBgr
-            {
-                /* background-color:beige; */
-                padding: 10px;
-                border-radius: 5px;
-            }
-            #updatesGridWrapper
-            {
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-		</style>
-        <div id="mainPageContainer">
-			<div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
-				<img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal navbar goes here -->
+
+	<body>
+		<span class="pageTitle"> Welcome to the Thronefall wiki </span>
+		<h1 class="pageTitle" style="display: none;"> The Thronefall Wiki </h1>
+		
+		<hr class="pageTitleUnderline">
+
+		<p>This is the official wiki for  <a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall</a> made by GrizzlyGames. 
+		    Use the left sidebar to explore the wiki or to find a specific page.</p>
+		<p>Is anything missing or out of date? Don't hesitate to inform us about it on the <a href="https://discord.gg/gVYctptyg8">official Thronefall Discord server</a> or the <a href="http://discord.gg/pfRJjfz6SU">wiki's Discord server</a>!</p>
+		
+		<div id="homeContainersWrapper">
+			<div class="homeContainer" id="trailerVideoDiv">
+				<h2 class="pageSubtitle">Game trailer</h2>
+				<hr class="pageTitleUnderline">
+				<video id="trailerVideo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256919666/movie480_vp9.webm?t=1684145975" preload="metadata" controls onloadstart="this.volume=0.5" ></video>
+				<iframe id="trailerVideoFrame" src="/assets/trailer/index.html"></iframe>
 			</div>
-
-            <div id="innerContainer">
-                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu to be isnerted with javascript -->
-                </div>
-                <div id="pageContentBox">
-                    <span class="pageTitle">
-                        Welcome to the Thronefall Wiki!
-                    </span>
-                    <hr class="mainSeparator">
-		            
-					<p>This is the official wiki for  <a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall</a> made by GrizzlyGames. 
-						Use the left sidebar to explore the wiki or to find a specific page.</p>
-					<p>Is anything missing or out of date? Don't hesitate to inform us about it on the <a href="https://discord.gg/gVYctptyg8">offical Thronefall Discord server</a> or the <a href="http://discord.gg/pfRJjfz6SU">wiki's Discord server</a>!</p>
-  
-					<br>
-					<div id="gridWrapper">
-						<!-- TRAILER -->
-						<div id="trailerBox" class="gridBoxes">
-							<span class="pageSubtitle">Game trailer</span>
-							<hr class="mainSeparator">
-							<video id="trailerVideo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256919666/movie480_vp9.webm?t=1684145975" preload="auto" controls></video>
+			<div class="homeContainer">
+				<h2 class="pageSubtitle">Suggested pages</h2>
+				<hr class="pageTitleUnderline">
+				<div id="suggestedPagesButtons buttonGroup">
+					<a href="./game-content/eternal_trials.html">
+						<button class="suggestedPagesButtons button">
+							Eternal trials
+						</button>
+					</a>
+					<a href="./leaderboard/">
+						<button class="suggestedPagesButtons button">
+							Leaderboard
+						</button>
+					</a>
+					<a href="./game-content/mutators/">
+						<button class="suggestedPagesButtons button">
+							Mutators
+						</button>
+					</a>
+					<a href="./game-content/maps/">
+						<button class="suggestedPagesButtons button">
+							Maps
+						</button>
+					</a>
+					<a href="./game-content/perks/">
+						<button class="suggestedPagesButtons button">
+							Perks
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="homeContainer" id="updatedContainer">
+				<h2 class="pageSubtitle">Wiki updates</h2>
+				<hr class="pageTitleUnderline">
+				<div id="updatesDiv" hx-get="/updates.html" hx-swap="innerHTML" hx-trigger="load">
+				    <a href="/updates.html">Recent events</a>
+				</div>
+			</div>
+			<div class="homeContainer">
+				<h2 class="pageSubtitle">Recent events</h2>
+				<hr class="pageTitleUnderline">
+				<div id="eventsDiv" hx-get="/events.html" hx-swap="innerHTML" hx-trigger="load">
+				    <a href="/events.html">Recent events</a>
+				</div>
+			</div>
+			<div class="homeContainer" id="GetGameContainer">
+				<!-- Steam page -->
+				<section id="steamGameWidgetSection">
+				    <div id="steamdocMain">
+						<div id="steamGameTitle">
+						    <strong>Get Thronefall</strong> on Steam
 						</div>
-
-						<!-- GAME LINKS -->
-						<div id="gameLinksBox" class="gridBoxes">
-							<span class="pageSubtitle">Game links</span>
-							<hr class="mainSeparator">
-							<!-- Discord server -->
-							<div id="discordInviteMainBox">
-								<div id="discordBoxTitle">
-									<span id="discordBoxTitle">Thronefall Discord server</span>
-								</div>
-								<div id="serverLogo">
-									<img src="../../../pictures/server_logo.webp" id="serverIconImg" alt="server icon">
-								</div>
-								<div id="serverName">
-									<span id="serverNameText">Grizzly Games & Friends</span>
-								</div>
-								<div id="joinButtonDiv">
-									<a href="https://discord.gg/gVYctptyg8" target="_blank">
-										<button id="joinServerButton" class="btn btn-success btn-lg">Join</button>
-									</a>
-								</div>
-							</div>
-							<!-- Steam page -->
-							<section id="steamGameWidgetSection">
-								<div id="steamPageMain">
-									<div id="steamGameTitle">
-										<strong>Get Thronefall</strong> on Steam
-									</div>
-									<div id="steamGameLogo">
-										<img src="../../../pictures/steam cover.jpg" id="steamGamePicture" alt="Steam Game Picture">
-									</div>
-									<div id="steamGameDescription">
-										Saddle the horses! See your kingdom come to life, fight gripping battles to defend it and still be done in time for lunch. 
-									</div>
-								</div> <!-- steamPageMain -->
-								<div id="buyGameDiv">
-									<a href="https://store.steampowered.com/app/2239150/Thronefall/" id="buyGameButtonLink" target="_blank">
-										<button id="buyGameButton" class="btn"> Buy on Steam </button>
-									</a>
-								</div>
-							</section>
+						<div id="steamGameLogo">
+						    <img src="/assets/images/game_logo_large.jpg" id="steamGamePicture">
 						</div>
-
-						<div id="updatesBox" class="gridBoxes" style="overflow-y: scroll;">
-							<center>
-								<span class="pageSubtitle">Updates</span>
-							</center>
-							<hr class="mainSeparator">
-							<!-- <iframe src="./updates.html" id="updatesWindow"></iframe> -->
-							<div id="updatesDiv" hx-get="./updates.html" hx-swap="innerHTML" hx-trigger="load"></div>
+						<div id="steamGameDescription">
+						    Saddle the horses! See your kingdom come to life, fight gripping battles to defend it and still be done in time for lunch. 
 						</div>
-
-					</div> <!-- gridWrapper -->
-				</div> <!-- pageContentBox -->
-            </div> <!-- innerContainer -->
-            
-            <div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                <!-- Footer to be injected by htmx -->
-            </div>
-        </div>
+				    </div>
+				    <!-- steamdocMain -->
+				    <div id="steamBuyGameDiv">
+						<a href="https://store.steampowered.com/app/2239150/Thronefall/" id="steamBuyGameButtonLink" target="_blank">
+						<button id="steamBuyGameButton" class="btn"> Buy on Steam </button>
+						</a>
+				    </div>
+				</section>
+			</div>
+			<div class="homeContainer" id="discordserverContainer">
+				<!-- Discord server -->
+				<div id="discordInviteMainBox">
+				    <div id="discordBoxTitleDiv">
+						<span id="discordBoxTitle">Thronefall Discord server</span>
+				    </div>
+				    <div id="discordServerLogo">
+						<img src="/assets/images/game_logo_small.png" id="discordServerIconImg" alt="Discord server icon">
+				    </div>
+				    <div id="discordServerName">
+						<span id="discordServerNameText">Grizzly Games & Friends</span>
+				    </div>
+				    <div id="discordJoinButtonDiv">
+						<a href="https://discord.gg/gVYctptyg8" target="_blank">
+						<button id="discordJoinServerButton" class="btn btn-success btn-lg">Join</button>
+						</a>
+				    </div>
+				</div>
+			</div>
+		</div>
     </body>
+	<script src="/assets/scripts/pageBuilder.js"></script>
+    <script>BuildPage(true);</script>
 </html>

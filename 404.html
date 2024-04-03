@@ -1,94 +1,44 @@
 <!DOCTYPE html>
-<!--
-	W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
-	
-			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
-			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
-			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
-			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
-			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
-			
-		Created by GhostMiner, June/July 2023.
-		> Ghost-Miner.Github.io,
-		> YouTube.com/GhostMinerMC
--->
+<!--W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+	⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+	⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+	⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+	⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+	⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+	⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉-->
 <html lang="en">
 	<head>
-		<title>Page not found | Thronefall Wiki</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-		<!-- Required meta tags -->
+		<title> Page not found | Thronefall wiki</title>
+		<meta content="Page not found"name="description">
+		<meta content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom"name="keywords">
+		<meta content="GhostMiner, ItsMeRaven"name="author">
+		<meta content="index,follow"name="robots">
+		<meta content="en"name="language">
+		<link href="/assets/images/game_logo_small.png"rel="shortcut icon"type="image/png">
+		<meta content="width=device-width,initial-scale=1"name="viewport">
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<!-- Page meta infromation -->
-		<meta name="description" content="An official wiki for Thronefall">
-		<meta name="keywords" content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom">
-		<meta name="language" content="en">
-		<meta name='robots' content="index,follow">
-		<meta name='author' content="GhostMiner & ItsMeRaven"> 
-		<!-- Bootstrap and other CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="../../styles/mainMenu.css"> <!-- Main menu styling -->
-        <link rel="stylesheet" href="../../styles/article.css">  <!-- Styling of wiki content - individual articles -->
-        <link rel="stylesheet" href="../../styles/global.css">   <!-- Website styling  -->
-		<link rel="stylesheet" href="../../styles/overrides.css">
-
-
-        <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
-
-		<script src="../../../scripts/toggleMobiMenu.js"></script>
-
-		<link rel="shortcut icon" type="image/jpg" href="../pictures/crown.png">
+		<script src="https://unpkg.com/htmx.org@1.9.4"crossorigin="anonymous"integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV"></script><script src="https://code.jquery.com/jquery-3.7.1.min.js"crossorigin="anonymous"></script><script src="/assets/scripts/pageOptions.js"></script><script src="/assets/scripts/contentsMenu.js"></script><script src="/assets/scripts/darkmode.js"></script><script src="/assets/scripts/cookies.js"></script>
 	</head>
-    <body>
-        <style>
-            body
-            {
-                background: url("https://ghost-miner.github.io/wp-content/uploads/2022/08/RICK-ASTLEY-ANIMATED.gif");
-                background-size: contain;
-                background-repeat: repeat;
-            }
-        </style>
-
-        <div id="mainPageContainer">
-            <div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
-                <img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
-                <!-- Veritcal navbar goes here -->
-            </div>
-            <div id="innerContainer">
-                <div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-                    <!-- Menu and header to be injected by htmx --> 
-                </div>
-                <div id="pageContentBox">
-                    <div class="articleGrid">
-                        <div class="articleGridItemWide">
-                            <span class="pageTitle">Page not found</span>
-                            <hr class="mainSeparator">
-                            <span class="pageSubtitle">Possible causes:</span>
-                            <ul>
-                                <li>You misspelt the address</li>
-                                <li>There is no page under this address</li>
-                                <li>A page with this address was deleted or moved elsewhere</li>
-                                <li>You forgot to include "about" or "game content" in the address. 
-                                    <i>(e.g. <a href="https://throne-fall.github.io/about/overview.html">Throne-Fall.github.io<span style="text-decoration: underline; font-weight: 600;">/about</span>/overview.html)</a></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-                <!-- Footer to be injected by htmx -->
-            </div>
-        </div>
-    </body>
+	<body>
+		<style>#lookingForSimPage{font-size:1.25rem;font-weight:500;display:none}.codeBlock{font-size:1rem}</style>
+		<h1 class="pageTitle">Page not found</h1>
+		<hr class="pageTitleUnderline">
+		<span id="lookingForSimPage">Redirecting from <var>*currUrl*</var> to <var>*newUrl*</var></span>
+		<h2 class="pageSubtitle"id="possibleCauses">Possible causes:</h2>
+		<ul id="possibleCausesList">
+			<li>The address is misspelt</li>
+			<li>A page with this address was deleted or moved elsewhere</li>
+			<li>You forgot to include "about" or "game content" in the address. <i>(e.g. <a href="https://throne-fall.github.io/about/overview.html">Throne-Fall.github.io<span style="text-decoration:underline;font-weight:600">/about</span>/overview.html)</a></i></li>
+		</ul>
+		<script src="/assets/scripts/pageBuilder.js"></script><script src="/assets/scripts/urlRedirect.js"></script><script>BuildPage(true);</script><script>CheckForSimilarPages();</script>
+	</body>
 </html>

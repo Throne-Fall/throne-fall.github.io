@@ -1,0 +1,111 @@
+<config>
+	<cssSkin>skins/matte/spritesheet.min.css</cssSkin>
+	<controlBarAutoHide>true</controlBarAutoHide>
+	<tocTitleColor>0x000000</tocTitleColor>
+	<tocItemTextColor>0x000000</tocItemTextColor>
+	<tocItemUpColor>0xFFFFFF</tocItemUpColor>
+	<tocItemOverColor>0xFFFFFF</tocItemOverColor>
+	<tocItemDownColor>0xFFFFFF</tocItemDownColor>
+	<tocItemSelectedUpColor>0x5186a4</tocItemSelectedUpColor>
+	<tocItemSelectedOverColor>0x5da1c8</tocItemSelectedOverColor>
+	<tocItemSelectedDownColor>0x396b88</tocItemSelectedDownColor>
+	<chrome>
+		<widgets>
+			<widget id="controlBar"
+					  type="ControlBar"
+					  height="35"
+					  horizontalAlign="center"
+					  verticalAlign="top"
+					  layoutMode="horizontal">
+
+				<widget id="leftMargin"
+						  type="Widget"
+						  width="5"/>
+				<widget id="rewindbutton"
+						  top="4"
+						  type="RewindButton"/>
+				<widget horizontalAlign="left"
+						  verticalAlign="center"
+						  top="2"
+						  left="0">
+					<widget id="playButton"
+							  type="playButton"/>
+
+					<widget id="pauseButton"
+							  type="pauseButton"/>
+				</widget>
+
+				<widget top="4"
+						  layoutMode="horizontal"
+						  horizontalAlign="center"
+						  verticalAlign="top">
+					<widget id="previousButton"
+							  type="PlaylistPreviousButton"/>
+					<widget id="nextButton"
+							  type="PlaylistNextButton"/>
+				</widget>
+
+				<widget id="spacerBeforeScrubBar"
+						  type="Widget"
+						  width="13"/>
+
+				<widget id="scrubBar"
+						  type="scrubBar"
+						  top="14"
+						  includeTimeHint="false"
+						  horizontalAlign="center"
+						  verticalAlign="top"
+						  markerWidth="6"
+						  markerHeight="6"
+						  markerColor="0x414141"
+						  markerColorAlpha=".95"
+						  markerCorner="6"
+						  percentWidth="100"/>
+
+				<widget id="spacerAfterScrubBar"
+						  type="Widget"
+						  width="13"/>
+
+				<widget layoutMode="horizontal"
+						  horizontalAlign="right"
+						  verticalAlign="center"
+						  right="6">
+
+					<widget id="timeViewWidget"
+							  type="TimeViewWidget"
+							  verticalAlign="middle"
+							  horizontalAlign="right"
+							  textColor="0x000000"
+							  fontSize="12"
+							  top="7"/>
+
+					<widget id="muteButton"
+							  type="MuteButton"
+							  top="4"/>
+
+					<widget id="captionbutton"
+							  type="CaptionButton"
+							  top="4"/>
+
+					<widget id="tocbutton"
+							  type="TOCButton"
+							  top="4"/>
+
+					<widget id="fullscreenMaxButton"
+							  top="4"
+							  right="15"
+							  type="FullScreenEnterButton"/>
+
+
+					<widget id="fullscreenMinButton"
+							  top="4"
+							  right="15"
+							  type="FullScreenLeaveButton"/>
+				</widget>
+				<widget id="rightMargin"
+						  type="Widget"
+						  width="5"/>
+			</widget>
+		</widgets>
+	</chrome>
+</config>

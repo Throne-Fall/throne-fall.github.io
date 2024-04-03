@@ -1,153 +1,144 @@
 <!DOCTYPE html>
+<!--W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+	
+			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉-->
 <html lang="en">
 	<head>
-		<title>Score | Thronefall Wiki</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
+		<!-- PAGE TITLE -->
+		<title> Score | Thronefall wiki</title>
+		<!-- PAGE INFORMATION -->
+		<meta name="description" content="Details about how the score system works">
+		<meta name="keywords"    content="Thronefall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name='author'      content="GhostMiner, ItsMeRaven"> 
+		<meta name='robots'      content="index,follow">
+		<meta name="language"    content="en">
+
+		<!-- Tab icon-->
+		<link rel="shortcut icon" type="image/png" href="/assets/images/game_logo_small.png">
+		<!-- Responsive design-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Bootstrap and other CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-		<link rel="stylesheet" href="../../styles/mainMenu.css">
-		<!-- Main menu styling -->
-		<link rel="stylesheet" href="../../styles/article.css">
-		<!-- Styling of wiki content - individual articles -->
-		<link rel="stylesheet" href="../../styles/global.css">
-		<!-- Website styling  -->
-		<link rel="stylesheet" href="../../styles/overrides.css">
+		<!-- Chatracter set-->
+		<meta charset="utf-8">
+		<!-- HTMX -->
 		<script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
-		<script src="../../../scripts/toggleMobiMenu.js"></script>
-		<link rel="shortcut icon" type="image/jpg" href="../../../pictures/crown.png">
+		<!-- jQuery  -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+		<!-- Various features -->
+		<script src="/assets/scripts/pageOptions.js"></script>
+		<!-- Article contents menu script -->
+		<script src="/assets/scripts/contentsMenu.js"></script> 
+		<!-- Dark mode -->
+		<script src="/assets/scripts/darkmode.js"></script>
+		<!-- Cookies -->
+		<script src="/assets/scripts/cookies.js"></script>
 	</head>
 	<body>
-		<div id="mainPageContainer">
-			<div id="mobiNavDiv" hx-get="../../../parts/mobiNav.html" hx-swap="innerHTML" hx-trigger="load">
-				<img src="../../../pictures/loading edit.gif" id="loadingMobiMenuGif">
-				<!-- Veritcal navbar goes here -->
-			</div>
-			<div id="innerContainer">
-				<div id="websiteSideBar" hx-get="../../../parts/sidebar.html" hx-swap="innerHTML" hx-trigger="load">
-					<!-- Menu and header to be injected by htmx --> 
-				</div>
-				<div id="pageContentBox">
-					<div class="articleGrid">
-						<div class="articleGridItemWide">
-							<span class="pageTitle"> Score </span>
-							<hr class="mainSeparator">
-						</div>
-						<div class="articleGridItem">
-							<span class="pageSubtitle"> General </span>
-							<hr>
-							<p>The score in Thronefall consists of 4 parts: 1. Base Score, 2. Gold Score, 3. Mutator Bonus, 4. No Restarts. At the end of the game all of them are added together to get the players score. This results in this formular (see sections below for more details): <span class="codeBlock">(Base Score + Gold x 10 + (Base Score + Gold x 10) x Mutator Multiplier) x No Restarts Bonus</span><br></p>
-							<br>
-							<span class="pageSubtitle"> Leaderboards </span>
-							<hr>
-							<p>The game has an integrated leaderboard system, which can be used to compare your score against Steam-Friends. The community has created a<a href="../leaderboard/"> Community Leaderboard</a>, that shows the highest score achieved for each map.</p>
-							<br>
-                            <span class="pageSubtitle"> Eternal Trials </span>
-                            <hr>
-                            <p>The eternal trials are a special case in which each map gives the player a score, which is added up at the end of each stage. After the player has been defeated, all of their achieved scores are added up and a stage bonus is added. The stage bonus is calculated using this formular: <span class="codeBlock">(Won Stages)^2 x 10000</span></p>
-							<br>
-							<span class="pageSubtitle"> Base Score </span>
-							<hr>
-							<p>The Base Score consists of 3 Scores that are added together at the end of each night: 1. Night Survived, 2. Realm Protected, 3. Time Bonus.<br>
-								<br>
-								Night Survived:<br>
-								You gain +100 Score for surviving a night.<br>
-								<br>
-								Realm Protected:<br>
-								You gain up to +250 Score for protecting your buildings. If no building was destroyed, you gain +250 score. Everything below 100% protected is calculated with this formular: <span class="codeBlock">+250 x (NOT destroyed buildings / total amount of buildings)^2</span>. Note that each wall segment counts as a separate building.<br>
-								<br>
-								Time Bonus:<br>
-								You gain up to +250 Score for killing the enemies fast. You gain the full +250, if you kill all enemies up to 5s after the last enemy spawned. Every bonus below +250 is calculated with this formular: <span class="codeBlock">+250 x ([90s - {total time - time of last spawn}] / 85s)^2</span>. Note that this means, you will not gain any score, if you kill all enemies more than 90s after the last enemy has spawned.<br>
-							</p>
-							<br>
-							<span class="pageSubtitle"> Gold Score </span>
-							<hr>
-							<p>The gold score is calculated with this formular: <span class="codeBlock">Unspent Gold x 10</span>. This only includes the gold you have remaining at the end of the game and does NOT include gold you have spent to buy buildings or upgrades. All gold you generate on the last night is added to the gold score, even if you did not pick it up before the victory screen.</p>
-							<br>
-							<span class="pageSubtitle"> Mutators Bonus </span>
-							<hr>
-							<p>The mutators bonus is only added, if you used a mutator. The bonus is calculated with this formular: <span class="codeBlock">(Base Score + Gold Score) x Mutators Multiplier</span>. The mutators multiplier is influenced by how many and which mutators you have picked (see the table below for reference).</p>
-							<br>
-							<span class="pageSubtitle"> Mutators Multiplier </span>
-							<section id="Bow-Table">
-								<div class="table-responsive" id="Archer-TableDiv">
-									<table class="table table-striped table-bordered">
-										<thead class="table-dark" id="Archer-TableHead">
-											<tr id="Archer-TableHeadRow">
-												<th class="align-middle">
-													Mutator
-												</th>
-												<th class="align-middle">
-													Single Multiplier
-												</th>
-												<th class="align-middle">
-													Total Multiplier
-												</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="align-middle"><a href="./mutators/turtle_god.html">Tiger God</a></td>
-												<td class="align-middle">x1.2</td>
-												<td class="align-middle">x1.2</td>
-											</tr>
-											<tr>
-												<td class="align-middle"><a href="./mutators/turtle_god.html">Falcon God</a></td>
-												<td class="align-middle">x1.2</td>
-												<td class="align-middle">x1.44</td>
-											</tr>
-											<tr>
-												<td class="align-middle"><a href="./mutators/turtle_god.html">God of Destruction</a></td>
-												<td class="align-middle">x1.2</td>
-												<td class="align-middle">x1.728</td>
-											</tr>
-											<tr>
-												<td class="align-middle"><a href="./mutators/turtle_god.html">Wasp God</a></td>
-												<td class="align-middle">x1.2</td>
-												<td class="align-middle">x2.074</td>
-											</tr>
-											<tr>
-												<td class="align-middle"><a href="./mutators/turtle_god.html">God of Death</a></td>
-												<td class="align-middle">x1.2</td>
-												<td class="align-middle">x2.488</td>
-											</tr>
-											<tr>
-												<td class="align-middle"><a href="./mutators/turtle_god.html">Snake God</a></td>
-												<td class="align-middle">x1.3</td>
-												<td class="align-middle">x3.235</td>
-											</tr>
-											<tr>
-												<td class="align-middle"><a href="./mutators/turtle_god.html">Turtle God</a></td>
-												<td class="align-middle">x1.4</td>
-												<td class="align-middle">x4.529</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</section>
-							<br>
-							<span class="pageSubtitle"> No Restarts Bonus </span>
-							<hr>
-							If the player did not use the restart function of the game, they are rewarded by an +10% increase of their score. This +10% applies to all the other Score: <span class="codeBlock">(Base Score + Gold Score + Mutator Bonus) x 1.1</span><br>
-							If the player did use the restart function, their score is multiplied by 1, which means they do not recieve any further changes to their score instead.
-							<p></p>
-						</div>
-						<div id="rightGridColumn" class="articleGridItem">
-							<div class="articleGridPicture">
-								<a href="../../../pictures/victory screen and score.png" target="_blank">
-								<img src="../../../pictures/victory screen and score.png" alt="picture of the king" class="articlePicture">
-								</a>
-								<strong>Score in a victory screen</strong>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="footerDiv" hx-get="../../../parts/footer.html" hx-swap="innerHTML" hx-trigger="load">
-				<!-- Footer to be injected by htmx -->
-			</div>
-		</div>
-	</body>
+        <!-- PAGE TITLE -->
+        <h1 class="pageTitle"> Score </h1>
+        <hr class="pageTitleUnderline">
+        <!-- CONTENT GOES HERE -->
+        <h2 class="pageSubtitle"> General </h2>
+        <hr>
+        <p>The score in Thronefall consists of 4 parts: 1. Base Score, 2. Gold Score, 3. Mutator Bonus, 4. No Restarts. At the end of the game all of them are added together to get the players score. This results in this formular (see sections below for more details):
+            <span class="codeBlock">(Base Score + Gold x 10 + (Base Score + Gold x 10) x Mutator Multiplier) x No Restarts Bonus</span>
+        </p>
+        <h2 class="pageSubtitle"> Leaderboards </h2>
+        <hr>
+        <p>The game has an integrated leaderboard system, which can be used to compare your score against Steam-Friends. The community has created a<a href="../leaderboard/"> Community Leaderboard</a>, that shows the highest score achieved for each map.</p>
+        <h2 class="pageSubtitle"> Eternal Trials </h2>
+        <hr>
+        <p>The eternal trials are a special case in which each map gives the player a score, which is added up at the end of each stage. After the player has been defeated, all of their achieved scores are added up and a stage bonus is added. The stage bonus is calculated using this formular: <span class="codeBlock">(Won Stages)^2 x 10000</span></p>
+        <h2 class="pageSubtitle"> Base Score </h2>
+        <hr>
+        <p>The Base Score consists of 3 Scores that are added together at the end of each night: 1. Night Survived, 2. Realm Protected, 3. Time Bonus.<br>
+            Night Survived:<br>
+            You gain +100 Score for surviving a night.<br>
+            Realm Protected:<br>
+            You gain up to +250 Score for protecting your buildings. If no building was destroyed, you gain +250 score. Everything below 100% protected is calculated with this formular: <span class="codeBlock">+250  (NOT destroyed buildings / total amount of buildings)^2</span>. Note that each wall segment counts as a separate building.<br>
+            Time Bonus:<br>
+            You gain up to +250 Score for killing the enemies fast. You gain the full +250, if you kill all enemies up to 5s after the last enemy spawned. Every bonus below +250 is calculated with this formular: <span class="codeBlock">+250 &times; ([90s - {total time - time of last spawn}] / 85s)^2</span>. Note that this means, you will not gain any score, if you kill all enemies more than 90s after the last enemy has spawned.<br>
+        </p>
+        <h2 class="pageSubtitle"> Gold Score </h2>
+        <hr>
+        <p>The gold score is calculated with this formular: <span class="codeBlock">Unspent Gold x 10</span>. This only includes the gold you have remaining at the end of the game and does NOT include gold you have spent to buy buildings or upgrades. All gold you generate on the last night is added to the gold score, even if you did not pick it up before the victory screen.</p>
+        <h2 class="pageSubtitle"> Mutators Bonus </h2>
+        <hr>
+        <p>The mutators bonus is only added, if you used a mutator. The bonus is calculated with this formular: <span class="codeBlock">(Base Score + Gold Score) x Mutators Multiplier</span>. The mutators multiplier is influenced by how many and which mutators you have picked (see the table below for reference).</p>
+        <h2 class="pageSubtitle"> Mutators Multiplier </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mutator</th>
+                    <th>Single Multiplier</th>
+                    <th>Total Multiplier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="./mutators/turtle_god.html">Tiger God</a></td>
+                    <td>x1.2</td>
+                    <td>x1.2</td>
+                </tr>
+                <tr>
+                    <td><a href="./mutators/turtle_god.html">Falcon God</a></td>
+                    <td>x1.2</td>
+                    <td>x1.44</td>
+                </tr>
+                <tr>
+                    <td><a href="./mutators/turtle_god.html">God of Destruction</a></td>
+                    <td>x1.2</td>
+                    <td>x1.728</td>
+                </tr>
+                <tr>
+                    <td><a href="./mutators/turtle_god.html">Wasp God</a></td>
+                    <td>x1.2</td>
+                    <td>x2.074</td>
+                </tr>
+                <tr>
+                    <td><a href="./mutators/turtle_god.html">God of Death</a></td>
+                    <td>x1.2</td>
+                    <td>x2.488</td>
+                </tr>
+                <tr>
+                    <td><a href="./mutators/turtle_god.html">Snake God</a></td>
+                    <td>x1.3</td>
+                    <td>x3.235</td>
+                </tr>
+                <tr>
+                    <td><a href="./mutators/turtle_god.html">Turtle God</a></td>
+                    <td>x1.4</td>
+                    <td>x4.529</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="pageSubtitle"> No Restarts Bonus </h2>
+        <hr>
+        If the player did not use the restart function of the game, they are rewarded by an +10% increase of their score. This +10% applies to all the other Score: <span class="codeBlock">(Base Score + Gold Score + Mutator Bonus) x 1.1</span><br>
+        If the player did use the restart function, their score is multiplied by 1, which means they do not recieve any further changes to their score instead.
+        <article id="sidebar">
+            <div class="articleImageBackgroundDiv">
+                <a href="/assets/images/score.jpg" target="_blank">
+                <img src="/assets/images/score.jpg" alt="" class="articleImage">
+                </a>
+                <span class="articleImageTitle">Score in a victory screen</span>
+            </div>
+        </article>
+    </body>
+    
+	<script src="/assets/scripts/pageBuilder.js"></script>
+	<script>BuildPage(false);</script>
 </html>
