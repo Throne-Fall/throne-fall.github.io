@@ -50,7 +50,7 @@
 	</head>
 
 	<body>
-		<span class="pageTitle"> Welcome to the Thronefall wiki </span>
+		<span class="pageTitle"> Welcome to the official Thronefall wiki </span>
 		<h1 class="pageTitle" style="display: none;"> The Thronefall Wiki </h1>
 		
 		<hr class="pageTitleUnderline">
@@ -59,105 +59,438 @@
 		    Use the left sidebar to explore the wiki or to find a specific page.</p>
 		<p>Is anything missing or out of date? Don't hesitate to inform us about it on the <a href="https://discord.gg/gVYctptyg8">official Thronefall Discord server</a> or the <a href="http://discord.gg/pfRJjfz6SU">wiki's Discord server</a>!</p>
 		
-		<div id="homeContainersWrapper">
-			<div class="homeContainer" id="trailerVideoDiv">
-				<h2 class="pageSubtitle">Game trailer</h2>
-				<hr class="pageTitleUnderline">
-				<video id="trailerVideo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256919666/movie480_vp9.webm?t=1684145975" preload="metadata" controls onloadstart="this.volume=0.5" ></video>
-				<!-- <iframe id="trailerVideoFrame" src="/assets/trailer/index.html"></iframe> -->
-			</div>
-			<div class="homeContainer">
-				<h2 class="pageSubtitle">Suggested pages</h2>
-				<hr class="pageTitleUnderline">
-				<div id="suggestedPagesButtons buttonGroup">
-					<a href="./game-content/eternal_trials.html">
-						<button class="suggestedPagesButtons button">
-							Eternal trials
-						</button>
-					</a>
-					<a href="./leaderboard/">
-						<button class="suggestedPagesButtons button">
-							Leaderboard
-						</button>
-					</a>
-					<!-- <a href="./misc/settings.html">
-						<button class="suggestedPagesButtons button">
-							Website options
-						</button>
-					</a> -->
-					<a href="./game-content/mutators/">
-						<button class="suggestedPagesButtons button">
-							Mutators
-						</button>
-					</a>
-					<a href="./game-content/maps/">
-						<button class="suggestedPagesButtons button">
-							Maps
-						</button>
-					</a>
-					<a href="./game-content/perks/">
-						<button class="suggestedPagesButtons button">
-							Perks
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="homeContainer" id="updatedContainer">
-				<h2 class="pageSubtitle">Wiki updates</h2>
-				<hr class="pageTitleUnderline">
-				<div id="updatesDiv" hx-get="/updates.html" hx-swap="innerHTML" hx-trigger="load">
-				    <a href="/updates.html">Recent events</a>
-				</div>
-			</div>
-			<div class="homeContainer">
-				<h2 class="pageSubtitle">Recent events</h2>
-				<hr class="pageTitleUnderline">
-				<div id="eventsDiv" hx-get="/events.html" hx-swap="innerHTML" hx-trigger="load">
-				    <a href="/events.html">Recent events</a>
-				</div>
-			</div>
-			<div class="homeContainer" id="GetGameContainer">
-				<!-- Steam page -->
-				<section id="steamGameWidgetSection">
-				    <div id="steamdocMain">
-						<div id="steamGameTitle">
-						    <strong>Get Thronefall</strong> on Steam
+		<div id="homeGridContainer">
+			<div class="homegridLeftCol">
+				<div class="homeContainer">
+					<h2>The game</h2>
+					<hr class="homeContainerTitleUnderline">
+					<p>Saddle the horses! See your kingdom come to life, fight gripping battles to defend it and still be done in time for lunch. 
+						<br> With Thronefall we tried to strip a classic strategy game from all unnecessary complexity, combining it with some healthy hack and slay. Build up your base during the day, defend it till your last breath at night. 
+					</p>
+					<div class="grid6columnsContainer" id="theGameDivLinks">
+						<div class="gridColItem">
+							<a href="/about/overview.html">Overview</a>
 						</div>
-						<div id="steamGameLogo">
-						    <img src="/assets/images/game_logo_large.jpg" id="steamGamePicture">
+						<div class="gridColItem">
+							<a href="/about/king.html">The king</a>
 						</div>
-						<div id="steamGameDescription">
-						    Saddle the horses! See your kingdom come to life, fight gripping battles to defend it and still be done in time for lunch. 
+						<div class="gridColItem">
+							<a href="/about/score.html">Score</a>
 						</div>
-				    </div>
-				    <!-- steamdocMain -->
-				    <div id="steamBuyGameDiv">
-						<a href="https://store.steampowered.com/app/2239150/Thronefall/" id="steamBuyGameButtonLink" target="_blank">
-						<button id="steamBuyGameButton" class="btn"> Buy on Steam </button>
-						</a>
-				    </div>
-				</section>
-			</div>
-			<div class="homeContainer" id="discordserverContainer">
-				<!-- Discord server -->
-				<div id="discordInviteMainBox">
-				    <div id="discordBoxTitleDiv">
-						<span id="discordBoxTitle">Thronefall Discord server</span>
-				    </div>
-				    <div id="discordServerLogo">
-						<img src="/assets/images/game_logo_small.png" id="discordServerIconImg" alt="Discord server icon">
-				    </div>
-				    <div id="discordServerName">
-						<span id="discordServerNameText">Grizzly Games & Friends</span>
-				    </div>
-				    <div id="discordJoinButtonDiv">
-						<a href="https://discord.gg/gVYctptyg8" target="_blank">
-						<button id="discordJoinServerButton" class="btn btn-success btn-lg">Join</button>
-						</a>
-				    </div>
+						<div class="gridColItem">
+							<a href="/game-content/eternal-trials.html">Eternal trials</a>
+						</div>						
+						<div class="gridColItem">
+							<a href="/about/leveling.html">Leveling system</a>
+						</div>				
+						<div class="gridColItem">
+							<a href="/leaderboard/" target="_blank">LeaderBoards</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+
+					<div class="grid4columnsContainer homeContainer" id="weaponsPerksMutsUpgradesDiv">
+						<div class="grid4ColumnsItem">
+							<h2>Weapons</h2>
+							<hr class="homeContainerTitleUnderline">
+							
+							<div class="iconandTitleColumns">
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/weapons/bow_and_dagger.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/weapons/bow.html">Bow and dagger</a> 
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/weapons/light_spear.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/weapons/spear.html">Spear</a> 
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/weapons/heavy_sword.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/weapons/sword.html">Sword</a> 
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/weapons/light_spear.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/weapons/lightning-staff.html">Lighting staff</a> 
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/weapons/shadow_codex.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/weapons/shadow-codex.html">Shadow codex</a> 
+								</div>
+							</div> <!-- iconandTitleColumns -->
+						</div> <!-- grid4ColumnsItem -->
+
+						<div class="grid4ColumnsItem">
+							<h2>Perks</h2>
+							<hr class="homeContainerTitleUnderline">
+
+							<div class="iconandTitleColumns">
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/perks/royal_mint.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/perks/royal-mint.html">Royal mint</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/perks/arcane_towers.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/perks/arcane-towers.html">Arcane towers</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/perks/castle_fortifications.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/perks/castle-fortifications.html">Castle fortifications</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/perks/architects_council.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/perks/architects-council.html">Architect's council</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<!-- <img src="/assets/images/" class="homeIconSmall" alt=""> -->
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/perks/">View all perks</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="grid4ColumnsItem">
+							<h2>Mutators</h2>
+							<hr class="homeContainerTitleUnderline">
+
+							<div class="iconandTitleColumns">
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/mutators/turtle_god.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/mutators/turtle-god.html">Turtle god</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/mutators/tiger_god.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/mutators/tiger-god.html">Tiger god</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/mutators/god_of_death.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/mutators/death-god.html">God of death</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/mutators/god_of_destruction.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/mutators/destruction-god.html">God of destruction</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<!-- <img src="/assets/images/icons/mutators/" class="homeIconSmall" alt=""> -->
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/mutators/">View all mutators</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="grid4ColumnsItem">
+							<h2>Upgrades</h2>
+							<hr class="homeContainerTitleUnderline">
+
+							<div class="iconandTitleColumns">
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/upgrades/scarecrows.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/upgrades/scarecrows.html">Scarecrows</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/upgrades/builders_guild.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/upgrades/builders-guild.html">Builder's guild</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/upgrades/improved_plow.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/upgrades/improved-plow.html">Improved plow</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/icons/upgrades/commander.png" class="homeIconSmall" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/upgrades/commander.html">Commander</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<!-- <img src="/assets/images/icons/upgrades/" class="homeIconSmall" alt=""> -->
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/upgrades/">View all upgrades</a>
+								</div>
+							</div>
+						</div>
+					</div> <!-- grid4columnsContainer -->
+
+					<div id="homeMapsList" class="homeContainer">
+						<h2>Levels</h2>
+						<hr class="homeContainerTitleUnderline">
+
+						<div class="grid5columnsContainer" id="homeMapsDiv">
+							<div class="grid5ColumnsItem">
+								<a href="/game-content/maps/nordfels.html">
+									<img src="/assets/images/maps/nordfels/day/nordfels_day_5.jpg" alt="" class="homeMapsImg">
+									<br>Nordfels
+								</a>
+							</div>
+							
+							<div class="grid4ColumnsItem">
+								<a href="/game-content/maps/durststein.html">
+									<img src="/assets/images/maps/durststein/day/durststein_day_4.jpg" alt="" class="homeMapsImg">
+									<br>Durststein
+								</a>
+							</div>
+							
+							<div class="grid4ColumnsItem">
+								<a href="/game-content/maps/frostsee.html">
+									<img src="/assets/images/maps/frostsee/day/frostsee_day_5.jpg" alt="" class="homeMapsImg">
+									<br>Frostsee
+								</a>
+							</div>
+							
+							<div class="grid4ColumnsItem">
+								<a href="/game-content/maps/uferwind.html">
+									<img src="/assets/images/maps/uferwind/day/uferwind_day_4.jpg" alt="" class="homeMapsImg">
+									<br>Uferwind
+								</a>
+							</div>
+							
+							<div class="grid4ColumnsItem">
+								<a href="/game-content/maps/">
+									<img src="/assets/images/maps/overworld.jpg" alt="" class="homeMapsImg">
+									<br> View all levels
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="homeContainer grid3columnsContainer" id="buildingsUnitsEnemiesDiv">
+						<div class="gridColItem">
+							<h2>Buildings</h2>
+							<hr class="homeContainerTitleUnderline">
+
+							<div class="iconandTitleColumnsLarge">
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/buildings/castle_center.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/buildings/castle-center.html">Castle tower</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/buildings/house.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/buildings/house.html">House</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/buildings/barracks.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/buildings/barracks.html">Barracks</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/buildings/mill.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/buildings/mill.html">Mills</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/buildings/" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem" style="padding-top: 10px; padding-bottom: 10px;">
+									<a href="/game-content/buildings/">View all buildings</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="gridColItem">
+							<h2>Units</h2>
+							<hr class="homeContainerTitleUnderline">
+
+							<div class="iconandTitleColumnsLarge">
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/units/knight.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/units/knights.html">Knights</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/units/flail.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/units/flails.html">Flails</a>
+								</div>
+
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/units/spearman.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/units/spearmen.html">Spearmen</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/units/firewing.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/units/firewing.html">Firewing</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/units/" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem" style="padding-top: 10px; padding-bottom: 10px;">
+									<a href="/game-content/units/">View all units</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="gridColItem">
+							<h2>Enemies</h2>
+							<hr class="homeContainerTitleUnderline">
+
+							<div class="iconandTitleColumnsLarge">
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/enemies/catapult.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/enemies/catapults.html">Catapult</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/enemies/ogre.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/enemies/ogre.html">Ogre</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/enemies/racer.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/enemies/racer.html">Ram</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/enemies/elite_crossbow_men.png" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem">
+									<a href="/game-content/enemies/elite-crossbow-men.html">Elite enemies</a>
+								</div>
+								
+								<div class="iconAndTitleItem">
+									<img src="/assets/images/enemies/" class="homeIconLarge" alt="">
+								</div>
+								<div class="iconAndTitleItem" style="padding-top: 10px; padding-bottom: 10px;">
+									<a href="/game-content/enemies/">View all enemies</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<div class="homeContainer">
+					<h2>Other stuff</h2>
+					<hr class="homeContainerTitleUnderline">
+					<div class="grid5columnsContainer" id="miscLinks">
+						<div class="gridColItem">
+							<a href="/about/languages.html">Supported languages</a>
+						</div>
+						<div class="gridColItem">
+							<a href="/about/system-requirements.html">System requirements</a>
+						</div>
+						<div class="gridColItem">
+							<a href="/about/wiki.html">About wiki</a>
+						</div>
+						<div class="gridColItem">
+							<a href="/misc/events/">Official events</a>
+						</div>
+						<div class="gridColItem">
+							<a href="/misc/hall-of-fame.html">Hall of fame</a>
+						</div>
+					</div>
+				</div>
+			</div> <!-- homegridLeftCol -->
+
+			<div id="homeGridRightCol">
+				<div class="homeContainer">
+					<h2>Official links</h2>
+					<hr>
+					<div class="officlaLinksContaimer">
+						<div class="officlaLinksItem">
+							<a href="https://store.steampowered.com/app/2239150/Thronefall">
+								<img src="/assets/images/icons/misc/steam icon.png" class="homeIconLarge" title="Get Thronefall on Steam" alt="">
+								<!-- <br> Steam -->
+							</a>
+						</div>						
+						<div class="officlaLinksItem">
+							<a href="https://discord.gg/gVYctptyg8">
+								<img src="/assets/images/icons/misc/discord-icon.png" class="homeIconLarge" title="Discord server" alt="">
+								<!-- <br> Discord -->
+							</a>
+						</div>						
+						<div class="officlaLinksItem">
+							<a href="https://youtube.com/playlist?list=PLgsD7taGtaBhNaErAOaiEiTzt6-lOpVp0">
+								<img src="/assets/images/icons/misc/youtube icon.png" class="homeIconLarge" title="Thronefall devlogs" alt="">
+								<!-- <br> YouTube -->
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="homeContainer homeRightSideCont">
+					<h2>Game updates and events</h2>
+					<hr>
+					<div id="eventsDiv" hx-get="/events.html" hx-swap="innerHTML" hx-trigger="load" class=""></div>
+				</div>
+
+				<div class="homeContainer homeRightSideCont">
+					<h2>Wiki updates</h2>
+					<hr>
+					<div id="updatesDiv" hx-get="/updates.html" hx-swap="innerHTML" hx-trigger="load" class=""></div>
+				</div>
+			</div> <!-- homeGridRightCol -->
+		</div> <!-- homeGridContainer -->
     </body>
 	<script src="/assets/scripts/pageBuilder.js"></script>
     <script>BuildPage(true);</script>
