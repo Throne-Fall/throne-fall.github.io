@@ -1,0 +1,117 @@
+:root {
+	--backgroundColourTransparent: rgba(255, 255, 255, 0.55);
+	--backgroundColourOpaque: rgba(255, 255, 255, 0.95);
+	--windowMainColourTop: rgb(194, 115, 1);
+	--windowMainColourBottom: orange;
+	--buttonColour1: rgb(255, 165, 0);
+	--buttonColour2: rgb(255, 193, 7);
+	--shadowColour: rgba(0, 0, 0, 1);
+	--whiteColour1: white;
+	--whiteColour2: rgba(225, 225, 225, 1.0);
+	--customOrange: rgb(186, 131, 3)
+}
+#fixTF2panelOvrl
+{
+    padding: 10px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.75);
+    /* border: 1px red solid; */
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#fixTF2panelBgr
+{
+    /* border: 1px blue solid; */
+    display: flex;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	border-radius: 5px;
+	margin: auto;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	max-width: 1600px;
+	/* max-height: 780px; */
+	scrollbar-color: var(--windowMainColourTop) var(--windowMainColourBottom);
+	box-shadow: 2px 2px 6px black;
+	background: linear-gradient(to bottom, var(--windowMainColourTop), var(--windowMainColourBottom));
+}
+#fixTF2panelFgr
+{
+    border-radius: 5px;
+    padding: 10px;
+    width: 1000%;
+    height: 100%;
+	/* box-shadow: 2px 2px 6px black; */
+	background: linear-gradient(to bottom, black, rgba(30, 31, 33, 1.0));
+    overflow: auto;
+}
+#fixTF2Cols
+{
+    /* margin: auto; */
+    /* border: 1px white solid; */
+    display: grid;
+    text-align: center;
+    height: 100%;
+    /* align-items:fixTF2panelOvrl center; */
+    /* justify-content: center; */
+    grid-template-columns: 500px auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+/* .ftf2Item
+{
+    border: 2px lime solid;
+} */
+.fixTFgameLink, .fixTFgameLink:link,.fixTFgameLink:visited
+{
+    color: white;
+    text-decoration: underline;
+}
+#fixTF2-cols2
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.aimbotsImgs
+{
+    max-height: 200px;
+    max-width: 350px;
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+}
+#fixTF2learnmore
+{
+    margin-top: -15px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 5px solid orange;
+    /* color: white; */
+}
+.fixTF2YTVid
+{
+    width: 100%;
+    height: 280px;
+    border-radius: 5px;
+}
+
+#fixtf2botsimagesgal2
+{
+    display: grid; grid-template-columns: 1fr 1fr 1.5fr;
+}
+.overlayBlur {
+	display: block;
+	position: fixed;
+	top: 0;
+	padding: 75px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.32);
+	backdrop-filter: blur(16px)
+}
+#fixTF2bottomtext
+{
+    font-size: 1.5rem;
+}
