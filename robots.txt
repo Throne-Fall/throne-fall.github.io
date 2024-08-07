@@ -26,6 +26,9 @@ Disallow: /updates.html
 Disallow: /assets/builder/
 Disallow: /assets/components/
 Disallow: /assets/trailer/
+# Other
+Disallow: /.vscode/
+Disallow /README.md
 
 Sitemap: https://throne-fall.github.io/sitemap.xml
 
