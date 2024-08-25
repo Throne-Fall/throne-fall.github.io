@@ -69,11 +69,16 @@
 			</div>
 		</div>
 		
-		<!-- THE GRID -->
+		<!-- 
+			THE GRID 
+		-->
 		<div id="homeGridContainer">
-			<!-- LEFT BOXES -->
+			<!-- 
+				LEFT BOXES 
+			-->
 			<div class="homegridLeftCol">
-				<!-- The game box -->
+				
+				<!-- "The game" box -->
 				<div class="homeContainer">
 					<h2>The game</h2>
 					<hr class="homeContainerTitleUnderline">
@@ -139,9 +144,8 @@
 								<a href="/game-content/weapons/shadow-codex.html">Shadow codex</a> 
 							</div>
 						</div><!-- iconandTitleColumns -->
-					</div>
+					</div> <!-- grid4ColumnsItem -->
 
-					<!-- grid4ColumnsItem -->
 					<div class="grid4ColumnsItem">
 						<h2>Perks</h2>
 						<hr class="homeContainerTitleUnderline">
@@ -176,8 +180,8 @@
 							<div class="iconAndTitleItem">
 								<a href="/game-content/perks/">View all perks</a>
 							</div>
-						</div>
-					</div>
+						</div><!-- iconandTitleColumns -->
+					</div> <!-- grid4ColumnsItem -->
 
 					<div class="grid4ColumnsItem">
 						<h2>Mutators</h2>
@@ -213,8 +217,8 @@
 							<div class="iconAndTitleItem">
 								<a href="/game-content/mutators/">View all mutators</a>
 							</div>
-						</div>
-					</div>
+						</div><!-- iconandTitleColumns -->
+					</div> <!-- grid4ColumnsItem -->
 					
 					<div class="grid4ColumnsItem">
 						<h2>Upgrades</h2>
@@ -250,8 +254,8 @@
 							<div class="iconAndTitleItem">
 								<a href="/game-content/upgrades/">View all upgrades</a>
 							</div>
-						</div>
-					</div>
+						</div><!-- iconandTitleColumns -->
+					</div> <!-- grid4ColumnsItem -->
 				</div><!-- grid4columnsContainer -->
 
 				<!-- Levels box -->
@@ -289,8 +293,8 @@
 							<br> View all levels
 							</a>
 						</div>
-					</div>
-				</div>
+					</div> <!-- grid5columnsContainer -->
+				</div> <!-- homeMapsList -->
 
 				<!-- Buildings, units & enemies box -->
 				<div class="homeContainer grid3columnsContainer" id="buildingsUnitsEnemiesDiv">
@@ -329,7 +333,7 @@
 								<a href="/game-content/buildings/">View all buildings</a>
 							</div>
 						</div>
-					</div>
+					</div> <!-- gridColItem -->
 					<div class="gridColItem">
 						<h2>Units</h2>
 						<hr class="homeContainerTitleUnderline">
@@ -365,7 +369,7 @@
 								<a href="/game-content/units/">View all units</a>
 							</div>
 						</div>
-					</div>
+					</div> <!-- gridColItem -->
 					<div class="gridColItem">
 						<h2>Enemies</h2>
 						<hr class="homeContainerTitleUnderline">
@@ -401,8 +405,8 @@
 								<a href="/game-content/enemies/">View all enemies</a>
 							</div>
 						</div>
-					</div>
-				</div>
+					</div> <!-- gridColItem -->
+				</div> <!-- homeContainer -->
 
 				<!-- Misc box -->
 				<div class="homeContainer">
@@ -426,34 +430,36 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- homegridLeftCol -->
+			</div> <!-- homegridLeftCol -->
 
-			<!-- RIGHT COLUMN -->
+			<!-- 
+				RIGHT COLUMN 
+			-->
 			<div id="homeGridRightCol">
-				<div class="homeContainer" style="padding-bottom: 1px;">
+				<div class="homeContainer" style="padding-bottom: 2px;">
 					<h2>Official links</h2>
 					<hr class="homeContainerTitleUnderline">
 					<div class="officlaLinksContaimer">
 						<div class="officlaLinksItem">
 							<a href="https://store.steampowered.com/app/2239150/Thronefall">
-								<img src="/assets/images/icons/misc/steam icon.webp" class="homeIconLarge" title="Get Thronefall on Steam" alt="" style="max-width: 40px;">
+								<img src="/assets/images/icons/misc/steam icon.webp" class="homeIconLarge" title="Get Thronefall on Steam" alt="steam icon" style="max-width: 40px;">
 								<!-- <br> Steam -->
 							</a>
 						</div>
 						<div class="officlaLinksItem">
 							<a href="https://discord.gg/gVYctptyg8">
-								<img src="/assets/images/icons/misc/discord-icon.webp" class="homeIconLarge" title="Discord server" alt="">
+								<img src="/assets/images/icons/misc/discord-icon.webp" class="homeIconLarge" title="Discord server" alt="discord icon">
 								<!-- <br> Discord -->
 							</a>
 						</div>
 						<div class="officlaLinksItem">
 							<a href="https://youtube.com/playlist?list=PLgsD7taGtaBhNaErAOaiEiTzt6-lOpVp0">
-								<img src="/assets/images/icons/misc/youtube icon.webp" class="homeIconLarge" title="Thronefall devlogs" alt="">
+								<img src="/assets/images/icons/misc/youtube icon.webp" class="homeIconLarge" title="Thronefall devlogs" alt="youtube icon">
 								<!-- <br> YouTube -->
 							</a>
 						</div>
-					</div>
-				</div>
+					</div> <!-- officlaLinksContaimer -->
+				</div> <!-- homeContainer -->
 
 				<div class="homeContainer homeRightSideCont" style="display: none;">
 					<h2>Stats</h2>
@@ -488,16 +494,22 @@
 					</div>
 				</div>
 
+				<!-- Game updates box -->
 				<div class="homeContainer homeRightSideCont">
 					<h2>Game updates and events</h2>
 					<hr class="homeContainerTitleUnderline">
+					<!-- inserted content -->
 					<div id="eventsDiv" hx-get="/events.html" hx-swap="innerHTML" hx-trigger="load" class=""></div>
 				</div>
+
+				<!-- Wiki updates box -->
 				<div class="homeContainer homeRightSideCont">
 					<h2>Wiki updates</h2>
 					<hr class="homeContainerTitleUnderline">
+					<!-- inserted content -->
 					<div id="updatesDiv" hx-get="/updates.html" hx-swap="innerHTML" hx-trigger="load" class=""></div>
 				</div>
+				
 			</div><!-- homeGridRightCol -->
 		</div><!-- homeGridContainer -->
     </body>
