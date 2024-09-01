@@ -27,4 +27,6 @@ function GetCookie(cname)
 	}
 	return "";
 }
-function SwapTrailerVideo() {console.log("redirecting deleted function")}
+
+function CheckSavedBlurPreference () {};
+function SwapTrailerVideo() {};
