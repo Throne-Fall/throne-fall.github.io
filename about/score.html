@@ -28,7 +28,7 @@
 		<meta name="language"    content="en">
 
 		<!-- Tab icon-->
-		<link rel="shortcut icon" type="image/png" href="/assets/images/game_logo_small.png">
+		<link rel="shortcut icon" type="image/webp" href="/assets/images/game_logo_small.webp">
 		<!-- Responsive design-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Chatracter set-->
@@ -62,16 +62,16 @@
         <p>The game has an integrated leaderboard system, which can be used to compare your score against Steam-Friends. The community has created a<a href="../leaderboard/"> Community Leaderboard</a>, that shows the highest score achieved for each map.</p>
         <h2 class="pageSubtitle"> Eternal Trials </h2>
         <hr>
-        <p>The eternal trials are a special case in which each map gives the player a score, which is added up at the end of each stage. After the player has been defeated, all of their achieved scores are added up and a stage bonus is added. The stage bonus is calculated using this formular: <span class="codeBlock">(Won Stages)^2 x 10000</span></p>
+        <p>The eternal trials are a special case in which each map gives the player a score, which is added up at the end of each stage. After the player has been defeated, all of their achieved scores are added up and a stage bonus is added. The stage bonus is calculated using this formular: <span class="codeBlock">(Won Stages)&sup2; &times; 10 000</span></p>
         <h2 class="pageSubtitle"> Base Score </h2>
         <hr>
         <p>The Base Score consists of 3 Scores that are added together at the end of each night: 1. Night Survived, 2. Realm Protected, 3. Time Bonus.<br>
             Night Survived:<br>
             You gain +100 Score for surviving a night.<br>
             Realm Protected:<br>
-            You gain up to +250 Score for protecting your buildings. If no building was destroyed, you gain +250 score. Everything below 100% protected is calculated with this formular: <span class="codeBlock">+250  (NOT destroyed buildings / total amount of buildings)^2</span>. Note that each wall segment counts as a separate building.<br>
+            You gain up to +250 Score for protecting your buildings. If no building was destroyed, you gain +250 score. Everything below 100% protected is calculated with this formular: <span class="codeBlock">+250  (NOT destroyed buildings &divide; total amount of buildings)&sup2;</span>. Note that each wall segment counts as a separate building.<br>
             Time Bonus:<br>
-            You gain up to +250 Score for killing the enemies fast. You gain the full +250, if you kill all enemies up to 5s after the last enemy spawned. Every bonus below +250 is calculated with this formular: <span class="codeBlock">+250 &times; ([90s - {total time - time of last spawn}] / 85s)^2</span>. Note that this means, you will not gain any score, if you kill all enemies more than 90s after the last enemy has spawned.<br>
+            You gain up to +250 Score for killing the enemies fast. You gain the full +250, if you kill all enemies up to 5s after the last enemy spawned. Every bonus below +250 is calculated with this formular: <span class="codeBlock">+250 &times; ( [90s &minus; {total time &minus; time of last spawn} ] &divide; 85s)&sup2;</span>. Note that this means, you will not gain any score, if you kill all enemies more than 90s after the last enemy has spawned.<br>
         </p>
         <h2 class="pageSubtitle"> Gold Score </h2>
         <hr>
