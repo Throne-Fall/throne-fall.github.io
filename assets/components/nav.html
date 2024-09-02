@@ -1,6 +1,13 @@
 <nav id="mainaNavBar">
 	<ul class="primaryList"id="mainNavbarItems">
-		<li class="navItemGroup"id="homeItem"><span class="primaryMenuItemText"><a class="navItem"href="/">Home</a></span>
+		<li class="navItemGroup"id="homeItem">
+			<span class="primaryMenuItemText"><a class="navItem"href="/">Home</a></span>
+			<ul class="secondaryList" id="homeList">
+				<li><a class="navItem"href="/misc/how-to-contribute.html">How&nbsp;to contribute</a>
+			</ul>
+		</li>
+
+		<!-- ABOUT SECTION -->
 		<li class="navItemGroup"id="AboutItems">
 			<span class="primaryMenuItemText"><a class="navItem linkHide"href="#"onclick='OpenMenuItem("about")'>About</a></span>
 			<ul class="secondaryList"id="aboutList">
@@ -13,6 +20,9 @@
 				<li><a class="navItem"href="/about/versions.html">Version history</a>
 				<li><a class="navItem"href="/about/system-requirements.html">System Requirements</a>
 			</ul>
+		</li>
+
+		<!-- GAME CINTENT SECTION (95% of stuff) -->
 		<li class="navItemGroup"id="gameContentItems">
 			<span class="primaryMenuItemText"><a class="navItem linkHide"href="#"onclick='OpenMenuItem("content")'>Game content</a></span>
 			<ul class="secondaryList"id="gameContentList">
@@ -26,6 +36,9 @@
 				<li><a class="navItem"href="/game-content/enemies/">Enemies</a>
 				<li><a class="navItem"href="/game-content/eternal-trials.html">Eternal Trials</a>
 			</ul>
+		</li>
+
+		<!-- EXTERNAL LINKS -->
 		<li class="navItemGroup">
 			<span class="primaryMenuItemText"><a class="navItem linkHide"href="#"onclick='OpenMenuItem("links")'>Links</a></span>
 			<ul class="secondaryList"id="linksList">
@@ -35,6 +48,9 @@
 				<li><a class="navItem"href="https://discord.gg/pfRJjfz6SU"target="_blank">Contribute</a>
 				<li><a class="navItem"href="https://docs.google.com/spreadsheets/d/1ARWbg3C38IYT4FXrgtE46osWOJWUZFyY4WFj49sAM2s/edit#gid=1409809708"target="_blank">Data-Sheet</a>
 			</ul>
+		</li>
+
+		<!-- OTHER STUFF -->
 		<li class="navItemGroup">
 			<span class="primaryMenuItemText"><a class="navItem linkHide"href="#"onclick='OpenMenuItem("misc")'id="miscCat">Miscellaneous</a></span>
 			<ul class="secondaryList"id="miscList">
@@ -42,5 +58,6 @@
 				<li><a class="navItem"href="/misc/events">Official Events</a>
 				<li><a class="navItem"href="/misc/hall-of-fame.html">Hall of Fame</a>
 			</ul>
+		</li>
 	</ul>
 </nav>
