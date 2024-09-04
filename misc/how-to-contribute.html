@@ -48,18 +48,351 @@
 		<script src="/assets/scripts/uaParser.js"></script>
 	</head>
 	<body>
+		<style>
+			thead
+			{
+				text-align: center;
+				font-size: 1.1rem;
+			}
+			.contribGuideImage
+			{
+				max-height: 225px;
+				max-width: 400px;
+				border-radius: 10px;
+			}
+			.imageColumn
+			{
+				text-align: center;
+			}
+			.guideStepNumber
+			{
+				font-weight: bold;
+				font-size: 1.25rem;
+				text-align: center;
+			}
+		</style>
+
 		<!-- PAGE TITLE -->
 		<h1 class="pageTitle"> How to contribute </h1>
 		<hr class="pageTitleUnderline">
 		
 		<!-- CONTENT GOES HERE -->
 		
-        <h2><em>Coming soon...</em></h2>
+		<div class="alert alert-warning" role="alert">
+			W O R K &nbsp; I N &nbsp; P R O G R E S S 
+		  </div>
+		  
+
+        <h2>Prerequisities:</h2>
+		<hr>
+		<h3>Requirements:</h3>
+		<ul>
+			<li>
+				<a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" target="_blank" rel="noopener noreferrer">Github account</a> 
+			</li>
+			<li>
+				<a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Code editor</a>
+			</li>
+			<li>
+				<a href="https://desktop.github.com/download/" target="_blank" rel="noopener noreferrer">Github app</a>
+			</li>
+		</ul>
+		<h3>Optional</h3>
+		<ul>
+			<li>
+				<a href="https://simplewebserver.org/" target="_blank" rel="noopener noreferrer">Local web-server</a> is needed to run the wiki on your machine, but not required to edit articles.
+			</li>
+		</ul>
+
+		<br>
+		<h2>Downloading the wiki</h2>
+		<hr>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Step</th>
+					<th>Instructions</th>
+					<th>Image</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="guideStepNumber"> 1 </td>
+					<td> Go to <a href="https://github.com/Throne-Fall/throne-fall.github.io" target="_blank" rel="noopener noreferrer">Wiki's repository</a> and fork it. </td>
+					<td class="imageColumn"> 
+						<a href="/assets/images/contrib-guide/download/fork.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/download/fork.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+
+				<tr>
+					<td class="guideStepNumber"> 2 </td>
+					<td> Leave everything as it is and press <em>"Create fork".</em> </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/download/fork-2.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/download/fork-2.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+
+				<tr>
+					<td class="guideStepNumber"> 3 </td>
+					<td> &nbsp; <br> Open the github desktop app and sign in if you haven't already. <br> &nbsp;</td>
+					<td class="imageColumn">
+						&nbsp;
+					</td>
+				</tr>
+
+				<tr>
+					<td class="guideStepNumber"> 4a </td>
+					<td> On the <em>"Let's get started"</em> screen click on a repository that says "<em>Your name</em>/throne-fall.github.io" and click on the clone button below.</td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/download/github-appp-lets-get-started.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/download/github-appp-lets-get-started.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+				<tr>
+					<td class="guideStepNumber"> 4b </td>
+					<td> Alternatively you can clone the repository via the <em>"File"</em> menu.</td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/download/github-app-clone-repo-file-menu.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/download/github-app-clone-repo-file-menu.png" alt="" srcset="">
+						</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="guideStepNumber"> 5 </td>
+					<td> Once you have cloned the repository, you should get a question "How are you planning to use this fork?". <br>
+						 Choose "To contribute to the parent project" and press "Continue". </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/download/github-app-fork-question.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/download/github-app-fork-question.png" alt="" srcset="">
+						</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="guideStepNumber"> 6 </td>
+					<td> You should now see a mostly empty windows with <em>"No local changes".</em></td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/download/github-app-empty.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/download/github-app-empty.png" alt="" srcset="">
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>		
+
+		<!-- <td> On the newly created page <em>(your fork of the repository)</em> click "Code" and "Open with Github desktop </td> -->
+
+		<br>
+		<h2>Uploading changes</h2>
+		<hr>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Step</th>
+					<th>Instructions</th>
+					<th>Image</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="guideStepNumber"> 1 </td>
+					<td> Once you're done with your changes open the GitHub app. <br>
+						 You should see list of all changed files on the left. </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/upload/github-app-changes-list.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/upload/github-app-changes-list.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+
+				<tr>
+					<td class="guideStepNumber"> 2 </td>
+					<td> In the bottom left shortly describe what you changed, then press "Commit to main". <br>
+						 Then click "Push origin" in the top bar to upload your changes. </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/upload/github-app-sample-commit.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/upload/github-app-sample-commit.png" alt="" srcset="">
+						</a> <br>
+						<a href="/assets/images/contrib-guide/upload/github-app-sample-commit-push.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/upload/github-app-sample-commit-push.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+
+				<tr>
+					<td class="guideStepNumber"> 3 </td>
+					<td> Once you pushed your changes, press <em>Ctrl+Alt+P</em> or use the <em>"Branch"</em> menu to open a preview of a pull request. </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/upload/github pull request b.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/upload/github pull request b.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="guideStepNumber"> 4 </td>
+					<td> Check if the <em>"base"</em> dropdown is set to <em>"upstream/main"</em> and click <em>"Create pull request"</em> </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/upload/github pull request 2.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/upload/github pull request 2.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="guideStepNumber"> 5 </td>
+					<td> A page should open with the detail of the pull request. Simply fill in information as needed and press <em>"Create pull request".</em> <em>(again)</em></td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/upload/github pull request 3.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/upload/github pull request 3.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="guideStepNumber"> 6 </td>
+					<td> Your pull request should be public on the wiki's repository and marked as "Open" now.</td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/upload/github pull request done.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/upload/github pull request done.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<h2>Editing pages</h2>
+		<hr>
+		<h3> Using a code editor </h3>
+		<p>To edit pages you can use any text or code editor. Visual Studio Code is used in this guide.</p>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Step</th>
+					<th>Instructions</th>
+					<th>Image</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="guideStepNumber"> 1 </td>
+					<td> In VSCdoe select open folder and select the one with the wiki. </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/edit/vscode empty.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/edit/vscode empty.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="guideStepNumber"> 2 </td>
+					<td> Select what page you want to edit in the left pane. <br>
+						 Wiki pages are in the <em>about, game-content, and misc</em> folders. </td>
+					<td class="imageColumn">
+						<a href="/assets/images/contrib-guide/edit/vscode folder opemed.png" target="_blank" rel="noopener noreferrer">
+							<img class="contribGuideImage" src="/assets/images/contrib-guide/edit/vscode folder opemed.png" alt="" srcset="">
+						</a> 
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Markup <em>(formatting)</em></h3>
+		<p>
+			<em>This guide shortly explains most commonly used tags. Visit 
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN web docs</a> 
+				or 
+				<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer">HTML basics</a>
+			for more information.
+			<br>
+			Click on a tag's name to learn more about it
+			</em>
+		</p>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Tag name</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">&lt;strong&gt;</a></td>
+					<td>Used for bold text</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">&lt;em&gt;</a></td>
+					<td>Used for italic text</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">&lt;h1&gt; to &lt;h6&gt;</a></td>
+					<td>Differently sized headings. <br/>Only tags H1 to H4 are used on the wiki.<br/>H1 is reserved for page title.</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">&lt;a href="URL"&gt;</a></td>
+					<td>Used to add a <a href="https://en.wikipedia.org/wiki/Hyperlink">hyperlink</a> to a text</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">&lt;p&gt;</a></td>
+					<td>A paragraph. Automatically puts text inside on a new line.</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br">&lt;br&gt;</a></td>
+					<td>Adds a line break at the current position in the text&lt;</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">&lt;hr&gt;</a></td>
+					<td>Add a horizontal line at the current position in the page</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">&lt;span&gt;</a></td>
+					<td>An element for giving a piece of text different style or function</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">&lt;img src="URL"&gt;</a></td>
+					<td>Adds image to the page.<br/>Requires a specific class to display correctly on the page</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">&lt;ul&gt;</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">&lt;ol&gt;</a></td>
+					<td>Unordered and ordered list container. <br/>Ordered lists uses numbers imstead of points.</td>
+				</tr>
+				<tr>
+					<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">&lt;li&gt;</a></td>
+					<td>An element of a list <em>(see tag above)</em></td>
+				</tr>
+			</tbody>
+		</table>
 		
+		
+
+
 		<!-- Sidebar content -->
 		<article id="sidebar">
 
 		</article>
+
+		<script>
+			function AddAlignMiddle ()
+			{
+				const tableCells = $("td");
+
+				for (let i = 0; i < tableCells.length; i++)
+				{
+					tableCells[i].classList.add("align-middle");
+				}
+			}
+			AddAlignMiddle();
+		</script>
 	</body>
 	
 	<script src="/assets/scripts/pageBuilder.js"></script>
