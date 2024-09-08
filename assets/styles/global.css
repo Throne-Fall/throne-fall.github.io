@@ -153,13 +153,13 @@ footer {
 	text-align: right
 }
 
-#pageThemeToggleButton {
+#pageThemeToggleButton, #searchButton {
 	padding: 5px;
 	margin-top: -5px;
 	box-shadow: 2px 2px 4px grey
 }
 
-#pageThemeToggleImg {
+#pageThemeToggleImg, #searchButtonImage {
 	max-width: 30px;
 	height: auto
 }
