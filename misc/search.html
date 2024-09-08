@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+	
+			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉-->
+<html lang="en">
+	<head>
+		<!-- PAGE TITLE -->
+		<title> Wiki search | Thronefall wiki</title>
+		<!-- PAGE INFORMATION -->
+		<!-- <meta name="description" content="DESCRIPTION"> -->
+		<meta name="keywords"    content="Thronefall, throne fall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name='author'      content="GhostMiner, ItsMeRaven"> 
+		<!-- <meta name='robots'      content="index,follow"> -->
+		<meta name="language"    content="en">
+
+		<!-- Tab icon-->
+		<link rel="shortcut icon" type="image/webp" href="/assets/images/game_logo_small.webp">
+		<!-- Responsive design-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Chatracter set-->
+		<meta charset="utf-8">
+		<!-- HTMX -->
+		<script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+		<!-- jQuery  -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+		<!-- Various features -->
+		<script src="/assets/scripts/pageOptions.js"></script>
+		<!-- Dark mode -->
+		<script src="/assets/scripts/darkmode.js"></script>
+		<!-- Cookies -->
+		<script src="/assets/scripts/cookies.js"></script>
+		<script src="/assets/scripts/uaParser.js"></script>
+		<script src="/assets/scripts/search.js"></script>
+	</head>
+	<body>
+		<!-- PAGE TITLE -->
+		<h1 class="pageTitle"> Search the wiki </h1>
+		<hr class="pageTitleUnderline">
+		
+		<!-- CONTENT GOES HERE -->
+		
+        <style>
+            #searchResultsContainer
+            {
+                margin: auto;
+                max-width: 750px;
+            }
+            #pageSearchInputBox, #contentSearchInputBox
+            {
+                width: 100%;
+                border-radius: 10px;
+                padding: 7.5px;
+
+				margin-bottom: 5px;
+
+                background: linear-gradient(to top, white, rgba(225, 225, 225, 1.0));
+                border: 1px rgb(186, 131, 3) solid;
+            }
+			#searchModeToggleDiv
+			{
+				display: grid;
+				grid-template-columns: 120px 1.1fr 1fr;
+				max-width: 500px;
+				margin:auto;
+			}
+			#searchModetoggleTitle
+			{
+				font-weight: bold;
+				font-size: 1.05rem;
+			}
+			#searchResultsTableDiv
+			{
+				text-align: left;
+				font-style: italic;
+			}
+            .srcTable-PageName
+            {
+                font-weight: 600;
+            }
+			#contentSearchInputBox
+			{
+				display: none;
+			}
+			#searchResultsHr
+			{
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+        </style>
+
+        <div id="searchResultsContainer">
+            <section id="searchInputDiv" class="">
+                <input type="text" id="pageSearchInputBox" class="boxShadow032" placeholder="Type to search" maxlength="20" minlength="2" oninput="DisplaySearchResultsTable(SearchInPageLists($('#pageSearchInputBox')[0].value))">
+                <input type="text" id="contentSearchInputBox" class="boxShadow032" placeholder="Type to search" maxlength="20" minlength="2" oninput="DisplaySearchResultsTable(SearchPageContents($('#contentSearchInputBox')[0].value))">
+				
+				<div id="searchModeToggleDiv">
+					<div id="searchModetoggleTitle">
+						Search mode:
+					</div>
+					<div class="searchModeToggleControlsDiv">
+						<input type="radio" name="searchModeRadio" id="searchModeNamesRadio" class="searchModeToggle" onclick="ChangeSearchMode('names')" checked>
+						<label for="searchModeNamesRadio" id="searchModeNamesLabel" class="searchModeToggleTitle">Page names and paths</label>
+					</div>
+					<div class="searchModeToggleControlsDiv">
+						<input type="radio" name="searchModeRadio" id="searchModeContentRadio" class="searchModeToggle" onclick="ChangeSearchMode('content')">
+						<label for="searchModeContentRadio" id="searchModeContentLabel" class="searchModeToggleTitle">Page Content</label>
+					</div>
+				</div>
+            </section>
+            <hr id="searchResultsHr">
+            <section id="searchResultsTableDiv">
+				<span id="searchResultsInfoText">Results: 0</span>
+                <table id="searchResultsTable">
+                    <thead id="searchResultsTableHead">
+                        <tr>
+                            <th>Page name</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody id="searchResultsTableBody">
+                        <tr class="searchResultsTableRow">
+                            <td class="srcTable-PageName">You mom</td>
+                            <td class="srcTable-Location">yourmom.zip</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <br>
+		<!-- Sidebar content -->
+		<article id="sidebar">
+
+		</article>
+	</body>
+	
+	<script src="/assets/scripts/pageBuilder.js"></script>
+	<script>BuildPage(true); //false = show side bar, true = hide side bar </script>
+</html>
