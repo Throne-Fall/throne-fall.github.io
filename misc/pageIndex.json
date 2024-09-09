@@ -1,0 +1,772 @@
+[
+  [
+    "Eternal trials",
+    "/game-content/eternal-trials.html",
+    " Eternal trials   General  The eternal trials are the only alternative gamemode besides the main levels. In contrast to the normal maps, the eternal trials are an endless mode. Just like rogue-like games, the players loses all progress and power-ups upon being defeated.  Gameplay  The eternal trials consists of stages. At the start of each stage the player is offered three options. Each option shows a map, a weapon and two perks. After the player has chosen an option, they will have to play on the selected map with their respective weapon and will obtain the two chosen perks for the rest of their run. This means that the player has 2 perks on stage 1, 4 perks on stage 2, 6 perks on stage 3 and so on. While the maps, weapons and perks are chosen by the player, they have to fight a randomised set of enemies each stage. The player has to face a random number of waves per map. The enemies in each of those waves are also randomly generated, meaning the player will face enemies that do not normally spawn on a specific map (see below for more details on wave generation). If the player manages to beat all the waves, they move on and are able to select the map, the weapon and the two perks for the next stage. The difficulty of the game increases with each stage (see below for more details on difficulty increases). After the players castle center eventually gets destroyed, they lose. All of their previous scores from each stage will be added together and the player receives a score bonus, increasing with each stage they have won. The stage bonus is calculated using this formular: (Won Stages)² ×10 000. After the player has received their final score, they lose all their perks and they may start another run.  Patterns  At the start of each stage, the wave generator uses a bunch of chances to determine which patterns the waves of the stage will have. Some possibilities are: Mono-battle stages, where you encounter the same one enemy type in every single wave (1.7%) and Mono-spawn stages, where enemies only spawn from one spawn point (10%). Additionally, other parts of the stage are determined, such as: Starting economy (low, medium, high, extreme-high) Spawn locations (random 1, random2, fixed 1, fixed 2,...) Enemy types (random 1, random 2, fixed 1, fixed 2, siege, ...) Wave durations Last wave bonus Amount of elite enemies (none, small part, medium part, large part) From stage 5 onwards the player always starts each stage with at least 11 gold.  Difficulty Points  The amount and power of enemies for each wave are determined by the amount of difficulty points. Difficulty points are a hidden statistic, purely in the background of the game. The amount of difficulty points per wave is determined by a complex calculation in the background of the game. It considers the current stage (the first 7 stages the difficulty increases exponentially, after that linearly), spawn location proximity to castle center (single multiplier), wave length (exponential) and simulated economy (this includes and is dependent on starting gold). When creating waves, the game spends the difficulty points to spawn enemies. For example 18 per exploder. Enemy Difficulty Points Archer 1.6 Catapult 6 Elite Crossbow Man 3.5 Exploder 18 Hunterling 2.4 Monster Rider 3.3 Ogre 17 Peasant 0.6 Racer 5 Ram 18 Slime 1 Spiky Slime 4.25 Swordsman 2 Wasp 5 Pikes 3 Fury 13 Barrel Knight 7 Flying Mage 8.5 Mole Knight 6.33 Mole Archer 4.88 Quicksling 18 Elite Enemies (Normal Version Difficulty Points) x6  Simulated Economy  As stated above, the game simulates the players economy on every given stage to increase the difficulty according to the amount of gold the player has at their disposal.  The game starts to simulate the players economy on day 1. It assumes that they put 50% into economy and 50% into defenses. The game also assumes that all economic buildings survive and calculates the players gold gain for the next day, which is again spent 50/50 in economy and defense. On the last two days, the game expects 100% of the available gold to be spent on defenses. This way the game consideres the total defense spending for each wave, by adding all previous defense spendings together.  In the end, the difficulty points are increased each wave, proportionally to the total defense spending up untill that respective wave. Some enemies have a \"Gold Limit\" value. It determines the minimum amount of gold the player has to have in defenses (according to the simulated economy), for it to be able to spawn.  Elite Enemies  Elite enemies are a special kind of enemies, that are unique to the eternal trials. They have 4x the hp and 3x the damage of their normal counterpart and are highlighted in the game by a special golden and spiky icon, as well as a golden outline. Elite enemies are converted from 6 normal enemies of their kind (and therefor also cost 6x their difficulty points) based on pre-generated patterns. If the total number of enemies exceeds 200, enemies are merged into the elite version of themselves, until the total number of enemies is below 200. Eternal Trials in the level selection Stage - Loadout selection"
+  ],
+  [
+    "Events list",
+    "/misc/events/index.html",
+    " Events  Every couple of months, the developers host an official Thronefall tournament! Players can participate on the official Thronefall discord server. You can find a list of all the past events below! Event History  Event Name   Goal   Map   Requirements   Date   Winners  Lightning Desert Challenge Highest Score Durststein   6th - 13th October 2023 🥇 ItsMeRaven 🥈 LTU_Adas 🥉 lich46 QuestFair Most Creative Quest Any No new Game Mechanics 22nd December 2023 - 5th January 2024 🎖️ matan 🎖️ Gertimoshka 🎖️ CaporalNico 🎖️ Hjorse Rider  Midas mayhem Challenge Most gold remaining Nordfels       25th March - 1st April 2024 🥇 ORANGUTAN 🥈 ItsMeRaven 🥉 SpeedBuff & Dorce 🎖️ Astrinaar 🎖️ Pirates"
+  ],
+  [
+    "Lightning desert",
+    "/misc/events/lightning-desert.html",
+    " Lightning Desert  Every couple of months, the developers host an official Thronefall tournament! Players can participate on the official Thronefall discord server. Lightning Desert was the first official tournament that has been hosted. The developers wanted to keep it simple, so everyone could participate. The goal of the challenge was to achieve the highest score possible while playing on the map durststein using the lightning staff weapon and commander mode perk. The start of the event was the 6th October 2023 and it ended on the 13th of the same month. Event Characteristics  Event Name   Goal   Map   Requirements   Date   Winners  Lightning Desert Challenge Highest Score Durststein   6th - 13th October 2023 🥇 ItsMeRaven 🥈 LTU_Adas 🥉 lich46 🥇 First Place - ItsMeRaven (66 295) 🥈 Second Place - LTU_Adas (65 441) 🥉 First Place - lich46 (64 691)"
+  ],
+  [
+    "Questfair",
+    "/misc/events/questfair.html",
+    " Questfair  Every couple of months, the developers host an official Thronefall tournament! Players can participate on the official Thronefall discord server. QuestFair was the second official tournament that has been hosted. The developers promised some event that were not about highscore-hunting and so they delivered QuestFair! The goal of the challenge was to create the most creative Quest, while not inventing new gameplay mechanics. The start of the event was the 22nd December 2023 and it ended on the 5th January 2024. Event Characteristics Event Name Goal Map Requirements Date Winners QuestFair Most Creative Quest Any No new Game Mechanics 22nd December 2023 - 5th January 2024 🎖️ matan 🎖️ Gertimoshka 🎖️ CaporalNico 🎖️ Hjorse Rider  🎖️ matan - No Preparation, go go go! Quest: Complete a level with less than 15 secs of preparations timer between waves Devevelopers' Comment: This post received the most community upvotes by a long margin so how could we say no. The idea didn’t cross our mind before and it sure does sound like a fun new way to play Thronefall. We’ll think about where to best implement that into the game and give it a go go go! 🎖️ Gertimoshka - I like just the way they are Quest: Never move any of your own units from their starting positions. Devevelopers' Comment: Both we as well as the community liked the idea. We’ll find a way to put it into the game, probably as a mutator so you can’t accidentally move your units and mess up the quest. 🎖️ CaporalNico - The great Wall Quest: Before Night 3 build a wall or two they can protect your castle and don't lose it a single part of your wall Devevelopers' Comment: The idea of having to protect something specific came up a few times but protecting your walls seems like the most fun and intuitive twist on the idea. We’re not sure how well it would work as a quest (the rules don’t quite fit into the quests section), but we have some ideas and will find a way to make it work. Nice one. 🎖️ Hjorse Rider - One Man Army Quest: Thematically, you're a one man army who wins whichever battle you participate in. Devevelopers' Comment: This concept or idea came up multiple times in different variations. In Hjorse Rider’s version building towers would still be allowed but building units would not be. In other variants e.g. by FlediX2 you may only build and upgrade your castle center and nothing else. Hjorse Rider gets the win in this category for choosing the best name One Man Army '' and for receiving the most community upvotes. That being said, we find all of these options interesting and will likely explore different variations of this idea in the game."
+  ],
+  [
+    "Midas mayhem",
+    "/misc/events/midas-mayhem.html",
+    " Midas mayhem  Every couple of months, the developers host an official Thronefall tournament! Players can participate on the official Thronefall discord server. Midas mayhem was the third official tournament that has been hosted. The developers wanted to take everyones focus away from the usual high-score hunting and instead focus on that sweet sweet money making! The goal of the challenge was to finish with as much leftover gold as possible while playing on the map Nordfels using the Sword as weapon. The Elite Towers, Healing Spirits & Loan perks were mandatory. You could use any number and combination of mutators, with exception of Pray to the War Gods which was prohibited. The start of the event was the 25th of March 2024 and it ended on the 1st of April of the same year. Event Characteristics  Event Name   Goal   Map   Requirements   Date   Winners  Midas mayhem Challenge Most gold remaining Nordfels       25th March - 1st April 2024 🥇 ORANGUTAN 🥈 ItsMeRaven 🥉 SpeedBuff & Dorce 🎖️ Astrinaar 🎖️ Pirates 🥇 First Place - ORANGUTAN (542 Gold) 🥈 Second Place - ItsMeRaven (539 Gold) 🥉 Shared Third Place - SpeedBuff (536 Gold) 🥉 Shared Third Place - Dorce (536 Gold) 🎖️ Fourth Place - Astrinaar (535 Gold) 🎖️ Fifth Place - Pirates (532 Gold)"
+  ],
+  [
+    "Hall of fame",
+    "/misc/hall-of-fame.html",
+    "Hall of Fame This is the Hall of Fame! Below you can see all the amazing Thronefall players, who have managed to get on the podium in official Thronefall events/tournaments! 🥇 First Places: Player Score Event ItsMeRaven 66295 Lightning Desert Challenge 🥈 Second Places:  Player   Score   Event LTU_Adas 65441 Lightning Desert Challenge 🥉 Third Places:  Player   Score   Event  lich46 64691 Lightning Desert Challenge"
+  ],
+  [
+    "How to contribute",
+    "/misc/how-to-contribute.html",
+    "thead { text-align: center; font-size: 1.1rem; } .contribGuideImage { max-height: 225px; max-width: 400px; border-radius: 10px; } .imageColumn { text-align: center; } .guideStepNumber { font-weight: bold; font-size: 1.25rem; text-align: center; } #preReq-n-contents { display: grid; grid-template-columns: auto 275px; column-gap: 15px; row-gap: 10px; margin-right: 5px; } #contrib-guide-contents-section { box-shadow: 1px 1px 6px black; border-radius: 10px; background-color: var(--mainContainerColourLightMoreOpaque); /* backdrop-filter: blur(8px); */ padding: 5px; padding-left: 10px; } #contrib-guide-contents-title { font-weight: bold; font-size: 1.2rem; }  How to contribute  Work in progress.  Prerequisities: Requirements: Github account  Code editor Github app Optional Local web-server is needed to run the wiki on your machine, but not required to edit articles.  Contents:  Prerequisities Download the wiki Upload changes Page editing Using a code editor Markup Downloading the wiki Step Instructions Image  1   Go to Wiki's repository and fork it.   2   Leave everything as it is and press \"Create fork\".   3    Open the github desktop app and sign in if you haven't already.     4a   On the \"Let's get started\" screen click on a repository that says \"Your name/throne-fall.github.io\" and click on the clone button below.  4b   Alternatively you can clone the repository via the \"File\" menu.  5   Once you have cloned the repository, you should get a question \"How are you planning to use this fork?\".  Choose \"To contribute to the parent project\" and press \"Continue\".   6   You should now see a mostly empty windows with \"No local changes\". Uploading changes Step Instructions Image  1   Once you're done with your changes open the GitHub app.  You should see list of all changed files on the left.   2   In the bottom left shortly describe what you changed, then press \"Commit to main\".  Then click \"Push origin\" in the top bar to upload your changes.   3   Once you pushed your changes, press Ctrl+Alt+P or use the \"Branch\" menu to open a preview of a pull request.   4   Check if the \"base\" dropdown is set to \"upstream/main\" and click \"Create pull request\"   5   A page should open with the detail of the pull request. Simply fill in information as needed and press \"Create pull request\". (again)  6   Your pull request should be public on the wiki's repository and marked as \"Open\" now. Editing pages  Using a code editor  To edit pages you can use any text or code editor. Visual Studio Code is used in this guide. Step Instructions Image  1   In VSCdoe select open folder and select the one with the wiki.   2   Select what page you want to edit in the left pane.  Wiki pages are in the about, game-content, and misc folders.   3  Understanding the <head> section.  Document title Used for title in browser tabs, search results, embeds, etc.  always include| Thronefall wiki after the page's name.  Short page description just like <title>, meta description is mostly intended for embeds and search engines (and web crawlers in general). Rest of the <head> section is mostly various scripts and libraries.  4  Understanding the <body> section.   Example images incldue the templatefile and the file for Nordfels Title that is shown at the top of the page. All content of the page is put in this section of the document. Content that will be displed in the right column. Mainly intended for images and the contents menu. Gallery - A grid of several images. Only used for Maps. Markup (formatting) This guide shortly explains most commonly used tags. Visit  MDN web docs  or  HTML basics for more information. Click on a tag's name to learn more about it Tag name Description <strong> Used for bold text <em> Used for italic text <h1> to <h6> Differently sized headings. Only tags H1 to H4 are used on the wiki.H1 is reserved for page title. <a href=\"URL\"> Used to add a hyperlink to a text <p> A paragraph. Automatically puts text inside on a new line. <br> Adds a line break at the current position in the text< <hr> Add a horizontal line at the current position in the page <span> An element for giving a piece of text different style or function <img src=\"URL\"> Adds image to the page.Requires a specific class to display correctly on the page <ul> and <ol> Unordered and ordered list container. Ordered lists uses numbers imstead of points. <li> An element of a list (see tag above) Editing guidelines Tables  Creating tables on the wiki is quite simple, however there are certain requirements to make a table display correctly. Visits Table basics on MDN for more information about tables. All tables must contain the  thead  and  tbody  section. Tables cannot contain any attributes other than id (which is rarely used for wiki tables). Cells of a table heading must use the <th> tag to get styled correctly. Table elements reference: Element name Description <table> The main table container <thead> Table's header section <tbody> Table's content section <tr> Table row <th> Heading cell <td> Generic cell function AddAlignMiddle () { const tableCells = $(\"td\"); for (let i = 0; i < tableCells.length; i++) { tableCells[i].classList.add(\"align-middle\"); } } AddAlignMiddle();"
+  ],
+  [
+    "King",
+    "/about/king.html",
+    " The king   General  The King is the only playable character in Thronefall. While appearing as an ordinary King, in-game the King is often descibed as \"the player\".  Additionally, it is the only character in the game, that has the ability to construct buildings. The horse is named Hasty the Horse.  Characteristics  Category Info Name The King Unit Type Hero  Details Statistic Value Health Points 50 Regeneration 10% per second Regeneration Delay 1s Movement Speed (Walking) 14 Movement Speed (Sprinting) 23 The King in-game."
+  ],
+  [
+    "Languages",
+    "/about/languages.html",
+    " Supported languages  Currently 10 Languages are supported by Thronefall. While the English and German translation was created by the developers, all the other languages were AI-translated. The devs have stated, that they will pay for proper translation when the game comes out of Early Access. Available languages English French German Spanish - Spain Japanese Polish Portuguese - Brazil Russian Simplified Chinese Turkish"
+  ],
+  [
+    "Leveling",
+    "/about/leveling.html",
+    " Leveling system  In Thronefall you level up by playing the game and earning points, which are calculated using the following equation: [base score + (gold amount × 10)] × 1.2(mutator amount) By surpassing certain scores you level up and get new perks, weapons, upgrades or even permanent upgrades.  Detailed List  Level Reward Description Type Icon 1 Bow & Dagger PASSIVE: Fast ranged attack. Strong against most units but not very effective when attacking siege engines. ACTIVE: Stab a nearby enemy with your dagger and deal massive damage. The lower health of your victim as you attack, the lower the cooldown of the ability will be. Weapon 2 Royal Mint Your castle center produces 1, 2 or 3 additional gold per day depending on its level, and you start the game with +1 gold. Perk 3 Arcane Towers All of your towers have +33% range and their projectiles deal +33% more damage to enemies. Perk 4 Light Spear PASSIVE: Rapid melee attack. Deals bonus damage against all fast moving enemy types and slows them down for a couple of seconds. Effective against fast moving enemies. ACTIVE: Heal yourself and significantly increase your attack speed for a brief moment. If you activate the ability while being below 30% of your max health the effect lasts longer. Weapon 5 Heavy Armor You have a massive +350% more health, but your horse is -20% slower at night. Perk 6 Flails Flails can simultaneously attack all enemies in a circle around them. Melee Unit 7 Castle Fortification Your castle center has +150% health. The interval between its attacks is reduced by -67% and its attack range is increased by +50%. Perk 8 Perk Slot You can equip one additional Perk to use during a level (2 total). Permanent Upgrade 9 Ring of Resurrection The first time you die each night, you are revived immediately and all of your dead units are revived with you. Perk 10 Hot Oil While shooting regular arrows, this tower also pours boiling oil onto nearby enemies. Enemies hit by oil suffer great damage. Upgrade Path: Tower 11 Commander Mode All of your units and buildings deal +45% more damage to enemies, but your own damage is -60% less effective. Perk 12 Magic Armor Enemies that deal damage to you take a part of that damage themselves. +150% HP for your character. Upgrade Path: Castle lvl 2 13 Architect's Council The build options from the next castle center upgrade are already unlocked. This means you have more building options to choose from early in the game. Perk 14 Scarecrows Every field belonging to this mill receives a free scarecrow. Scarecrows have a strong anti-air attack. Upgrade Path: Mill 15 Sword PASSIVE: Slow melee attack. Deals splash damage. Strong against groups of enemies. ACTIVE: Big strike with a larger radius, dealing more damage. Weapon 16 Warrior Mode The weapon you equipped becomes more powerful every night all the way up to +160%, but all of your units and buildings deal -40% less damage right from the beginning. Perk 17 Wind Spirits Wind spirits magically intercept a portion of enemy arrows in the range of the mill. The higher the level of this mill, the more arrows are blocked. Upgrade Path: Mill 18 Castle Blueprints Walls and towers have +100% more health. Perk 19 Hunters Hunters are fast and effective against monsters. They have decent self defence capabilities in melee combat, but are vulnerable against ranged untis. Ranged Unit 20 Gladiator School Units are trained +75% faster, but every barracks and each of their upgrades cost +1 gold. Perk 21 War Horse Your horse is +20% faster and riding over enemies deals 2.5 damage. This damage increases in correlation to all of your other in-game weapon upgrades like certain castle center upgrades. Perk 22 Falcon God Enemies are +75% faster and chase you for -60% shorter when you attack them, but you get 20% more points and XP if you win. Mutator 23 Assassins Training -Your auto-attack cooldown is +100% longer. +You deal +250% more damage. Upgrade Path: Castle lvl 2 24 Perk Slot You can equip one additional Perk to use during a level (3 total). Permanent Upgrade 25 Berserks Berserks target siege units and other high health targets. They will not hesitate to sacrifice their lives for you. Melee Unit 26 Glass Cannon You deal +100% more damage, but you have -80% health. Perk 27 Castle-Up The upgrade costs of walls and towers get reduced by 1 every night (they will never be lower than 1, initial build costs are unaffected). Upgrade Path: Castle lvl 3 28 Lightning Staff PASSIVE: Shoots a lightning bolt at all enemies in range. Enemies in close proximity to each other can not all be hit at once. That means the more spread out your enemies are, the more enemies you can hit at once. ACTIVE: A powerful lightning errupts from your current position after a short delay and deals massive splash damage in a small radius. Weapon 29 Big Harbours Harbours have capacity for 2 additional fishing boats, have +100% more health, and spawn with one boat on the water. Perk 30 Fire Archers Fire Archers deal splash damage around their target and cause bonus damage against siege engines. Ranged Unit 31 God of Destruction Buildings only heal 25% of their health points every morning. Destroyed buildings take an additional day to get repaired, but you get 20% more points and XP if you win. Mutator 32 Elite Warriors All of your units have +100% health, but their training speed at night is reduced by -60%. Perk 33 Archery Skills All your archers have +60% more range and their movement speed is increased by +20%. Perk 34 Faster Research Blacksmith upgrades start with 1 day of progress already complete, so all upgrades finish much faster. All blacksmith upgrades cost -1 gold. Perk 35 Support Tower This tower no longer shoots at enemies. Instead it shoots healing orbs at you and your units. Upgrade Path: Tower 36 Fortified Houses Houses have +250% more health and level 2 houses shoot arrows at enemies dealing 8 damage to enemies nearby every 1.66 seconds. Perk 37 Wasp God In the first 3 nights, there will be +100% more enemies that spawn +25% faster, but you get +20% more points and XP if you win. Mutator 38 Pumpkin Fields Fields give +1 additional gold per day and have +900% health, but they cost +2 more gold to build. Perk 39 Godly Curse If you lock onto a target, that target receives 50% more damage from all sources. +75% HP for your character. Upgrade Path: Castle lvl 3 40 Healing Spirits All healing effects on you and your units are +65% more effective. Perk 41 Ice Magic Slow effects on enemies last -200% longer and slowed enemies move -30% slower. Perk 42 Melee Resistancce You, your units and all of your buildings start the game with +35% resistance against melee attacks. Perk 43 Power Tower The tower you are closest to gets a significant attack speed boost of +233%. Perk 44 Ranged Resistance You, your units and all of your buildings start the game with +35% resistance against ranged attacks. Perk 45 God of Death Allied units are no longer revived at night and your own revive time is increased by +100%, but you get 20% more points and XP if you win. Mutator 46 Treasure Hunter You get +50 gold on the morning before the last night. Perk 47 Indestructible Mines Your gold mines are indestructible. Perk 48 Gods Lotion You regenerate health +120% faster and the delay before the health regenerations kicks in is reduced by -50%. Perk 49 No Walls Pact You can't build any walls, but you get +10% more points and XP if you win. Mutator 50 Melee Damage You, your units and all of your buildings start the game with +25% melee damage. Perk 51 Firewing A flying unit that deals splash damage to ground and airborne enemies. Hero Unit 52 Phoenix God Enemy units regenerate 8% of their health every second, but you get +30% more points and XP if you win. Mutator 53 Anti-Air Telescope Flying enemies spawn with -25% health and deal -25% damage. Perk 54 Health Potions All of your units heal themselves by 4% each second. Perk 55 No Towers Pact You can't build any towers, but you get +20% more points and XP if you win. Mutator 56 Ranged Damage You, your units and all of your buildings start the game with +25% ranged damage. Perk 57 Stronger Heros Your hero units from the hero's quarter have +40% more health and are +40% stronger. Perk 58 No Units Pact You can't build any units, but you get +20% more points and XP if you win. Mutator 59 Lizzard Rider Fast archer unit that focusses on important targets like low health enemies, flying monsters or enemy support units. Additionally the lizzard can perform a melee attack. Hero Unit"
+  ],
+  [
+    "Overview",
+    "/about/overview.html",
+    " Game overview   A strategy game without all the headache? We got you covered.  Release date:: 2nd August 2023. Saddle the horses! See your kingdom come to life, fight gripping battles to defend it and still be done in time for lunch. With Thronefall we tried to strip a classic strategy game from all unnecessary complexity, combining it with some healthy hack and slay. Build up your base during the day, defend it till your last breath at night.  Will you be able to strike the right balance between economy and defence? Do you need more archers, thicker walls or an additional mill? Will you keep the enemies at bay with your longbow or charge your horse right into them? It's going to be a tough night,  but nothing beats seeing the sun rise above your little kingdom to live another day. Thronefall Developer Grizzly games Publisher Grizzly games Release date 2nd August 2023 (2023/08/02) Genre Strategy, Tower defense Mode Single-player Supported platforms: Windows, Mac OS, Linux*"
+  ],
+  [
+    "Score",
+    "/about/score.html",
+    " Score   General  The score in Thronefall consists of 4 parts: 1. Base Score, 2. Gold Score, 3. Mutator Bonus, 4. No Restarts. At the end of the game all of them are added together to get the players score. This results in this formular (see sections below for more details): (Base Score + Gold x 10 + (Base Score + Gold x 10) x Mutator Multiplier) x No Restarts Bonus  Leaderboards  The game has an integrated leaderboard system, which can be used to compare your score against Steam-Friends. The community has created a Community Leaderboard, that shows the highest score achieved for each map.  Eternal Trials  The eternal trials are a special case in which each map gives the player a score, which is added up at the end of each stage. After the player has been defeated, all of their achieved scores are added up and a stage bonus is added. The stage bonus is calculated using this formular: (Won Stages)² × 10 000  Base Score  The Base Score consists of 3 Scores that are added together at the end of each night: 1. Night Survived, 2. Realm Protected, 3. Time Bonus. Night Survived: You gain +100 Score for surviving a night. Realm Protected: You gain up to +250 Score for protecting your buildings. If no building was destroyed, you gain +250 score. Everything below 100% protected is calculated with this formular: +250(NOT destroyed buildings ÷ total amount of buildings)². Note that each wall segment counts as a separate building. Time Bonus: You gain up to +250 Score for killing the enemies fast. You gain the full +250, if you kill all enemies up to 5s after the last enemy spawned. Every bonus below +250 is calculated with this formular: +250 × ( [90s − {total time − time of last spawn} ] ÷ 85s)². Note that this means, you will not gain any score, if you kill all enemies more than 90s after the last enemy has spawned.  Gold Score  The gold score is calculated with this formular: Unspent Gold x 10. This only includes the gold you have remaining at the end of the game and does NOT include gold you have spent to buy buildings or upgrades. All gold you generate on the last night is added to the gold score, even if you did not pick it up before the victory screen.  Mutators Bonus  The mutators bonus is only added, if you used a mutator. The bonus is calculated with this formular: (Base Score + Gold Score) x Mutators Multiplier. The mutators multiplier is influenced by how many and which mutators you have picked (see the table below for reference).  Mutators Multiplier  Mutator Single Multiplier Total Multiplier Tiger God x1.2 x1.2 Falcon God x1.2 x1.44 God of Destruction x1.2 x1.728 Wasp God x1.2 x2.074 God of Death x1.2 x2.488 Snake God x1.3 x3.235 Turtle God x1.4 x4.529  No Restarts Bonus  If the player did not use the restart function of the game, they are rewarded by an +10% increase of their score. This +10% applies to all the other Score: (Base Score + Gold Score + Mutator Bonus) x 1.1 If the player did use the restart function, their score is multiplied by 1, which means they do not recieve any further changes to their score instead. Score in a victory screen"
+  ],
+  [
+    "System requirements",
+    "/about/system-requirements.html",
+    "#sysReqColumns { display: grid; grid-template-columns: 1fr 1fr; }  System requirements  Thronefall is officially supported on Windows and Mac, but can be played on Linux via  Proton.  You can check Thronefall's Linux compatibility rating on ProtonDB. Note that these requirements are not strictly required to run the game, but similar (or better) components are recommended for the intended or smooth playing experience. These requirements have been taken from Thronefall's Steam page. Windows Requires a 64-bit processor and operating system OS: Windows 10 Processor:  Intel® Core™ i5-9600 Memory: 4 GB RAM Graphics:  Nvidia GeForce GTX 970 Storage: 300 MB of available space Sound Card: Just whistle your favourite tune :) macOS OS: macOS Ventura or later Processor: M1 or Intel® equivalent Memory: 4 GB RAM Graphics: M1 or Intel® equivalent Storage: 1 GB of available space Sound Card: Just whistle your favourite tune :)"
+  ],
+  [
+    "Versions",
+    "/about/versions.html",
+    " Version history   View on steam's news hub "
+  ],
+  [
+    "Wiki",
+    "/about/wiki.html",
+    " About wiki  This Wiki was created for and by the Thronefall community! You can join us on the official Thronefall Discord or the Thronefall Wiki Discord! Most of the Information you can find on this wiki comes from this Data-Sheet. Feel free to check it out for more detailed information! While I (Hi, It's me, Raven. And yes that's an intended and bad pun with my name) currently created most of the articles on this wiki, there have been many great and talented people that have contributed to this community project. Below you can find a list of all the people who have put effort into this. All the love to them! (Hopefully I didn't forget anyone)  Contributors  Contributor Contribution GhostMiner Website design and technical stuff ItsMe_Raven Article writing and design lich46, Gertimoshka Data Collection FlediX2 Information feedback LTU_Adas Information and design feedback IpGa13 Information"
+  ],
+  [
+    "Archery range",
+    "/game-content/buildings/archery-range.html",
+    "Archery Range  General  Archery Ranges are a defensive building in the kingdom of Thronefall. They can be upgraded twice, and upon construction 4 units are spawned. Units respawn at the archery range slowly during the night and instantly at dawn. The player can choose 1 out of 4 possible unit-types that are spawned by the Archery Range. Archery Ranges can be enhanced with theGladiator Schoolperk.   Characteristics  Category Info Name Archery Range Building Category Defensive Health Points 30 | 40 | 50 Units spawned 4 | 8 | 12 Building Cost 4 Gold Upgrade Cost Level 2 8 Gold Upgrade Cost Level 3 16 Gold  Units  Type Description Icon  Longbow Archer Longbows have a very large range, but are quite fragile. Great pick if you manage to keep them at safe distance.  Crossbowmen Crossbowmen have a low range, but high damage output. They are armored against ranged attacks. Bonus damage against ranged units. Less effective against flying enemies.  Hunters Hunters are fast and effective against monsters. They have self defense capabilities in melee combat, but are vulnerable against ranged units.  Fire Archers Fire Archers deal splash damage around their attack target and cause bonus damage against siege engines.  Locations  You can find Archery Ranges onNordfels,DurststeinandFrostsee. An Archery Range in-game."
+  ],
+  [
+    "Barracks",
+    "/game-content/buildings/barracks.html",
+    "Barracks  General  Barracks are a defensive building in the kingdom of Thronefall. They can be upgraded twice, and upon construction 4 units are spawned. Units respawn at the barracks slowly during the night and instantly at dawn. The player can choose 1 out of 4 possible unit-types that are spawned by the barracks. Barracacks can be enhanced with theGladiator Schoolperk.   Characteristics  Category Info Name Barracks Building Category Defensive Health Points 30 | 40 | 50 Attack None Units spawned 4 | 8 | 12 Production Speed 10s | 6s | 6s Building Cost 4 Gold Upgrade Cost Level 2 8 Gold Upgrade Cost Level 3 16 Gold  Units  Type Description Icon  Knights Knights are versatile warriors, who are well armored against ranged attacks.  Spearmen Spearmen are fast and strong units. They do extra damage against fast enemies and slow them down. Not a great pick against ranged units.  Flails Flails can simultaneously attack all enemies in a circle around them.  Berserks Berserks target siege units and other high health targets. They will not hesitate to sacrifice their lives for you.  Locations  You can find Barracks onNeuland,Nordfels,DurststeinandFrostsee. A Barrack in-game."
+  ],
+  [
+    "Barricade",
+    "/game-content/buildings/barricade.html",
+    "Barricade  General  Barricades are a protective building in the kingdom of Thronefall. They slow down any enemies passing over them and deal damage against fast enemies.   Characteristics  Category Info Name Barricade Building Category None Building Cost 4 Gold  Details Statistic Value Attack Damage 15 vs. Fast (True Damage) Slow Duration 7s Slow Strength -67% True Damage is a static damage value that can not be changed by damage increases or decreases.  Locations  You can find Barricades onDurststein. A Barricade in-game."
+  ],
+  [
+    "Blacksmith",
+    "/game-content/buildings/blacksmith.html",
+    "Blacksmith  General  Royal Forges are a protective building in the kingdom of Thronefall. They can be upgraded twice and upon construction or upgrade a research can be selected that buffs all units, all buildings, and the king. The player can choose 1 out of 4 possible researches once the blacksmith is constructed or upgraded. Researches may be repeated multiple times. Royal Forges can be enhanced with theFaster Researchperk.   Characteristics  Category Info Name Blacksmith Building Category Economy Health Points 80 Amount of Researches 1 | 2 | 3 Building Cost 4 Gold Upgrade Cost Level 2 9 Gold Upgrade Cost Level 3 16 Gold  Researches  Type Description Icon  Melee Attack  +20% melee damage (3 days to research)  Ranged Attack  +20% ranged damage (3 days to research)  Melee Resistance  +30% melee resistance (2 days to research)  Ranged Resistance  +30% ranged resistance (2 day to research)  Locations  You can find Royal Forges onFrostsee. A Blacksmith in-game."
+  ],
+  [
+    "Bridge",
+    "/game-content/buildings/bridge.html",
+    "Bridge  General  Bridges are the basic income building in the kingdom of Thronefall. They can be built to access new build splots and generate gold after each night.  Characteristics  Category Info Name Bridge Building Category Economic Health Points None Income Generated per Night 1 Building Cost 2 Gold A Bridge in-game."
+  ],
+  [
+    "Castle center",
+    "/game-content/buildings/castle-center.html",
+    "Castle Center  General  The Castle Center is the most important building in the kingdom of Thronefall. It can be upgraded twice and the player loses if the castle center is destroyed. The Castle Center can be enhanced with theRoyal MintandCastle Fortifications Perks.  The player can choose 1 out of 4 possible upgrades upon upgrading the Castle Center.  Characteristics  Category Info Name Castle Center Building Category Castle Center Building Cost 3 Gold Upgrade Cost Level 2 7 Gold Upgrade Cost Level 3 20 Gold  Details Statistic Value Health Points 100 | 300 | 700 Attacks per second 0.25 | 0.5 | 1 Attack Range 35 (Ranged) Projectile Speed 30 Base Damage 4.5 Damage vs. Ranged Resistant x0.6  Upgrades  Type Description Icon  Royal Training  +75% HP for your character. +75% Attack damage output for your character.  Builder's Guild  +Every morning a level 1 house is automatically upgraded to a level 2 house (if available). +50% HP for your character.  Magic Armor  +Enemies that deal damage to you, take a part of that damage themselves. +150% HP for your character.  Assassin's Training  -Your auto-attack cooldown is +100% longer. +You deal +250% more damage.  Royal Mastery  +75% HP for your character. +75% Attack damage output for your character.  Commander  +Units move faster while you command them. +Units can attack while you command them. +30% Overall damage output for your character.  Castle-Up  +The upgrade costs of walls and towers get reduced by 1 every night (they will never be lower than 1, initial build costs are unaffected).  Godly Curse  +If you lock in a target, that target receives 50% more damage from all sources. +75% HP for your character.  Locations  You can find the Castle Center onNeuland,Nordfels,DurststeinandFrostsee. A Castle Center in-game."
+  ],
+  [
+    "Field",
+    "/game-content/buildings/field.html",
+    "Field  General  Fields are a basic income building in the kingdom of Thronefall. They can be built upon the construction of amilland generate gold after each night.  Fields can be enhanced with the pumpkin fieldsperk.   Characteristics  Category Info Name Field Building Category Economic Health Points 10 Income Generated per Night 1 Building Cost 1 Gold  Locations  You can find Fields onNeuland, Nordfels andDurststein. A Field in-game."
+  ],
+  [
+    "Fishing harbour",
+    "/game-content/buildings/fishing-harbour.html",
+    "Fishing Harbour  General  Fishing Harbours are an income building in the kingdom of Thronefall. Harbours produce one gold per boat. They start with zero boats and create one every night, up to a maximum of five. They can be upgraded once, which doubles the gold produced per boat. Destroyed harbours do not lose any boats, but do not create a new boat or generate any income for the night. Fishing Harbours can be enhanced with thebig harboursperk.   Characteristics  Category Info Name Fishing Harbour Building Category Economic Health Points 60 | 120 Income Generated per Night 0 - 5 Gold | 0 - 10 Gold  Building Cost 3 Gold Upgrade Cost Level 2 7 Gold  Locations  You can find Fishing Harbours onFrostsee. A Fishing Harbour in-game."
+  ],
+  [
+    "Gold mine",
+    "/game-content/buildings/gold-mine.html",
+    "Gold Mine  General  Gold Mines are an income building in the kingdom of Thronefall. They generate a high amount of gold once constructed, but generate less income over time.  Gold Mines can be enhanced with the indestructible minesperk.   Characteristics  Category Info Name Gold Mine Building Category Economic Health Points 20 Income Generated per Night 6 gold -1 per night after construction. Building Cost 5 Gold  Locations  You can find Gold Mines onDurststeinandFrostsee. A Gold Mine in-game."
+  ],
+  [
+    "Heros quarter",
+    "/game-content/buildings/heros-quarter.html",
+    "Heros Quarter  General  Hero's Quarters are a defensive building in the kingdom of Thronefall. They can be upgraded twice and upon construction the player can select a Hero that will be spawned from the building. The hero is a singular stonger unit and is controlled like any other unit in the game. The player can choose 1 out of 4 possible heros once the hero's quarters is constructed. Upgrading the hero's quarters increases the power of the selected hero.  Characteristics  Category Info Name Hero's Quarter Building Category None Health Points 50 | 70 | 90 Building Cost 5 Gold Upgrade Cost Level 2 9 Gold Upgrade Cost Level 3 18 Gold Hero Health Multiplier x1 | x2 | x4 Hero Damage Multiplier x1 | x2 | x4 Revive Time 60s  Heros  Type Description Icon  Golem  Very sturdy unit that deals both splash damage, as well as plenty of single target damage. Perfect for your frontline when supported by other untis.  Support Mage  Heals you and allied units in range and absorbs magical projectiles in a wide radius.  Firewing  A flying unit that deals splash damage to ground and airborne enemies.  Lizzard Rider  Fast archer unit that focusses on important targets like low health enemies, flying monsters or enemy support units. Additionally the lizzard can perform a melee attack.  Locations  You can find Hero's Quarter onUferwind. A Hero's Quarter in-game."
+  ],
+  [
+    "House",
+    "/game-content/buildings/house.html",
+    "House  General  Houses are the basic income building in the kingdom of Thronefall. They can be upgraded once and generate gold after each night. Houses can be enhanced with theFortified Housesperk.   Characteristics  Category Info Name House Building Category Economic Health Points 20 | 30 Income Generated per Night 1 | 2 Building Cost 2 Gold Upgrade Cost Level 2 2 Gold  Locations  You can find Houses onNeuland,Nordfels,DurststeinandFrostsee. A House in-game."
+  ],
+  [
+    "Buildings list",
+    "/game-content/buildings/index.html",
+    "Buildings  Description  Buildings are structures in Thronefall that can be built and upgraded by the player during the day.  Buildings serve different purposes: while economic buildings add to your income every day, defensive buildings keep your kingdom from falling at night.Each building has a certain amount of health points, If the health points reach zero, the building is destroyed (with the exception of barricades, which have 0 Health but are indestructible).  List of buildings  Archery Ranges   Barracks   Barricades   Bridges   Blacksmiths   Castle Center   Fields   Fishing Harbours   Gold Mines   Hero's Quarters   Houses   Mills   Royal Forge   Shrine   Towers   Walls  Buildings availability #BuildingsavailabilityTables  { max-width: 900px; margin: auto; } .buildingsTable  { text-align: center; } Defense and military Building Neuland Nordfels Durststein Frostsee Uferwind Sturmklamm Wildbach Tower ✔ ✔ ✔ ✔ ✔ ✔ ✔ Wall ✔ ✔ ✔ ✔ ✔ ✔ ✔ Barricades     ✔     ✔   Barracks ✔ ✔ ✔ ✔ ✔ ✔ ✔ Archery Range ✔ ✔ ✔ ✔ ✔ ✔ ✔ Hero's Quarter         ✔ ✔ ✔ Shrine           ✔ ✔ Economy Building Neuland Nordfels Durststein Frostsee Uferwind Sturmklamm Wildbach House ✔ ✔ ✔ ✔ ✔ ✔ ✔ Mill ✔ ✔ ✔   ✔ ✔ ✔ Field Fields are part of the mill Gold mine     ✔ ✔     ✔ Harbor       ✔ ✔   ✔ Bridge         ✔     Other Building Neuland Nordfels Durststein Frostsee Uferwind Sturmklamm Wildbach Royal forge           ✔ ✔ Blacksmith       ✔ ✔   ✔"
+  ],
+  [
+    "Mill",
+    "/game-content/buildings/mill.html",
+    "Mill  General  Mills are an income building in the kingdom of Thronefall. They can be upgraded twice and its consruction and upgrades unlock the ability to build (more)Fields. The player can choose 1 out of 4 possible upgrades upon constructing the Mill.  Characteristics  Category Info Name Mill Building Category Economic Health Points 30 | 50 | 80 Income Generated per Night 1 | 2 | 6 Building Cost 3 Gold Upgrade Cost Level 2 4 Gold Upgrade Cost Level 3 6 Gold  Upgrades  Type Description Icon  Improved Plow  Every future upgrade of this mill will increase its income even more. (+1 ÷ Upgrade)  Explosive Trap  The mill explodes when destroyed dealing massive damage around itself. The damage and radius increases every time you upgrade this mill.  Scarecrows  Every field belonging to this mill receives a free scarecrow. Scarecrows have a strong anti-air attack.  Wind Spirits  Wind spirits magically intercept a portion of enemy arrows in the range of the mill. The higher the level of this mill, the more arrows are blocked.  Locations  You can find Mills onNeuland,Nordfels andDurststein. A Mill in-game."
+  ],
+  [
+    "Royal forge",
+    "/game-content/buildings/royal-forge.html",
+    "Royal Forge  General  Royal Forges are a protective building in the kingdom of Thronefall. They can be upgraded twice and upon construction or upgrade a research can be selected that buffs the king. The player can choose 1 out of 4 possible researches once the Royal Forge is constructed or upgraded. Researches may be repeated multiple times. Royal Forges can be enhanced with theFaster Researchperk.   Characteristics  Category Info Name Royal Forge Building Category Economy Health Points 80 Amount of Researches 1 | 2 | 3 Building Cost 4 Gold Upgrade Cost Level 2 7 Gold Upgrade Cost Level 3 14 Gold  Researches  Type Description Icon  Lighter Weaponry  -40% cooldown for the auto-attack of your weapon (2 days to research)  Additional Armor  +50% health and health regeneration for your character (2 days to research)  Blessed Weaponry  -40% ability cooldown for your active ability (2 days to research)  Sharper Weaponry  +50% damage for your weapon, affects both active and passive ability (3 day to research) A Royal Forge in-game."
+  ],
+  [
+    "Shrine",
+    "/game-content/buildings/shrine.html",
+    "Shrine  General  The shrine is a unique defensive building in Thronefall. Once built, it has to be activated, by killing enemies near the constructed shrine. Once activated, the shrine can shoot at enemies and generates 2 Gold each night. The shrines attack becomes +20% stronger for every other shrine you have activated. Shrines can be enhanced with theAncient Shrinesperk.   Characteristics  Category Info Name Shrine Building Category Defensive Health Points 777 Requirements to activate 350 HP of enemies died in range Building Cost 3 Gold  Details Statistic Value Attacks per second 3 Attack Range 20 (Ranged) Projectile Speed 40 Base Damage 3.5 An inactive Shrine in-game. An activated Shrine in-game."
+  ],
+  [
+    "Tower",
+    "/game-content/buildings/tower.html",
+    "Tower  General  Towers are a defensive building in the kingdom of Thronefall. They can be upgraded twice and fire arrows at the closest enemy in range. Towers can be enhanced with theArcane TowersandPower Tower Perks.  The player can choose 1 out of 4 possible upgrades upon upgrading the Tower to level 3.  Characteristics   Category   Info  Name Tower Building Category Defensive Building Cost 3 Gold Upgrade Cost Level 2 5 Gold Upgrade Cost Level 3 15 Gold  Details  Statistic   Value  Health Points 100 | 250 Attacks per second 0.5 | 0.714 Attack Range 36 (Ranged) Projectile Speed 20 Base Damage 8 Damage vs. Flying x1.15 Damage vs. Ranged Resistant x0.6 Damage vs. Tower Vulnerable x2 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Upgrades  Current: Level 2: Upgrade  Icon  Health Range Attack damage Attack cooldown Projectile speed Target Special Castle Tower +150     -40% +100% Closest   Sniper Tower   +50% +180% +100% +50% Highest health and siege   Armoured Tower +350         Lowest health or flying Activates a shield for 5 seconds when damage is first sustained Bunker Tower +75 -45%       Random Cooldown increases with each consecutive shot in a night Level 3: Upgrade Icon Health Attack Cooldown Attack Damage Projectile Speed Special Archer's Spire +350 -30% Shoots an additional arrow Ballistic Spire +50% +450% +50% Slows targets Fire Spire +250 -50% Single target damage reduced. Causes splash damage. Pours oil on close targets. Healing Spire +750 -30% Cooldown +90% Only allies targeted. All damage converted into healing for allies. Before 1.5 Available at level 3  Type   Description   Icon   Fortress Tower  This tower becomes an armored fortress that can shoot two at two enemies at once. It will not go down easily.  Ballista  This tower has an increased range. It shoots very powerful projectiles at low rate of fire. Focuses siege engines and other large Enemies.  Hot Oil  While shooting regular arrows, this tower also pours boiling oil onto nearby enemies. Enemies hit by oil suffer great damage.  Support Tower  This tower no longer shoots at enemies. Instead it shoots healing orbs at you and your units.  Locations  You can find Towers onNeuland,Nordfels,DurststeinandFrostsee. A Tower in-game."
+  ],
+  [
+    "Wall",
+    "/game-content/buildings/wall.html",
+    "Wall  General  Walls are a protective building in the kingdom of Thronefall. They can be upgraded once and protect other buildings against enemies. Each segment of the wall has it's own health points. Walls can be enhanced with the castle blueprintsperk.   Characteristics   Normal Walls  Category Info Name Wall Building Category Wall Health Points 240 | 640 Building Cost 3-5 or 15 Gold Upgrade Cost Level 2 5-7 or 20 Gold  Locations  You can find Walls onNeuland,Nordfels,Durststein,Frostsee andUferwind. A Wall in-game."
+  ],
+  [
+    "Archer",
+    "/game-content/enemies/archer.html",
+    "Archer General Archers are a basic ranged unit in Thronefall. Introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall.  Description  Archer shoot arrows from afar. Quite strong when left uncontested. Weak against buildings and towers.  Characteristics  Category Info Name Archer Icon Unit Type Ranged, Tower Vulnerable Preferred Target None Targets Player When hit  Details   Attack Statistics  Statistic Value Attacks per second 0.5 Attack Range 40 (Ranged) Projectile Speed 20 Base Damage 4 Damage vs. Flying x1.2 Damage vs. Ranged Resistant x0.5 Damage vs. Ranged Vulnerable x1.5 Chase King Time 5s The damage dealt is calculated with this formula:Base Damage × Type Value 1 × Type Value 2 × ... × Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense statistics  Statistic Value Health Points 20 Movement Speed 5 Eternal trials statistics  Statistic Value Difficulty Budget 1.6 Gold Limit 0 An Archer in-game."
+  ],
+  [
+    "Barrel knight",
+    "/game-content/enemies/barrel-knight.html",
+    "Barrel Knight  General  Barrel Knights are a melee, siege unit in Thronefall.  Description  An enchanted warrior made of wood. Counts as a siege weapon. Quite sturdy and eager to cause trouble.  Characteristics  Category Info Name Barrel Knight Icon Enemy Type Melee, Siege type enemy Preferred Target Units Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 0.8 Attack Range 3.2 (Melee) Base Damage 3.5  Defense Statistics  Statistic Value Health Points 100 Movement Speed 8  Eternal trials statistics Statistic Value Difficulty Budget 7 Gold Limit 0 A Barrel Knight in-game."
+  ],
+  [
+    "Catapults",
+    "/game-content/enemies/catapults.html",
+    "Catapults  General  Catapults are a basic siege enemy in Thronefall. While not introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall.  Characteristics  Category Info Name Catapult Icon Unit Type Ranged, Siege Preferred Target Buildings Targets Player Never  Details Attack Statistics Statistic Value Attacks per second 0.2 Attack Range 26.4 (Ranged) Projectile Speed 20 Base Damage 150 Damage vs. Castle Center x0.2 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 45 Movement Speed 2  Eternal trials statistics Statistic Value Difficulty Budget 6 Gold Limit 14  Encounters  You can encounter Catapults in Nordfels, Durststein and Frostsee. A Catapult in-game."
+  ],
+  [
+    "Elite crossbow men",
+    "/game-content/enemies/elite-crossbow-men.html",
+    "Elite Crossbow Men  General  Elite Crossbow Men are a heavy ranged enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall.  Description  Elite crossbow men deal massive amounts of damage to you and your units. Its best to keep yourself and your troops entirely out of range whenever you can. They are quite weak against buildings, though.  Characteristics  Category Info Name Elite Crossbow Man Icon Unit Type Ranged, Tower Vulnerable Preferred Target Units Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 0.625 Attack Range 15 (Ranged) Projectile Speed 30 Base Damage 15 Damage vs. Hero x0.75 Damage vs. Wall x0.15 Damage vs. Ranged Resistant x0.4 Damage vs. Ranged Vulnerable x1.5 Chase King Time 5s The damage dealt is calculated with this formula:   Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n,  where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 40 Movement Speed 4  Eternal trials statistics Statistic Value Difficulty Budget 3.5 Gold Limit 0  Encounters  You can encounter Elite Crossbow Men in Frostsee. An Elite Crossbow Man in-game."
+  ],
+  [
+    "Elite enemies",
+    "/game-content/enemies/elite-enemies.html",
+    "Elite Enemies  General  Elite Units are unique to the Eternal Trials and Elite God Mutator.  In the Eternal Trials they can be encountered as early as by stage 1, becoming more frequent on higher stages.  Details  While elite enemies do not change their behavior compared to their normal counterpart, they have increased health and damage. They are also highlighted by a yellow outline in-game and are announced before the night by a special icon. The icon is spiky on the outside and shows a golden version of their icon in the middle.  Characteristics  Statistic Value Icon Health x4 Damage x3 An Elite Barrel Knight in-game."
+  ],
+  [
+    "Exploder",
+    "/game-content/enemies/exploder.html",
+    "Exploder  General  Exploders are a specialised enemy in Thronefall that die upon attacking a building, and explode upon death. They deal friendly fire to other enemies with their explosion. They are encountered in some outer regions of the kingdom of Thronefall.  Description  Exploders are monsters that roll straight for the closest building and explode when they die. They are slightly armored against attacks from the player character.  Characteristics  Category Info Name Exploder Icon Unit Type Melee, Monster, Fast, Hero Resistant Preferred Target Buildings Targets Player Never  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 4 (Melee) Projectile Speed 20 Base Damage 3.5  Explosion Statistics Statistic Value Attack Range 3.5 Attack Radius 6.5 Base Damage 90 Damage vs. King x0.5 Damage vs. Castle x0.5 Damage vs. Buildings x2 Friendly Fire 9 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 60 Movement Speed 9  Eternal trials statistics Statistic Value Difficulty Budget 18 Gold Limit 0  Encounters  You can encounter Exploders in Durststein An Exploder in-game."
+  ],
+  [
+    "Flying mage",
+    "/game-content/enemies/flying-mage.html",
+    "Flying Mage  General  Flying Mages are a ranged, flying unit in Thronefall.  Description  Shoots magical projectiles that deal splash damage. Prefers attacking your units.  Characteristics  Category Info Name Flying Mage Icon Enemy Type Ranged, Flying Preferred Target Units Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 0.5 Attack Range 17 (Ranged) AoE Range 3.25 Projectile Speed 15 Main Attack Base Damage 2 AoE Base Damage 3 (flat) Main attack Damage vs. Castle Center x0.5 Main attack Damage vs. Ranged Resistant x0.5 AoE Damage vs. Ranged Resistant x0.75 AoE Damage vs. Buildings x0.5 AoE Damage vs. Siege x0.2 Damage vs. Ranged Vulnerable x1.5 Flat damage is neither melee, nor ranged. Meaning it can not be lowered by melee or ranged resistances. The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 45 Movement Speed 7  Eternal trials statistics Statistic Value Difficulty Budget 5 Gold Limit 12 A Flying Mage in-game."
+  ],
+  [
+    "Fury",
+    "/game-content/enemies/fury.html",
+    "Fury  General  Furies are a ranged, flying unit in Thronefall.  Description  A large flying monster that focusses on destroying your defense. Their projectiles are quite slow and easy to dodge, but wreak havoc when they hit.  Characteristics  Category Info Name Fury Icon Enemy Type Ranged, Ranged Vulnerable Preferred Target Defensive Buildings Targets Player Never  Details Attack Statistics Statistic Value Attacks per second 0.25 Attack Range 15 (Ranged) Projectile Speed 10 Base Damage 30 Damage vs. Ranged Resistant x0.5 Damage vs. Ranged Vulnerable x1.5 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 75 Movement Speed 8  Eternal trials statistics Statistic Value Difficulty Budget 13 Gold Limit 12 A Fury in-game."
+  ],
+  [
+    "Hunterling",
+    "/game-content/enemies/hunterling.html",
+    "Hunterling  General  Hunterlings are a specialised enemy in Thronefall, as they target your king during the night. While not introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall.  Description  Hunterlings are incredibly fast and dangerous monsters with the sole aim of chasing you down. They can smell your royal blood all across the entire kingdom.  Characteristics  Category Info Name Hunterling Icon Unit Type Melee, Fast, Monster Preferred Target The King Targets Player Always  Details Attack Statistics Statistic Value Attacks per second 2 Attack Range 3 (+0.5 vs King; Melee) Base Damage 5 Damage vs. Melee x0.25 Damage vs. Economic Buildings x0.25 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 30 Movement Speed 10  Eternal trials statistics Statistic Value Difficulty Budget 2.4 Gold Limit 0  Encounters  You can encounter Hunterlings in Nordfels, Durststein and Frostsee. A Hunterling in-game."
+  ],
+  [
+    "Enemies list",
+    "/game-content/enemies/index.html",
+    "#encountersTables { max-width: 800px; margin: auto; } Enemies Description Enemies appear at night from predetermined spawning points. Only when all enemies are killed, the night ends.  There are three types of enemies: human enemies, monster enemies and siege enemies. Furthermore, each enemy has different attributes: they deal melee or ranged damage,  have specific targets, are vulnerable and resistant to different entities, etc.  List of enemies Archer Archers are a basic ranged unit in Thronefall. Introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall. Barrel Knight  Barrel Knights are a melee, siege unit in Thronefall. An enchanted warrior made of wood. Counts as a siege weapon. Quite sturdy and eager to cause trouble. Catapults Catapults are a basic siege enemy in Thronefall. While not introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall. Elite Crossbow Man  Elite Crossbow Men are a heavy ranged enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall. Elite Enemies  Elite Units are unique to the Eternal Trials. They can be encountered as early as by stage 1, becoming more frequent on higher stages. Exploder  Exploders are a specialised enemy in Thronefall that die upon attacking a building, and explode upon death.  Flying Mage Flying Mages are a ranged, flying unit in Thronefall. Shoots magical projectiles that deal splash damage. Prefers attacking your units. Fury A large flying monster that focusses on destroying your defense. Their projectiles are quite slow and easy to dodge, but wreak havoc when they hit. Hunterling Hunterlings are a specialised enemy in Thronefall, as they target your king during the night.  Monster Riders  Hunterlings are a specialised enemy in Thronefall, as they target your king during the night.  Ogre  Ogres are a basic tank enemy in Thronefall. Introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall. Peasant  Peasants are a basic enemy in Thronefall. Even though they have been introduced in the tutorial, they can only rarely be encountered in the kingdom of Thronefall. Pikes  Equipped with long spear. Your horse is slowed and you take additional damage when riding into them, even more so when galloping. Better try to stay out of their range. Quicksling  Quickslings are an advanced siege unit in Thronefall. They deal high amounts of damage, but shoot randomly at all units inside their range. Racer Racers are a basic monster enemy in Thronefall. While not introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall. Ram Rams are a heavy siege enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall. Strange Statue Strange Statues are a unique boss-battle on the map Sturmklamm. On the final night of the map, the 4 statues on the map awaken and start to attack. Shadow In The Water  The Shadow In The Water is a boss enemy in Thronefall. They are encountered in the colder regions of the kingdom of the game.  Slime Slimes are a small enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall. Spiky Slime Spiky Slimes are a small enemy in Thronefall. They are the bigger and healther version of the slime. Swordsdman  Swordsmen are a basic enemy in Thronefall. While not introduced in the tutorial, you can find them anywhere in the kingdom of Thronefall. Wasp  Wasps are a basic flying enemy in Thronefall. While not introduced in the tutorial, they can be encountered almost everywhere in the kingdom of Thronefall. Encounters Human enemies Building Neuland Nordfels Durststein Frostsee Uferwind Sturmklamm Peasant ✔   ✔   ✔   Archer ✔ ✔ ✔   ✔ ✔ Ogre ✔ ✔ ✔ ✔   ✔ Swordsman   ✔ ✔ ✔   Elite Crossbow Man       ✔     Pikes         ✔ ✔ Flying Mage         ✔ ✔ Monster enemies Building Neuland Nordfels Durststein Frostsee Uferwind Sturmklamm Racer   ✔ ✔ ✔   ✔ Wasp   ✔ ✔ ✔ ✔ ✔ Hunterling   ✔ ✔ ✔     Monster Rider     ✔   ✔ ✔ Exploder     ✔     ✔ Slime       ✔     Spiky Slime       ✔     Fury         ✔ ✔ Siege enemies Building Neuland Nordfels Durststein Frostsee Uferwind Sturmklamm Catapult   ✔ ✔     ✔ Ram       ✔ ✔   Barrel Knight         ✔   Bosses Enemy Map Shadow In The Water Frostsee Strange statue Sturmklamm"
+  ],
+  [
+    "Mole archer",
+    "/game-content/enemies/mole-archer.html",
+    "Mole Archer  General  Mole Archers are an advanced ranged unit in Thronefall. They are able to dig themselfes closer to their target and move through tarrain.  Description  A ranged unit that loves playing hard to get. Takes additional damage from defense towers.  Characteristics  Category Info Name Mole Archer Icon Unit Type Ranged, Tower Vulnerable Preferred Target None Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 40 (Ranged) Projectile Speed 20 Base Damage 3.75 Damage vs. King x0.8 Damage vs. Units x1.4 Damage vs. Buildings x0.5 Damage vs. Ranged Resistant x0.5 Damage vs. Ranged Vulnerable x1.5 Chase King Time 5s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 50 Movement Speed 5 Dig Range 30 Dig Speed TBD Dig Cooldown 8-16s  Eternal trials statistics Statistic Value Difficulty Budget 4.88 Gold Limit 0 A Mole Archer in-game."
+  ],
+  [
+    "Mole knight",
+    "/game-content/enemies/mole-knight.html",
+    "Mole Knight  General  Mole Knights are an advanced melee unit in Thronefall. They are able to dig themselfes closer to their target and move through tarrain.  Description  Can tunnel directly to its target. Takes additional damage from defense towers.  Characteristics  Category Info Name Mole Knight Icon Unit Type Melee, Tower Vulnerable Preferred Target None Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 3 (Melee) Base Damage 5 Damage vs. Castle Center x0.25 Damage vs. Towers x0.5 Chase King Time 5s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 60 Movement Speed 5 Dig Range 30 Dig Speed TBD Dig Cooldown 8-16s  Eternal trials statistics Statistic Value Difficulty Budget 6.33 Gold Limit 0 A Mole Knight in-game."
+  ],
+  [
+    "Monster rider",
+    "/game-content/enemies/monster-rider.html",
+    "Monster Rider  General  Monster Riders are the only mounted enemy in Thronefall. They are encountered in some outer regions of the kingdom of Thronefall.  Description  Monster riders are fast and durable melee warriors. A man meets monster synergy that should not be underestimated.  Characteristics  Category Info Name Monster Rider Icon Unit Type Melee, Fast, Monster Preferred Target Units Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 4 (Melee) Base Damage 3 Chase King Time 5s  Defense Statistics  Statistic Value Health Points 40 Movement Speed 11  Eternal trials statistics Statistic Value Difficulty Budget 3.3 Gold Limit 0  Encounters  You can encounter Monster Riders in Durststein. A Monster Rider in-game."
+  ],
+  [
+    "Ogre",
+    "/game-content/enemies/ogre.html",
+    "Ogre  General  Ogres are a basic tank enemy in Thronefall. Introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall.  Description  Ogres are huge melee warriors, that really pack a punch. Hey! Due to their human heritage, ogres aren't monsters, though (everybody knows that, duh).  Characteristics  Category Info Name Ogre Icon Unit Type Melee, High Health Preferred Target Defensive Buildings Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 3 (Melee) Projectile Speed 20 Base Damage 20 Damage vs. Units x0.5 Chase King Time 5s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 200 Movement Speed 4  Eternal trials statistics Statistic Value Difficulty Budget 17 Gold Limit 0  Encounters  You can encounter Ogres in Neuland, Nordfels, Durststein and Frostsee. An Ogre in-game."
+  ],
+  [
+    "Peasant",
+    "/game-content/enemies/peasant.html",
+    "Peasant  General  Peasants are a basic enemy in Thronefall. Even though they have been introduced in the tutorial, they can only rarely be encountered in the kingdom of Thronefall.  Description  Peasants equipped with swords. Not an enemy to worry about, unless they appear in bigger numbers.  Characteristics  Category Info Name Peasant Icon Unit Type Melee Preferred Target None Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 0.5 Attack Range 3 (Melee) Base Damage 1 Chase King Time 10s  Defense Statistics  Statistic Value Health Points 8.7 Movement Speed 4  Eternal trials statistics Statistic Value Difficulty Budget 0.6 Gold Limit 0  Encounters  You can encounter Peasants in Neuland and Durststein. A Peasant in-game."
+  ],
+  [
+    "Pikes",
+    "/game-content/enemies/pikes.html",
+    "Pikes  General  Pikes are melee unit in Thronefall.  Description  Equipped with long spear. Your horse is slowed and you take additional damage when riding into them, even more so when galloping. Better try to stay out of their range.  Characteristics  Category Info Name Pikes Icon Enemy Type Melee, Ranged Vulnerable Preferred Target Hero Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 0.25 Attack Range 15 (Melee) Base Damage 30 Damage vs. Ranged (moving) +6 Damage vs. King (sprinting) +11 Chase King Time 5s  Defense Statistics  Statistic Value Health Points 25 Movement Speed 5  Eternal trials statistics Statistic Value Difficulty Budget 3 Gold Limit 0 A Pikes in-game."
+  ],
+  [
+    "Quicksling",
+    "/game-content/enemies/quicksling.html",
+    "Quicksling  General  Quickslings are an advanced siege unit in Thronefall. They deal high amounts of damage, but shoot randomly at all units inside their range.  Description  A unique siege weapon that rapidly fires arrows at random enemies in its range. If you don't have any allied buildings or untis nearby, it will quickly mow you down.  Characteristics  Category Info Name Quicksling Icon Unit Type Ranged, Siege, Tower Vulnerable Preferred Target None Targets Player Never  Details Attack Statistics Statistic Value Attacks per second 2.222 Attack Range 37.5 (Ranged) Projectile Speed 22.5 Base Damage 8.5 Damage vs. King x0.5 Damage vs. Castle Center x0.5 Damage vs. Units x0.7 Damage vs. Ranged Resistant x0.5 Damage vs. Ranged Vulnerable x1.5 Chase King Time -1s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 55 Movement Speed 3  Eternal trials statistics Statistic Value Difficulty Budget 18 Gold Limit 8 A Quicksling in-game."
+  ],
+  [
+    "Racer",
+    "/game-content/enemies/racer.html",
+    "Racer  General  Racers are a basic monster enemy in Thronefall. While not introduced in the tutorial, they can be encountered everywhere in the kingdom of Thronefall.  Description  Racers are fast rolling monsters, that are not messing around. They aim right for your castle center and are somewhat armored against attacks from the player character.  Characteristics  Category Info Name Racer Icon Unit Type Melee, Fast, Monster, Hero Resistant Preferred Target Castle Center Targets Player Never  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 3 (+0.5 vs. Castle Center; Melee) Base Damage 2.5 Damage vs. Castle x2 Damage vs. Wall x0.5 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 35 Movement Speed 10  Eternal trials statistics Statistic Value Difficulty Budget 5 Gold Limit 12  Encounters  You can encounter Racers in Nordfels, Durststein and Frostsee. A Racer in-game."
+  ],
+  [
+    "Ram",
+    "/game-content/enemies/ram.html",
+    "Ram  General  Rams are a heavy siege enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall.  Description  Rams are siege units with a ton of health looking to tear down your walls and buildings. Furthermore, they are armored against ranged attacks.  Characteristics  Category Info Name Ram Icon Unit Type Melee, Siege, Ranged Resistant, High Health Preferred Target Buildings Targets Player Never  Details Attack Statistics Statistic Value Attacks per second 0.5 Attack Range 3.5 (Melee) Base Damage 15  Defense Statistics  Statistic Value Health Points 250 Movement Speed 2.25  Eternal trials statistics Statistic Value Difficulty Budget 18 Gold Limit 14  Encounters  You can encounter Rams in Frostsee. A Ram in-game."
+  ],
+  [
+    "Shadow",
+    "/game-content/enemies/shadow.html",
+    "Shadow  General  The Shadow In The Water is a boss enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall. While referred to as \"Shadow In The Water\" in-game, the name given by the developers is \"Eismoloch\" (german for \"Ice Juggernaut\"). Unlike all the other enemies in Thronefall, the Shadow In The Water spawns units instead of dealing damage directly. It takes damage everytime it does so and dealing additional damage to the boss reduces the amount of enemies it can spawn. Attack Pattern Upon spawning, the boss instantly destroys the 2 fishing harbours (and their fishing ships), that are on the lake in the middle of the map. The Shadow In The Water has 5 location where it spawns enemies. All these locations are at the edge of the lake in the middle of the map: 1. south-east, 2. south-west, 3. north-east, 4. north-west, 5. north. It starts spawning enemies in the south-east and changes its location everytime the healthbar depletes. In total, it spawns units in every location twice in the following pattern:   1. south-east, 2. south-west, 3. south-east, 4. south-west, 5. north-east, 6. north-west, 7. north, 8. north-east, 9. north-west, 10. north  Characteristics  Category Info Name Shadow In The Water Icon Unit Type Boss, Monster Preferred Target None Targets Player Never  Details Attack Statistics Statistic Value Attacks per second 0.167 Units Spawned 10 Slimes: Slimes are small melee monsters without much brain, so they will just attack whatever is closest to them. They usually appear in groups, which makes them vulnerable against splash damage. 5 Spiky Slimes:Spiky Slimes are small melee monsters without much brain, so they will just attack whatever is closest to them. They usually appear in groups, which makes them vulnerable against splash damage. Spiky slimes have more health and attack than normal slimes. 5 Racers:Racers are fast rolling monsters, that are not messing around. They aim right for your castle center and are somewhat armored against attacks from the player character. Selfdamage when Attacking 100/s (200 total per attack)  Defense Statistics  Statistic Value Health Points 10x1500 (15000 total) Transition Speed 10s  Encounters  You can encounter the Shadow In The Water in Frostsee. The \"Shadow In The Water\" in-game. The Attack Pattern in-game. The destroyed Fishing Harbours in-game."
+  ],
+  [
+    "Slime",
+    "/game-content/enemies/slime.html",
+    "Slime  General  Slimes are a small enemy in Thronefall. They are encountered in the colder regions of the kingdom of Thronefall.  Description  Slimes are small melee monsters without much brain, so they will just attack whatever is closest to them. They usually appear in groups, which makes them vulnerable against splash damage.  Characteristics  Category Info Name Slime Icon Unit Type Melee, Monster Preferred Target None Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 2.5 Attack Range 2.5 (Melee) Base Damage 1.2 Damage vs. Wall x0.5 Chase King Time 3s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 12.5 Movement Speed 5  Eternal trials statistics Statistic Value Difficulty Budget 1 Gold Limit 0  Encounters  You can encounter Slimes in Frostsee. A Slime in-game."
+  ],
+  [
+    "Spiky slime",
+    "/game-content/enemies/spiky-slime.html",
+    "Spiky Slime  General  Spiky Slimes are a small enemy in Thronefall. They are the bigger and healther version of the slime. They are encountered in the colder regions of the kingdom of Thronefall.  Description  Spiky Slimes are small melee monsters without much brain, so they will just attack whatever is closest to them. They usually appear in groups, which makes them vulnerable against splash damage. Spiky slimes have more health and attack than normal slimes.  Characteristics  Category Info Name Spiky Slime Icon Unit Type Melee, Monster Preferred Target None Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 2.5 Attack Range 2.5 (Melee) Base Damage 3.6 Damage vs. Melee x0.4 Damage vs. Wall x0.33 Chase King Time 3s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 50 Movement Speed 5  Eternal trials statistics Statistic Value Difficulty Budget 4.25 Gold Limit 0  Encounters  You can encounter Spiky Slimes in Frostsee. A Spiky Slime in-game."
+  ],
+  [
+    "Strange statue",
+    "/game-content/enemies/strange-statue.html",
+    "Strange Statue  General  Strange Statues are a unique boss-battle on the map Sturmklamm. On the final night of the map, the 4 statues on the map awaken and start to attack.  Description  Some speculate they could be part of an ancient defense mechanism? Maybe there is a reason this castle remained abandoned for so long? No... they are just statues...  Characteristics  Category Info Name Strange Statue Icon Unit Type Boss, Melee, Tower Vulnerable Preferred Target Player Targets Player When near  Details Attack Statistics Statistic Value Attacks per second 2 Attack Range 5.5 (Melee) Projectile Speed 22.5 Base Damage 22.5 Damage vs. King x0.5 Damage vs. Castle Center x0.5 Chase King Time 0s  Details  Dig Attack Statistics Statistic Value Dig Cooldown 3-12s Dig Range 30 (flat) Dig Speed TBD AoE Range 5.25 AoE Damage 18 Flat damage is neither melee, nor ranged. Meaning it can not be lowered by melee or ranged resistances. The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 10000 Movement Speed 6 A dormant Strange Statue in-game. An awoken Strange Statue in-game."
+  ],
+  [
+    "Swordsman",
+    "/game-content/enemies/swordsman.html",
+    "Swordsman  General  Swordsmen are a basic enemy in Thronefall. While not introduced in the tutorial, you can find them anywhere in the kingdom of Thronefall.  Characteristics  Category Info Name Swordsman Icon Unit Type Melee Preferred Target None Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 3 (Melee) Base Damage 2.5 Chase King Time 5s  Defense Statistics  Statistic Value Health Points 25 Movement Speed 5  Eternal trials statistics Statistic Value Difficulty Budget 2 Gold Limit 0  Encounters  You can encounter Swordsmen in Nordfels, Durststein and Frostsee. A Swordsman in-game."
+  ],
+  [
+    "Wasp",
+    "/game-content/enemies/wasp.html",
+    "Wasp  General  Wasps are a basic flying enemy in Thronefall. While not introduced in the tutorial, they can be encountered almost everywhere in the kingdom of Thronefall.  Description  Wasps are flying monsters eager to destroy every single one of your economic buildings.  Characteristics  Category Info Name Wasp Icon Unit Type Ranged, Flying, Monster Preferred Target Economic Buildings Targets Player When hit  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 9 (Ranged) Projectile Speed 20 Base Damage 2.5 Damage vs. Flying x1.2 Damage vs. Ranged Resistant x0.5 Chase King Time 3s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 25 Movement Speed 8  Eternal trials statistics Statistic Value Difficulty Budget 5 Gold Limit 0  Encounters  You can encounter Wasps in Nordfels and Frostsee. A Wasp in-game."
+  ],
+  [
+    "Durststein",
+    "/game-content/maps/durststein.html",
+    " Durststein   Overview  Durststein (German for \"Thirst Stone\") is the third map in the game. The map features a desert design, 2 new buildings and 2 new enemies. It is also the map with the largest amount of starting money. Map composition This map features wide open areas and plenty of ramps and vantage points for ranged units to shoot from. Everything is surrounded by mountains and cliffs, resulting in 4 spawn areas, one in each cardinal direction. Map details Quests Name Description A. Achieve a victory B. Achieve a victory without   C. Achieve a victory with   D. Achieve a victory with    E. Achieve a victory with    F. Achieve a highscore of 12000  Spawned enemies Night Enemiess 1 10 Monster Riders, 9 Racers 2 18 Peasants, 9 Racers 3 14 Archers, 8 Monster Riders, 2 Swordsmen 4 30 Swordsmen, 10 Archers, 7 Hunterlings 5 20 Swordsmen, 5 Exploders 6 30 Archers, 12 Hunterlings, 10 Monster Riders 7 12 Archers, 12 Monster Riders, 3 Ogres, 3 Exploders 8 36 Swordsmen, 7 Ogres, 3 Exploders 9 90 Monster Riders 10 25 Hunterlings, 15 Swordsmen, 15 Archers, 15 Racers, 2 Ogres, 2 Catapults, 2 Exploders 11 35 Racers, 14 Ogres 12 150 Monster Riders, 50 Swordsmen, 35 Archers, 35 Hunterlings, 25 Ogres, 20 Racers, 20 Exploders, 3 Catapults Durststein without any buildings. Durststein in the map selection.  Gallery  Durststein with a fully upgraded castle. Durststein without any buildings. Durststein in the map selection."
+  ],
+  [
+    "Frostsee",
+    "/game-content/maps/frostsee.html",
+    " Frostsee   Overview  Frostsee (German for \"Frost lake\") is the fourth map in the game. The map features a snowy tundra design, 2 new buildings, 4 new enemies and a boss. It is also the currently hardest map playable.  Map composition This map features wide open areas, a few lakes and a buildable outpost. Everything is surrounded by icy mountains and water, resulting in 5 spawn areas, one being an ice cave. Map details Quests Name Description A. Achieve a victory B. Achieve a victory with     C. Achieve a victory with       D. Achieve a highscore of 12500 E. Achieve a victory with       F. Achieve a victory with       Spawned enemies Night Enemies 1 7 Swordsmen 2 17 Slimes 3 4 Elite Crossbow Men 4 45 Slimes 5 10 Swordsmen, 1 Ram 6 9 Wasps 7 14 Elite Crossbow Men, 2 Rams 8 30 Spiky Slimes, 8 Racers 9 33 Wasps 10 40 Swordsmen, 10 Elite Crossbow Men, 5 Ogres, 4 Rams 11 30 Racers, 20 Spiky Slimes, 20 Wasps 12 45 Swordsmen, 34 Slimes, 20 Racers, 17 Spiky Slimes, 10 Hunterlings, 8 Elite Crossbow Men, 8 Ogres, 3 Rams 13 1 Shadow In The Water Frostsee without any buildings. Frostsee in the map selection.  Gallery  Frostsee with a fully upgraded castle. Frostsee without any buildings. Frostsee in the map selection."
+  ],
+  [
+    "Maps list",
+    "/game-content/maps/index.html",
+    " Maps  Neuland The Tutorial of Thronefall.  It teaches the Player basic mechanics like attacking, building and upgrading.  Neuland is the easiest map of the game. As a tutorial, it has only one enemy spawning point located in the east.  Nordfels The map features a large mountain range in the north and a U-shaped river to define the mapborder. Enemy units spawn from the north-east, east, south-east, south, and the west of the castle with the west, south and northeast of the castle only spawning flying units. Durststein The map features a desert design, 2 new buildings and 2 new enemies. It is also the map with the largest amount of starting money.  This map features wide open areas and plenty of ramps and vantage points for ranged units to shoot from. Frostsee The map features a snowy tundra design, 2 new buildings, 4 new enemies and a boss. It is also the currently hardest map playable.  This map features wide open areas, a few lakes and a buildable outpost.  Uferwind With its rugged shoreline to one side and vast open grasslands to the other it offers a challenge unlike any of the maps before.  Right from the start you'll have quite a bit of gold and many building options on your hand, allowing you to explore a variety of different approaches.  Sturmklamm The map features a mountain design, 2 new buildings, 3 new enemies and a new boss. It is also the first map with ambient effects (rain). This map features many slim corridors and paths up a hill, on which your castle center stands.In the south are 4 bridges, which represent the 4 spawnpoints of ground enemies."
+  ],
+  [
+    "Neuland",
+    "/game-content/maps/neuland.html",
+    " Neuland   Overview  Neuland (German for \"New Land\") is the Tutorial of Thronefall. It teaches the Player basic mechanics like attacking, building and upgrading. Neuland is the easiest map of the game. As a tutorial, it has only one enemy spawning point located in the west.   Map composition  Neuland features a small plateau, a ramp leading to the enemy spawn point, surrounded by cliffs, a river and a forest to build your first kingdom on.  This is the easiest level of the game, having extra regeneration as a part of tutorial mechanics and only having one enemy spawning point on the east of the map. Map details Quests Name Description A. Achieve a victory Spawned enemies  Night Enemies 1 5 Peasants 2 6 Peasants 3 15 Peasants 4 25 Peasants 5 25 Peasants 6 15 Peasants, 7 Archers 7 20 Peasants, 10 Archers 8 4 Ogres an image of Neuland without any buildings. Neuland in the map selection.  Gallery  The starting area. The middle area. The third and main area. Neuland in the map selection."
+  ],
+  [
+    "Nordfels",
+    "/game-content/maps/nordfels.html",
+    " Nordfels   Overview  Nordfels (German for \"North rock\") is the first map of Thronefall after the tutorial. The map features a large mountain range in the north and a U-shaped river to define the mapborder.  Enemy units spawn from the north-east, east, south-east, south, and the west of the castle  with the west, south and northeast of the castle only spawning flying units.  Map composition Nordfels' Castle layout is split into 3 areas: Outisde area unprotected by walls: This area consists of 3 mills, 3 Watchtowers and 1 archer barracks.  The front of the castle: Area with 3 houses, 4 watchtowers and 1 barracks. The inner castle: Area with 7 houses, 3 watchtowers, 2 barracks (1 ranged and 1 melee), and the Castle Center building.  Map details Quests Name Description A. Achieve a victory B. Achieve a victory with   C. Achieve a victory with   D. Achieve a victory with   E. Achieve a victory with   F Achieve a victory with    Spawned enemies Night Enemies 1 3 Swordsmen 2 8 Swordsmen 3 8 Swordsmen, 2 Hunterlings 4 24 Archers 5 15 Racers 6 20 Swordsmen, 20 Archers 7 15 Wasps 8 30 Swordsmen, 10 Hunterlings, 10 Racers 9 25 Wasps, 5 Ogres  10 90 Swordsmen, 3 Ogres 11 50 Archers, 30 Racers 12 5 Hunterlings 13 80 Swordsmen, 35 Racers, 30 Wasps, 30 Archers, 16 Catapults, 7 Ogres, 5 Hunterlings Nordfels without any buildings. Nordfels in the map selection.  Gallery  Nordfels with a fully upgraded castle. Nordfels without any buildings. Nordfels in the map selection."
+  ],
+  [
+    "Sturmklamm",
+    "/game-content/maps/sturmklamm.html",
+    " Sturmklamm   Overview  Sturmklamm (German for \"Storm Ravine\") is the fifth map in the game. The map features a mountain design, 2 new buildings, 3 new enemies and a new boss. It is also the first map with ambient effects (rain). Map composition This map features many slim corridors and paths up a hill, on which your castle center stands. In the south are 4 bridges, which represent the 4 spawnpoints of ground enemies. Since one bridge is not longer standing, its spawnpoint can only be used to spawn mole-like enemies. The north is blocked by hills, where multiple spawnpoints for flying enemies are located. Map details Quests Name Description A. Achieve a victory B. Achieve a victory with       C. Achieve a victory with       D. Achieve a victory with     E. Achieve a highscore of 13500 F. Achieve a victory with   Spawned enemies Night Enemiess 1 3 Archers, 3 Pikes 2 5 Mole Knights 3 12 Archers, 9 Pikes 4 8 Wasps, 6 Furies 5 8 Mole Archers, 8 Mole Knights 6 30 Archers, 6 Ogres, 3 Catapults 7 30 Monster Riders, 30 Racers, 20 Mole Knights, 20 Flying Mages 8 36 Pikes, 9 Quickslings 9 60 Mole Archers, 40 Mole Knights, 6 Exploders 10 90 Racers, 30 Elite Crossbow Men, 6 Exploders 11 30 Wasps, 30 Flying Mages, 14 Furies 12 85 Mole Archers, 70 Mole Knights, 45 Swordsmen, 30 Racers, 30 Pikes, 16 Quickslings, 10 Exploders 13 4 Strange Statues Sturmklamm without any buildings. Sturmklamm in the map selection.  Gallery  Sturmklamm with a fully upgraded castle. Sturmklamm without any buildings. Sturmklamm in the map selection."
+  ],
+  [
+    "Uferwind",
+    "/game-content/maps/uferwind.html",
+    " Uferwind  Overview Uferwind (German for \"Shore wind\") is the fifth map of Thronefall.  With its rugged shoreline to one side and vast open grasslands to the other it offers a challenge unlike any of the maps before.  Right from the start you'll have quite a bit of gold and many building options on your hand, allowing you to explore a variety of different approaches.   Map details   Quests  Name Description A. Achieve a victory B. Achieve a victory with     C. Achieve a victory with     D. Achieve a victory with     E. Achieve a victory with     F. Achieve a victory with        Spawned enemies  Night Enemies 1 47 Peasants 2 10 Archers, 8 Pikes 3 7 Furies 4 25Archers, 16 Pikes 5 12 Monster Riders, 12 Wasps, 8 Furies 6 38 Barrel Knights 7 25 Flying Mages 8 25 Archers, 25 Pikes, 16 Wasps, 12 Furies 9 45 Barrel Knights, 35 Flying Mages 10 30 Furies, 25 Racers, 20 Wasps 11 40 Flying Mages, 40 Pikes, 12 Ogres, 4 Rams 12 46 Flying Mages, 42 Barrel Knights, 30 Furies, 7 Rams  Available buildings  Castle level Defense buildings Economy buildings 1 15x Tower, 2x Wall (1x very long, 1x short), 2x Barracks, 2x Archery range, 1x Hero's quarter, 1x Blacksmith 13x House, 6x Field, 3x Mill, 3x Bridge, 1x Harbour 2 11x Tower 13x Field, 2x Mill, 2x Harbour 3 5x Field  Gallery  The open area without buildings. Uferwind in the level selection. Castle area with buildings and units. Uferwind without buildings. Uferwind in the level selection."
+  ],
+  [
+    "Death god",
+    "/game-content/mutators/death-god.html",
+    "Death God  General  The Challenge the God of Death mutator removes the ability for barracks and archery ranges to revive dead units and also increases the kings respawn time drastically, but also increases the score and XP by 20% if you win.  Description Allied units are no longer revived at night and your own revive time is increased by +100%, but you get 20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Destruction god",
+    "/game-content/mutators/destruction-god.html",
+    "Destruction God  General  The Challenge the God of Destruction mutator reduces the amount of health all buildings are healed at the end of a night and also increases the time a destroyed building needs to be repaired, but also increases the score and XP by 20% if you win.  Description Buildings only heal 25% of their health points every morning. Destroyed buildings take an additional day to get repaired, but you get 20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Elite god",
+    "/game-content/mutators/elite-god.html",
+    "Elite God  General  The Challenge the Elite God mutator makes every third enemy an elite version of themselfes, but also increases the score and XP by 60% if you win.  Description Every third enemy spawn will consist of elite enemies with greatly improved health and attack damage, but you get +60% more score and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Falcon god",
+    "/game-content/mutators/falcon-god.html",
+    "Falcon God  General  The Challenge the Falcon God mutator increases the speed of enemies significantly, but also increases the score and XP by 20% if you win.  Description Enemies are +75% faster and chase you for -60% shorter when you attack them, but you get 20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Growth god",
+    "/game-content/mutators/growth-god.html",
+    "Growth God  General The Challenge the Growth God mutator increases the health and damage of all enemies each night, but also increases the score and XP by 50% if you win. The increase in health and damge is calculated using this formular:1.75(current_night ÷ total_amount_of_nights)   Description Enemies grow stronger every night, all the way up to +75% health and +75% attack damage, but you get 50% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Mutators list",
+    "/game-content/mutators/index.html",
+    "Mutators Description Mutators are modifiers that can be selected before playing a level in Thronefall.  Mutators raise the difficulty of the game, but give additional points and XP in return. Unlike with weapons or perks, any number of mutators can be selected.  List of mutators Pray to the War Gods Challenge the Turtle God Challenge the Tiger God  Challenge the Snake God  Challenge the Falcon God  The God of Destruction  Challenge the Wasp God  Challenge the God of Death  No Walls Pact Challenge the Phoenix God  No Towers Pact No Units Pact Challenge the Range God Challenge the Growth God Challenge the Elite God"
+  ],
+  [
+    "No towers pact",
+    "/game-content/mutators/no-towers-pact.html",
+    "No Towers Pact  General  The No Towers Pact mutator removes the option of building towers, but also increases the score and XP by 20% if you win.  Description You can't build any towers, but you get +20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "No units pact",
+    "/game-content/mutators/no-units-pact.html",
+    "No Units Pact  General  The No Units Pact mutator removes the option of building units, but also increases the score and XP by 40% if you win.  Description You can't build any units, but you get +20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "No walls pact",
+    "/game-content/mutators/no-walls-pact.html",
+    "No Walls Pact  General  The No Walls Pact mutator removes the option of building walls, but also increases the score and XP by 10% if you win.  Description You can't build any walls, but you get +10% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Phoenix god",
+    "/game-content/mutators/phoenix-god.html",
+    "Phoenix God  General  The Challenge the Phoenix God mutator enables enemies to regenerate health, but also increases the score and XP by 20% if you win.  Description Enemy units regenerate 8% of their health every second, but you get +30% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Pray to the war gods",
+    "/game-content/mutators/pray-to-the-war-gods.html",
+    "Pray to the War Gods  General  The Pray to the War Gods mutator weakens enemies, but also dencreases the score and XP by -40% if you win.  Description Enemies have -20% health and deal -20% damage, but you get -40% less points and XP if you win. (Warning; Quests with specific loadout requirements can not be completed while this mutator is enabled.)  Icon of the Mutator."
+  ],
+  [
+    "Range god",
+    "/game-content/mutators/range-god.html",
+    "Range God  General  The Challenge the Range God mutator increases the health, range, move speed, attack speed and damage of all ranged, non-flying enemies, but also increases the score and XP by 20% if you win.  Description Ranged enemies on the ground are supercharged and have +70% more range, +100% hleath, +40% attack damage, +50% move speed and -30% attack cooldown times, but you get 20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Snake god",
+    "/game-content/mutators/snake-god.html",
+    "Snake God  General  The Challenge the Tiger God mutator decreases the amount of gold enemies drop significantly, but also increases the score and XP by 30% if you win.  Description Enemies drop -50% gold, but you get 30% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Tiger god",
+    "/game-content/mutators/tiger-god.html",
+    "Tiger God  General  The Challenge the Tiger God mutator increases the damage of enemies significantly, but also increases the score and XP by 20% if you win.  Description Enemies deal +75% damage, but you get 20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Turtle god",
+    "/game-content/mutators/turtle-god.html",
+    "Turtle God  General  The Challenge the Turtle God mutator increases the health of enemies significantly, but also increases the score and XP by 40% if you win.  Description Enemies have +75% more health, but you get 40% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Wasp god",
+    "/game-content/mutators/wasp-god.html",
+    "Wasp God  General  The Challenge the Wasp God mutator increases the amount of enemies during the first three nights and increases the spawning speed by +25%, but also increases the score and XP by 20% if you win.  Description In the first 3 nights, there will be +100% more enemies that spawn +25% faster, but you get +20% more points and XP if you win.  Icon of the Mutator."
+  ],
+  [
+    "Ancient shrines",
+    "/game-content/perks/ancient-shrines.html",
+    "Ancient Shrines  General   Shrines are built from the beginning of the level and become stronger, but need more kills to be activated.  Description Shrines do not have to be purchased and shoot +50% stronger projectiles, but they require +100% more energy to be activated. Icon of the Perk."
+  ],
+  [
+    "Anti air telescope",
+    "/game-content/perks/anti-air-telescope.html",
+    "Anti Air Telescope  General   The Anti-Air Telescope Perk weakens flying enemies.  Description Flying enemies spawn with -25% health and deal -25% damage. Icon of the Perk."
+  ],
+  [
+    "Arcane towers",
+    "/game-content/perks/arcane-towers.html",
+    "Arcane Towers  General   The Arcane Towers Perk is unlocked upon reaching level 3 and improves your towers significantly.  Description All of your towers have +33% range and their projectiles deal +33% more damage to enemies.  Statistics The range of your towers increases by 33% and their attack damage by 2.5. This damage bonus increases to 40 for the ballista path of the tower.  Icon of the Perk."
+  ],
+  [
+    "Archery skills",
+    "/game-content/perks/archery-skills.html",
+    "Archery Skills  General   The Archery Skills Perk is unlocked upon reaching level 32 and increases the range and movement speed of all allied ranged units.  Description All your archers have +60% more range and their movement speed is increased by +20%. Icon of the Perk."
+  ],
+  [
+    "Architects council",
+    "/game-content/perks/architects-council.html",
+    "Architects Council  General   The Architect's Council Perk is unlocked upon reaching level 13 and enables you to build buildings from the level 2 castle center upgrade.  Description The build options from the next castle center upgrade are already unlocked. This means you have more building options to choose from early in the game.  Statistics At the start of the game, unlocks all buildings that are only buildable when you have a level 2 castle center. Icon of the Perk."
+  ],
+  [
+    "Big harbours",
+    "/game-content/perks/big-harbours.html",
+    "Big Harbours  General   The Big Harbour Perk is unlocked upon reaching level 28 and increases the amount of fishing ships one harbour can hold. It also increases the health points of harbours. Additionally, fishing harbours gain a fishing ship upon construction.  Description Harbours have capacity for 2 additional fishing boats, have +100% more health and spawn with one boat on the water.  Icon of the Perk."
+  ],
+  [
+    "Castle blueprints",
+    "/game-content/perks/castle-blueprints.html",
+    "Castle Blueprints  General  The Castle Blueprints Perk is unlocked upon reaching level 18 and increases the health points of walls and towers.  Description Walls and towers have +70% more health. Icon of the Perk."
+  ],
+  [
+    "Castle fortifications",
+    "/game-content/perks/castle-fortifications.html",
+    "Castle Fortifications  General   The Castle Fortifications Perk is unlocked upon reaching level 7 and increases the damage output of your caslte center.  Description Your castle center has +150% health. The interval between its attacks is reduced by -67% and its attack range is increased by +50%.  Statistics The castle gains +150% health points, +50% attack range and +200% attacks per second.  Icon of the Perk."
+  ],
+  [
+    "Commander mode",
+    "/game-content/perks/commander-mode.html",
+    "Commander Mode  General  The Commander Mode Perk is unlocked upon reaching level 11 and increases the damage of units and buildings at the cost of the kings damage.  Description All of your units and buildings deal +40% more damage to enemies, but your own damage is -60% less effective. Icon of the Perk."
+  ],
+  [
+    "Daredevil",
+    "/game-content/perks/daredevil.html",
+    "Daredevil  General   Gain an increased amount of starting gold, at the cost of 10 gold drops  Description The lower on health you are, the more additional attack damage you have (up to +75%). Icon of the Perk."
+  ],
+  [
+    "Elite towers",
+    "/game-content/perks/elite-towers.html",
+    "Elite Towers  General   The perk increases the damage of newly built or upgraded towers for one night.  Description Every tower that was freshly built or upgraded during the last day receives an elite marker for one night making it deal +50% Icon of the Perk."
+  ],
+  [
+    "Elite warriors",
+    "/game-content/perks/elite-warriors.html",
+    "Elite Warriors  General   The Elite Warrios Perk is unlocked upon reaching level 31 and increases your units health at the cost of respawn speed.  Description All of your units have +80% health, but their training speed at night is reduced by -60%.  Statistics The units gain +80% health points, but take 150% longer to revive (250% total). Icon of the Perk."
+  ],
+  [
+    "Faster research",
+    "/game-content/perks/faster-research.html",
+    "Faster Research  General   The Faster Research Perk is unlocked upon reaching level 33 and increases the research speed and decreases the research cost of blacksmiths and royal forges.  Description All of your research start with 1 day of progress already complete, so all upgrades finish much faster. All upgrades cost -1 gold.  Statistics Blacksmiths need 1 night less to finish an upgrade and cost 1 gold less. Resulting in offensive upgrades needing 2 nights to finish and defensive upgrades just 1. Icon of the Perk."
+  ],
+  [
+    "Fortified houses",
+    "/game-content/perks/fortified-houses.html",
+    "Fortified Houses  General   The Fortified Houses Perk is unlocked upon reaching level 35 and increases the durability of your houses. Houses also gain a ranged attack.  Description  Details Statistic Value Health Points 70 | 105 Attacks per second 0.602 Attack Range 17 (Ranged) Projectile Speed 20 Base Damage 8 Damage vs. Ranged Resistant x0.6 Damage vs. Tower Vulnerable x3 Icon of the Perk."
+  ],
+  [
+    "Gladiator school",
+    "/game-content/perks/gladiator-school.html",
+    "Gladiator School  General  The Gladiator School Perk is unlocked upon reaching level 20 and increses the speed barracks revive units at the cost of increasing the upgrade cost.  Description Icon of the Perk."
+  ],
+  [
+    "Glass cannon",
+    "/game-content/perks/glass-cannon.html",
+    "Glass Cannon  General   The Glass Cannon Perk is unlocked upon reaching level 2 and increases the damage of your king significantly at the cost of a great amount of health points.  Description You deal +80% more damage, but you have -66% health. Icon of the Perk."
+  ],
+  [
+    "Gods lotion",
+    "/game-content/perks/gods-lotion.html",
+    "Gods Lotion  General   The Gods Lotion Perk is unlocked upon reaching level 47 and improves the regeneration of the king.  Description You regenerate health +120% faster and the delay before the health regeneration kicks in is reduced by -50%. Icon of the Perk."
+  ],
+  [
+    "Healing spirits",
+    "/game-content/perks/healing-spirits.html",
+    "Healing Spirits  General   The Healing Spirits Perk is unlocked upon reaching level 39 and increases the effectiveness of healing affects on allied units and your king.  Description All healing effects on you and your units are +65% more effective. Icon of the Perk."
+  ],
+  [
+    "Health potions",
+    "/game-content/perks/health-potions.html",
+    "Health Potions  General   The Health Potions Perk enables your units to regenerate health.  Description All of your units heal themselves by 4% each second. Icon of the Perk."
+  ],
+  [
+    "Heavy armor",
+    "/game-content/perks/heavy-armor.html",
+    "Heavy Armor  General   The Heavy Armor Perk is unlocked upon reaching level 5 and increases your kings health points. It gives the king +250% more health points, but slows down the health regeneration by 250% (350% of original time).  Description You have a massive +250% more health. Icon of the Perk."
+  ],
+  [
+    "Ice magic",
+    "/game-content/perks/ice-magic.html",
+    "Ice Magic  General   The Ice Magic Perk is unlocked upon reaching level 40 and increases the duration and effectiveness of slowing effects.  Description Slow effects on enemies last -200% longer and slowed enemies move -30% slower.  Statistics All slow effects on enemies last three times as long and slow them by an additional -10.31% (-76,97% total)  Icon of the Perk."
+  ],
+  [
+    "Indestructable mines",
+    "/game-content/perks/indestructable-mines.html",
+    "Indestructible Mines  General   The Indestructible Mines Perk is unlocked upon reaching level 46 and makes your gold mines invincible.  Description Your gold mines are indestructible.  Statistics Your mines become invincible and can no longer be targeted by enemies. Icon of the Perk."
+  ],
+  [
+    "Perks list",
+    "/game-content/perks/index.html",
+    "Perks Description Perks are modifiers that can be selected before playing a level in Thronefall.  Perks give the player a certain boon during a level. At the start, only 1 perk can be selected.  Up to 2 perks can be selected from player level 8 onwards, and 3 perks from player level 24 onwards.  List of perks Royal Mint  Arcane Towers Heavy Armor Castle Fortifications Ring of Resurrection  Commander Mode Architect's Council  Warrior Mode Castle Blueprints Gladiator School War Horse  Glass Cannon Big Harbours  Elite Warriors  Archery Skills  Faster Research Fortified Houses Pumpkin Fields  Healing Spirits  Ice Magic Melee Resistance Power Tower Ranged Resistance Treasure Hunter  Indestructible Mines Gods Lotion Melee Damage Anti-Air Telescope Health Potions Ranged Damage Stronger Heroes Loan Elite Towers Ancient Shrines Lighter Materials Spell Scroll Daredevil"
+  ],
+  [
+    "Lighter materials",
+    "/game-content/perks/lighter-materials.html",
+    "Lighter Materials  General   Your king attacks 1.33 times as fast.  Description Your auto-attack cooldown is reduced by -25%. Icon of the Perk."
+  ],
+  [
+    "Loan",
+    "/game-content/perks/loan.html",
+    "Loan  General   Gain an increased amount of starting gold, at the cost of 10 gold drops  Description Start the level with +7 gold, but the first 10 gold dropped by enemies disappear. Icon of the Perk."
+  ],
+  [
+    "Melee damage",
+    "/game-content/perks/melee-damage.html",
+    "Melee Damage  General   The Melee Damage perk increases the melee damage of the King and all the units by 25%.  Description You, your units and all of your buildings start the game with +25% melee damage.  Icon of the Perk."
+  ],
+  [
+    "Melee resistance",
+    "/game-content/perks/melee-resistance.html",
+    "Melee Resistance  General   The Melee Resistance Perk is unlocked upon reaching level 41 and reduces the amount of melee damage your king, units and buildings take.  Description You, your units and all of your buildings start the game with +35% resistance against melee attacks.  Statistics Any Damage from melee attacks, that the King units and all buildings would take is multiplied by 0.741, resulting in a 26% damage reduction. This stacks multiplicatively with the Blacksmith Melee Resistance upgrades. Icon of the Perk."
+  ],
+  [
+    "Power tower",
+    "/game-content/perks/power-tower.html",
+    "Power Tower  General   The Power Tower Perk is unlocked upon reaching level 42 and increases the attack speed of the closest tower to the king.  Description The tower you are closest to gets a significant attack speed boost of +233%. Icon of the Perk."
+  ],
+  [
+    "Pumpkin fields",
+    "/game-content/perks/pumpkin-fields.html",
+    "Pumpkin Fields  General   The Pumpkin Fields Perk is unlocked upon reaching level 37 and increases the income, that mills produce and increase the health of all farmlands.  Description Mills give +1 additional gold per day and Farmlands have +400% health. Icon of the Perk."
+  ],
+  [
+    "Ranged damage",
+    "/game-content/perks/ranged-damage.html",
+    "Ranged Damage  General   The Ranged Damage perk increases the ranged damage of the King and all the units by 25%.  Description You, your units and all of your buildings start the game with +25% ranged damage.  Icon of the Perk."
+  ],
+  [
+    "Ranged resistance",
+    "/game-content/perks/ranged-resistance.html",
+    "Ranged Resistance  General   The Ranged Resistance Perk is unlocked upon reaching level 43 and reduces the amount of ranged damage your king, units and buildings take.  Description You, your units and all of your buildings start the game with +35% resistance against ranged attacks.  Statistics Any Damage from ranged attacks that the King, units and all buildings would take is multiplied by 0.741, resulting in a 26% damage reduction. This stacks multiplicatively with the Blacksmith Ranged Resistance upgrades. Icon of the Perk."
+  ],
+  [
+    "Ring of resurrection",
+    "/game-content/perks/ring-of-resurrection.html",
+    "Ring of Resurrection  General   The Ring of Resurrection Perk is unlocked upon reaching level 9 and grants your king and your units one very fast revive each night.  Description The first time you die each night, you are revived immediately and all of your dead units are revived with you.  Statistics The first revive of the King each night takes 2 seconds. This revive also revives your units. This also works while using the Challenge the God of Death mutator. Icon of the Perk."
+  ],
+  [
+    "Royal mint",
+    "/game-content/perks/royal-mint.html",
+    "Royal Mint  General   The Royal Mint Perk is unlocked upon reaching level 2 and enables your castle center to produce gold.  Description Your castle center produices 1, 2 or 3 additional gold per day depending on its level. Icon of the Perk."
+  ],
+  [
+    "Spell scroll",
+    "/game-content/perks/spell-scroll.html",
+    "Spell Scroll  General   Your ability-cooldown refreshes 1,538 times as fast  Description The cooldown of your active ability is reduced by -35%. Icon of the Perk."
+  ],
+  [
+    "Stronger heros",
+    "/game-content/perks/stronger-heros.html",
+    "Stronger Heros  General   The Stronger Heroes perk increases the damage and health points of all heros by +40%.  Description Your hero units from the hero's quarter have +40% more health and are +40% stronger.  Icon of the Perk."
+  ],
+  [
+    "Treasure hunter",
+    "/game-content/perks/treasure-hunter.html",
+    "Treasure Hunter  General   The Treasure Hunter Perk is unlocked upon reaching level 45 and grants you gold on the day before the lat night.  Description You get +60 gold on the morning before the last night. Icon of the Perk."
+  ],
+  [
+    "War horse",
+    "/game-content/perks/war-horse.html",
+    "War Horse  General   The War Horse Perk is unlocked upon reaching level 21 and increases the movementspeed of your king. It also eneables your king to deal damage by running over enemies.  Description Your horse is +20% faster and riding over enemies deals 2.25 damage. This damage increases in correlation to all of your other in-game weapon upgrades like certain castle center upgrades.  Icon of the Perk."
+  ],
+  [
+    "Warrior mode",
+    "/game-content/perks/warrior-mode.html",
+    "Warrior Mode  General   The Warrior Mode Perk is unlocked upon reaching level 16 and increases your kings damage at the cost of the damage of units and buildings.  Description The weapon you equipped becomes more powerful every night all the way up to +175%, but all of your units and buildings deal -30% less damage right from the beginning.  Statistics The units and structures deal 30% less damage, but your king gains damage each night, up to a total of +175% damage. The kings damage is calculated with this formula:2.75(current_night ÷ total_amount_of_nights). Icon of the Perk."
+  ],
+  [
+    "Allied crossbowmen",
+    "/game-content/units/allied-crossbowmen.html",
+    "Allied Crossbowmen  General  Crossbowmen are a basic ranged unit in Thronefall. While first introduced in Norfels, they can be recruited everywhere in the kingdom of Thronefall.  Description  Crossbowmen have a low range, but high damage output. They are armored against ranged attacks. Bonus damage against ranged units. Less effective against flying units.  Characteristics  Category Info Name Crossbowmen Icon Unit Type Unit, Ranged Preferred Target None  Details Attack Statistics Statistic Value Attacks per second 0.5 Attack Range 13 (Ranged) Projectile Speed 40 Base Damage 7 Damage vs. Ranged x2 Damage vs. Flying x0.5 Damage vs. Ranged Resistant x0.4 Search Radius 45 Keep Distance Radius 12 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 35 Movement Speed 4  Encounters  You can recruit Crossbowmen in Nordfels, Durststein and Frostsee. A Crossbowman in-game."
+  ],
+  [
+    "Berserks",
+    "/game-content/units/berserks.html",
+    "Berserks  General  Berserks are a melee unit in Thronefall. They are unlocked upon reaching level 25 and can be recruited everywhere in the kingdom of Thronefall.  Description  Berserks target siege units and other high health targets. They will not hesitate to sacrifice their lives for you.  Characteristics  Category Info Name Berserk Icon Unit Type Unit, Melee Preferred Target Siege type, high health type enemies  Details Attack Statistics Statistic Value Attacks per second 2 Attack Range 3 (Melee) Base Damage 2.5 Damage vs. Siege x2 Search Radius 100 Keep Distance Radius 2 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 65 Movement Speed 6.5  Encounters  You can recruit Berserks in Neuland, Nordfels, Durststein and Frostsee. A Berserk in-game."
+  ],
+  [
+    "Fire archers",
+    "/game-content/units/fire-archers.html",
+    "Fire Archers  General  Fire Archers are a ranged unit in Thronefall, specialising in fighting siege type enemies. They are unlocked upon reaching level 29 and can be recruited everywhere in the kingdom of Thronefall. Fire Archers are the only unit in thronefall that leave behind a damaging effect on the ground.  Description  Fire Archers deal splash damage around their target and cause bonus damage against siege engines.  Characteristics  Category Info Name Fire Archer Icon Unit Type Ranged Preferred Target Siege, Non-Flying type enemies  Details Attack Statistics Statistic Value Attacks per second 0.333 Attack Range 25 (Ranged) Projectile Speed 18 Base Damage vs. Flying 5 Base Damage vs. Ground 5.4x7 (37.8) Area of Effect vs. Ground 3.25 Damage vs. Siege x3 Damage vs. Ranged Resistant x0.5 Search Radius 42 Keep Distance Radius 24 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 30 Movement Speed 5  Encounters  You can recruit Fire Archers in Nordfels, Durststein and Frostsee. A Fire Archer in-game."
+  ],
+  [
+    "Firewing",
+    "/game-content/units/firewing.html",
+    "Firewing  General  Firewings are a ranged, flying hero in Thronefall, dealing AoE damage to ground and flying targets.  Description  A flying unit that deals splash damage to ground and airborne enemies.  Characteristics  Category Info Name Firewing Icon Unit Type Ranged, Flying, Unit Preferred Target None  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range vs. Ground 45 (Ranged) Attack Range vs. Flying 35 (Ranged) Area of Effect 3.25 Main Attack Base Damage 4 AoE Base Damage 5 Search Radius vs. Ground 35 Search Radius vs. Flying 60 Keep Distance Radius 12  Defense Statistics  Statistic Value Health Points 30 Movement Speed 10 A Firewing in-game."
+  ],
+  [
+    "Flails",
+    "/game-content/units/flails.html",
+    "Flails  General  Flails are a melee unit in Thronefall. They are unlocked upon reaching level 6 and can be recruited everywhere in the kingdom of Thronefall. Flails are the only melee unit that can damage multiple enemies at once.  Description  Flails can simultaneously attack all enemies in a circle around them.  Characteristics  Category Info Name Flail Icon Unit Type Unit, Melee Preferred Target None  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 4 (Melee) Base Damage 1.5 Search Radius 40 Keep Distance Radius 3.5  Defense Statistics  Statistic Value Health Points 70 Movement Speed 5  Encounters  You can recruit Flails in Neuland, Nordfels, Durststein and Frostsee. A Flail in-game."
+  ],
+  [
+    "Golem",
+    "/game-content/units/golem.html",
+    "Golem  General  Golems are a melee hero in Thronefall, dealing huge AoE and single target damage to ground targets.  Description  Very sturdy unit that deals both splash damage, as well as plenty of single target damage. Perfect for your frontline when supported by other untis.  Characteristics  Category Info Name Golem Icon Unit Type Melee, Unit Preferred Target None  Details Attack Statistics Statistic Value Attacks per second 0.333 Attack Range 4.5 (Melee) Area of Effect 0.94 Base Damage 30 AoE Base Damage 5 Search Radius 30 Keep Distance Radius 3  Defense Statistics  Statistic Value Health Points 300 Movement Speed 4 A Golem in-game."
+  ],
+  [
+    "Hunters",
+    "/game-content/units/hunters.html",
+    "Hunters  General  Hunters are a ranged unit in Thronefall, specialising in fighting monster type enemies. They are unlocked upon reaching level 19 and can be recruited everywhere in the kingdom of Thronefall. Hunters are the only ranged unit in the game that has a dedicated attack for melee range.  Description  Hunters are fast and effective against monsters. They have decent self defense capeabilities in melee combat, but are vulnerable against ranged units.  Characteristics  Category Info Name Hunters Icon Unit Type Unit, Ranged Preferred Target Monster type enemies  Details  Ranged Attack Statistics Statistic Value Attacks per second 0.714 Attack Range 25 (+40% vs. Monsters; Ranged) Projectile Speed 20 Base Damage 3.5 Damage vs. Monsters x2 Damage vs. Air, not Monster  x0.5 Damage vs. Ranged Resistant x0.5 Search Radius 42 Keep Distance Radius 24  Melee Attack Statistics Statistic Value Attacks per second 2 Attack Range 3.5 (Melee) Base Damage 3.5 Damage vs. Monsters x2 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 45 Movement Speed 6  Encounters  You can recruit Hunters in Nordfels, Durststein and Frostsee. A Hunter in-game."
+  ],
+  [
+    "Units list",
+    "/game-content/units/index.html",
+    "Units Description As the King cannot be at multiple places at once, units are an excellent way to divide your attention when enemies attack from multiple sides.  Units are a very versatile defense (more so than towers), as they can be placed anywhere, and can be commanded to stand ground or follow.  In every level, certain units have particular advantages due to the level layout and spawning enemies. Regular units, such as melee units and ranged units, are available in groups (+4 for each upgrade). Hero units only appear as a single unit,  but get stronger and more resilient with upgrades instead. List of units Berserks Berserks are a melee unit in Thronefall. They are unlocked upon reaching level 25 and can be recruited everywhere in the kingdom of Thronefall. Crossbowmen Crossbowmen are a basic ranged unit in Thronefall. While first introduced in Norfels, they can be recruited everywhere in the kingdom of Thronefall. Fire Archers  Fire Archers are a ranged unit in Thronefall, specialising in fighting siege type enemies. They are unlocked upon reaching level 29 and can be recruited everywhere in the kingdom of Thronefall. Firewing Firewings are a ranged, flying hero in Thronefall, dealing AoE damage to ground and flying targets. Flails Flails are a melee unit in Thronefall. They are unlocked upon reaching level 6 and can be recruited everywhere in the kingdom of Thronefall. Golem Golems are a melee hero in Thronefall, dealing huge AoE and single target damage to ground targets. Hunters Hunters are a ranged unit in Thronefall, specialising in fighting monster type enemies. They are unlocked upon reaching level 19 and can be recruited everywhere in the kingdom of Thronefall. Knights Knights are a basic melee unit in Thronefall. While first introduced in Norfels, they can be recruited everywhere in the kingdom of Thronefall. Lizzard rider Lizzard Riders are a hybrid melee and ranged hero in Thronefall, dealing huge single target damage. Longbow archers Longbow Archers are a basic ranged unit in Thronefall. While first introduced in Norfels, they can be recruited everywhere in the kingdom of Thronefall. Spearmen Spearmen are a basic melee unit in Thronefall. While first introduced in Nordfels, they can be recruited everywhere in the kingdom of Thronefall. Support mage Support Mages are a ranged hero in Thronefall, healing the king and allied units and blocks magical projectiles."
+  ],
+  [
+    "Knights",
+    "/game-content/units/knights.html",
+    "Knights  General  Knights are a basic melee unit in Thronefall. While first introduced in Norfels, they can be recruited everywhere in the kingdom of Thronefall.  Description  Knights are versatile warriors, who are well armored against ranged attacks.  Characteristics  Category Info Name Knight Icon Unit Type Unit, Melee, Ranged Resistant Preferred Target None  Details Attack Statistics Statistic Value Attacks per second 1 Attack Range 3.5 (Melee) Base Damage 2.5 Search Radius 40 Keep Distance Radius 2  Defense Statistics  Statistic Value Health Points 100 Movement Speed 4  Encounters  You can recruit Knights in Neuland, Nordfels, Durststein and Frostsee. A Knight in-game."
+  ],
+  [
+    "Lizzard rider",
+    "/game-content/units/lizzard-rider.html",
+    "Lizzard Rider  General  Lizzard Riders are a hybrid melee and ranged hero in Thronefall, dealing huge single target damage.  Description  Fast archer unit that focusses on important targets like low health enemies, flying monsters or enemy support units. Additionally the lizzard can perform a melee attack.  Characteristics  Category Info Name Lizzard Rider Icon Unit Type Melee, Ranged, Unit Preferred Target Low Health, Flying type enemies  Details  Melee Attack Statistics Statistic Value Attacks per second 2 Attack Range 5.5 (Melee) Base Damage 3.5 Search Radius 65 Keep Distance Radius 25  Ranged Attack Statistics Statistic Value Attacks per second 2 Attack Range 30 (Melee) Base Damage 6  Defense Statistics  Statistic Value Health Points 60 Movement Speed 13 A Lizzard Rider in-game."
+  ],
+  [
+    "Longbows",
+    "/game-content/units/longbows.html",
+    "Longbows  General  Longbow Archers are a basic ranged unit in Thronefall. While first introduced in Norfels, they can be recruited everywhere in the kingdom of Thronefall.  Description  Longbows have a very large range, but are quite fragile. Great pick if you manage to keep them at a safe distance.  Characteristics  Category Info Name Longbow Archers Icon Unit Type Unit, Ranged Preferred Target Flying  Details Attack Statistics Statistic Value Attacks per second 0.5 Attack Range 40 (Ranged) Attack Range vs. Flying 50 (Ranged) Projectile Speed 22 Base Damage 4 Damage vs. Flying x1.2 Damage vs. Ranged Resistant x0.5 Search Radius 65 Keep Distance Radius 34 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 15 Movement Speed 9  Encounters  You can recruit Longbow Archers in Nordfels, Durststein and Frostsee. A Longbow Archer in-game."
+  ],
+  [
+    "Spearmen",
+    "/game-content/units/spearmen.html",
+    "Spearmen  General  Spearmen are a basic melee unit in Thronefall. While first introduced in Nordfels, they can be recruited everywhere in the kingdom of Thronefall.  Description  Spearmen are fast and strong units. They do extra damage against fast enemies and slow them down. Not a great pick against ranged units.  Characteristics  Category Info Name Spearman Icon Unit Type Unit, Melee, Ranged Vulnerable Preferred Target None  Details Attack Statistics Statistic Value Attacks per second 2 Attack Range 4.5 (Melee) Base Damage 1.75 Damage vs. Ranged x0.75 Damage vs. Fast x1.75 Slow Duration vs. Fast 2s Slow Strength vs. Fast -67% Search Radius 40 Keep Distance Radius 3.5 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Defense Statistics  Statistic Value Health Points 60 Movement Speed 8  Encounters  You can recruit Spearmen in Neuland, Nordfels, Durststein and Frostsee. A Spearman in-game."
+  ],
+  [
+    "Support mage",
+    "/game-content/units/support-mage.html",
+    "Support Mage  General  Support Mages are a ranged hero in Thronefall, healing the king and allied units and blocks magical projectiles.  Description  Heals you and allied units in range and absorbs magical projectiles in a wide radius.  Characteristics  Category Info Name Support Mage Icon Unit Type Ranged, Unit Preferred Target None  Details Attack Statistics Statistic Value Heals per second 1.5 Heal Range 26 Base Heal 3.5x4 (14) Projectile Blocks per second 3 Projectile Block Range 30 Search Radius 65 Keep Distance Radius 10  Defense Statistics  Statistic Value Health Points 25 Movement Speed 9 A Support Mage in-game."
+  ],
+  [
+    "Assassins training",
+    "/game-content/upgrades/assassins-training.html",
+    "Assassins Training  General  Assassin's Training is an upgrade path of theCastle Center. It can be chosen upon upgrading the Castle Center to level 2 and increases the damage of the King significantly and may reduce the cooldown of your weapons active ability, when timed correctly. Assassin's Training increases the Kings attack damage by +100% and can reduce your active abilities cooldown by up to 50%.  Description  The Assassin's Training Icon."
+  ],
+  [
+    "Ballista",
+    "/game-content/upgrades/ballista.html",
+    "Ballista Removed feature This feature is only available in versions before 1.5.  General  Ballista is an upgrade path of the Tower. It can be chosen upon upgrading a tower to level 3 and gives the tower a ballista, that deals massive damage at a slow rate of fire. The ballista targets siege type enemies and other high health targets.  Description  This tower has an increased range. It shoots very powerful projectiles at low rate of fire. Focusses siege engines and other large Enemies.  Details  Category Info Name Ballista Building Tower (Level 3) Health Points 300 Attacks per second 0.167 Attack Range 55 (Ranged) Projectile Speed 40 Base Damage 80 Preferred Target Siege, High Health type enemies The Ballista Icon."
+  ],
+  [
+    "Builders guild",
+    "/game-content/upgrades/builders-guild.html",
+    "Builder'S Guild  General  Builder's Guild is an upgrade path of theCastle Center. It can be chosen upon upgrading the Castle Center to level 2 and upgrades a house from level 1 to level 2 before each night. This makes the house produce +1 gold immediately.  Description   The Builder's Guild Icon."
+  ],
+  [
+    "Castle up",
+    "/game-content/upgrades/castle-up.html",
+    "Castle Up  General  Castle-Up is an upgrade path of theCastle Center. It can be chosen upon construction upgrading the Castle Center to level 3 and reduces the cost of upgrades for towers and walls.  Description  +The upgrade costs of walls and towers get reduced by I every night (they will never be lower than I, initial build costs are unaffected). The Castle-Up Icon."
+  ],
+  [
+    "Commander",
+    "/game-content/upgrades/commander.html",
+    "Commander  General  Commander is an upgrade path of theCastle Center. It can be chosen upon upgrading the Castle Center to level 3, increases the damage of the King slightly and enables units to attack while being commanded by the player. Commander also increases the movement speed of friendly units by +60% while being commanded.  Description  Units move 60% faster while you command them Units can attack while you command them 30% attack damage for your character  The Commander Icon."
+  ],
+  [
+    "Explosive trap",
+    "/game-content/upgrades/explosive-trap.html",
+    "Explosive Trap  General  Explosive Trap is an upgrade path of the Mill. It can be chosen upon construction of a mill and gives the mill the ability to deal damage to enemies. Explosive Trap activates when the mill is destroyed and deals massive damage against all enemies nearby.  Description  The mill explodes when destroyed dealing massive damage around itself. The damage and radius increases every time you upgrade this mill.  Details  Category Info Name Explosive Trap Building Mill (Level 1) Attack Radius 5.5 | 7 | 8.5 (Melee) Base Damage 39 | 78 | 136.5 The Explosive Trap Icon."
+  ],
+  [
+    "Fortress tower",
+    "/game-content/upgrades/fortress-tower.html",
+    "Fortress Tower Removed feature This feature is only available in versions before 1.5.  General  Fortress Tower is an upgrade path of the Tower. It can be chosen upon upgrading a tower to level 3 and gives the tower a massive amount of health.  Description  This tower becomes an armored fortress, that can shoot at two enemies at once. It will not go down easily.  Details  Category Info Name Fortress Tower Building Tower (Level 3) Health Points 1050 Attacks per second 1 Projectiles per Attack 2 Attack Range 36 (Ranged) Projectile Speed 20 Base Damage 8 Damage vs. Flying x1.15 Damage vs. Ranged Resistant x0.6 Damage vs. Tower Vulnerable x2 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1). The Fortress Tower Icon."
+  ],
+  [
+    "Godly curse",
+    "/game-content/upgrades/godly-curse.html",
+    "Godly Curse  General  Godly Curse is an upgrade path of theCastle Center. It can be chosen upon construction upgrading the Castle Center to level 3 and increases the damage an enemy takes, when it's targeted. They player can target an enemy by pressing (left) alt.  Description  +If you lock in a target, that target receives 50% more damage from all sources +75% HP for your character. The Godly Curse Icon."
+  ],
+  [
+    "Hot oil",
+    "/game-content/upgrades/hot-oil.html",
+    "Hot Oil Removed feature This feature is only available in versions before 1.5.  General  Hot Oil is an upgrade path of the Tower. It can be chosen upon upgrading a tower to level 3 and gives the tower a second attack, that deals massive damage in a circle around the tower.  Description  While shooting regular arrows, this tower also pours boiling oil onto nearby enemies. Enemies hit by oil suffer great damage.  Characteristics  Category Info Name Iron Plates Building Tower (Level 3) Health Points 500  Details  Tower Attack Statistic Value Attacks per second 1 Attack Range 36 (Ranged) Projectile Speed 20 Base Damage 8 Damage vs. Flying x1.15 Damage vs. Ranged Resistant x0.6 Damage vs. Tower Vulnerable x2  Hot Oil Attack  Statistic Value Attacks per second 0.2 Attack Range 6.5 Base Damage 6x5 (30) Damage vs. Flying x0 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1). The Hot Oil Icon."
+  ],
+  [
+    "Improved plow",
+    "/game-content/upgrades/improved-plow.html",
+    "Improved Plow  General  Improved Plow is an upgrade path of the Mill. It can be chosen upon construction of a mill and increases the amount gold the mill generates per night. Improved Plow gives the mill +1 gold per night per upgrade.  Description  Every future upgrade of this mill will increase its income even more. (+1 ÷ Upgrade)  Details  Category Info Name Improved Plow Building Mill (Level 1) Income Generated per Night 1 | 3 | 8  The Improved Plow Icon."
+  ],
+  [
+    "Upgrades list",
+    "/game-content/upgrades/index.html",
+    "Upgrades Mill  Improved Plow Explosive Trap Scarecrows Wind Spirits  Castle level 2 Royal Training Builder's Guild Magic Armor Assassin's Training Castle level 3 Royal Mastery Commander Castle-Up Godly Curse Tower level 2 Castle tower Sniper tower Armoured tower Bunker tower Tower level 3 Archer's spire Ballistic spire Fire spire Healing spire  Tower level 3 (pre 1.5) Fortress Tower Ballista Hot Oil  Support Tower"
+  ],
+  [
+    "Magic armor",
+    "/game-content/upgrades/magic-armor.html",
+    "Magic Armor  General  Magic Armor is an upgrade path of theCastle Center. It can be chosen upon upgrading the Castle Center to level 2 and increases the health poins of the King significantly. Magic Armor also reflects damage the King takes, dealing damage to enemies equal to the damage that the enemies dealt to the King.  Description  +Enemies that deal damage to you, take a part of that damage themselves. +150% HP for your character.  The Magic Armor Icon."
+  ],
+  [
+    "Royal mastery",
+    "/game-content/upgrades/royal-mastery.html",
+    "Royal Mastery  General  Royal Mastery is an upgrade path of theCastle Center. It can be chosen upon upgrading the Castle Center to level 3 and increases the base stats of the King.  Description  +75% HP for your character. +75% Attack damage output for your character. The Royal Mastery Icon."
+  ],
+  [
+    "Royal training",
+    "/game-content/upgrades/royal-training.html",
+    "Royal Training  General  Royal Training is an upgrade path of theCastle Center. It can be chosen upon upgrading the Castle Center to level 2 and increases the base stats of the King.  Description  +75% HP for your character. +75% Attack damage output for your character. The Royal Training Icon."
+  ],
+  [
+    "Scarecrows",
+    "/game-content/upgrades/scarecrows.html",
+    "Scarecrows  General  Scarecrows is an upgrade path of the Mill. It can be chosen upon construction of a mill and gives the fields around the mill the ability to deal damage to flying enemies. Scarecrows are build upon the construction of fields around the mill. These scarecrows deal massive damage against flying enemies nearby.  Description  Every field belonging to this mill receives a free scarecrow. Scarecrows have a strong anti-air attack.  Details  Category Info Name Scarecrows Building Mill (Level 1) Attacks per second 0.33 Attack Range 48 (Ranged) Base Damage 25  The Scarecrows Icon."
+  ],
+  [
+    "Support tower",
+    "/game-content/upgrades/support-tower.html",
+    "Support Tower Removed feature This feature is only available in versions before 1.5.  General  Support Tower is an upgrade path of the Tower. It can be chosen upon upgrading a tower to level 3 and enables the tower to heal allied units and the King. This comes at the cost of no longer dealing damage to enemies.  Description  This tower no longer shoots at enemies. Instead it shoots healing orbs at you and your units.  Details  Category Info Name Support Tower Building Tower (Level 3) Health Points 350 Attacks per second 1 Attack Range 36 (Ranged) Projectile Speed 30 Base Damage -15 Preferred Target Hero, Units The Support Tower Icon."
+  ],
+  [
+    "Wind spirits",
+    "/game-content/upgrades/wind-spirits.html",
+    "Wind Spirits  General  Wind Spirits is an upgrade path of the Mill. It can be chosen upon construction of a mill and gives the fields around the mill the ability to deflect arrows.  Description  Wind spirits magically intercept a portion of enemy arrows in the range of the mill. The higher the level of this mill, the more arrows are blocked.  Details  Category Info Name Wind Spirits Building Mill (Level 1) Attack Range 34.5 (Ranged) Attack Speed 1.78 | 2.67 | 4 Additional Building Type Ranged Armored The Wind Spirits Icon."
+  ],
+  [
+    "Bow",
+    "/game-content/weapons/bow.html",
+    " Bow   General  The Bow & Dagger is the weapon you start with. It deals medium damage at long range.  Its active ability is a knife stab that deals high damage and has a short or long cooldown depending on how much health the attacked target has.  The cooldown is calculated based on the targets current health based on this formula:6sec. x ((0.1 + HP_Percentage) x (1 - 0.1))   Details  Passive Attack  Statistic Value Attacks per second 1.05 Attack Range 30 (Ranged) Attack Range vs Flying 36 (Ranged) Projectile Speed 30 Base Damage 5 Damage vs. Player Resistant x0.5 Damage vs. Siege x0.5 Damage vs. Flying x2 Damage vs. Ranged Resistant x0.6 Damage vs. Boss x2  Active Ability Statistic Value Cooldown 0.75 - 6s Attack Range 6 (Melee) Preferred Target Low Current Health Base Damage 10 Damage vs. Player Resistant x0.5 Damage vs. Siege x0.6 Damage vs. Monsters x0.75 Damage vs. Boss x3 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Icon of the Bow."
+  ],
+  [
+    "Weapons list",
+    "/game-content/weapons/index.html",
+    " Weapons  Description Before playing a level, one weapon must be selected. The weapon determines the attack and damage of the King. All weapons have a passive ability  (automatic attacks) and an active ability, which can be triggered by the player and has a cooldown time. List of weapons Bow & Dagger  Spear  Sword  Lightning Staff  Shadow Codex  Falchion & traps"
+  ],
+  [
+    "Lightning staff",
+    "/game-content/weapons/lightning-staff.html",
+    " Lightning staff   General  The Lightning Staff is the fourth available weapon in the game It deals low damage but can attack multiple enemies at once.  Its active ability casts a small circle under the king, which deals massive damage after a short amount of delay.   Details  Passive Attack  Statistic Value Attacks per second 0.333 Attack Range 35 (Ranged) Attack Splash 35 (Ranged) - 5 Range between targets Base Damage 2.25 Damage vs. Player Resistant x0.5 Damage vs. Ranged Resistant x0.6 Damage vs. Ranged Vulnerable x1.33 Damage vs. Flying x2 Damage vs. Boss x2  Active Ability Statistic Value Cooldown 9s Cast Delay 3s Area of Effect 2.3 Base Damage 25 Damage vs. Flying 2x Damage vs. Boss 2x The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Icon of the Lightning Staff."
+  ],
+  [
+    "Shadow codex",
+    "/game-content/weapons/shadow-codex.html",
+    "Shadow Codex  General  The Shadow Codex is the fifth available weapon in the game It curses enemies and deals damage to every cursed enemy at once.  Its active ability removes all curses to deal a big amount of.   Details  Passive Attack  Statistic Value Attacks per second 0.667 Attack Range 17 (+3 vs. Air; Ranged) Base Damage 2 Damage vs. Boss x2  Active Ability Statistic Value Cooldown 10s Base Damage 18 Damage vs. Boss 2x The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Icon of the Shadow Codex."
+  ],
+  [
+    "Spear",
+    "/game-content/weapons/spear.html",
+    " Spear   General  The Spear is the second available weapon in the game, unlocked at level 4. It deals low damage but attacks quickly, dealing bonus damage to fast enemies and  slowing them down.  Its active ability makes the king attack extremely fast and regenerates his health. If the kings health is low, the duration of the ability doubles.   Details  Passive Attack  Statistic Value Attacks per second 3 Attack Range 5 (Melee) Base Damage 1.71 Damage vs. Player Resistant x0.5 Damage vs. Fast x2.06 Slow Duration vs. Fast 3s Slow Strength vs. Fast -67% Damage vs. Boss x2  Active Ability Statistic Value Cooldown 13s Attacks per second 9 Healing per second 33% Duration 2 - 4s The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Icon of the Spear."
+  ],
+  [
+    "Sword",
+    "/game-content/weapons/sword.html",
+    " Sword   General  The Sword is the third weapon available in the game, unlocked at level 13. It deals medium damage in an area against multiple enemies. Its active ability deals medium damage around the king in a circle.  Details  Passive Attack  Statistic Value Attacks per second 1 Attack Range 4 (Melee) Base Damage 3.465 Damage vs. Player Resistant x0.5 Damage vs. Boss x3  Active Ability Statistic Value Cooldown 9s Attack Range 4 (Melee) Base Damage 6.93 Damage vs. Player Resistant x0.5 Damage vs. Boss x3 The damage dealt is calculated with this formula:Base Damage x Type Value 1 x Type Value 2 x ... x Type Value n, where n is the amount of types that the target has (all types that are not provided in the table above have a Value of 1).  Icon of the Sword."
+  ]
+]
