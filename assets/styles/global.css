@@ -230,3 +230,14 @@ footer {
 	text-align: center;
 	box-shadow: 2px 2px 4px grey
 }
+
+
+
+#pageEditorFrame
+{
+	width: 100%;
+	height: 100%;
+	height: 100svh;
+	max-height: 1000px;
+	border-radius: 10px;
+}
