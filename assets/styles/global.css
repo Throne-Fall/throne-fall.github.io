@@ -241,3 +241,14 @@ footer {
 	max-height: 1000px;
 	border-radius: 10px;
 }
+#openEditorButton
+{
+	font-weight: bold;
+	/* font-size: 1.1rem; */
+}
+#openEditorButton:hover
+{
+	/* font-style: italic; */
+	text-decoration: underline;
+	font-size: 1.1rem;
+}
