@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+	
+			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉-->
+<html lang="en">
+	<head>
+		<!-- PAGE TITLE -->
+		<title> Twisted Tactics | Thronefall wiki</title>
+		<!-- PAGE INFORMATION -->
+		<meta name="description" content="Details about the Twisted Tactics event">
+		<meta name="keywords"    content="Thronefall, throne fall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name='author'      content="GhostMiner, ItsMeRaven"> 
+		<meta name='robots'      content="index,follow">
+		<meta name="language"    content="en">
+
+		<!-- Tab icon-->
+		<link rel="shortcut icon" type="image/webp" href="/assets/images/game_logo_small.webp">
+		<!-- Responsive design-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Chatracter set-->
+		<meta charset="utf-8">
+		<!-- HTMX -->
+		<script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+		<!-- jQuery  -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+		<!-- Various features -->
+		<script src="/assets/scripts/pageOptions.js"></script>
+		<!-- Article contents menu script -->
+		<script src="/assets/scripts/contentsMenu.js"></script> 
+		<!-- Dark mode -->
+		<script src="/assets/scripts/darkmode.js"></script>
+		<!-- Cookies -->
+		<script src="/assets/scripts/cookies.js"></script>
+		<script src="/assets/scripts/uaParser.js"></script>
+	</head>
+    <style>
+        #TwistedTacticsGrid
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 15px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .videoFrame
+        {
+            margin-top: 10px;
+            border: 0px;
+            max-width: 500px;
+            max-height: 275px;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 5px;
+        }
+    </style>
+	<body>
+        <!-- PAGE TITLE -->
+        <h1 class="pageTitle"> Midas mayhem </h1>
+        <hr class="pageTitleUnderline">
+        <!-- CONTENT GOES HERE -->
+        <p>Every couple of months, the developers host an official Thronefall tournament! Players can participate on the official <a href="https://discord.gg/gVYctptyg8">Thronefall discord server</a>.</p>
+        <p>Twisted Tactics was the fourth official tournament that has been hosted. The developers wanted to challange players to come up with creative, unique and unconventional ways to achieve victory! The goal of the challenge was to achieve victory with as much creativity and style as possible, in order to impress both the devs and the discord community to gain their votes. There were no limitations on maps, weapons, perks, mutations or any other game mechanic. The only requirement was that you'd record an uninterrupted clip of you winning with whatever tactic you came up with.</p>
+        <p>The start of the event was the 5th of September 2024 and it ended on the 19th of September of the same year.</p>
+        <br>
+        <h2 class="pageSubtitle">Event Characteristics</h2>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th> Event Name </th>
+                    <th> Goal </th>
+                    <th> Map </th>
+                    <th> Requirements </th>
+                    <th> Date </th>
+                    <th> Winners </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Twisted Tactics Tournament</strong>
+                    </td>
+                    <td>
+                        Most creative way to achieve victory
+                    </td>
+                    <td>
+                        <p>ANY</p>
+                    </td>
+                    <td>
+                        <p>N/A</p>
+                    </td>
+                    <td>
+                        5th September - 19th September 2024
+                    </td>
+                    <td>
+                        🥇 FlediX2 <br>🥈 Leon Reg <br>🥉 Tim von Ahsen <br>🎖️ Quontavious <br>🎖️ Kukpunkt
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="TwistedTacticsGrid">
+            <div>
+                <h2 class="pageSubtitle">🥇 First Place - FlediX2</h2>
+				<p>Playing With Mouse & Feet Only, 3 Maps in a row, No Deaths, 1 restart</p>
+                <iframe class="videoFrame" src="https://youtube.com/embed/rx_FFMQEpmU">
+                </iframe>
+            </div>
+            <div>
+                <h2 class="pageSubtitle">🥈 Second Place - Leon Reg</h2>
+				<p>Playing Nordfels Blinfolded</p>
+                <iframe class="videoFrame" src="https://youtube.com/embed/kZYsC_hwedg">
+                </iframe>
+            </div>
+            <div>
+                <h2 class="pageSubtitle">🥉 Third Place - Tim von Ahsen)</h2>
+				<p> No Units, No Towers, No King Damage on Durststein</p>
+                <iframe class="videoFrame" src="https://youtube.com/embed/358WxlafP-o">
+                </iframe>
+            </div>
+            <div>
+                <h2 class="pageSubtitle">🎖️ Fourth Place - Quontavious</h2>
+				<p>Never leaving the top of the hill on Sturmklamm</p>
+                <iframe class="videoFrame" src="https://www.youtube.com/embed/w_q5Bf00Ly4">
+                </iframe>
+            </div>
+            <div>
+                <h2 class="pageSubtitle">🎖️ Fifth Place - Kukpunkt</h2>
+				<p>No Walls, No Units, No Economy, No Towers on Wildbach</p>
+                <iframe class="videoFrame" src="https://www.youtube.com/embed/DBcKsgDwOVY">
+                </iframe>
+            </div>
+        </div>
+    </body>    
+	
+	<script src="/assets/scripts/pageBuilder.js"></script>
+	<script>BuildPage(true);</script>
+</html>
