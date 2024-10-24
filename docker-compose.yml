@@ -1,0 +1,9 @@
+version: '1.0'
+services:
+  nginx:
+    build: .
+    ports:
+      # host : container
+      - "8081:80"
+    volumes:
+      - .:/usr/share/nginx/html
