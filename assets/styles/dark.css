@@ -3,3 +3,8 @@ a,a:link,a:visited{color:var(--lightOrange);text-decoration:none}hr{background-c
 {
     color: white;
 }
+#trailerOverlayWindowMainDiv
+{
+    background: white;
+    color: black;
+}

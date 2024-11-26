@@ -78,6 +78,10 @@
 		grid-template-columns: 1fr;
 		max-width: 650px
 	}
+	#trailerOverlayWindowMainDiv
+	{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 900px) {
