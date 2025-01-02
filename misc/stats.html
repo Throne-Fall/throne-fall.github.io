@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+	
+			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉-->
+<html lang="en">
+	<head>
+		<!-- PAGE TITLE -->
+		<title> Statistics | Thronefall wiki</title>
+		<!-- PAGE INFORMATION -->
+		<!-- <meta name="description" content="DESCRIPTION"> -->
+		<meta name="keywords"    content="Thronefall, throne fall, leaderBoard, grizzly games, speedrun, wiki, fandom">
+		<meta name='author'      content="GhostMiner, ItsMeRaven"> 
+		<meta name='robots'      content="index,follow">
+		<meta name="language"    content="en">
+
+		<link rel="shortcut icon" type="image/webp" href="/assets/images/game_logo_small.webp">
+		<link rel="stylesheet" href="/assets/styles/stats.css">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<meta charset="utf-8">
+		<script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script src="/assets/scripts/pageOptions.js"></script>
+		<script src="/assets/scripts/darkmode.js"></script>
+		<script src="/assets/scripts/cookies.js"></script>
+		<script src="/assets/scripts/graphs.js"></script>
+	</head>
+	<body>
+		<!-- PAGE TITLE -->
+		<h1 class="pageTitle"> Wiki Statistics </h1>
+		<hr class="pageTitleUnderline">
+		
+		<!-- CONTENT GOES HERE -->
+		
+		<!-- <style>
+			div
+			{
+				border: 1px white dotted;
+			}
+		</style> -->
+		
+		<section id="LeaderBoardstatisticsSection">
+			<!-- <div id="lbstatsTitle">Leaderboard statistics</div>
+			<hr> -->
+			<section id="textStatsSection">
+				<div class="textStatDiv">
+					<span class="textStatValue"id="totalSubsTextStat">106 991</span><br>
+					<span class="textStatTitle">Total visits</span>
+				</div>
+				<div class="textStatDiv">
+					<span class="textStatValue"id="popularLevelTextStar">13 600</span><br>
+					<span class="textStatTitle">Unique visitors</span>
+				</div>
+				<div class="textStatDiv">
+					<span class="textStatValue"id="monthPeakTextStat">2 873</span><br>
+					<span class="textStatTitle">All-time peak: 14/10/2024</span>
+				</div>
+				<div class="textStatDiv">
+					<span class="textStatValue"id="monthPeakTextStat">403,7</span><br>
+					<span class="textStatTitle">Daily average</span>
+				</div>
+			</section>
+		
+			<div class="splitRowGraph">
+				<div id="levelDistributionDivCont">
+					<span class="graphTitle">Most visited pages</span>
+					<table>
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Page name</th>
+								<th>Visits</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1.</td>
+								<td> <a href="/game-content/buildings/tower.html" target="_blank" rel="noopener noreferrer"> Tower </a> </td>
+								<td> 1 829 </td>
+							</tr>
+							<tr>
+								<td>2.</td>
+								<td> <a href="/game-content/eternal-trials.html" target="_blank" rel="noopener noreferrer"> Eternal trials </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>3.</td>
+								<td> <a href="/about/king.html" target="_blank" rel="noopener noreferrer"> King </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>4.</td>
+								<td> <a href="/game-content/units/allied-crossbowmen.html" target="_blank" rel="noopener noreferrer"> Allied crossbowmen </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td> <a href="/about/score.html" target="_blank" rel="noopener noreferrer"> Score </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>6.</td>
+								<td> <a href="/game-content/units/hunters.html" target="_blank" rel="noopener noreferrer"> Hunters </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>7.</td>
+								<td> <a href="/game-content/units/knights.html" target="_blank" rel="noopener noreferrer"> Knights </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>8.</td>
+								<td> <a href="/about/leveling.html" target="_blank" rel="noopener noreferrer"> Leveling </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>9.</td>
+								<td> <a href="/game-content/units/longbows.html" target="_blank" rel="noopener noreferrer"> Lonhbows </a> </td>
+								<td> 1234 </td>
+							</tr>
+							<tr>
+								<td>10.</td>
+								<td> <a href="/game-content/maps/uferwind.html" target="_blank" rel="noopener noreferrer"> Uferwind </a> </td>
+								<td> 1234 </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div id="subStatusDiv">
+					<span class="graphTitle">Category ranking</span>
+					<table>
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Category name</th>
+								<th>Visits</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1.</td>
+								<td> <a href="/game-content/enemies/" target="_blank" rel="noopener noreferrer"> Enemies </a> </td>
+								<td> 5 467 </td>
+							</tr>
+							<tr>
+								<td>2.</td>
+								<td> <a href="/game-content/buildings/" target="_blank" rel="noopener noreferrer"> Buildings </a> </td>
+								<td>5 459 </td>
+							</tr>
+							<tr>
+								<td>3.</td>
+								<td> <a href="/game-content/maps/" target="_blank" rel="noopener noreferrer"> Maps </a> </td>
+								<td> 4 801 </td>
+							</tr>
+							<tr>
+								<td>4.</td>
+								<td> <a href="/game-content/units/" target="_blank" rel="noopener noreferrer"> Units </a> </td>
+								<td> 4 405 </td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td> <a href="/game-content/perks/" target="_blank" rel="noopener noreferrer"> Perks </a> </td>
+								<td> 4 124 </td>
+							</tr>
+							<tr>
+								<td>6.</td>
+								<td> <a href="/game-content/weapons/" target="_blank" rel="noopener noreferrer"> Weapons </a> </td>
+								<td> 3 070 </td>
+							</tr>
+							<tr>
+								<td>7.</td>
+								<td> <a href="/game-content/upgrades/" target="_blank" rel="noopener noreferrer"> Upgrades </a> </td>
+								<td> 1 588 </td>
+							</tr>
+							<tr>
+								<td>8.</td>
+								<td> <a href="/game-content/mutators/" target="_blank" rel="noopener noreferrer"> Mutators </a> </td>
+								<td> 1 106 </td>
+							</tr>
+							<tr>
+								<td>9.</td>
+								<td> About </td>
+								<td> N/A </td>
+							</tr>
+							<tr>
+								<td>10.</td>
+								<td> Miscellaneous </td>
+								<td> N/A </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+
+			<div class="splitRowGraph">
+				<div id="proofTypeDivCont">
+					<span class="graphTitle">Last 6 months</span>
+					<div id="proofTypeDiv"class="graphDiv">
+						<div id="monthlyVisits-graph"></div>
+					</div>
+				</div>
+				<div id="imageHostsDivCont">
+					<span class="graphTitle">Average visits per week day</span>
+					<div id="imageHostsDiv"class="graphDiv">
+						<div id="weekDayVisits-graph"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="" id="hourlyVisitsGraphDiv">
+				<span class="graphTitle">Average visits by hour <em>(UTC)</em></span>
+				<div id="imageHostsDiv"class="graphDiv">
+					<div id="hourlyVisits-graph"></div>
+				</div>
+			</div>
+
+			<br>
+			<hr>
+			<br>
+
+			<div class="splitRowGraph">
+				<div id="levelDistributionDivCont">
+					<span class="graphTitle">Operating system</span>
+					<div id="levelDistributionDiv"class="graphDiv">
+						<div id="osShare-graph"></div>
+					</div>
+				</div>
+				<div id="subStatusDiv">
+					<span class="graphTitle">Browser</span>
+					<div id="subStatusDiv"class="graphDiv">
+						<div id="browserShare-graph"></div>
+					</div>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="splitRowGraph">
+				<div id="levelDistributionDivCont">
+					<span class="graphTitle">Windows version</span>
+					<table>
+						<thead>
+							<tr>
+								<th>Version</th>
+								<th class="fixedWidth">%</th>
+								<th class="fixedWidth">#</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Windows 10</td>
+								<td class="fixedWidth">52,6%</td>
+								<td class="fixedWidth">1 928</td>
+							</tr>
+							<tr>
+								<td>Windows 11</td>
+								<td class="fixedWidth">47%</td>
+								<td class="fixedWidth">1 723</td>
+							</tr>
+							<tr>
+								<td>Windows 7</td>
+								<td class="fixedWidth">0,22%</td>
+								<td class="fixedWidth">8</td>
+							</tr>
+							<tr>
+								<td>Windows 8</td>
+								<td class="fixedWidth">0,1%</td>
+								<td class="fixedWidth">4</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div id="subStatusDiv">
+					<span class="graphTitle">Android version</span>
+					<table>
+						<thead>
+							<tr>
+								<th>Version</th>
+								<th class="fixedWidth">%</th>
+								<th class="fixedWidth">#</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Android 10</td>
+								<td class="fixedWidth">82,1%</td>
+								<td class="fixedWidth">524</td>
+							</tr>
+							<tr>
+								<td>Android 14</td>
+								<td class="fixedWidth">7,2%</td>
+								<td class="fixedWidth">46</td>
+							</tr>
+							<tr>
+								<td>Android 13</td>
+								<td class="fixedWidth">3%</td>
+								<td class="fixedWidth">19</td>
+							</tr>
+							<tr>
+								<td>Android 8</td>
+								<td class="fixedWidth">2,8%</td>
+								<td class="fixedWidth">18</td>
+							</tr>
+							<tr>
+								<td>Android 12</td>
+								<td class="fixedWidth">2%</td>
+								<td class="fixedWidth">15</td>
+							</tr>
+							<tr>
+								<td>Android 11</td>
+								<td class="fixedWidth">1,4%</td>
+								<td class="fixedWidth">9</td>
+							</tr>
+							<tr>
+								<td>Android 7</td>
+								<td class="fixedWidth">0,9%</td>
+								<td class="fixedWidth">6</td>
+							</tr>
+							<tr>
+								<td>Android 6</td>
+								<td class="fixedWidth">0,5%</td>
+								<td class="fixedWidth">3</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</section>
+
+		<center><span id="fuckcss"> Responsive design is intentionally disabled for this page because i ain't wasting my life with it again.</span></center>
+
+		<style>
+			.fixedWidth
+			{
+				max-width: 50px;
+			}
+			#fuckcss
+			{
+				display: none;
+				/* color: gray; */
+				/* font-size: 0.9rem; */
+			}
+		</style>
+	</body>
+	
+	<script src="/assets/scripts/pageBuilder.js"></script>
+	<script>BuildPage(true); //false = show side bar, true = hide side bar </script>
+	<script>
+		DrawAllCharts();
+		milliseconds = 1000;
+		setTimeout(() =>
+		{
+			DrawAllCharts();
+		}, milliseconds);
+		SetLightTheme();
+	</script>
+</html>
