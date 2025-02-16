@@ -66,6 +66,7 @@
         <br>
         <h2 class="pageSubtitle" id="mapDetails">Map details</h2>
         <hr>
+
         <h3 class="pageSubtitleSmall" id="quests">Quests</h3>
         <table>
             <thead class="table-dark">
@@ -81,6 +82,7 @@
                 </tr>
             </tbody>
         </table>
+
         <h3 class="pageSubtitleSmall" id="spawnedEnemies">Spawned enemies</h3> 
         <table>
             <thead>
@@ -124,20 +126,41 @@
                 </tr>
             </tbody>
         </table>
+
         <article id="sidebar">
-            <div class="articleImageBackgroundDiv" style="margin-bottom: 20px;">
-                <a href="/assets/images/maps/neuland/neuland_empty.webp" target="_blank">
-                <img src="/assets/images/maps/neuland/neuland_empty.webp" alt="image of Nordfels with castle" class="articleImage">
-                </a>
-                <strong>an image of Neuland without any buildings.</strong>
-            </div>
-            <div class="articleImageBackgroundDiv" style=" text-align: center">
-                <a href="/assets/images/maps/neuland/neuland_lv_select.webp lv select.webp" target="_blank">
-                <img src="/assets/images/maps/neuland/neuland_lv_select.webp" alt="Nordfels in the mapselection" class="articleImage">
-                </a> <br>
-                <span class="articleImageDescription">Neuland in the map selection.</span>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="detailsTableHeading">Neuland</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="detailsTableLevelImageCell">
+                            <div class="detailsTableImageTitle"> Castle area </div>
+                            <hr style="margin: 5px">
+                            <img src="/assets/images/maps/neuland/neuland_empty.webp" alt="image of Nordfels with castle" id="LevelImage-CastleArea" class="articleImage">
+                            <div class="detailsTableImageTitle"> Level select </div>
+                            <hr style="margin: 5px">
+                            <img src="/assets/images/maps/neuland/neuland_lv_select.webp" alt="image of Nordfels with castle" id="LevelImage-LevelSelecr" class="articleImage">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="detailsTableLeftColumn"> Level # </td>
+                        <td class="detailsTableRightColumn"> 1 </td>
+                    </tr>
+                    <tr>
+                        <td class="detailsTableLeftColumn"> Waves </td>
+                        <td class="detailsTableRightColumn"> 8 </td>
+                    </tr>
+                    <tr>
+                        <td class="detailsTableLeftColumn"> Boss </td>
+                        <td class="detailsTableRightColumn"> None </td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
+
         <article id="Gallery">
             <h2 class="pageSubtitle"> Gallery </h2>
             <hr>
