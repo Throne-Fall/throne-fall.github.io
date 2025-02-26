@@ -1,6 +1,6 @@
 .articleColumnsContainer {
 	display: grid;
-	grid-template-columns: 80% auto;
+	grid-template-columns: 77.5% auto;
 	column-gap: 15px
 }
 
@@ -15,7 +15,7 @@
 .articleImage {
 	width: 100%;
 	height: auto;
-	padding-bottom: 10px;
+	margin-bottom: 10px;	
 	border-radius: 5px
 }
 
@@ -110,13 +110,13 @@
 .detailsMapImageChangeButtonDiv
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     
     text-align-last: center;
     /* font-size: 1.05rem; */
     font-weight: 600;
 
-    margin-top: -5px;
+    /* margin-top: -5px; */
     /* margin-bottom: 10px; */
 }
 
@@ -134,4 +134,17 @@
 {
     text-align-last: center;
     font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.detailsTableImage
+{
+	width: 100%;
+	height: auto;
+	border-radius: 5px
+}
+
+.tableCellBoldText
+{
+	font-weight: 600;
 }
