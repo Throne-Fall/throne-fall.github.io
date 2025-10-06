@@ -50,7 +50,7 @@
 	display: grid;
 	align-items: center;
 	justify-content: center;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	align-items: center;
 	column-gap: 10px;
 	row-gap: 5px;
