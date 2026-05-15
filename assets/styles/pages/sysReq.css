@@ -1,1 +1,4 @@
-#sysReqColumns{display:grid;grid-template-columns:1fr 1fr}
+#sysReqColumns {
+	display: grid;
+	grid-template-columns: 1fr 1fr
+}
