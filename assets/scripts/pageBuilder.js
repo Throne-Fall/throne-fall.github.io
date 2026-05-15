@@ -199,8 +199,6 @@ async function CompilePage(hideSidebar)
 		// console.log("===\nREDIRECTED FROM: " + location.search.split("=")[1]+"\n===");	
 	}
 
-	GetPageInfo();
-
 	// console.timeEnd("_inserStuff");
 	// Hide loading overlay
 	if ($("#mainOverlayDiv")[0] != undefined)
