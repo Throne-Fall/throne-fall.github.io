@@ -63,7 +63,7 @@ function HideChoiceButtons (type)
 
 		if (currentTheme == "dark")
 		{
-			document.getElementById("submitFormFrame").src = "./submit/legacy/timeDark.html"
+			document.getElementById("submitFormFrame").src = "./submit/legacy/time.html"
 		}
 		else
 		{
