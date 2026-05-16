@@ -306,14 +306,7 @@ function SortSubData ()
 
     sc_canShowTableData = true; // ALLOW USER TO CHANGE TABLE
 
-    if (location.pathname.includes("embed"))
-    {
-        EmbedLeaderBoarReadyEvent();
-    }
-    else 
-    {
-        LeaderBoarReadyEvent();
-    }
+    LeaderBoarReadyEvent();
 }
 
 // DISPLAY TABLE FOR REQUESTED LEVEL
