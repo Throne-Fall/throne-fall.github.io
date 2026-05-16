@@ -1,57 +1,826 @@
 <!DOCTYPE html>
 <!--
-	W H A T   A R E   Y O U   D O I N G   I N   M Y   C O D E ? ! 
+░█░█░█░█░█▀█░▀█▀░░░█▀█░█▀▄░█▀▀░░░█░█░█▀█░█░█░░░█▀▄░█▀█░▀█▀░█▀█░█▀▀░░░▀█▀░█▀█░░░█▄█░█░█░░░█▀▀░█▀█░█▀▄░█▀▀░▀▀█░█
+░█▄█░█▀█░█▀█░░█░░░░█▀█░█▀▄░█▀▀░░░░█░░█░█░█░█░░░█░█░█░█░░█░░█░█░█░█░░░░█░░█░█░░░█░█░░█░░░░█░░░█░█░█░█░█▀▀░░▀░░▀
+░▀░▀░▀░▀░▀░▀░░▀░░░░▀░▀░▀░▀░▀▀▀░░░░▀░░▀▀▀░▀▀▀░░░▀▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░░░▀▀▀░▀░▀░░░▀░▀░░▀░░░░▀▀▀░▀▀▀░▀▀░░▀▀▀░░▀░░▀
+                            ⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
+                            ⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
+                            ⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
+                            ⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
+
+ ██████  ███████ ████████     ████████ ██   ██ ███████     ███████ ██    ██  ██████ ██   ██     
+██       ██         ██           ██    ██   ██ ██          ██      ██    ██ ██      ██  ██      
+██   ███ █████      ██           ██    ███████ █████       █████   ██    ██ ██      █████       
+██    ██ ██         ██           ██    ██   ██ ██          ██      ██    ██ ██      ██  ██      
+ ██████  ███████    ██           ██    ██   ██ ███████     ██       ██████   ██████ ██   ██     
+                                                                                                
+                                                                                                
+ ██████  ██    ██ ████████      ██████  ███████                                                 
+██    ██ ██    ██    ██        ██    ██ ██                                                      
+██    ██ ██    ██    ██        ██    ██ █████                                                   
+██    ██ ██    ██    ██        ██    ██ ██                                                      
+ ██████   ██████     ██         ██████  ██                                                      
+                                                                                                
+                                                                                                
+███    ███ ██    ██      ██████  ██████  ██████  ███████ ██                                     
+████  ████  ██  ██      ██      ██    ██ ██   ██ ██      ██                                     
+██ ████ ██   ████       ██      ██    ██ ██   ██ █████   ██                                     
+██  ██  ██    ██        ██      ██    ██ ██   ██ ██                                             
+██      ██    ██         ██████  ██████  ██████  ███████ ██                                     
+                                                                                                
+                                                                                                
+██ ███    ███     ██████  ██       █████  ██    ██ ██ ███    ██  ██████                         
+██ ████  ████     ██   ██ ██      ██   ██  ██  ██  ██ ████   ██ ██                              
+██ ██ ████ ██     ██████  ██      ███████   ████   ██ ██ ██  ██ ██   ███                        
+██ ██  ██  ██     ██      ██      ██   ██    ██    ██ ██  ██ ██ ██    ██                        
+██ ██      ██     ██      ███████ ██   ██    ██    ██ ██   ████  ██████                         
+                                                                                                
+                                                                                                
+████████ ██   ██ ██████   ██████  ███    ██ ███████ ███████  █████  ██      ██                  
+   ██    ██   ██ ██   ██ ██    ██ ████   ██ ██      ██      ██   ██ ██      ██                  
+   ██    ███████ ██████  ██    ██ ██ ██  ██ █████   █████   ███████ ██      ██                  
+   ██    ██   ██ ██   ██ ██    ██ ██  ██ ██ ██      ██      ██   ██ ██      ██                  
+   ██    ██   ██ ██   ██  ██████  ██   ████ ███████ ██      ██   ██ ███████ █████████          
+                                                                                        
+      .--,-``-.                           
+     /   /     '.              ,----..    
+    / ../        ;            /   /   \   
+    \ ``\  .`-    '          /   .     :  
+     \___\/   \   :         .   /   ;.  \ 
+          \   :   |        .   ;   /  ` ; 
+          /  /   /         ;   |  ; \ ; | 
+          \  \   \         |   :  | ; | ' 
+      ___ /   :   |        .   |  ' ' ' : 
+     /   /\   /   :        '   ;  \; /  | 
+    / ,,/  ',-    .  ___    \   \  ',  /  
+    \ ''\        ;  /  .\    ;   :    /   
+     \   \     .'   \  ; |    \   \ .'    
+      `--`-,,-'      `--"      `---`      
+	Created by GhostMiner, 
+    v.1.0-2.0: June - November 2023, 
+    v.3.0-3.5: December 2023 - 2026/05/16
+    v.3.6:     2026/05/16
 	
-			⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆ 
-			⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿ 
-			⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀ 
-			⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
-			⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
-        THIS PAGE IS RESERVED FOR THE SCORE AND SPEEDRUN LEADERBAORDS
+    > Ghost-Miner.Github.io
+	> YouTube.com/GhostMinerMC
 -->
 <html lang="en">
-	<head>
-		<title>Leaderboards | Thronefall Wiki</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
+    <head>
+		<title>Thronefall leaderboard</title>
+		<link rel="shortcut icon" type="image/jpg" href="./img/crown.png">
+        <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<!-- Page meta infromation -->
-		<!-- <meta name="description" content="An official wiki for Thronefall"> -->
-		<meta name="keywords" content="Thronefall, leaderBoard, grizzly games, speedrun, wiki">
+        <!-- Page meta infromation -->
+		<meta name="description" content="Official leaderboard for high-scores and speed-runs of Thronefall.">
+		<meta name="keywords" content="Thronefall, throne fall, leaderBoard, grizzly games, speedrun, fandom, Jonas Tyroller, Neuland, Nordfels, Durststein, Frostsee, Uferwind, Sturmklamm, Eternal trials, submission, submit, score, high-score, highscore">
 		<meta name="language" content="en">
 		<meta name='robots' content="index,follow">
-		<meta name='author' content="GhostMiner & ItsMeRaven"> 
-		<!-- Bootstrap and other CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<meta name='author' content="GhostMiner">
+        <!-- htmx -->
+        <script src="https://unpkg.com/htmx.org@1.9.5" integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO" crossorigin="anonymous"></script>
+        <!-- Bootstrap 4 CSS library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-        <link rel="stylesheet" href="../styles/global.css">
-        <link rel="stylesheet" href="../styles/mainMenu.css">
-
-		<link rel="shortcut icon" type="image/jpg" href="../pictures/crown.webp">
-        <script>
-			const LBurl = "http://ghost-miner.github.io/thronefall";
-			const urlHash = location.hash;
-            location.replace(LBurl + urlHash);
-        </script>
-	</head>
+        <!-- Custom CSS stylesheets and libraries -->
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/overlays.css">
+        <link rel="stylesheet" href="./styles/animations.css">
+        <link rel="stylesheet" href="./styles/contextMenu.css">
+        <!-- page scripts -->
+        <script src="./scripts/pageOptions.js"></script>
+        <script src="./scripts/lbOptions.js"></script>
+        <script src="./scripts/darkmode.js"></script>
+        <script src="./scripts/cookies.js"></script>
+        <script src="./scripts/events.js"></script>
+        <!-- Submission scripts -->
+        <script src="./scripts/processScores.js"></script>
+        <script src="./scripts/overlays.js"></script>
+        <script src="./scripts/subInfo.js"></script>
+        <script src="./scripts/parser.js"></script>
+    </head>
     <body>
-        <h1>
-			<strong>
-				<center>
-     		       <a href="http://ghost-miner.github.io/thronefall">CLICK HERE</a>
-				</center>
-			</strong>
-		</h1>
+        <!-- Loading overlay to hide trnasition from light to dark theme -->
+        <div id="loadingOVerlay">
+            <div id="loadingTextBox">
+                <img src="./img/crown.png" id="loadingPageLogo" alt="Page logo">
+                <br>
+                <span id="loadingPageNameText"> Thronefall leaderboard </span>
+                <br>
+                <img src="./img/loading.gif" id="loadingPageLogo" alt="loading animation">
+            </div>
+        </div>
+
+        <!-- The entire page -->
+        <div id="mainPageContainerBack">
+            <div id="mainPageContainerFront">
+                <div id="sesstionstorWarn">Using local storage to load submissions! For development purposes only! </div>
+                <!-- 
+                    PAGE TITLE AND GAME LINK BUTTONS
+                 -->
+                <header>
+                    <section id="pageTitle">
+                        <img src="./img/crown.png" id="pageLogo" alt="Page logo">
+                        <br>
+                        <h1> Thronefall leaderboard </h1>
+                    </section>
+                    <hr>
+                    <section id="gameLinks">
+                        <a href="https://store.steampowered.com/app/2239150/Thronefall" id="gl_steamPage" target="_blank">
+                            <button type="button" class="btn gameLinksBtn btn-warning dropShadow whiteGradient">
+                                Get Thronefall
+                            </button>
+                        </a>
+                        <a href="https://discord.gg/gVYctptyg8" id="gl_Discord" target="_blank">
+                            <button type="button" class="btn gameLinksBtn btn-warning dropShadow whiteGradient">
+                                Discord server
+                            </button>
+                        </a>
+                        
+                        <a href="https://youtube.com/playlist?list=PLgsD7taGtaBhNaErAOaiEiTzt6-lOpVp0" id="gl_Devlogs" target="_blank">
+                            <button type="button" class="btn gameLinksBtn btn-warning dropShadow whiteGradient">
+                                Devlogs
+                            </button>
+                        </a>
+
+                        <a href="https://throne-fall.github.io" id="gl_Wiki" target="_blank">
+                            <button type="button" class="btn gameLinksBtn btn-warning dropShadow whiteGradient" style="margin-left: 0px;">
+                                Thronefall wiki
+                            </button>
+                        </a>
+                    </section>
+                </header>
+                <hr>
+                <!-- 
+                    CATEGORY BUTTONS
+                 -->
+                <nav>
+                    <div id="categoryButtonsWrapper">
+                        <div id="categoryButtonsMain">
+                            <div id="levelsButtons">
+                            <!-- 
+                                S C O R E
+                            -->
+                                <section id="scoreLevelsToggle" class="levelsToggleButtons">
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow" id="nl_score_btn" 
+                                            onclick="SelectRandomBackground(1); ChangeTableData('Neuland',true)" >
+                                        <span class="levelToggleText"> Neuland </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow" id="nf_score_btn" 
+                                            onclick="SelectRandomBackground(2); ChangeTableData('Nordfels',true)">
+                                        <span class="levelToggleText"> Nordfels </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow" id="ds_score_btn" 
+                                            onclick="SelectRandomBackground(3); ChangeTableData('Durststein',true)">
+                                        <span class="levelToggleText"> Durststein </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow frostseeBtn" id="fs_score_btn" 
+                                            onclick="SelectRandomBackground(4); ChangeTableData('Frostsee',true)">
+                                        <span class="levelToggleText"> Frostsee </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow uferwindBtn" id="uf_score_btn" 
+                                            onclick="SelectRandomBackground(5); ChangeTableData('Uferwind',true)">
+                                        <span class="levelToggleText"> Uferwind </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow uferwindBtn" id="st_score_btn" 
+                                            onclick="SelectRandomBackground(6); ChangeTableData('Sturmklamm',true)">
+                                        <span class="levelToggleText"> Sturmklamm </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow uferwindBtn" id="et_score_btn" 
+                                            onclick="SelectRandomBackground(2); ChangeTableData('Wildbach',true);">
+                                        <span class="levelToggleText"> Wildbach </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow uferwindBtn" id="et_score_btn" 
+                                            onclick="SelectRandomBackground(2); ChangeTableData('Moorweg',true);">
+                                        <span class="levelToggleText"> Moorweg </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow uferwindBtn" id="et_score_btn" 
+                                            onclick="SelectRandomBackground(2); ChangeTableData('Freifort',true);" >
+                                        <span class="levelToggleText"> Freifrot </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow uferwindBtn" id="et_score_btn" 
+                                            onclick="SelectRandomBackground(2); ChangeTableData('Totend',true);">
+                                        <span class="levelToggleText"> Totend </span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow uferwindBtn" id="ets1_score_btn" 
+                                            onclick="SelectRandomBackground(4); ChangeTableData('Eternal trials',true)" style="width: 203%;">
+                                        <span class="levelToggleText"> Eternal trials </span>
+                                    </button>
+                                </section> <!-- scoreLevelsToggle -->
+                            </div> <!-- levelsButtons -->
+                        </div> <!-- categoryButtonsMain -->
+
+                        <div id="submissionButtonCell">
+                                <div id="submitButtonSplit">
+                                    <!-- Submisison split button -->
+                                    <button type="button" class="btn btn-warning btn_orangeGradient dropShadow" id="submitScoreBtnSplit"  href="#" onclick="OpenSubmitWindow(); HideChoiceButtons('score')">
+                                        <span id="SubmitButtonText"> SUBMIT SCORE </span>
+                                    </button>
+                                </div> <!-- submitButtonSplit -->
+
+                                <div id="underScoreButtonsGroup">
+                                    <button title="Submission rules" type="button" onclick="ShowRulesWindow()" id="colourThemeToggleButton" class="btn btn-warning btn_orangeGradient dropShadow">
+                                        <span id="SubmitButtonText">RULES</span>
+                                    </button>
+                                    
+                                    <div id="pageOptionsSplit">
+                                        <!-- THEME -->
+                                        <button title="Toggle colour theme" type="button" onclick="ToggleThemes()" id="colourThemeToggleButton" class="btn btn-warning btn_orangeGradient dropShadow">
+                                            <img alt="colour theme icon" src="./img/sun.png" style="max-width: 25px;" id="colourThemeToggleIcon">
+                                        </button>
+                                    </div> <!-- submitButtonSplit -->
+                                </div>
+                        </div> <!-- submissionButtonCell -->
+                    </div> <!-- categoryButtonsWrapper -->
+                </nav>
+
+                <main>    
+                    <!-- 
+                        LEADERBOARDS
+                    -->
+                    <section id="leaderBoards">
+                        <!-- 
+                            S C O R E 
+                         -->
+                        <div id="lbScoresSection">
+                            <section id="LBLoadingIndicator" >
+                                <img alt="loading submisisons animation" src="./img/loading.gif" id="lbLoadImage" class="centerHorizontal">
+                            </section> <!-- LBLoadingIndicator -->
+                            <section id="leaderboardContent" style="display: none;">
+                                <section id="tableTitle">
+                                    <span id="leaderboardNameText">*table name*</span>
+                                    <span id="searchResultsLegendText">*search legend*</span>
+                                </section>
+                                <table class="table table-striped" id="LBtableMain">
+                                    <thead class="table-dark tableHead_gradient" id="LBtableHead">
+                                        <tr>
+                                            <td id="th-mapName"    class="mapNameColumn 0">     Level     </td>
+                                            <td id="th-position"   class="positionColumn 1">      #       </td>
+                                            <td id="th-name"       class="nameColumn 2">		 Name	  </td>
+                                            <td id="th-score"      class="scoreColumn 3">		 Score 	  </td>
+                                            <td id="th-coins"      class="coinsColumn 4">		 Gold 	  </td>
+                                            <td id="th-mutNums"    class="mutatorsColumn 5"> Mutators     </td>
+                                            <td id="th-usedWeapon" class="weaponColumn 7">Used&nbsp;weapon</td>
+                                            <td id="th-version"    class="versionColumn 8">	 Version      </td>
+                                            <td id="th-date"       class="dateColumn 9">		 Date	  </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-light tableBody_gradient" id="scoreLBtableBody">
+                                        <tr class="scoreTableRow">
+                                            <td class="mapName mapNameColumn 0">  ...</td>
+                                            <td class="position positionColumn 1">...</td>
+                                            <td class="name nameColumn 2">		  ...</td>
+                                            <td class="score scoreColumn 3">	  ...</td>
+                                            <td class="coins coinsColumn 4">	  ...</td>
+                                            <td class="mutNums mutatorsColumn 5"> ...</td>
+                                            <td class="usedWeapon weaponColumn 7">...</td>
+                                            <td class="version versionColumn 8">  ...</td>
+                                            <td class="date dateColumn 9">		  ...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- ET S2 & S1 -->
+                                <section id="et1-lb" style="display: none;">
+
+                                    <section id="et1-tableTitle">
+                                        <span id="et1-leaderboardNameText">Eternal traisl Season 2</span>
+                                    </section>
+                                    <table class="table table-striped table-dark" id="et2-LBtableMain">
+                                        <thead class="table-dark tableHead_gradient" id="et2-LBtableHead">
+                                            <tr>
+                                                <td id="et2-th-mapName" class="et2-mapNameColumn 0" style="display: none;">     Level     </td>
+                                                <td id="et2-th-position" class="et2-positionColumn 1">      #       </td>
+                                                <td id="et2-th-name" class="et2-nameColumn 2">		 Name	  </td>
+                                                <td id="et2-th-score" class="et2-scoreColumn 3">		 Score 	  </td>
+                                                <td id="et2-th-coins" class="et2-coinsColumn 4" style="display: none;">		 Gold 	  </td>
+                                                <td id="et2-th-mutNums" class="et2-mutatorsColumn 5" style="display: none;"> Mutators     </td>
+                                                <td id="et2-th-usedWeapon" class="et2-weaponColumn 7" style="display: none;">Used&nbsp;weapon</td>
+                                                <td id="et2-th-version" class="et2-versionColumn 8">	 Version      </td>
+                                                <td id="et2-th-date" class="et2-dateColumn 9">		 Date	  </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-light tableBody_gradient" id="et2-scoreLBtableBody">
+                                            <tr class="scoreet2TableRow" style="display: table-row;" onclick="ShowSubInfo(162, true)">
+                                                <td class="et2mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et2position positionColumn 1">1</td>
+                                                <td class="nameet2 nameColumn 2">Tim von Ahsen</td>
+                                                <td class="scoreet2 scoreColumn 3">468&nbsp;773</td>
+                                                <td class="coinset2 coinsColumn 4" style="display: none;">0</td>
+                                                <td class="mutNumset2 mutatorsColumn 5" style="display: none;">0</td>
+                                                <td class="usedWeaponet2 weaponColumn 7" style="display: none;">Bow</td>
+                                                <td class="versionet2 versionColumn 8">1.51</td>
+                                                <td class="dateet2 dateColumn 9">11/04/2024</td>
+                                            </tr>
+                                            <tr class="scoreet2TableRow" style="display: table-row;" onclick="ShowSubInfo(157, true)">
+                                                <td class="et2mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et2position positionColumn 1">2</td>
+                                                <td class="nameet2 nameColumn 2">ItsMeRaven</td>
+                                                <td class="scoreet2 scoreColumn 3">464&nbsp;809</td>
+                                                <td class="coinset2 coinsColumn 4" style="display: none;">0</td>
+                                                <td class="mutNumset2 mutatorsColumn 5" style="display: none;">0</td>
+                                                <td class="usedWeaponet2 weaponColumn 7" style="display: none;">Bow</td>
+                                                <td class="versionet2 versionColumn 8">1.5</td>
+                                                <td class="dateet2 dateColumn 9">25/03/2024</td>
+                                            </tr>
+                                            <tr class="scoreet2TableRow" style="display: table-row;" onclick="ShowSubInfo(185, true)">
+                                                <td class="et2mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et2position positionColumn 1">3</td>
+                                                <td class="nameet2 nameColumn 2">ORANGUTAN</td>
+                                                <td class="scoreet2 scoreColumn 3">458&nbsp;872</td>
+                                                <td class="coinset2 coinsColumn 4" style="display: none;">0</td>
+                                                <td class="mutNumset2 mutatorsColumn 5" style="display: none;">0</td>
+                                                <td class="usedWeaponet2 weaponColumn 7" style="display: none;">Bow</td>
+                                                <td class="versionet2 versionColumn 8">1.61</td>
+                                                <td class="dateet2 dateColumn 9">23/06/2024</td>
+                                            </tr>
+                                            <tr class="scoreet2TableRow" style="display: table-row;" onclick="ShowSubInfo(164, true)">
+                                                <td class="et2mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et2position positionColumn 1">4</td>
+                                                <td class="nameet2 nameColumn 2">Skulblack</td>
+                                                <td class="scoreet2 scoreColumn 3">438&nbsp;853</td>
+                                                <td class="coinset2 coinsColumn 4" style="display: none;">0</td>
+                                                <td class="mutNumset2 mutatorsColumn 5" style="display: none;">0</td>
+                                                <td class="usedWeaponet2 weaponColumn 7" style="display: none;">Bow</td>
+                                                <td class="versionet2 versionColumn 8">1.5</td>
+                                                <td class="dateet2 dateColumn 9">23/04/2024</td>
+                                            </tr>
+                                            <tr class="scoreet2TableRow" style="display: table-row;" onclick="ShowSubInfo(167, true)">
+                                                <td class="et2mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et2position positionColumn 1">7</td>
+                                                <td class="nameet2 nameColumn 2">The Last Grimm</td>
+                                                <td class="scoreet2 scoreColumn 3">318&nbsp;377</td>
+                                                <td class="coinset2 coinsColumn 4" style="display: none;">0</td>
+                                                <td class="mutNumset2 mutatorsColumn 5" style="display: none;">0</td>
+                                                <td class="usedWeaponet2 weaponColumn 7" style="display: none;">Bow</td>
+                                                <td class="versionet2 versionColumn 8">1.57</td>
+                                                <td class="dateet2 dateColumn 9">25/05/2024</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <section id="et1-tableTitle">
+                                        <span id="et1-leaderboardNameText">Eternal traisl Season 1</span>
+                                    </section>
+                                    <table class="table table-striped table-dark" id="et1-LBtableMain">
+                                        <thead class="table-dark tableHead_gradient" id="et1-LBtableHead">
+                                            <tr>
+                                                <td id="et1-th-mapName" class="et1-mapNameColumn 0" style="display: none;">     Level     </td>
+                                                <td id="et1-th-position" class="et1-positionColumn 1">      #       </td>
+                                                <td id="et1-th-name" class="et1-nameColumn 2">		 Name	  </td>
+                                                <td id="et1-th-score" class="et1-scoreColumn 3">		 Score 	  </td>
+                                                <td id="et1-th-coins" class="et1-coinsColumn 4" style="display: none;">		 Gold 	  </td>
+                                                <td id="et1-th-mutNums" class="et1-mutatorsColumn 5" style="display: none;"> Mutators     </td>
+                                                <td id="et1-th-usedWeapon" class="et1-weaponColumn 7" style="display: none;">Used&nbsp;weapon</td>
+                                                <td id="et1-th-version" class="et1-versionColumn 8">	 Version      </td>
+                                                <td id="et1-th-date" class="et1-dateColumn 9">		 Date	  </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-light tableBody_gradient" id="et1-scoreLBtableBody">
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(143, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">1</td>
+                                                <td class="et1-name nameColumn 2">ItsMeRaven</td>
+                                                <td class="et1-score scoreColumn 3">1&nbsp;564&nbsp;471</td>
+                                                <td class="et1-version versionColumn 8">1.42</td>
+                                                <td class="et1-date dateColumn 9">22/02/2024</td>
+                                            </tr>
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(164, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">2</td>
+                                                <td class="et1-name nameColumn 2">Skulblack</td>
+                                                <td class="et1-score scoreColumn 3">1&nbsp;354&nbsp;807</td>
+                                                <td class="et1-version versionColumn 8">1.42</td>
+                                                <td class="et1-date dateColumn 9">08/03/2024</td>
+                                            </tr>
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(150, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">3</td>
+                                                <td class="et1-name nameColumn 2">The Last Grimm</td>
+                                                <td class="et1-score scoreColumn 3">754&nbsp;755</td>
+                                                <td class="et1-version versionColumn 8">1.42</td>
+                                                <td class="et1-date dateColumn 9">03/03/2024</td>
+                                            </tr>
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(141, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">4</td>
+                                                <td class="et1-name nameColumn 2">Tomos</td>
+                                                <td class="et1-score scoreColumn 3">716&nbsp;415</td>
+                                                <td class="et1-version versionColumn 8">1.42</td>
+                                                <td class="et1-date dateColumn 9">15/02/2024</td>
+                                            </tr>
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(127, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">5</td>
+                                                <td class="et1-name nameColumn 2">Krongk</td>
+                                                <td class="et1-score scoreColumn 3">641&nbsp;956</td>
+                                                <td class="et1-version versionColumn 8">1.36</td>
+                                                <td class="et1-date dateColumn 9">02/01/2024</td>
+                                            </tr>
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(151, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">6</td>
+                                                <td class="et1-name nameColumn 2">CardeasII</td>
+                                                <td class="et1-score scoreColumn 3">559&nbsp;256</td>
+                                                <td class="et1-version versionColumn 8">1.42</td>
+                                                <td class="et1-date dateColumn 9">03/03/2024</td>
+                                            </tr>
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(152, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">7</td>
+                                                <td class="et1-name nameColumn 2">UnderTheCities</td>
+                                                <td class="et1-score scoreColumn 3">512&nbsp;302</td>
+                                                <td class="et1-version versionColumn 8">1.42</td>
+                                                <td class="et1-date dateColumn 9">04/03/2024</td>
+                                            </tr>
+                                            <tr class="et1-scoreTableRow" style="display: table-row;" onclick="ShowSubInfo(125, true)">
+                                                <td class="et1-mapName mapNameColumn 0" style="display: none;">EternalTrials</td>
+                                                <td class="et1-position positionColumn 1">8</td>
+                                                <td class="et1-name nameColumn 2">Alcaros</td>
+                                                <td class="et1-score scoreColumn 3">504&nbsp;387</td>
+                                                <td class="et1-version versionColumn 8">1.33</td>
+                                                <td class="et1-date dateColumn 9">04/12/2023</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <!-- et s1  -->
+                            </section> <!-- leaderboardContent -->
+                        </div> <!-- lbScoresSection -->
+                    </section> <!-- leaderBoards -->
+                </main>
+
+                <!-- 
+                    FOOTER
+                 -->
+                <footer style="padding: 10px;">
+                    <hr style="margin-top: 0px;">
+                    <span id="footerText">
+                        Made by <a href="https://ghost-miner.github.io/">GhostMiner.</a> 
+                    </span>
+                </footer>
+                <style>
+                    #footerText
+                    {
+                        font-weight: bold;
+                        font-size: 1rem;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                </style>
+            </div> <!-- mainPageContainerFront -->
+        </div> <!-- mainPageContainerBack -->
+        
+        <!-------------------------------
+                O V E R L A Y S
+        --------------------------------->
+        <!-- 
+            SUBMIT SCORE/TIME WINDOW 
+        -->
+        <section id="overlayWindow" style="display: none;">
+            <div class="overlayBlur">
+                <div id="submitWindowBakcground" class="">
+                    <div id="submitWindowForeground">
+                        <div id="windowTitleBar">
+                            <div class="titleBarCell" id="titleBarText">
+                                New submission
+                            </div>
+                            <div class="titleBarCell" id="titleBarClose">
+                                <img alt="close window icon" src="./img/cross white.png" id="windowTitleBarCloseImage" onclick="CloseSubmitWindow()">
+                            </div>
+                        </div> <!-- windowTitleBar -->
+            
+                        <div id="windowContent">
+                            <div id="chooseSubTypeButtons">
+                                <span id="chooseSubTiypeTitle">Choose a category</span>
+                                <button class="btn btn-lg btn-block btn-warning whiteGradient dropShadow" onclick="HideChoiceButtons('score')" id="topChoiceButton">
+                                    <strong> High-score </strong>
+                                </button>
+                                <button class="btn btn-lg btn-block btn-warning whiteGradient dropShadow" onclick="HideChoiceButtons('time')">
+                                    <strong> Speed-run </strong>
+                                </button>
+                            </div> 
+                            <div id="submiFormDiv">
+                                <iframe id="submitFormFrame" src=""></iframe>
+                            </div>
+                        </div> 
+                            <!-- windowContent -->
+                    </div> <!-- submitWindowForeground -->
+                </div> <!-- submitWindowBakcground -->
+            </div> <!-- overlayBlur -->
+        </section>
+
+        <!-- 
+            SUBMISSION INFO WINDOW
+        -->
+        <section id="subInfoOverlayWindow" style="display: none;">
+            <div id="subInfoOverlayBlur">
+                <div id="subInfoWindowsBackground">
+                    <div id="subInfoWindowsForeground">
+                        <div id="windowTitleBar">
+                            <div class="titleBarCell" id="titleBarText">
+                                Submission details
+                            </div>
+                            <div class="titleBarCell" id="titleBarClose">
+                                <img alt="close window icon" src="./img/cross white.png" id="windowTitleBarCloseImage" onclick="CloseSubInfoWindow()">
+                            </div>
+                        </div> <!-- windowTitleBar -->
+
+                        <div id="subInfoWindowContent">
+                            <div class="alert alert-warning" id="obsoleteSubInfoBar" role="alert">
+								This submission is obsolete.
+							</div>
+							<div class="alert alert-danger" id="rejectedSubInfoBar" role="alert">
+								    This submission was rejected!
+							</div>
+
+                            <!-- SUBMISSION PROOF -->
+                                <!-- Image -->
+							<div id="subIinfoImageDiv" style="display: none;">
+								<a href="" id="subInfoImgLink" target="_blank">
+									<img alt="submission proof image" src="./img/loading.gif" id="subInfoImg">
+								</a><br>
+								<!-- <span class="subInfoUrlText"> Video URL: <a href="" id="subIinfoFileUrl" target="_blank">*url*</a> </span> -->
+							</div>
+                            <!-- Video -->
+							<div id="subIinfoVideoDiv">
+								<iframe src="" id="subInfoVideo"></iframe>
+								<span class="subInfoUrlText"> Video&nbsp;URL:&nbsp;<a href="" id="subIinfoFileUrl" target="_blank">*url*</a> </span>
+							</div>
+                            <!-- External image -->
+							<div id="subIinfoExternalImgDiv" style="display: none;">
+								<div id="extenralImgButtonDiv">
+									<span id="extenralImgTitle">This image cannot be shown here.</span>	
+									<br>
+									<a href="" id="extenralImgButtonLink" target="_blank">
+										<button class="btn btn-warning btn-whiteFill" id="extImgButton">View in new tab</button>
+									</a>
+								</div>
+							</div>
+
+							<!-- POSITION NAME AND DATE -->
+							<div id="subInfoTitle">
+								<var id="si_position" class="subInfoVarsTitle">#...</var> Submitted by <var id="si_name" class="subInfoVarsTitle">...</var> on <var id="si_date" class="subInfoVarsTitle">...</var>
+							</div>
+
+							<!-- SUBMISSION DETAILS  -->
+							<div id="subInfoGridWrapper">
+								<div class="subInfoGridCell">
+									<span class="subInfoSubtitle">Score: <br> </span>
+									<var class="subInfoVars" id="si_score">...</var>
+								</div>
+								<div class="subInfoGridCell">
+									<span class="subInfoSubtitle">Gold: <br></span>
+									<var class="subInfoVars" id="si_gold">...</var>
+								</div>
+								<div class="subInfoGridCell" id="versionInfoCell">
+									<span class="subInfoSubtitle">Version: <br></span>
+									<var class="subInfoVars" id="si_version">...</var>
+								</div>
+								
+							</div> <!-- subInfoGridWrapper -->
+
+							<div id="subInfoTitle">
+								<strong>LOADOUT:</strong>
+							</div>
+
+							<div id="lodoutGridWrapper">
+                                <!-- W E A P O N  -->
+								<div class="subInfoGridCell">
+									<span class="subInfoSubtitle">Used weapon: <br></span>
+                                    <a href="#" id="weaponWikiLink" target="_blank">
+                                        <img alt="used weapon icon" src="./img/loading black.gif" title="" id="subInfoWeaponIcon" class="subInfoIcon">
+                                    </a>
+                                    <br> <var class="subInfoVars" id="si_weapon">...</var>
+								</div>
+                                <!-- P E R K S -->
+								<div class="subInfoGridCell">
+									<span class="subInfoSubtitle">Used perks: <br></span>
+
+                                    <div id="perksIconsWrapper">
+                                        <div class="perksIconsCell">
+                                            <a href="#" class="perkWikiLink" target="_blank">
+                                                <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfoPerkIcon" id="subInfoPerkIcon1">
+                                            </a>
+    									    <p class="subInfoVars subInfoPerkName">...</p>
+                                        </div>
+                                        <div class="perksIconsCell">
+                                            <a href="#" class="perkWikiLink" target="_blank">
+                                                <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfoPerkIcon" id="subInfoPerkIcon2">
+                                            </a>
+    									    <p class="subInfoVars subInfoPerkName">...</p>
+                                        </div>
+                                        <div class="perksIconsCell">
+                                            <a href="#" class="perkWikiLink" target="_blank">
+                                                <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfoPerkIcon" id="subInfoPerkIcon3">
+                                            </a>
+    									    <p class="subInfoVars subInfoPerkName">...</p>
+                                        </div>
+                                    </div>
+									<var class="subInfoVars" id="si_perksList">... 	</var>
+								</div>
+							</div>
+							
+                            <!-- M U T A T O R S -->
+							<div id="mutListCell" class="subInfoGridCell">
+								<span class="subInfoSubtitle">Used mutators: <br></span>
+								<var class="subInfoVars" id="si_mutatorsList" style="font-size: 0.9em;">...</var>
+
+                                <div id="mutatorIconsWrapper">
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                    <div class="mutatorIconsCell">
+                                        <a href="#" class="mutatorWikiLink" target="_blank">
+                                            <img alt="" src="./img/loading black.gif" title="" class="subInfoIcon subInfomutatorIcon">
+                                        </a>
+                                        <p class="subInfoVars subInfoMutatorName">...</p>
+                                    </div>
+                                </div>
+							</div>
+                        </div> <!-- windowContent -->
+                    </div> <!-- subInfoWindowsFpreground-->
+                </div> <!-- subInfoWindowsBackground --> 
+            </div> <!-- overlayBlur -->
+        </section> <!-- overlayWindow -->
+
+        <!-- 
+            RULES WINDOW    
+        -->
+        <section id="rulesWindow">
+            <div class="overlayBlur">
+                <div id="rulesWindowsBackground">
+                    <div id="subInfoWindowsForeground">
+                        <div id="windowTitleBar">
+                            <div class="titleBarCell" id="titleBarText">
+                                Submission rules
+                            </div>
+                            <div class="titleBarCell" id="titleBarClose">
+                                <img alt="close window" src="./img/cross white.png" id="windowTitleBarCloseImage" onclick="HideRulesWindow()">
+                            </div>
+                        </div> <!-- windowTitleBar -->
+                        
+                        <div id="rulesWindowContent">
+                            <p><strong>GENERAL</strong></p>
+                            <p><strong>1.1:</strong> Submission must not be played on beta versions. <br>
+                            <strong>1.2:</strong> World record submissions must include a video. <br>
+                            <strong>1.3:</strong> All submissions must be played in the vanilla version of the game (no mods). <br>
+                            <strong>1.4:</strong> No game files may be added, removed, edited or changed before, during and after a run, if it influences or changes the outcome of the run. <br>
+                            <strong>1.5:</strong> All runs must be completed without the use of major glitches.
+                            </p>
+                            <hr>
+                            <p><strong>SCREENSHOT SUBMISSIONS</strong></p>
+                            <p><strong>2.1:</strong> Screenshot must show the entire victory screen.</p>
+                            <div id="subRules_ScreenshotRuleDiv">
+                                <img alt="submission rules image 1" class="subRules_ScreenshotRuleImg" src="./img/sub img rule img 1.png">
+                                <img alt="submission rules image 2" class="subRules_ScreenshotRuleImg" src="./img/sub img rule img 2.png">
+                                <img alt="submission rules image 2" class="subRules_ScreenshotRuleImg" src="./img/sub img rule img 3.png">
+                            </div>
+                            
+                            <hr>
+                            <p><strong>VIDEO SUBMISSIONS</strong></p>
+                            <p><strong>3.1:</strong> Video must include the loadout screen and the final score. <br>
+                               <strong>3.2:</strong> Video must include only the game's audio.</p>
+                        </div> <!-- rulesWindowContent-->
+                    </div> <!-- subInfoWindowsForeground -->
+                </div> <!-- rulesWindowsBackground -->          
+            </div> <!-- overlayBlur -->
+        </section> <!-- rulesWindow -->   
+
+        <div id="contextMenu" class="contextMenu cMenuOpenAnim">
+            <ul>
+                <li id="menu-item-1">Change colour theme</li>
+                <!-- <li id="menu-item-2">Change text style</li>
+                <li id="menu-item-3">Toggle animations</li>
+                <hr style="margin: 0px; margin-left: 10px; margin-right: 10px; background: gray;">
+                <li id="menu-item-4">Open advanced search</li> -->
+            </ul>
+        </div>
+
+        <section id="some stuff at the bottom">
+            <link rel="stylesheet" href="./styles/overrides.css">        
+            <!-- Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="./scripts/browserCheck.js"></script>
+
+            <div style="background-color: black;" id="darkThemeTogglerDiv">
+                <!-- Dark mode
+                <link rel="stylesheet" href="./styles/darkmode.css">
+                <script>
+                    document.getElementById("LBtableMain").classList.add("table-dark");
+                </script> -->
+            </div>
+            <script>
+                PageReadyEvent();
+                const websiteVersion = "3.5.5, 22/01/2025"; // version moved to this semi-hidden place to hide the fact this webpage has not been given shit about for a long tome
+            </script>
+            <script src="./scripts/contextMenu.js"></script>
+        </section>
     </body>
 </html>
+<!-- 
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⠿⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⡏⠁⠀⠀⠀⠀⠀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣦⣤⡄⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿
+⣿⣿⣷⣄⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡧⠇⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣾⣮⣭⣿⡻⣽⣒⠀⣤⣜⣭⠐⢐⣒⠢⢰⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣏⣿⣿⣿⣿⣿⣿⡟⣾⣿⠂⢈⢿⣷⣞⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣷⣶⣾⡿⠿⣿⠗⠈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠻⠋⠉⠑⠀⠀⢘⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⡿⠟⢹⣿⣿⡇⢀⣶⣶⠴⠶⠀⠀⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⡿⠀⠀⢸⣿⣿⠀⠀⠣⠀⠀⠀⠀⠀⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀⠹⣿⣧⣀⠀⠀⠀⠀⡀⣴⠁⢘⡙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⠗⠂⠄⠀⣴⡟⠀⠀⡃⠀⠉⠉⠟⡿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⠾⠛⠂⢹⠀⠀⠀⢡⠀⠀⠀⠀⠀⠙⠛⠿⢿⣿⣿⣿
+░▀█▀░░░█▀█░█▄█░░░▀█▀░█░█░█▀▀░░░█▀█░█▀█░█▀▀░░░█░█░█░█░█▀█░░░█░█░█▀▀░█▀▀░█▀█░█▀▀░░
+░░█░░░░█▀█░█░█░░░░█░░█▀█░█▀▀░░░█░█░█░█░█▀▀░░░█▄█░█▀█░█░█░░░█▀▄░█▀▀░█▀▀░█▀▀░▀▀█░░
+░▀▀▀░░░▀░▀░▀░▀░░░░▀░░▀░▀░▀▀▀░░░▀▀▀░▀░▀░▀▀▀░░░▀░▀░▀░▀░▀▀▀░░░▀░▀░▀▀▀░▀▀▀░▀░░░▀▀▀░░
+░▀█▀░█░█░█▀▀░░░█▀▀░█░█░█▀▀░▀█▀░█▀▀░█▄█░░░█▀▄░█░█░█▀█░█▀█░▀█▀░█▀█░█▀▀░█░█        
+░░█░░█▀█░█▀▀░░░▀▀█░░█░░▀▀█░░█░░█▀▀░█░█░░░█▀▄░█░█░█░█░█░█░░█░░█░█░█░█░▀░▀        
+░░▀░░▀░▀░▀▀▀░░░▀▀▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀░░░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░▀        
+
+    
+░▀█▀░█░█░█▀▄░█▀█░█▀█░█▀▀░█▀▀░█▀█░█░░░█░░░░░█░░░█▀▀░█▀█░█▀▄░█▀▀░█▀▄░█▀▄░█▀█░█▀█░█▀▄░█▀▄░░░█░█░░░░░▀▀█░
+░░█░░█▀█░█▀▄░█░█░█░█░█▀▀░█▀▀░█▀█░█░░░█░░░░░█░░░█▀▀░█▀█░█░█░█▀▀░█▀▄░█▀▄░█░█░█▀█░█▀▄░█░█░░░▀▄▀░░░░░░▀▄░
+░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░▀░▀░▀▀░░▀▀▀░▀░▀░▀▀░░▀▀▀░▀░▀░▀░▀░▀▀░░░░░▀░░▀░░░▀▀░░
+ -->

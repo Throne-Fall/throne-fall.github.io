@@ -1,0 +1,439 @@
+@media screen and (max-width: 1600px) {
+	#fixTF2Cols {
+		grid-template-columns: 30% auto
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.fixTF2YTVid {
+		height: 250px
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	#fixtf2botsimagesgal2 {
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+	.fixTF2YTVid {
+		height: 225px
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#fixTF2Cols {
+		grid-template-columns: repeat(1, 1fr)
+	}
+
+	#fixTF2ColLeft {
+		order: 2
+	}
+
+	#fixtf2botsimagesgal2 {
+		grid-template-columns: repeat(3, 1fr)
+	}
+
+	.fixTF2YTVid {
+		max-width: 540px;
+		height: 280px
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#fixtf2botsimagesgal2 {
+		grid-template-columns: repeat(2, 1fr)
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.aimbotsImgs {
+		max-height: 200px;
+		max-width: 100%
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	#fixTF2-cols2,
+	#fixtf2botsimagesgal2 {
+		grid-template-columns: repeat(1, 1fr)
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	#mainPageContainerBack {
+		padding-top: 0;
+		padding-bottom: 0
+	}
+
+	#mainPageContainerFront {
+		margin: 2%
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#subInfoOverlayBlur {
+		padding: 3%
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#subIinfoVideoDiv {
+		height: 360px
+	}
+
+	.overlayBlur {
+		padding: 50px
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	#searchDiv {
+		text-align: center
+	}
+
+	#tableTitle {
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+	#searchResultsLegendText {
+		text-align: right
+	}
+
+	#subIinfoVideoDiv {
+		height: 380px
+	}
+
+	#lodoutGridWrapper,
+	#mutListCell,
+	#subIinfoVideoDiv,
+	#subInfoGridWrapper,
+	#subInfoImg {
+		max-width: 90%
+	}
+
+	.overlayBlur {
+		padding: 3%
+	}
+
+	.old_overlaysBlur {
+		padding: 2%
+	}
+
+	#categoryButtonsWrapper {
+		grid-template-columns: 1fr;
+		width: 100%;
+		max-width: 600px;
+		margin: auto
+	}
+
+	#categoryButtons,
+	.levelsToggleButtons {
+		max-width: 100%
+	}
+
+	#submissionButtonCell {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 10px
+	}
+
+	#underScoreButtonsGroup {
+		justify-content: center
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.splitRowGraph {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr)
+	}
+
+	#textStatsSection {
+		grid-template-columns: repeat(1, 1fr)
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#subIinfoVideoDiv {
+		height: 320px
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#categoryButtonsWrapper {
+		width: 100%
+	}
+
+	#categoryButtons,
+	#scoreLevelsToggle,
+	#timeLevelsToggle {
+		grid-template-columns: repeat(3, 1fr)
+	}
+
+	#subTypeTitle {
+		position: relative;
+		top: 25%
+	}
+
+	#searchForOptionsWrapper {
+		grid-template-columns: repeat(3, 1fr)
+	}
+
+	.searchOptionsSection {
+		grid-template-columns: 1fr
+	}
+
+	.searchOptionsSection {
+		text-align: center
+	}
+
+	.searchOptionsTitle {
+		text-align: center
+	}
+
+	#advancedSearchWindowsBackground {
+		max-height: 425px
+	}
+
+	#advancedSearchString {
+		max-width: 100%
+	}
+
+	#searchSubTypeWrapper {
+		max-width: 100%
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#subIinfoVideoDiv {
+		height: 280px
+	}
+
+	#lodoutGridWrapper,
+	#mutListCell,
+	#subIinfoVideoDiv,
+	#subInfoGridWrapper,
+	#subInfoImg {
+		max-width: 95%
+	}
+
+	#subIinfoExternalImgDiv {
+		height: 250px
+	}
+
+	#newProofWindowMainVideo {
+		padding: 3%
+	}
+
+	#old_ProofVideo {
+		height: 320px
+	}
+
+	.overlayBlur {
+		padding: 2%
+	}
+
+	#gameLinks {
+		grid-template-columns: 1fr 1fr;
+		max-width: 350px
+	}
+
+	#timeLevelsToggle {
+		grid-template-columns: repeat(3, 1fr)
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#tableTitle {
+		grid-template-columns: 1fr
+	}
+
+	#searchResultsLegendText {
+		margin-bottom: 15px;
+		margin-top: -15px;
+		text-align: left
+	}
+
+	#subIinfoVideoDiv {
+		height: 240px
+	}
+
+	#lodoutGridWrapper {
+		grid-template-columns: 1fr
+	}
+
+	#subIinfoExternalImgDiv {
+		height: 225px
+	}
+
+	#chooseSubTypeButtons {
+		max-width: 90%
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	#categoryButtons,
+	#scoreLevelsToggle,
+	#timeLevelsToggle {
+		grid-template-columns: 1fr 1fr
+	}
+
+	#categoryButtons,
+	#levelsButtons {
+		max-width: 350px;
+		margin: auto
+	}
+
+	#levelsButtons {
+		padding-top: 15px
+	}
+
+	#subIinfoVideoDiv {
+		height: 180px
+	}
+
+	#subInfoGridWrapper {
+		grid-template-columns: 1fr 1fr
+	}
+
+	#subIinfoExternalImgDiv {
+		height: 150px
+	}
+
+	#versionInfoCell {
+		position: relative;
+		left: 50%
+	}
+
+	#newProofWindowMainVideo {
+		padding: 2%
+	}
+
+	#old_ProofVideo {
+		height: 240px
+	}
+
+	.frostseeBtn {
+		left: 0
+	}
+
+	#searchBarNewLine {
+		display: block
+	}
+
+	#searchButton {
+		margin-top: 5px
+	}
+
+	#advancedSearchButton {
+		margin-top: 5px
+	}
+
+	#leaderBoards {
+		margin-top: 40px
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#subInfoGridWrapper {
+		grid-template-columns: 1fr
+	}
+
+	#subIinfoExternalImgDiv {
+		height: 125px
+	}
+
+	#categoryButtons,
+	#gameLinks,
+	#scoreLevelsToggle,
+	#timeLevelsToggle {
+		margin: auto;
+		grid-template-columns: 1fr;
+		row-gap: 5px;
+		max-width: 175px
+	}
+
+	#gameLinks {
+		row-gap: 0
+	}
+
+	#levelsButtons {
+		margin-top: 15px;
+		margin-bottom: 15px
+	}
+
+	.uferwindBtn {
+		position: relative;
+		left: 0
+	}
+}
+
+@media only screen and (max-width: 200px) {}
+
+@media only screen and (max-height: 800px) {}
+
+@media only screen and (max-height: 700px) {
+	#subInfoOverlayBlur {
+		padding: 1%
+	}
+
+	.overlayBlur {
+		padding: 3%
+	}
+
+	#old_ProofVideo {
+		height: 500px
+	}
+}
+
+@media only screen and (max-height: 600px) {
+	#subIinfoVideoDiv {
+		height: 250px
+	}
+
+	.overlayBlur {
+		padding: 2%
+	}
+
+	#old_ProofVideo {
+		height: 400px
+	}
+}
+
+@media only screen and (max-height: 550px) {
+	#subIinfoVideoDiv {
+		height: 250px
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	#subInfoWindowsBackground {
+		max-width: 50%
+	}
+
+	.overlayBlur {
+		padding: 1%
+	}
+
+	#old_ProofVideo {
+		height: 300px
+	}
+}
+
+@media only screen and (max-height: 450px) {}
+
+@media only screen and (max-height: 400px) {
+	#old_ProofVideo {
+		height: 250px
+	}
+}
+
+@media only screen and (max-height: 300px) {
+	.old_ProofWindow {
+		height: 80%;
+		top: 0;
+		transform: translate(0, 0)
+	}
+}

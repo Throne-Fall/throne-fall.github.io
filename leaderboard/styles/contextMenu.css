@@ -1,0 +1,45 @@
+.contextMenu {
+	display: none;
+	position: absolute;
+	color: black;
+	background-color: var(--backgroundColourTransparent);
+	backdrop-filter: blur(32px);
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+}
+
+.contextMenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+
+.contextMenu li {
+	padding: 8px 12px;
+	cursor: pointer
+}
+
+.contextMenu li:hover,
+.custom-menu li.active {
+	border-radius: 5px;
+	background-color: var(--backgroundColourOpaque)
+}
+
+@keyframes contextMenuOpenKFs {
+	0% {
+		transform: scale(0, 0)
+	}
+
+	100% {
+		transform: scaleY(1, 1)
+	}
+}
+
+.cMenuOpenAnim {
+	transform-origin: top left;
+	animation-duration: 0.2s;
+	animation-name: contextMenuOpenKFs;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out
+}

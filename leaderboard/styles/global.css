@@ -1,0 +1,561 @@
+:root {
+	--backgroundColourTransparent: rgba(255, 255, 255, 0.55);
+	--backgroundColourOpaque: rgba(255, 255, 255, 0.95);
+	--windowMainColourTop: rgb(194, 115, 1);
+	--windowMainColourBottom: orange;
+	--buttonColour1: rgb(255, 165, 0);
+	--buttonColour2: rgb(255, 193, 7);
+	--shadowColour: rgba(0, 0, 0, 1);
+	--whiteColour1: white;
+	--whiteColour2: rgba(225, 225, 225, 1.0);
+	--customOrange: rgb(186, 131, 3)
+}
+
+body {
+	background-color: black;
+	background-image: url("../img/backgrounds/Overworld.jpg");
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+	background-size: cover;
+	font-family: 'Times New Roman', Times, serif;
+	color: black;
+	min-height: 100vh
+}
+
+a,
+a:link,
+a:visited {
+	color: var(--windowMainColourTop);
+	text-decoration: none
+}
+
+.ScoreProofLink {
+	cursor: pointer
+}
+
+.ScoreProofLink:hover {
+	text-decoration: underline !important;
+	font-style: italic
+}
+
+.centerHorizontal {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0)
+}
+
+.centerVertical {
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%)
+}
+
+.btn_orangeGradient {
+	background: linear-gradient(to bottom, var(--buttonColour1), var(--buttonColour2));
+	border: 1px var(--customOrange) solid
+}
+
+.dropShadow {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.whiteGradient {
+	background: linear-gradient(to bottom, var(--whiteColour1), var(--whiteColour2));
+	border: 1px var(--customOrange) solid
+}
+
+.noLink,
+.noLink:link,
+.noLink:visited {
+	color: black !important
+}
+
+#mainPageContainerBack {
+	max-width: 1000px;
+	min-width: 300px;
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px
+}
+
+#mainPageContainerFront {
+	background: var(--backgroundColourTransparent);
+	backdrop-filter: blur(12px);
+	border-radius: 5px;
+	padding: 20px 10px 10px;
+	box-shadow: 0 0 8px var(--shadowColour)
+}
+
+#loadingOVerlay {
+	display: block;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background-color: rgb(0, 0, 0, 0.95);
+	backdrop-filter: blur(16px);
+	color: white;
+	text-align: center
+}
+
+#loadingTextBox {
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%)
+}
+
+#loadingPageLogo {
+	max-width: 75px;
+	max-height: 75px;
+	width: 100%
+}
+
+#loadingPageNameText {
+	font-size: 3rem;
+	font-weight: bold;
+	font-style: italic
+}
+
+header {
+	text-align: center
+}
+
+#pageNameText,
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-style: italic
+}
+
+.gameLinksBtn {
+	font-weight: bold;
+	width: 100%;
+	padding: 7px 15px;
+	margin-bottom: 7px
+}
+
+#gameLinks {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 5px;
+	width: 100%;
+	max-width: 550px;
+	text-align: center;
+	margin: auto
+}
+
+#searchToggleButton {
+	border-radius: 5px;
+	margin-top: 5px
+}
+
+#colourThemeToggleButton {
+	border-radius: 5px;
+	margin-right: -5px
+}
+
+#pageOptionsSplitDrpBtn {
+	padding: 7px
+}
+
+#pageOptionsSplit {
+	margin-left: 10px;
+	margin-right: 5px
+}
+
+#underScoreButtonsGroup {
+	margin-top: 5px;
+	justify-content: right;
+	display: flex
+}
+
+#submitScoreBtnSplit {
+	padding: 10px 18px;
+	margin-right: -5px;
+	border-radius: 5px
+}
+
+#submitTimeBtnSplit {
+	padding: 10px
+}
+
+#submitTimeLink,
+#submitTimeLink:link,
+#submitTimeLink:visited {
+	color: black
+}
+
+#SubmitButtonText {
+	font-weight: bold
+}
+
+#categoryButtonsWrapper {
+	display: grid;
+	grid-template-columns: 2.5fr 1.5fr;
+	width: 100%
+}
+
+#categoryButtons {
+	display: none;
+	grid-template-columns: 3fr 1fr;
+	/*repeat(3, 1fr);*/
+	column-gap: 5px;
+	row-gap: 5px;
+	width: 100%;
+	margin-bottom: 10px;
+	max-width: 600px
+}
+
+.levelsToggleButtons {
+	display: none;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 5px;
+	row-gap: 5px;
+	width: 100%;
+	margin-bottom: 10px;
+	max-width: 600px
+}
+
+#timeLevelsToggle {
+	grid-template-columns: repeat(4, 1fr);
+	display: none !important
+}
+
+#lbTimeSection {
+	overflow: auto
+}
+
+#scoreLevelsToggle {
+	display: grid
+}
+
+#demoLevelsToggle {
+	grid-template-columns: repeat(3, 1fr)
+}
+
+.categoryToggleText {
+	font-weight: bold
+}
+
+.levelToggleText {
+	font-weight: bold
+}
+
+#submissionButtonCell {
+	text-align: right
+}
+
+#searchDiv {
+	display: none;
+	margin: auto;
+	text-align: right;
+	height: 40px
+}
+
+.searchElements {
+	height: 100%
+}
+
+#site-search {
+	border-radius: 5px;
+	max-width: 200px;
+	width: 100%
+}
+
+#advancedSearchWindow {
+	display: none
+}
+
+#advancedSearchWindowsBackground {
+	max-height: 300px
+}
+
+.searchOptionsTitle {
+	font-weight: bold;
+	font-size: 1.25rem;
+	text-align: right;
+	margin-right: 10px
+}
+
+.searchOptionsTogglesWrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	position: relative;
+	top: 3px
+}
+
+.searchOptionsSection {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 10px
+}
+
+#advancedSearchString {
+	max-width: 550px
+}
+
+#advSrcNumberFieldDiv {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	max-width: 450px;
+	column-gap: 5px
+}
+
+#subTypeDiv {
+	background-color: rgba(255, 255, 255, 0)
+}
+
+#searchTypeDiv {
+	background-color: rgba(255, 255, 255, 0)
+}
+
+#searchSubTypeWrapper {
+	max-width: 250px;
+	grid-template-columns: repeat(2, 1fr)
+}
+
+#searchForOptionsWrapper {
+	grid-template-columns: repeat(5, 1fr);
+	max-width: 55searchOptionsSection0px
+}
+
+#searchTypeWrapper {
+	max-width: 350px;
+	grid-template-columns: repeat(2, 1fr)
+}
+
+#startSarchButtonDiv {
+	text-align: center;
+	margin-top: 10px
+}
+
+#startSearchButton {
+	width: 100%;
+	max-width: 175px;
+	font-weight: bold
+}
+
+#numOfSearchResultsTextDiv {
+	text-align: center;
+	font-size: 1.25rem;
+	margin-top: 5px
+}
+
+#numOfSearchResultsText {
+	font-weight: bold
+}
+
+#tableTitle {
+	display: grid;
+	grid-template-columns: repeat(2fr, 1fr, 1fr)
+}
+
+#leaderboardContent,
+#t_leaderboardContent {
+	overflow: auto
+}
+
+.scoreTableRow:hover,
+.timeTableRow:hover {
+	background: linear-gradient(to bottom, var(--whiteColour2), var(--whiteColour1));
+	color: black;
+	cursor: pointer
+}
+
+.scoreTableRow:active,
+.timeTableRow:active {
+	color: var(--windowMainColourBottom)
+}
+
+.positionColumn {
+	font-weight: bold
+}
+
+#lbLoadImage {
+	max-width: 100px;
+	width: 100%;
+	height: auto;
+	margin: 15px
+}
+
+#LBtableMain,
+#LBtableMainTime {
+	text-align: center
+}
+
+#LBtableHead {
+	font-weight: bold
+}
+
+#et1-leaderboardNameText,
+#leaderboardNameText,
+#t_leaderboardNameText {
+	line-height: 55px;
+	font-weight: bold;
+	font-size: 1.75rem
+}
+
+#evtf {
+	border: 0;
+	width: 0;
+	height: 0;
+	display: none;
+	visibility: hidden;
+	opacity: 0
+}
+
+#searchResultsLegendText {
+	display: none;
+	position: relative;
+	top: 25%;
+	text-align: center
+}
+
+.tableDarkHeader,
+.tableHead_gradient {
+	background: linear-gradient(to bottom, black, #24272b);
+	color: white;
+	border: 1px solid black;
+	cursor: pointer
+}
+
+.tableBodyBackground,
+.tableBody_gradient {
+	background: linear-gradient(to bottom, var(--whiteColour2), var(--whiteColour1))
+}
+
+.nameColumn {
+	text-align: left
+}
+
+#searchBarNewLine {
+	display: none
+}
+
+footer {
+	font-weight: bold;
+	text-align: center
+}
+
+#tableName {
+	line-height: 55px;
+	font-weight: bold;
+	font-size: 1.75rem
+}
+
+.demoArchiveTitle {
+	font-weight: bold;
+	font-size: 1.2rem;
+	font-style: italic
+}
+
+#ts_th-coins,
+.t_coins {
+	display: none
+}
+
+#bonusModesTitle {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 50px
+}
+
+#lbbonusModeSection {
+	display: none
+}
+
+#sesstionstorWarn {
+	display: none;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: red;
+	text-shadow: 0 0 4px white;
+	background-color: rgba(0, 0, 0, 0.25)
+}
+
+#fixTF2panelOvrl {
+	padding: 10px;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.75);
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#fixTF2panelBgr {
+	display: flex;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	border-radius: 5px;
+	margin: auto;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	max-width: 1600px;
+	scrollbar-color: var(--windowMainColourTop) var(--windowMainColourBottom);
+	box-shadow: 2px 2px 6px black;
+	background: linear-gradient(to bottom, var(--windowMainColourTop), var(--windowMainColourBottom))
+}
+
+#fixTF2panelFgr {
+	border-radius: 5px;
+	padding: 10px;
+	width: 1000%;
+	height: 100%;
+	background: linear-gradient(to bottom, black, rgba(30, 31, 33, 1.0));
+	overflow: auto
+}
+
+#fixTF2Cols {
+	display: grid;
+	text-align: center;
+	height: 100%;
+	grid-template-columns: 500px auto;
+	column-gap: 10px;
+	row-gap: 10px
+}
+
+.fixTFgameLink,
+.fixTFgameLink:link,
+.fixTFgameLink:visited {
+	color: white;
+	text-decoration: underline
+}
+
+#fixTF2-cols2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr)
+}
+
+.aimbotsImgs {
+	max-height: 200px;
+	max-width: 350px;
+	height: auto;
+	width: auto;
+	border-radius: 5px
+}
+
+#fixTF2learnmore {
+	margin-top: -15px;
+	padding: 10px;
+	font-size: 1.1rem;
+	border: 5px solid orange
+}
+
+.fixTF2YTVid {
+	width: 100%;
+	height: 280px;
+	border-radius: 5px
+}
+
+#fixtf2botsimagesgal2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.5fr
+}

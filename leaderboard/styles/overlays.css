@@ -1,0 +1,465 @@
+.overlayBlur {
+	display: block;
+	position: fixed;
+	top: 0;
+	padding: 75px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.32);
+	backdrop-filter: blur(16px)
+}
+
+#submitWindowBakcground {
+	display: flex;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	border-radius: 5px;
+	margin: auto;
+	padding: 0 7.5px 7.5px;
+	width: 100%;
+	max-width: 900px;
+	height: 100%;
+	max-height: 780px;
+	scrollbar-color: var(--windowMainColourTop) var(--windowMainColourBottom);
+	box-shadow: 2px 2px 6px black;
+	background: linear-gradient(to bottom, var(--windowMainColourTop), var(--windowMainColourBottom))
+}
+
+#submitWindowForeground {
+	overflow-y: auto;
+	width: 100%
+}
+
+#windowTitleBar {
+	background: var(--windowMainColourTop);
+	padding: 5px 5px 10px
+}
+
+#titleBarText {
+	color: white;
+	text-align: center;
+	font-size: 1.3rem;
+	margin-bottom: -30px;
+	font-weight: bold
+}
+
+#windowTitleBarCloseImage {
+	width: 20px;
+	height: auto;
+	cursor: pointer
+}
+
+#titleBarClose {
+	text-align: right
+}
+
+#chooseSubTypeButtons {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.75rem;
+	max-width: 400px;
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+#topChoiceButton {
+	margin-top: 20px
+}
+
+#submiFormDiv {
+	display: none
+}
+
+#submitFormFrame {
+	width: 100%;
+	height: 725px;
+	border: 0;
+	background: black
+}
+
+.subInfoIcon {
+	max-width: 55px
+}
+
+#subInfoWeaponIcon {
+	margin-top: 10px
+}
+
+#perksIconsWrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 10px;
+	max-width: 300px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0)
+}
+
+#mutatorIconsWrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 5px;
+	margin-top: 15px;
+	max-width: 400px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0)
+}
+
+#subInfoOverlayBlur {
+	display: block;
+	position: fixed;
+	top: 0;
+	padding: 25px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.32);
+	backdrop-filter: blur(16px)
+}
+
+#obsoleteSubInfoBar {
+	display: none;
+	box-shadow: 2px 2px 32px var(--shadowColour);
+	margin: 10px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.1rem
+}
+
+#rejectedSubInfoBar {
+	display: none;
+	box-shadow: 2px 2px 32px var(--shadowColour);
+	margin: 10px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.2rem
+}
+
+#advancedSearchWindowsBackground,
+#rulesWindowsBackground {
+	display: flex;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	border-radius: 5px;
+	margin: auto;
+	padding: 0 7.5px 7.5px;
+	max-width: 900px;
+	height: 100%;
+	scrollbar-color: var(--windowMainColourTop) var(--windowMainColourBottom);
+	box-shadow: 2px 2px 6px black;
+	background: linear-gradient(to bottom, var(--windowMainColourTop), var(--windowMainColourBottom))
+}
+
+#subInfoWindowsBackground {
+	display: flex;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	border-radius: 5px;
+	margin: auto;
+	padding: 0 7.5px 7.5px;
+	max-width: 900px;
+	height: 100%;
+	scrollbar-color: var(--windowMainColourTop) var(--windowMainColourBottom);
+	box-shadow: 2px 2px 6px black;
+	background: linear-gradient(to bottom, var(--windowMainColourTop), var(--windowMainColourBottom))
+}
+
+#advancedSearchWindowsForeground,
+#subInfoWindowsForeground {
+	overflow: auto;
+	width: 100%;
+	background: linear-gradient(to top, var(--whiteColour1), var(--whiteColour2))
+}
+
+#subInfoWindowContent {
+	margin-top: 25px
+}
+
+#subInfoImg {
+	border-radius: 5px;
+	max-width: 85%;
+	max-height: 400px;
+	box-shadow: 2px 2px 8px black
+}
+
+#subIinfoImageDiv {
+	text-align: center
+}
+
+#subInfoVideo {
+	border: 0;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	background-color: #222222;
+	box-shadow: 2px 2px 8px black;
+	margin-bottom: -5px
+}
+
+#subIinfoVideoDiv {
+	display: none;
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 15px;
+	height: 420px;
+	max-width: 75%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0)
+}
+
+#subIinfoExternalImgDiv {
+	text-align: center;
+	height: 300px;
+	background-image: url("../img/backgrounds/overworld blur.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+#subInfoExtImg {
+	filter: blur(16px);
+	border-radius: 5px;
+	max-width: 85%;
+	max-height: 400px;
+	box-shadow: 2px 2px 8px black
+}
+
+#externalImgMessageDiv {
+	font-size: 2rem;
+	position: relative;
+	top: -50%;
+	transform: translate(0%, 50%)
+}
+
+#extenralImgButtonDiv {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%)
+}
+
+#subInfoTitle {
+	text-align: center;
+	font-size: 1.32rem;
+	padding: 10px;
+	text-shadow: 2px 2px 2px gray
+}
+
+.subInfoSubtitle {
+	font-weight: bold;
+	font-size: 1.1rem
+}
+
+#lodoutGridWrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 10px;
+	row-gap: 10px;
+	text-align: center;
+	max-width: 75%;
+	margin: auto;
+	padding-bottom: 10px
+}
+
+#subInfoGridWrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+	text-align: center;
+	max-width: 75%;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+.subInfoGridCell {
+	box-shadow: 2px 2px 8px black;
+	background: linear-gradient(to bottom, var(--buttonColour1), var(--buttonColour2));
+	border-radius: 5px;
+	padding-top: 3px;
+	padding-bottom: 7px
+}
+
+.subInfoVars {
+	font-style: normal
+}
+
+.subInfoVarsTitle {
+	font-style: normal;
+	font-weight: bold
+}
+
+#extenralImgTitle {
+	font-weight: bold;
+	color: white;
+	font-size: 1.75em;
+	text-shadow: 2px 2px 2px black
+}
+
+#mutListCell {
+	margin-bottom: 15px;
+	max-width: 75%;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0)
+}
+
+#rulesWindow {
+	display: none
+}
+
+#rulesWindowContent {
+	padding: 15px
+}
+
+#overlayWindoTitle {
+	font-size: 1.25rem;
+	font-weight: bold
+}
+
+#subRules_ScreenshotRuleDiv {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 5px
+}
+
+.subRules_ScreenshotRuleImg {
+	width: 100%;
+	border-radius: 5px
+}
+
+.old_overlaysBlur {
+	z-index: 5;
+	display: block;
+	position: fixed;
+	top: 0;
+	padding: 50px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.32);
+	backdrop-filter: blur(16px)
+}
+
+.old_titleBarLeft {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.old_titleBarRight {
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin-top: -10px;
+	margin-right: 5px
+}
+
+.old_windowTitleBarButton {
+	font-size: 1.3rem;
+	padding-left: 10%;
+	color: white;
+	margin-top: -10px;
+	margin-left: 5px
+}
+
+.old_windowTitleBarButtonIcon {
+	width: 20px;
+	height: auto
+}
+
+.old_windowTitleBarButtonIcon:hover {
+	cursor: pointer
+}
+
+.old_ScoreProof {
+	text-align: right
+}
+
+.old_ProofWindow {
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5)
+}
+
+.old_ProofWindowContent {
+	border-radius: 0 0 10px 10px;
+	margin: auto;
+	padding: 10px;
+	max-height: 600px;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	color: white;
+	background: linear-gradient(to bottom, var(--windowMainColourTop), var(--windowMainColourBottom));
+	z-index: 4
+}
+
+.old_ProofWindowTitleBar {
+	position: relative;
+	display: flex;
+	border-radius: 5px 5px 0 0;
+	background-color: var(--windowMainColourTop);
+	margin: 0;
+	padding-top: 7px;
+	width: 100%;
+	height: 35px;
+	z-index: 5
+}
+
+.old_titleBarRight {
+	padding-right: 5px
+}
+
+#old_ProofImage {
+	border-radius: 5px;
+	object-fit: contain;
+	width: 100%;
+	height: 100%
+}
+
+#old_ProofVideo {
+	border-radius: 5px;
+	height: 580px;
+	width: 100%;
+	border: 0;
+	background: black
+}
+
+.old_titleBarRight {
+	margin-top: 0
+}
+
+#buttonsGridWrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 10px;
+	max-width: 400px;
+	margin: auto
+}
+
+.optionsWinButton {
+	font-weight: bold;
+	font-size: 1.1rem
+}
+
+.optionsDoneWinButton {
+	max-width: 200px;
+	position: relative;
+	left: 25%;
+	font-weight: bold;
+	font-size: 1.15rem
+}

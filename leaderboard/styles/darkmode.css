@@ -1,0 +1,106 @@
+:root {
+	--dark1Transl: rgba(30, 31, 33, 0.55);
+	--dark1Opaque: rgba(30, 31, 33, 1.0);
+	--dark2: black;
+	--darkButtonCol1: hsl(39, 100%, 35%);
+	--darkButtonCol2: hsl(45, 100%, 36%)
+}
+
+body {
+	color: white
+}
+
+hr {
+	background: grey
+}
+
+#mainPageContainerFront {
+	background: var(--dark1Transl);
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.5)
+}
+
+.btn_orangeGradient {
+	background: linear-gradient(to bottom, var(--darkButtonCol1), var(--darkButtonCol2));
+	color: white
+}
+
+.whiteGradient {
+	background: linear-gradient(to bottom, var(--dark1Opaque), var(--dark2));
+	border: 1px solid var(--darkButtonCol1);
+	color: white
+}
+
+.whiteGradient:hover {
+	color: var(--darkButtonCol1)
+}
+
+.dropShadow {
+	box-shadow: 1px 2px 6px rgba(255, 255, 255, 0.5)
+}
+
+.tableDarkHeader,
+.tableHead_gradient {
+	background: linear-gradient(to bottom, var(--whiteColour2), var(--whiteColour1));
+	color: black
+}
+
+.tableBodyBackground,
+.tableBody_gradient {
+	background: linear-gradient(to top, var(--dark2), var(--dark1Opaque));
+	color: white;
+	border: 1px solid black;
+	cursor: pointer
+}
+
+.scoreTableRow:hover,
+.timeTableRow:hover {
+	background: linear-gradient(to bottom, var(--dark1Opaque), var(--dark2));
+	color: orange
+}
+
+#advancedSearchWindowsForeground,
+#subInfoWindowsForeground {
+	background: linear-gradient(to top, var(--dark1Opaque), var(--dark2))
+}
+
+.subInfoGridCell {
+	background: linear-gradient(to bottom, var(--darkButtonCol1), var(--darkButtonCol2))
+}
+
+#loadingOVerlay {
+	display: none
+}
+
+.searchOptionsSection {
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+.contextMenu {
+	color: white;
+	background-color: var(--dark1Transl);
+	border: 1px solid white;
+	box-shadow: 2px 2px 5px rgba(255, 255, 2555, 0.5)
+}
+
+.contextMenu li:hover {
+	background-color: var(--dark1Opaque)
+}
+
+#bonusModesAlert {
+	background-color: var(--dark1Transl);
+	color: white;
+	border: 0
+}
+
+.graphDiv {
+	background: var(--dark1Transl);
+	color: white
+}
+
+.apexcharts-tooltip {
+	color: black
+}
+
+.textStatDiv {
+	background: var(--dark1Transl)
+}
