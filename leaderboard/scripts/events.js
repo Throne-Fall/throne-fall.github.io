@@ -11,20 +11,6 @@ function PageReadyEvent()
     OpenSubmitFromURL();
     dummy2();
 }
-function EmbedPageReadyEvent()
-{
-    console.log("PAGE READY.\nWaiting for leaderboard.");
-
-    // SelectRandomBackground(1);
-    // CheckSavedFontStyle();
-    // CheckSavedTheme();
-    // CheckAnimState();
-
-    GetformID();
-    SpawnTableRows();
-    GetSubData();
-    // OpenSubmitFromURL();
-}
 
 let LbReady = false;
 function LeaderBoarReadyEvent ()
@@ -49,11 +35,4 @@ function LeaderBoarReadyEvent ()
     // $("#searchButton")[0].disabled = false;
     $("#ets1_score_btn")[0].disabled = false;
     $("#ets1_score_btn")[0].disabled = false;
-}
-
-function EmbedLeaderBoarReadyEvent()
-{
-    console.log("LEADERBOARD READY.");
-
-    ChangeTableData('Neuland',false); // Load Neuland subs
 }
