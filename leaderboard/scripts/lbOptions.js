@@ -104,10 +104,7 @@ function IsPicServiceSupoorted (url)
     [
         "i.postimg.cc",
         "i.ibb.co",
-        "i.imgur.com",
-        "media.discordapp.net",
-        "cdn.discordapp.com",
-        "ghost-miner.github.io",
+        "i.imgur.com"
     ]
     for (let i = 0; i < supportedDomains.length; i++)
     {
